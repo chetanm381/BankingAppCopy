@@ -32,6 +32,7 @@ Screen1 As screen:
             lbl_HomeTab_1 As label:
                 Align: =Align.Center
                 Color: =RGBA(107, 29, 94, 1)
+                FontWeight: =FontWeight.Semibold
                 Height: =35
                 Size: =11
                 Text: ="Home"
@@ -43,10 +44,10 @@ Screen1 As screen:
             btn_createApp_1 As button:
                 BorderColor: =RGBA(107, 29, 94, 1)
                 BorderThickness: =1
-                Color: =RGBA(0, 0, 0, 1)
+                Color: =RGBA(107, 29, 94, 1)
                 Fill: =RGBA(255, 255, 255, 1)
-                FontWeight: =FontWeight.Normal
                 Height: =35
+                HoverFill: =ColorFade(Self.BorderColor, 20%)
                 RadiusBottomLeft: =50
                 RadiusBottomRight: =50
                 RadiusTopLeft: =50
@@ -152,6 +153,7 @@ Screen1 As screen:
                     Color: =RGBA(107, 29, 94, 1)
                     Fill: =RGBA(252, 242, 247, 1)
                     Height: =30
+                    HoverFill: =ColorFade(Self.Color, 20%)
                     Size: =9
                     Text: ="Primary Holder"
                     Width: =100
@@ -272,6 +274,93 @@ Screen1 As screen:
                             Text: ="+91-123456789"
                             X: =73
                             ZIndex: =3
+
+                    Label4_4 As label:
+                        FontWeight: =FontWeight.Semibold
+                        Size: =12
+                        Text: ="Date of Birth"
+                        Width: =Parent.Width*.40
+                        X: =Parent.Width*.05
+                        Y: =250
+                        ZIndex: =9
+
+                    Container2_1 As groupContainer.manualLayoutContainer:
+                        BorderColor: =RGBA(237, 237, 237, 1)
+                        BorderThickness: =2
+                        DropShadow: =DropShadow.None
+                        Fill: =RGBA(250, 250, 250, 1)
+                        Height: =40
+                        Width: =Parent.Width*.40
+                        X: =38
+                        Y: =290
+                        ZIndex: =10
+
+                        Image2_1 As image:
+                            Height: =30
+                            Image: =cake
+                            Width: =30
+                            X: =15
+                            Y: =5
+                            ZIndex: =1
+
+                        Rectangle3_1 As rectangle:
+                            Fill: =RGBA(202, 202, 202, 1)
+                            Height: =30
+                            Width: =2
+                            X: =57
+                            Y: =5
+                            ZIndex: =2
+
+                        DatePicker1 As datepicker:
+                            BorderThickness: =0
+                            IconBackground: =Color.White
+                            IconFill: |-
+                                =ColorValue("#969696")
+                            PaddingLeft: =5
+                            PaddingTop: =5
+                            Size: =13
+                            Width: =233
+                            X: =70
+                            ZIndex: =3
+
+                    Label4_5 As label:
+                        FontWeight: =FontWeight.Semibold
+                        Size: =12
+                        Text: ="Address"
+                        Width: =Parent.Width*.40
+                        X: =419
+                        Y: =250
+                        ZIndex: =11
+
+                    TextInput1_3 As text:
+                        Default: =""
+                        DisabledBorderColor: =RGBA(237, 237, 237, 1)
+                        DisabledColor: =RGBA(44, 54, 84, 1)
+                        DisabledFill: =RGBA(250, 250, 250, 1)
+                        DisplayMode: =DisplayMode.Disabled
+                        Height: =181
+                        HintText: ="Enter Address"
+                        Mode: =TextMode.MultiLine
+                        Width: =Parent.Width*.40
+                        X: =420
+                        Y: =290
+                        ZIndex: =12
+
+                    Label4_6 As label:
+                        FontWeight: =FontWeight.Semibold
+                        Size: =12
+                        Text: ="Signature"
+                        Width: =Parent.Width*.40
+                        X: =38
+                        Y: =360
+                        ZIndex: =13
+
+                    Container4 As groupContainer.manualLayoutContainer:
+                        Height: =96
+                        Width: =303
+                        X: =38
+                        Y: =400
+                        ZIndex: =14
 
                 Container3 As groupContainer.manualLayoutContainer:
                     Height: =Parent.Height*.74
