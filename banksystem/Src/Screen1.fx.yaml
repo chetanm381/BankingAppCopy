@@ -31,6 +31,7 @@ Screen1 As screen:
 
             lbl_HomeTab_1 As label:
                 Align: =Align.Center
+                Color: =RGBA(107, 29, 94, 1)
                 Height: =35
                 Size: =11
                 Text: ="Home"
@@ -40,6 +41,7 @@ Screen1 As screen:
                 ZIndex: =2
 
             btn_createApp_1 As button:
+                BorderColor: =RGBA(107, 29, 94, 1)
                 BorderThickness: =1
                 Color: =RGBA(0, 0, 0, 1)
                 Fill: =RGBA(255, 255, 255, 1)
@@ -55,4 +57,47 @@ Screen1 As screen:
                 X: =Parent.Width-Self.Width-Parent.Width*.02
                 Y: =(Parent.Height-Self.Height)/2
                 ZIndex: =3
+
+        doorstepbankingContainer As groupContainer.manualLayoutContainer:
+            BorderStyle: =BorderStyle.None
+            DropShadow: =DropShadow.None
+            Fill: =RGBA(252, 242, 247, 1)
+            FillPortions: =0
+            Height: =Parent.Height*.3
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Width: =Parent.Width
+            ZIndex: =3
+
+            Label1 As label:
+                Color: =RGBA(107, 29, 94, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =64
+                Size: =25
+                Text: ="DOOR STEP BANKING"
+                Width: =520
+                X: =Parent.Width*.02
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =1
+
+            Image1 As image:
+                Height: =Parent.Height
+                Image: =rafiki
+                Width: =482
+                X: =Parent.Width-Self.Width
+                ZIndex: =2
+
+        Container6 As groupContainer.manualLayoutContainer:
+            BorderStyle: =BorderStyle.None
+            DropShadow: =DropShadow.None
+            Fill: =RGBA(107, 29, 94, 1)
+            FillPortions: =0
+            Height: =130
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            ZIndex: =4
 
