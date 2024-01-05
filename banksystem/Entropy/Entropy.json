@@ -1,44 +1,90 @@
 {
-  "ComponentIndexes": {},
+  "ComponentIndexes": {
+    "Component1": 1
+  },
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
     "App": 1,
+    "btn_createApp": 13,
+    "Component1": 6,
+    "cont_mainContent_1": 9,
+    "cont_mainContent_2": 14,
+    "cont_MainHeader": 7,
     "Host": 3,
-    "Label1": 5,
+    "img_bankngIMg": 16,
+    "img_xebiaLogo": 10,
+    "lbl_doorStepBanking": 15,
+    "lbl_gap_1": 11,
+    "lbl_HomeTab": 12,
     "Screen1": 4
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "01/05/2024 08:44:27",
+  "HeaderLastSavedDateTimeUTC": "01/05/2024 09:29:50",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
-  "LocalResourceFileNames": {},
-  "LocalResourceRootPaths": {},
-  "OrderComponentMetadata": {},
-  "OrderComponentTemplate": {},
+  "LocalResourceFileNames": {
+    "download (7) 1": "356b3dc8-ae6c-4f2d-b6bd-c8767afe9ba4.png",
+    "rafiki": "4df617f1-dc9e-42f4-947f-5ef41f982f38.png"
+  },
+  "LocalResourceRootPaths": {
+    "download (7) 1": "https://docserverpwaprodcin.blob.core.windows.net/62d783ca-e242-41ba-b86b-de7841902a2f-1/resource/4a26b311-4f8e-4773-9de5-dc18ad7f6ffe.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-01-05T08%3A49%3A33Z&ske=2024-01-06T09%3A04%3A33Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-01-06T09%3A04%3A33Z&sr=b&sp=r&sig=%2BPzAjAjFNviLI0LUuooO8X%2Fe97An0MDXWp9wJ5Lcyco%3D",
+    "rafiki": "https://docserverpwaprodcin.blob.core.windows.net/62d783ca-e242-41ba-b86b-de7841902a2f-1/resource/0443e08e-f5f6-4b39-8e03-aea9b289f414.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-01-05T08%3A50%3A22Z&ske=2024-01-06T09%3A05%3A22Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-01-06T09%3A05%3A22Z&sr=b&sp=r&sig=xvdheNqkVhzeNd0JBZgmqDdSX7rL0nhnF3OxjvaInxA%3D"
+  },
+  "OrderComponentMetadata": {
+    "5601c908ae7840419f651d6d0b9ec0d8": 0
+  },
+  "OrderComponentTemplate": {
+    "5601c908ae7840419f651d6d0b9ec0d8": 0
+  },
   "OrderDataSource": {},
   "OrderGroupControls": {},
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
   "OrderXMLTemplate": {
-    "label": 0
+    "button": 3,
+    "groupContainer": 0,
+    "image": 2,
+    "label": 1
   },
   "OverridablePropertiesEntry": {
     "App": {},
+    "btn_createApp": {},
+    "Component1": {},
+    "cont_mainContent_1": {},
+    "cont_mainContent_2": {},
+    "cont_MainHeader": {},
     "Host": {},
-    "Label1": {},
+    "img_bankngIMg": {},
+    "img_xebiaLogo": {},
+    "lbl_doorStepBanking": {},
+    "lbl_gap_1": {},
+    "lbl_HomeTab": {},
     "Screen1": {}
   },
   "PCFDynamicSchemaForIRRetrievalEntry": {},
   "PCFTemplateEntry": {},
   "PublishOrderIndices": {
     "App": 0,
+    "btn_createApp": 4,
+    "Component1": 0,
+    "cont_mainContent_1": 1,
+    "cont_mainContent_2": 0,
+    "cont_MainHeader": 0,
     "Host": 0,
-    "Label1": 0,
+    "img_bankngIMg": 0,
+    "img_xebiaLogo": 2,
+    "lbl_doorStepBanking": 0,
+    "lbl_gap_1": 3,
+    "lbl_HomeTab": 5,
     "Screen1": 0
   },
-  "ResourcesJsonIndices": {},
+  "ResourcesJsonIndices": {
+    "Image-download (7) 1": 0,
+    "Image-rafiki": 1,
+    "Image-SampleImage": 2
+  },
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {

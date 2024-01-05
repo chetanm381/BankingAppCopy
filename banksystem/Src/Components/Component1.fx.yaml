@@ -1,0 +1,83 @@
+Component1 As CanvasComponent:
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =640
+    Width: =640
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    cont_MainHeader As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height-350
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =1
+
+        cont_mainContent_1 As groupContainer.horizontalAutoLayoutContainer:
+            FillPortions: =0
+            Height: =Parent.Height*.25
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            Width: =Parent.Width
+            ZIndex: =1
+
+            img_xebiaLogo As image:
+                Height: =Parent.Height
+                Image: ='download (7) 1'
+                ImagePosition: =ImagePosition.Center
+                PaddingBottom: =5
+                PaddingLeft: =5
+                PaddingTop: =5
+                Width: =Parent.Width*.3
+                ZIndex: =1
+
+            lbl_gap_1 As label:
+                Text: =""
+                Width: =Parent.Width*.15
+                ZIndex: =2
+
+            lbl_HomeTab As label:
+                AlignInContainer: =AlignInContainer.Center
+                AutoHeight: =true
+                Height: =Parent.Height
+                Text: ="Home"
+                Width: =Parent.Width*.15
+                ZIndex: =3
+
+            btn_createApp As button:
+                AlignInContainer: =AlignInContainer.Center
+                BorderThickness: =1
+                Color: =RGBA(0, 0, 0, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                RadiusBottomLeft: =50
+                RadiusBottomRight: =50
+                RadiusTopLeft: =50
+                RadiusTopRight: =50
+                Size: =12
+                Text: ="Check Application Status"
+                Width: =Parent.Width*.38
+                ZIndex: =4
+
+        cont_mainContent_2 As groupContainer.horizontalAutoLayoutContainer:
+            Height: =Parent.Height*.75
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            Width: =Parent.Width
+            ZIndex: =2
+
+            lbl_doorStepBanking As label:
+                Align: =Align.Center
+                AlignInContainer: =AlignInContainer.Center
+                Text: ="DOOR STEP BANKING"
+                Width: =Parent.Width*.6
+                ZIndex: =1
+
+            img_bankngIMg As image:
+                AlignInContainer: =AlignInContainer.Center
+                Height: =Parent.Height
+                Image: =rafiki
+                Width: =Parent.Width*.4
+                ZIndex: =2
+
