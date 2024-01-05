@@ -93,9 +93,11 @@ Screen1 As screen:
                 ZIndex: =2
 
         ScrollableContainer As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =1000
             LayoutMinHeight: =1000
+            LayoutMinWidth: =250
             Width: =Parent.Width
             Y: =HeaderContainer.Height+doorstepbankingContainer.Height
             ZIndex: =4
@@ -161,7 +163,7 @@ Screen1 As screen:
 
                 Rectangle2 As rectangle:
                     Fill: =RGBA(252, 242, 247, 1)
-                    Height: =Parent.Height*.75
+                    Height: =Parent.Height*.7
                     Width: =Parent.Width*.35
                     X: =Parent.Width*.04
                     Y: =(Parent.Height-Self.Height)/2
