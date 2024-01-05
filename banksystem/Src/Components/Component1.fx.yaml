@@ -20,7 +20,7 @@ Component1 As CanvasComponent:
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
-            Width: =Parent.Width
+            Width: =Component1.component1_width
             ZIndex: =1
 
             img_xebiaLogo As image:
@@ -65,7 +65,7 @@ Component1 As CanvasComponent:
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
-            Width: =Parent.Width
+            Width: =Component1.component1_width
             ZIndex: =2
 
             lbl_doorStepBanking As label:
