@@ -117,7 +117,7 @@ Screen1 As screen:
                 BorderStyle: =BorderStyle.None
                 DropShadow: =DropShadow.Regular
                 Fill: =RGBA(255, 255, 255, 1)
-                Height: =579
+                Height: =692
                 RadiusBottomLeft: =20
                 RadiusBottomRight: =20
                 RadiusTopLeft: =20
@@ -132,8 +132,8 @@ Screen1 As screen:
                     FontWeight: =FontWeight.Bold
                     Text: ="UPLOAD LIVE SIGNATURE PHOTO"
                     Width: =318
-                    X: =21
-                    Y: =15
+                    X: =Rectangle1.X
+                    Y: =Parent.Height*0.015
                     ZIndex: =1
 
                 Rectangle1 As rectangle:
@@ -141,7 +141,7 @@ Screen1 As screen:
                     Height: =2
                     Width: =Parent.Width*.94
                     X: =(Parent.Width-Self.Width)/2
-                    Y: =64
+                    Y: =Label2.Y+Label2.Height+Parent.Height*.015
                     ZIndex: =2
 
                 Button1 As button:
@@ -153,7 +153,17 @@ Screen1 As screen:
                     Size: =9
                     Text: ="Primary Holder"
                     Width: =100
-                    X: =Parent.Width-Self.Width-Parent.Width*0.03
-                    Y: =20
+                    X: |-
+                        =//Parent.Width-Self.Width-Parent.Width*0.03
+                        Rectangle1.X+Rectangle1.Width-Self.Width
+                    Y: =Label2.Y+Label2.Height/2-Self.Height/2
                     ZIndex: =3
+
+                Rectangle2 As rectangle:
+                    Fill: =RGBA(252, 242, 247, 1)
+                    Height: =Parent.Height*.75
+                    Width: =Parent.Width*.35
+                    X: =Parent.Width*.04
+                    Y: =(Parent.Height-Self.Height)/2
+                    ZIndex: =4
 
