@@ -161,32 +161,14 @@ Screen1 As screen:
                     Y: =Label2.Y+Label2.Height/2-Self.Height/2
                     ZIndex: =3
 
-                Rectangle2 As rectangle:
-                    Fill: =RGBA(252, 242, 247, 1)
-                    Height: =Parent.Height*.74
-                    Width: =Parent.Width*.33
-                    X: =Parent.Width*.04
-                    Y: =(Parent.Height-Self.Height)/2
-                    ZIndex: =4
-
-                Label3 As label:
-                    Align: =Align.Center
-                    DisplayMode: =DisplayMode.View
-                    FontWeight: =FontWeight.Semibold
-                    Size: =12
-                    Text: ="Photo"
-                    X: =185
-                    Y: =545
-                    ZIndex: =5
-
                 Container1 As groupContainer.manualLayoutContainer:
                     BorderColor: =RGBA(107, 29, 94, 1)
                     BorderStyle: =BorderStyle.Dotted
                     BorderThickness: =2
                     DropShadow: =DropShadow.None
                     Height: =513
-                    Width: =749
-                    X: =483
+                    Width: =Parent.Width*0.60
+                    X: =Container3.X+Container3.Width+Parent.Width*0.03
                     Y: =89
                     ZIndex: =6
 
@@ -194,7 +176,8 @@ Screen1 As screen:
                         FontWeight: =FontWeight.Semibold
                         Size: =12
                         Text: ="Name"
-                        X: =16
+                        Width: =Parent.Width*.40
+                        X: =Parent.Width*.05
                         Y: =20
                         ZIndex: =1
 
@@ -202,8 +185,8 @@ Screen1 As screen:
                         FontWeight: =FontWeight.Semibold
                         Size: =12
                         Text: ="Adhar Card Number"
-                        Width: =187
-                        X: =414
+                        Width: =Parent.Width*.40
+                        X: =Parent.Width*.55
                         Y: =20
                         ZIndex: =2
 
@@ -213,8 +196,8 @@ Screen1 As screen:
                         DisabledColor: =RGBA(44, 54, 84, 1)
                         DisabledFill: =RGBA(250, 250, 250, 1)
                         DisplayMode: =DisplayMode.Disabled
-                        Width: =307
-                        X: =16
+                        Width: =Parent.Width*.40
+                        X: =Parent.Width*.05
                         Y: =60
                         ZIndex: =3
 
@@ -225,8 +208,8 @@ Screen1 As screen:
                         DisabledFill: =RGBA(250, 250, 250, 1)
                         DisplayMode: =DisplayMode.Disabled
                         Format: =TextFormat.Number
-                        Width: =307
-                        X: =414
+                        Width: =Parent.Width*.40
+                        X: =Parent.Width*.55
                         Y: =60
                         ZIndex: =4
 
@@ -234,7 +217,8 @@ Screen1 As screen:
                         FontWeight: =FontWeight.Semibold
                         Size: =12
                         Text: ="Country of Birth"
-                        X: =16
+                        Width: =Parent.Width*.40
+                        X: =Parent.Width*.05
                         Y: =124
                         ZIndex: =5
 
@@ -242,8 +226,8 @@ Screen1 As screen:
                         FontWeight: =FontWeight.Semibold
                         Size: =12
                         Text: ="PAN Card Number"
-                        Width: =187
-                        X: =414
+                        Width: =Parent.Width*.40
+                        X: =Parent.Width*.55
                         Y: =124
                         ZIndex: =6
 
@@ -254,8 +238,8 @@ Screen1 As screen:
                         DisabledFill: =RGBA(250, 250, 250, 1)
                         DisplayMode: =DisplayMode.Disabled
                         Format: =TextFormat.Number
-                        Width: =307
-                        X: =414
+                        Width: =Parent.Width*.40
+                        X: =Parent.Width*.55
                         Y: =164
                         ZIndex: =7
 
@@ -265,8 +249,8 @@ Screen1 As screen:
                         DropShadow: =DropShadow.None
                         Fill: =RGBA(250, 250, 250, 1)
                         Height: =40
-                        Width: =307
-                        X: =16
+                        Width: =Parent.Width*.40
+                        X: =Parent.Width*.05
                         Y: =164
                         ZIndex: =8
 
@@ -288,4 +272,21 @@ Screen1 As screen:
                             Text: ="+91-123456789"
                             X: =73
                             ZIndex: =3
+
+                Container3 As groupContainer.manualLayoutContainer:
+                    Height: =Parent.Height*.74
+                    Width: =Parent.Width*.30
+                    X: =Parent.Width*.04
+                    Y: =(Parent.Height-Self.Height)/2
+                    ZIndex: =7
+
+                    Label3 As label:
+                        Align: =Align.Center
+                        DisplayMode: =DisplayMode.View
+                        FontWeight: =FontWeight.Semibold
+                        Size: =12
+                        Text: ="Photo"
+                        X: =(Parent.Width-Self.Width)/2
+                        Y: =Parent.Height-Self.Height-Parent.Height*0.03
+                        ZIndex: =1
 
