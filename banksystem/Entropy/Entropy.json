@@ -1,14 +1,12 @@
 {
   "ComponentIndexes": {
-    "Component1": 1,
-    "Component1_1": 1
+    "Component1": 1
   },
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
     "App": 1,
     "btn_createApp": 9,
     "Component1": 4,
-    "Component1_1": 17,
     "cont_mainContent_1": 6,
     "cont_mainContent_2": 11,
     "cont_MainHeader": 5,
@@ -22,7 +20,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "01/05/2024 09:39:48",
+  "HeaderLastSavedDateTimeUTC": "01/05/2024 10:17:50",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -31,8 +29,8 @@
     "rafiki": "4df617f1-dc9e-42f4-947f-5ef41f982f38.png"
   },
   "LocalResourceRootPaths": {
-    "download (7) 1": "https://docserverpwaprodcin.blob.core.windows.net/cce31b94-f638-4e5e-a0b8-67a4366f7243-1/resource/Assets0Images0356b3dc8-ae6c-4f2d-b6bd-c8767afe9ba4.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-01-05T09%3A38%3A15Z&ske=2024-01-06T09%3A53%3A15Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-01-06T09%3A53%3A15Z&sr=b&sp=r&sig=WVlbFhDPhMV32lqPiosRixlPKltRr61ejBgoGqvt1L8%3D",
-    "rafiki": "https://docserverpwaprodcin.blob.core.windows.net/cce31b94-f638-4e5e-a0b8-67a4366f7243-1/resource/Assets0Images04df617f1-dc9e-42f4-947f-5ef41f982f38.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-01-05T09%3A38%3A15Z&ske=2024-01-06T09%3A53%3A15Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-01-06T09%3A53%3A15Z&sr=b&sp=r&sig=qi1zY3qW7g7Qvbq1cz4mCVR%2BW1n0QxrDMsDjzmDGvyU%3D"
+    "download (7) 1": "https://docserverpwaprodcin.blob.core.windows.net/b84a54ad-5c67-42e3-86fe-3c10e918dca9-1/resource/Assets0Images0356b3dc8-ae6c-4f2d-b6bd-c8767afe9ba4.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-01-05T10%3A17%3A35Z&ske=2024-01-06T10%3A32%3A35Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-01-06T10%3A32%3A35Z&sr=b&sp=r&sig=wCmvHcwbI9GBwCQ8ZeJBZ5bNCb2sKQbF9LMKGMgLifk%3D",
+    "rafiki": "https://docserverpwaprodcin.blob.core.windows.net/b84a54ad-5c67-42e3-86fe-3c10e918dca9-1/resource/Assets0Images04df617f1-dc9e-42f4-947f-5ef41f982f38.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-01-05T10%3A17%3A35Z&ske=2024-01-06T10%3A32%3A35Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-01-06T10%3A32%3A35Z&sr=b&sp=r&sig=utqiXoPHeRQBVhr49DVR6VbU5uECcXAtYGwUxvVzyDk%3D"
   },
   "OrderComponentMetadata": {
     "5601c908ae7840419f651d6d0b9ec0d8": 0
@@ -54,7 +52,6 @@
     "App": {},
     "btn_createApp": {},
     "Component1": {},
-    "Component1_1": {},
     "cont_mainContent_1": {},
     "cont_mainContent_2": {},
     "cont_MainHeader": {},
@@ -72,7 +69,6 @@
     "App": 0,
     "btn_createApp": 5,
     "Component1": 0,
-    "Component1_1": 0,
     "cont_mainContent_1": 2,
     "cont_mainContent_2": 7,
     "cont_MainHeader": 1,
@@ -92,16 +88,16 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.1211642,
+    "AnalysisLoadTime": 0.1141564,
     "ControlCount": {
-      "5601c908ae7840419f651d6d0b9ec0d8": 3,
+      "5601c908ae7840419f651d6d0b9ec0d8": 2,
       "button": 1,
       "groupContainer": 3,
       "image": 2,
       "label": 3,
       "screen": 1
     },
-    "DeserializationLoadTime": 0.9121783
+    "DeserializationLoadTime": 0.9217982
   },
   "WasLocalDatabaseReferencesEmpty": true
 }
