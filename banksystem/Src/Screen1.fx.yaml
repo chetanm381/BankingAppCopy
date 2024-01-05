@@ -291,7 +291,7 @@ Screen1 As screen:
                         Fill: =RGBA(250, 250, 250, 1)
                         Height: =40
                         Width: =Parent.Width*.40
-                        X: =38
+                        X: =Parent.Width*.05
                         Y: =290
                         ZIndex: =10
 
@@ -351,7 +351,7 @@ Screen1 As screen:
                         Size: =12
                         Text: ="Signature"
                         Width: =Parent.Width*.40
-                        X: =38
+                        X: =Parent.Width*.05
                         Y: =360
                         ZIndex: =13
 
@@ -361,8 +361,8 @@ Screen1 As screen:
                         DropShadow: =DropShadow.None
                         Fill: =RGBA(250, 250, 250, 1)
                         Height: =96
-                        Width: =303
-                        X: =38
+                        Width: =Parent.Width*.40
+                        X: =Parent.Width*.05
                         Y: =400
                         ZIndex: =14
 
