@@ -356,6 +356,10 @@ Screen1 As screen:
                         ZIndex: =13
 
                     Container4 As groupContainer.manualLayoutContainer:
+                        BorderColor: =RGBA(237, 237, 237, 1)
+                        BorderThickness: =2
+                        DropShadow: =DropShadow.None
+                        Fill: =RGBA(250, 250, 250, 1)
                         Height: =96
                         Width: =303
                         X: =38
@@ -363,6 +367,9 @@ Screen1 As screen:
                         ZIndex: =14
 
                 Container3 As groupContainer.manualLayoutContainer:
+                    BorderStyle: =BorderStyle.None
+                    DropShadow: =DropShadow.None
+                    Fill: =RGBA(252, 242, 247, 1)
                     Height: =Parent.Height*.74
                     Width: =Parent.Width*.30
                     X: =Parent.Width*.04
