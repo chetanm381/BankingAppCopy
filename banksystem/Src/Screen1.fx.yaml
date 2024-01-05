@@ -203,13 +203,89 @@ Screen1 As screen:
                         Size: =12
                         Text: ="Adhar Card Number"
                         Width: =187
-                        X: =437
+                        X: =414
                         Y: =20
                         ZIndex: =2
 
                     TextInput1 As text:
                         Default: ="Pooja Sharma"
+                        DisabledBorderColor: =RGBA(237, 237, 237, 1)
+                        DisabledColor: =RGBA(44, 54, 84, 1)
+                        DisabledFill: =RGBA(250, 250, 250, 1)
+                        DisplayMode: =DisplayMode.Disabled
+                        Width: =307
                         X: =16
                         Y: =60
                         ZIndex: =3
+
+                    TextInput1_1 As text:
+                        Default: ="123456789123"
+                        DisabledBorderColor: =RGBA(237, 237, 237, 1)
+                        DisabledColor: =RGBA(44, 54, 84, 1)
+                        DisabledFill: =RGBA(250, 250, 250, 1)
+                        DisplayMode: =DisplayMode.Disabled
+                        Format: =TextFormat.Number
+                        Width: =307
+                        X: =414
+                        Y: =60
+                        ZIndex: =4
+
+                    Label4_2 As label:
+                        FontWeight: =FontWeight.Semibold
+                        Size: =12
+                        Text: ="Country of Birth"
+                        X: =16
+                        Y: =124
+                        ZIndex: =5
+
+                    Label4_3 As label:
+                        FontWeight: =FontWeight.Semibold
+                        Size: =12
+                        Text: ="PAN Card Number"
+                        Width: =187
+                        X: =414
+                        Y: =124
+                        ZIndex: =6
+
+                    TextInput1_2 As text:
+                        Default: ="123456789123"
+                        DisabledBorderColor: =RGBA(237, 237, 237, 1)
+                        DisabledColor: =RGBA(44, 54, 84, 1)
+                        DisabledFill: =RGBA(250, 250, 250, 1)
+                        DisplayMode: =DisplayMode.Disabled
+                        Format: =TextFormat.Number
+                        Width: =307
+                        X: =414
+                        Y: =164
+                        ZIndex: =7
+
+                    Container2 As groupContainer.manualLayoutContainer:
+                        BorderColor: =RGBA(237, 237, 237, 1)
+                        BorderThickness: =2
+                        DropShadow: =DropShadow.None
+                        Fill: =RGBA(250, 250, 250, 1)
+                        Height: =40
+                        Width: =307
+                        X: =16
+                        Y: =164
+                        ZIndex: =8
+
+                        Image2 As image:
+                            Height: =40
+                            Image: =india
+                            Width: =57
+                            ZIndex: =1
+
+                        Rectangle3 As rectangle:
+                            Fill: =RGBA(202, 202, 202, 1)
+                            Height: =30
+                            Width: =2
+                            X: =57
+                            Y: =5
+                            ZIndex: =2
+
+                        Label5 As label:
+                            Text: ="+91-123456789"
+                            X: =73
+                            ZIndex: =3
 
