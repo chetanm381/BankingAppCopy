@@ -1,7 +1,8 @@
 Component1 As CanvasComponent:
+    component1_width: =Max(App.Width, App.MinScreenWidth)
     Fill: =RGBA(0, 0, 0, 0)
     Height: =640
-    Width: =640
+    Width: =Max(App.Width, App.MinScreenWidth)
     X: =0
     Y: =0
     ZIndex: =1
