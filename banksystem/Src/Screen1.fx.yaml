@@ -1,6 +1,6 @@
 Screen1 As screen:
 
-    Container4 As groupContainer.verticalAutoLayoutContainer:
+    BgContainer As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
@@ -8,60 +8,51 @@ Screen1 As screen:
         Width: =Parent.Width
         ZIndex: =1
 
-        BgContainer As groupContainer.manualLayoutContainer:
-            Height: =Parent.Height
+        HeaderContainer As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            BorderStyle: =BorderStyle.None
+            DropShadow: =DropShadow.None
+            FillPortions: =0
+            Height: =Parent.Height*.08
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             Width: =Parent.Width
-            ZIndex: =1
+            ZIndex: =2
 
-            HeaderContainer As groupContainer.manualLayoutContainer:
-                BorderStyle: =BorderStyle.None
-                DropShadow: =DropShadow.None
-                Height: =Parent.Height*.08
-                Width: =Parent.Width
+            img_xebiaLogo_1 As image:
+                Height: =Parent.Height*.80
+                Image: ='download (7) 1'
+                PaddingBottom: =5
+                PaddingLeft: =5
+                PaddingTop: =5
+                Width: =153
+                Y: =(Parent.Height-Self.Height)/2
                 ZIndex: =1
 
-                img_xebiaLogo_1 As image:
-                    Height: =Parent.Height*.80
-                    Image: ='download (7) 1'
-                    PaddingBottom: =5
-                    PaddingLeft: =5
-                    PaddingTop: =5
-                    Width: =153
-                    Y: =(Parent.Height-Self.Height)/2
-                    ZIndex: =1
-
-                lbl_HomeTab_1 As label:
-                    Align: =Align.Center
-                    Height: =35
-                    Size: =11
-                    Text: ="Home"
-                    Width: =100
-                    X: =btn_createApp_1.X-Self.Width-Parent.Width*.015
-                    Y: =(Parent.Height-Self.Height)/2
-                    ZIndex: =2
-
-                btn_createApp_1 As button:
-                    BorderThickness: =1
-                    Color: =RGBA(0, 0, 0, 1)
-                    Fill: =RGBA(255, 255, 255, 1)
-                    FontWeight: =FontWeight.Normal
-                    Height: =35
-                    RadiusBottomLeft: =50
-                    RadiusBottomRight: =50
-                    RadiusTopLeft: =50
-                    RadiusTopRight: =50
-                    Size: =11
-                    Text: ="Check Application Status"
-                    Width: =220
-                    X: =Parent.Width-Self.Width-Parent.Width*.02
-                    Y: =(Parent.Height-Self.Height)/2
-                    ZIndex: =3
-
-            Container3 As groupContainer.manualLayoutContainer:
-                Height: =181
-                Width: =1366
-                Y: =61
+            lbl_HomeTab_1 As label:
+                Align: =Align.Center
+                Height: =35
+                Size: =11
+                Text: ="Home"
+                Width: =100
+                X: =btn_createApp_1.X-Self.Width-Parent.Width*.015
+                Y: =(Parent.Height-Self.Height)/2
                 ZIndex: =2
+
+            btn_createApp_1 As button:
+                BorderThickness: =1
+                Color: =RGBA(0, 0, 0, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Normal
+                Height: =35
+                RadiusBottomLeft: =50
+                RadiusBottomRight: =50
+                RadiusTopLeft: =50
+                RadiusTopRight: =50
+                Size: =11
+                Text: ="Check Application Status"
+                Width: =220
+                X: =Parent.Width-Self.Width-Parent.Width*.02
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =3
 
