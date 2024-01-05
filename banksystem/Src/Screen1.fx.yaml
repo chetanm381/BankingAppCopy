@@ -328,7 +328,7 @@ Screen1 As screen:
                         Size: =12
                         Text: ="Address"
                         Width: =Parent.Width*.40
-                        X: =419
+                        X: =Parent.Width*.55
                         Y: =250
                         ZIndex: =11
 
@@ -342,7 +342,7 @@ Screen1 As screen:
                         HintText: ="Enter Address"
                         Mode: =TextMode.MultiLine
                         Width: =Parent.Width*.40
-                        X: =420
+                        X: =Parent.Width*.55
                         Y: =290
                         ZIndex: =12
 
