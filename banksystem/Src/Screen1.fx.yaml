@@ -176,18 +176,18 @@ Screen1 As screen:
                         FontWeight: =FontWeight.Semibold
                         Size: =12
                         Text: ="Name"
-                        Width: =Parent.Width*.40
+                        Width: =Parent.Width*.30
                         X: =Parent.Width*.05
-                        Y: =20
+                        Y: =Parent.Height*.05
                         ZIndex: =1
 
                     Label4_1 As label:
                         FontWeight: =FontWeight.Semibold
                         Size: =12
                         Text: ="Adhar Card Number"
-                        Width: =Parent.Width*.40
+                        Width: =Parent.Width*.30
                         X: =Parent.Width*.55
-                        Y: =20
+                        Y: =Parent.Height*.05
                         ZIndex: =2
 
                     TextInput1 As text:
@@ -198,7 +198,7 @@ Screen1 As screen:
                         DisplayMode: =DisplayMode.Disabled
                         Width: =Parent.Width*.40
                         X: =Parent.Width*.05
-                        Y: =60
+                        Y: =Label4.Y+Label4.Height+Parent.Height*.01
                         ZIndex: =3
 
                     TextInput1_1 As text:
@@ -210,25 +210,25 @@ Screen1 As screen:
                         Format: =TextFormat.Number
                         Width: =Parent.Width*.40
                         X: =Parent.Width*.55
-                        Y: =60
+                        Y: =Label4.Y+Label4.Height+Parent.Height*.01
                         ZIndex: =4
 
                     Label4_2 As label:
                         FontWeight: =FontWeight.Semibold
                         Size: =12
                         Text: ="Country of Birth"
-                        Width: =Parent.Width*.40
+                        Width: =Parent.Width*.30
                         X: =Parent.Width*.05
-                        Y: =124
+                        Y: =TextInput1.Y+TextInput1.Height+Parent.Height*.05
                         ZIndex: =5
 
                     Label4_3 As label:
                         FontWeight: =FontWeight.Semibold
                         Size: =12
                         Text: ="PAN Card Number"
-                        Width: =Parent.Width*.40
+                        Width: =Parent.Width*.30
                         X: =Parent.Width*.55
-                        Y: =124
+                        Y: =TextInput1.Y+TextInput1.Height+Parent.Height*.05
                         ZIndex: =6
 
                     TextInput1_2 As text:
@@ -240,7 +240,7 @@ Screen1 As screen:
                         Format: =TextFormat.Number
                         Width: =Parent.Width*.40
                         X: =Parent.Width*.55
-                        Y: =164
+                        Y: =Label4_2.Y+Label4_2.Height+Parent.Height*0.01
                         ZIndex: =7
 
                     Container2 As groupContainer.manualLayoutContainer:
@@ -251,7 +251,7 @@ Screen1 As screen:
                         Height: =40
                         Width: =Parent.Width*.40
                         X: =Parent.Width*.05
-                        Y: =164
+                        Y: =Label4_2.Y+Label4_2.Height+Parent.Height*0.01
                         ZIndex: =8
 
                         Image2 As image:
