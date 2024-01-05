@@ -163,9 +163,53 @@ Screen1 As screen:
 
                 Rectangle2 As rectangle:
                     Fill: =RGBA(252, 242, 247, 1)
-                    Height: =Parent.Height*.7
-                    Width: =Parent.Width*.35
+                    Height: =Parent.Height*.74
+                    Width: =Parent.Width*.33
                     X: =Parent.Width*.04
                     Y: =(Parent.Height-Self.Height)/2
                     ZIndex: =4
+
+                Label3 As label:
+                    Align: =Align.Center
+                    DisplayMode: =DisplayMode.View
+                    FontWeight: =FontWeight.Semibold
+                    Size: =12
+                    Text: ="Photo"
+                    X: =185
+                    Y: =545
+                    ZIndex: =5
+
+                Container1 As groupContainer.manualLayoutContainer:
+                    BorderColor: =RGBA(107, 29, 94, 1)
+                    BorderStyle: =BorderStyle.Dotted
+                    BorderThickness: =2
+                    DropShadow: =DropShadow.None
+                    Height: =513
+                    Width: =749
+                    X: =483
+                    Y: =89
+                    ZIndex: =6
+
+                    Label4 As label:
+                        FontWeight: =FontWeight.Semibold
+                        Size: =12
+                        Text: ="Name"
+                        X: =16
+                        Y: =20
+                        ZIndex: =1
+
+                    Label4_1 As label:
+                        FontWeight: =FontWeight.Semibold
+                        Size: =12
+                        Text: ="Adhar Card Number"
+                        Width: =187
+                        X: =437
+                        Y: =20
+                        ZIndex: =2
+
+                    TextInput1 As text:
+                        Default: ="Pooja Sharma"
+                        X: =16
+                        Y: =60
+                        ZIndex: =3
 
