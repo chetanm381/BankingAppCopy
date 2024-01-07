@@ -1,12 +1,17 @@
 Screen1 As screen:
 
+    Container5 As groupContainer.manualLayoutContainer:
+        Height: =Parent.Height
+        Width: =Parent.Width
+        ZIndex: =1
+
     BgContainer As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
         LayoutOverflowY: =LayoutOverflow.Scroll
         Width: =Parent.Width
-        ZIndex: =1
+        ZIndex: =2
 
         HeaderContainer As groupContainer.manualLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
@@ -168,10 +173,10 @@ Screen1 As screen:
                     BorderStyle: =BorderStyle.Dashed
                     BorderThickness: =2
                     DropShadow: =DropShadow.None
-                    Height: =Parent.Height*.80
+                    Height: =Parent.Height*.75
                     Width: =Parent.Width*0.60
                     X: =Container3.X+Container3.Width+Parent.Width*0.03
-                    Y: =(Parent.Height-Self.Height)/2+Parent.Height*0.03
+                    Y: =(Parent.Height-Self.Height)/2
                     ZIndex: =6
 
                     Label4 As label:
@@ -370,10 +375,10 @@ Screen1 As screen:
                     BorderStyle: =BorderStyle.None
                     DropShadow: =DropShadow.None
                     Fill: =RGBA(252, 242, 247, 1)
-                    Height: =Parent.Height*.80
+                    Height: =Parent.Height*.75
                     Width: =Parent.Width*.30
                     X: =Parent.Width*.04
-                    Y: =(Parent.Height-Self.Height)/2+Parent.Height*0.03
+                    Y: =(Parent.Height-Self.Height)/2
                     ZIndex: =7
 
                     Label3 As label:
@@ -385,9 +390,4 @@ Screen1 As screen:
                         X: =(Parent.Width-Self.Width)/2
                         Y: =Parent.Height-Self.Height-Parent.Height*0.03
                         ZIndex: =1
-
-    Container5 As groupContainer.manualLayoutContainer:
-        Height: =Parent.Height
-        Width: =Parent.Width
-        ZIndex: =2
 
