@@ -132,7 +132,7 @@ Screen1 As screen:
                 RadiusTopRight: =20
                 Width: =Parent.Width*.93
                 X: =(Parent.Width-Self.Width)/2
-                Y: =63
+                Y: =Container11.Height/2
                 ZIndex: =2
 
                 Label2 As label:
@@ -176,7 +176,7 @@ Screen1 As screen:
                     Height: =Parent.Height*.75
                     Width: =Parent.Width*0.60
                     X: =Container3.X+Container3.Width+Parent.Width*0.03
-                    Y: =(Parent.Height-Self.Height)/2
+                    Y: =Rectangle1.Y+Rectangle1.Height+Parent.Height*0.03
                     ZIndex: =6
 
                     Label4 As label:
@@ -378,7 +378,7 @@ Screen1 As screen:
                     Height: =Parent.Height*.75
                     Width: =Parent.Width*.30
                     X: =Parent.Width*.04
-                    Y: =(Parent.Height-Self.Height)/2
+                    Y: =Rectangle1.Y+Rectangle1.Height+Parent.Height*0.03
                     ZIndex: =7
 
                     Label3 As label:
