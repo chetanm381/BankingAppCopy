@@ -50,6 +50,7 @@ Screen1 As screen:
                 BorderColor: =RGBA(107, 29, 94, 1)
                 BorderThickness: =1
                 Color: =RGBA(107, 29, 94, 1)
+                DisplayMode: =DisplayMode.View
                 Fill: =RGBA(255, 255, 255, 1)
                 Height: =35
                 HoverFill: =ColorFade(Self.BorderColor, 20%)
