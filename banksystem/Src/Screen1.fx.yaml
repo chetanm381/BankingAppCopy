@@ -48,9 +48,7 @@ Screen1 As screen:
 
             btn_createApp_1 As button:
                 BorderColor: =RGBA(107, 29, 94, 1)
-                BorderThickness: =1
                 Color: =RGBA(107, 29, 94, 1)
-                DisplayMode: =DisplayMode.View
                 Fill: =RGBA(255, 255, 255, 1)
                 Height: =35
                 HoverFill: =ColorFade(Self.BorderColor, 20%)
@@ -435,10 +433,10 @@ Screen1 As screen:
                         PressedBorderColor: |-
                             =ColorValue("#FFFFFF")
                         PressedFill: =RGBA(0,0,0,0)
-                        RadiusBottomLeft: =18
-                        RadiusBottomRight: =18
-                        RadiusTopLeft: =18
-                        RadiusTopRight: =18
+                        RadiusBottomLeft: =22
+                        RadiusBottomRight: =22
+                        RadiusTopLeft: =22
+                        RadiusTopRight: =22
                         Text: =""
                         Width: =Parent.Width
                         ZIndex: =3
