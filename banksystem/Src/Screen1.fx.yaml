@@ -199,6 +199,7 @@ Screen1 As screen:
                         ZIndex: =2
 
                     TextInput1 As text:
+                        Clear: =true
                         Default: ="Pooja Sharma"
                         DisabledBorderColor: =RGBA(237, 237, 237, 1)
                         DisabledColor: =RGBA(44, 54, 84, 1)
@@ -392,20 +393,9 @@ Screen1 As screen:
                         Y: =Parent.Height-Self.Height-Parent.Height*0.03
                         ZIndex: =1
 
-                Container6 As groupContainer.manualLayoutContainer:
-                    Height: =50
-                    RadiusBottomLeft: =15
-                    RadiusBottomRight: =15
-                    RadiusTopLeft: =15
-                    RadiusTopRight: =15
-                    Width: =Parent.Width*.15
-                    X: =
-                    Y: =Container3.Y+Container3.Height+Parent.Height*.04
-                    ZIndex: =8
-
                 Container6_1 As groupContainer.manualLayoutContainer:
                     BorderColor: =RGBA(12, 164, 54, 1)
-                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
                     DropShadow: =DropShadow.None
                     Fill: =RGBA(12, 164, 54, 1)
                     Height: =50
@@ -413,7 +403,7 @@ Screen1 As screen:
                     RadiusBottomRight: =20
                     RadiusTopLeft: =20
                     RadiusTopRight: =20
-                    Width: =Parent.Width*.15
+                    Width: =Parent.Width*.12
                     X: =Parent.Width-Parent.Width*.03-Self.Width
                     Y: =Container3.Y+Container3.Height+Parent.Height*.04
                     ZIndex: =9
@@ -432,7 +422,7 @@ Screen1 As screen:
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Semibold
                         Height: =Parent.Height
-                        Size: =20
+                        Size: =16
                         Text: ="Submit"
                         Width: =Parent.Width*.75
                         ZIndex: =2
@@ -444,10 +434,10 @@ Screen1 As screen:
                         PressedBorderColor: |-
                             =ColorValue("#FFFFFF")
                         PressedFill: =RGBA(0,0,0,0)
-                        RadiusBottomLeft: =20
-                        RadiusBottomRight: =20
-                        RadiusTopLeft: =20
-                        RadiusTopRight: =20
+                        RadiusBottomLeft: =18
+                        RadiusBottomRight: =18
+                        RadiusTopLeft: =18
+                        RadiusTopRight: =18
                         Text: =""
                         Width: =Parent.Width
                         ZIndex: =3
@@ -462,7 +452,7 @@ Screen1 As screen:
                     RadiusBottomRight: =20
                     RadiusTopLeft: =20
                     RadiusTopRight: =20
-                    Width: =Parent.Width*.15
+                    Width: =Parent.Width*.12
                     X: =Container6_1.X-Parent.Width*0.04-Self.Width
                     Y: =Container3.Y+Container3.Height+Parent.Height*.04
                     ZIndex: =10
@@ -481,7 +471,7 @@ Screen1 As screen:
                         Color: =RGBA(107, 29, 94, 1)
                         FontWeight: =FontWeight.Semibold
                         Height: =Parent.Height
-                        Size: =20
+                        Size: =16
                         Text: ="Back"
                         Width: =Parent.Width*.75
                         X: =Parent.Width-Self.Width
