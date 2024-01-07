@@ -96,7 +96,7 @@ Screen1 As screen:
         ScrollableContainer As groupContainer.manualLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
-            Height: =1000
+            Height: =Parent.Height*1.10
             LayoutMinHeight: =1000
             LayoutMinWidth: =250
             Width: =Parent.Width
@@ -120,7 +120,7 @@ Screen1 As screen:
                 BorderStyle: =BorderStyle.None
                 DropShadow: =DropShadow.Regular
                 Fill: =RGBA(255, 255, 255, 1)
-                Height: =Parent.Height*.85
+                Height: =Screen1.Height*.90
                 RadiusBottomLeft: =20
                 RadiusBottomRight: =20
                 RadiusTopLeft: =20
@@ -168,10 +168,10 @@ Screen1 As screen:
                     BorderStyle: =BorderStyle.Dotted
                     BorderThickness: =2
                     DropShadow: =DropShadow.None
-                    Height: =513
+                    Height: =Parent.Height*.80
                     Width: =Parent.Width*0.60
                     X: =Container3.X+Container3.Width+Parent.Width*0.03
-                    Y: =89
+                    Y: =(Parent.Height-Self.Height)/2+Parent.Height*0.03
                     ZIndex: =6
 
                     Label4 As label:
@@ -338,7 +338,7 @@ Screen1 As screen:
                         DisabledColor: =RGBA(44, 54, 84, 1)
                         DisabledFill: =RGBA(250, 250, 250, 1)
                         DisplayMode: =DisplayMode.Disabled
-                        Height: =181
+                        Height: =Parent.Height*0.4
                         HintText: ="Enter Address"
                         Mode: =TextMode.MultiLine
                         Width: =Parent.Width*.40
@@ -360,7 +360,7 @@ Screen1 As screen:
                         BorderThickness: =2
                         DropShadow: =DropShadow.None
                         Fill: =RGBA(250, 250, 250, 1)
-                        Height: =96
+                        Height: =Parent.Height-Self.Y-Parent.Height*0.04
                         Width: =Parent.Width*.40
                         X: =Parent.Width*.05
                         Y: =Label4_6.Y+Label4_6.Height+Parent.Height*0.04
@@ -370,10 +370,10 @@ Screen1 As screen:
                     BorderStyle: =BorderStyle.None
                     DropShadow: =DropShadow.None
                     Fill: =RGBA(252, 242, 247, 1)
-                    Height: =Parent.Height*.74
+                    Height: =Parent.Height*.80
                     Width: =Parent.Width*.30
                     X: =Parent.Width*.04
-                    Y: =(Parent.Height-Self.Height)/2
+                    Y: =(Parent.Height-Self.Height)/2+Parent.Height*0.03
                     ZIndex: =7
 
                     Label3 As label:
