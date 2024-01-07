@@ -165,7 +165,7 @@ Screen1 As screen:
 
                 Container1 As groupContainer.manualLayoutContainer:
                     BorderColor: =RGBA(107, 29, 94, 1)
-                    BorderStyle: =BorderStyle.Dotted
+                    BorderStyle: =BorderStyle.Dashed
                     BorderThickness: =2
                     DropShadow: =DropShadow.None
                     Height: =Parent.Height*.80
