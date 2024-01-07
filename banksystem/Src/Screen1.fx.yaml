@@ -386,3 +386,8 @@ Screen1 As screen:
                         Y: =Parent.Height-Self.Height-Parent.Height*0.03
                         ZIndex: =1
 
+    Container5 As groupContainer.manualLayoutContainer:
+        Height: =Parent.Height
+        Width: =Parent.Width
+        ZIndex: =2
+
