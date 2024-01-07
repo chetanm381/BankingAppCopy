@@ -120,7 +120,7 @@ Screen1 As screen:
                 BorderStyle: =BorderStyle.None
                 DropShadow: =DropShadow.Regular
                 Fill: =RGBA(255, 255, 255, 1)
-                Height: =692
+                Height: =Parent.Height*.85
                 RadiusBottomLeft: =20
                 RadiusBottomRight: =20
                 RadiusTopLeft: =20
@@ -352,7 +352,7 @@ Screen1 As screen:
                         Text: ="Signature"
                         Width: =Parent.Width*.40
                         X: =Parent.Width*.05
-                        Y: =360
+                        Y: =Container2_1.Y+Container2_1.Height+Parent.Height*0.04
                         ZIndex: =13
 
                     Container4 As groupContainer.manualLayoutContainer:
@@ -363,7 +363,7 @@ Screen1 As screen:
                         Height: =96
                         Width: =Parent.Width*.40
                         X: =Parent.Width*.05
-                        Y: =400
+                        Y: =Label4_6.Y+Label4_6.Height+Parent.Height*0.04
                         ZIndex: =14
 
                 Container3 As groupContainer.manualLayoutContainer:
