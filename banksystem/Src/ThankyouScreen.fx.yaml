@@ -70,13 +70,14 @@ ThankyouScreen As screen:
             ZIndex: =1
 
     TS_ContainerForThankYouPop As groupContainer.manualLayoutContainer:
-        Fill: =RGBA(237, 237, 237, 0.43)
+        Fill: =RGBA(219, 219, 219, 0.71)
         Height: =Parent.Height
         Width: =Parent.Width
         ZIndex: =3
 
         TS_PopUpContainerDetails As groupContainer.manualLayoutContainer:
-            Height: =511
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =Parent.Height*.70
             RadiusBottomLeft: =20
             RadiusBottomRight: =20
             RadiusTopLeft: =20
@@ -85,4 +86,45 @@ ThankyouScreen As screen:
             X: =(Parent.Width-Self.Width)/2
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =1
+
+            TS_ThankYouLabel As label:
+                Align: =Align.Center
+                Color: =RGBA(107, 29, 94, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =132
+                Size: =20
+                Text: ="Your Account Opening Detail have been successfully captured."
+                Width: =Parent.Width*.80
+                X: =(Parent.Width-Self.Width)/2
+                Y: =TS_ThankYouLabel_1.Y+TS_ThankYouLabel_1.Height
+                ZIndex: =1
+
+            TS_ThankYouLabel_1 As label:
+                Align: =Align.Center
+                Color: =RGBA(107, 29, 94, 1)
+                FontWeight: =FontWeight.Semibold
+                Size: =20
+                Text: ="Thank You"
+                Width: =Parent.Width*.80
+                X: =(Parent.Width-Self.Width)/2
+                Y: =TS_popupImage.Y+TS_popupImage.Height+Parent.Height*.02
+                ZIndex: =2
+
+            TS_ThankYouLabel_2 As label:
+                Align: =Align.Center
+                Color: =RGBA(107, 29, 94, 1)
+                Size: =15
+                Text: ="Your Account will be opened shortly."
+                Width: =Parent.Width*.80
+                X: =(Parent.Width-Self.Width)/2
+                Y: =TS_ThankYouLabel.Y+TS_ThankYouLabel.Height+Parent.Height*.03
+                ZIndex: =3
+
+            TS_popupImage As image:
+                Height: =Parent.Height*.40
+                Image: ='Group 2422'
+                Width: =Parent.Width*0.35
+                X: =(Parent.Width-Self.Width)/2
+                Y: =Parent.Height*.05
+                ZIndex: =4
 
