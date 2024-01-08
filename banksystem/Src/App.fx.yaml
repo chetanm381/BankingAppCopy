@@ -1,5 +1,6 @@
 App As appinfo:
     BackEnabled: =true
+    OnStart: =Set(ThankyouPopUp,false)
     Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:
