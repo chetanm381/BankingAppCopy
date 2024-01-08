@@ -178,6 +178,24 @@
                         Y: =(Parent.Height-Self.Height)/2+Parent.Height*.03
                         ZIndex: =1
 
+                        Circle1_1 As circle:
+                            Fill: =RGBA(12, 204, 67, 1)
+                            Height: =50
+                            Width: =50
+                            X: =352
+                            Y: =12
+                            ZIndex: =1
+
+                        Icon1_1 As icon.Check:
+                            Color: =RGBA(255, 255, 255, 1)
+                            DisplayMode: =DisplayMode.View
+                            Height: =30
+                            Icon: =Icon.Check
+                            Width: =30
+                            X: =362
+                            Y: =22
+                            ZIndex: =2
+
                     MPV_Label7_1 As label:
                         Color: =RGBA(107, 29, 94, 1)
                         FontWeight: =FontWeight.Bold
@@ -205,6 +223,24 @@
                         X: =(Parent.Width-Self.Width)/2
                         Y: =(Parent.Height-Self.Height)/2+Parent.Height*.03
                         ZIndex: =1
+
+                        Circle1 As circle:
+                            Fill: =RGBA(12, 204, 67, 1)
+                            Height: =50
+                            Width: =50
+                            X: =352
+                            Y: =12
+                            ZIndex: =1
+
+                        Icon1 As icon.Check:
+                            Color: =RGBA(255, 255, 255, 1)
+                            DisplayMode: =DisplayMode.View
+                            Height: =30
+                            Icon: =Icon.Check
+                            Width: =30
+                            X: =362
+                            Y: =22
+                            ZIndex: =2
 
                     MPV_Label7 As label:
                         Color: =RGBA(107, 29, 94, 1)
