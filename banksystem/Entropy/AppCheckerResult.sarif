@@ -14,6 +14,186 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "OpenAccountScreen",
+                "type": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "OpenAccountScreen",
+                "type": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "OpenAccountScreen",
+                "type": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_4.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_4.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "OpenAccountScreen",
+                "type": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "OpenAccountScreen",
+                "type": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_5.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_5.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "OpenAccountScreen",
+                "type": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Screen1"
                 }
               ],
@@ -36,7 +216,7 @@
             "level": "Low"
           },
           "ruleId": "acc-ReadableScreenNameNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -66,7 +246,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -96,7 +276,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -126,7 +306,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -156,7 +336,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -186,7 +366,67 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.MPV_Button2_6.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.MPV_Button2_6.Y",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "OpenAccountScreen",
+                "type": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.MPV_Button2_6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.MPV_Button2_7.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.MPV_Button2_7.Y",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "OpenAccountScreen",
+                "type": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.MPV_Button2_7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 2
         }
       ],
       "tool": {
@@ -194,6 +434,23 @@
           "fullName": "PowerApps app checker",
           "name": "PowerApps app checker",
           "rules": [
+            {
+              "id": "acc-AccessibleLabelNeeded",
+              "messageStrings": {
+                "issue": {
+                  "text": "Missing accessible label"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Edit the accessible label property to describe the item."
+                ],
+                "level": "Medium",
+                "primaryCategory": "accessibility",
+                "whyFix": "If there's no accessible text, people who can’t see the screen won't understand what’s in images and controls."
+              }
+            },
             {
               "id": "acc-ReadableScreenNameNeeded",
               "messageStrings": {
@@ -212,20 +469,20 @@
               }
             },
             {
-              "id": "acc-AccessibleLabelNeeded",
+              "id": "app-InefficientDelayLoading",
               "messageStrings": {
                 "issue": {
-                  "text": "Missing accessible label"
+                  "text": "Inefficient delay loading"
                 }
               },
               "properties": {
                 "componentType": "app",
                 "howToFix": [
-                  "Edit the accessible label property to describe the item."
+                  "Use variables, collections, and navigation context to share state across screens instead."
                 ],
                 "level": "Medium",
-                "primaryCategory": "accessibility",
-                "whyFix": "If there's no accessible text, people who can’t see the screen won't understand what’s in images and controls."
+                "primaryCategory": "performance",
+                "whyFix": "Controls that reference controls on other screens can slow down app loading and navigation. Doing this may force the app to load the other screens immediately, rather than waiting until the user navigates to that screen."
               }
             }
           ],
