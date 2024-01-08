@@ -493,19 +493,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container5_2.PDF_Container2_3.PDF_DatePicker.AccessibleLabel"
+                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container5_2.PDUD_Container2_3.PDUD_DatePicker1_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container5_2.PDF_Container2_3.PDF_DatePicker.AccessibleLabel",
+                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container5_2.PDUD_Container2_3.PDUD_DatePicker1_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "PersonalDetailsFormScreen",
-                "type": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container5_2.PDF_Container2_3.PDF_DatePicker"
+                "type": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container5_2.PDUD_Container2_3.PDUD_DatePicker1_2"
               }
             }
           ],
@@ -523,19 +523,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container5_2.PDF_TextInput2_9.AccessibleLabel"
+                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container5_2.PDUD_TextInput2_9.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container5_2.PDF_TextInput2_9.AccessibleLabel",
+                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container5_2.PDUD_TextInput2_9.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "PersonalDetailsFormScreen",
-                "type": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container5_2.PDF_TextInput2_9"
+                "type": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container5_2.PDUD_TextInput2_9"
               }
             }
           ],
@@ -553,19 +553,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container5_2.PDF_TextInput2_8.AccessibleLabel"
+                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container5_2.PDUD_TextInput2_8.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container5_2.PDF_TextInput2_8.AccessibleLabel",
+                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container5_2.PDUD_TextInput2_8.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "PersonalDetailsFormScreen",
-                "type": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container5_2.PDF_TextInput2_8"
+                "type": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container5_2.PDUD_TextInput2_8"
               }
             }
           ],
@@ -583,19 +583,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_TextInput1_4.AccessibleLabel"
+                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.Container7.Container1_1.TextInput1_4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_TextInput1_4.AccessibleLabel",
+                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.Container7.Container1_1.TextInput1_4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "PersonalDetailsFormScreen",
-                "type": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_TextInput1_4"
+                "type": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.Container7.Container1_1.TextInput1_4"
               }
             }
           ],
@@ -613,19 +613,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_TextInput1_5.AccessibleLabel"
+                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.Container7.Container1_1.TextInput1_5.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_TextInput1_5.AccessibleLabel",
+                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.Container7.Container1_1.TextInput1_5.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "PersonalDetailsFormScreen",
-                "type": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_TextInput1_5"
+                "type": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.Container7.Container1_1.TextInput1_5"
               }
             }
           ],
@@ -643,19 +643,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_TextInput1_6.AccessibleLabel"
+                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.Container7.Container1_1.TextInput1_6.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_TextInput1_6.AccessibleLabel",
+                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.Container7.Container1_1.TextInput1_6.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "PersonalDetailsFormScreen",
-                "type": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_TextInput1_6"
+                "type": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.Container7.Container1_1.TextInput1_6"
               }
             }
           ],
@@ -673,19 +673,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_TextInput1_7.AccessibleLabel"
+                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.Container7.Container1_1.Container2_3.DatePicker1_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_TextInput1_7.AccessibleLabel",
+                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.Container7.Container1_1.Container2_3.DatePicker1_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "PersonalDetailsFormScreen",
-                "type": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_TextInput1_7"
+                "type": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.Container7.Container1_1.Container2_3.DatePicker1_1"
               }
             }
           ],
@@ -703,49 +703,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_Container2_4.PDF_DatePicker1_2.AccessibleLabel"
+                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.Container7.Container1_1.TextInput1_7.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_Container2_4.PDF_DatePicker1_2.AccessibleLabel",
+                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.Container7.Container1_1.TextInput1_7.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "PersonalDetailsFormScreen",
-                "type": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_Container2_4.PDF_DatePicker1_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_TextInput1_8.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_TextInput1_8.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "PersonalDetailsFormScreen",
-                "type": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_TextInput1_8"
+                "type": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.Container7.Container1_1.TextInput1_7"
               }
             }
           ],

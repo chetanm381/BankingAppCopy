@@ -164,7 +164,7 @@ OpenAccountScreen As screen:
                     DropShadow: =DropShadow.None
                     Height: =Parent.Height
                     Width: =Parent.Width-OA_Container5.Width
-                    X: =307
+                    X: =OA_Container5.X+OA_Container5.Width
                     ZIndex: =2
 
                     OA_HtmlText1 As htmlViewer:
@@ -174,9 +174,9 @@ OpenAccountScreen As screen:
                             ="<p style='color: #6b1d5e; text-align: center'> Please enter  <b><font color=orange>OTP</font></b> you recieved on 
                             email ID <font color=orange>examplexxx@yesbank.in</font></p> "
                         Size: =17
-                        Width: =461
-                        X: =(Parent.Width-Self.Width)/2
-                        Y: =OA_Label6.Height+OA_Label6.Y*.6
+                        Width: =Parent.Width*.55
+                        X: =(Parent.Width-Self.Width)/2+Parent.Width*.02
+                        Y: =OA_Label6.Y
                         ZIndex: =2
 
                     OA_Label2_2 As label:
@@ -211,94 +211,7 @@ OpenAccountScreen As screen:
                         Y: =OA_Label2_2.Y+OA_Label2_2.Height/2-Self.Height/2
                         ZIndex: =5
 
-                    OA_Label8 As label:
-                        Color: =RGBA(107, 29, 94, 1)
-                        FontWeight: =FontWeight.Bold
-                        Height: =44
-                        Size: =11
-                        Text: ="Enter OTP you recieved on Email"
-                        Width: =281
-                        X: =230
-                        Y: =208
-                        ZIndex: =6
-
-                    OA_TextInput2 As text:
-                        BorderColor: =RGBA(107, 29, 94, 1)
-                        Default: =""
-                        Height: =60
-                        HoverBorderColor: =RGBA(107, 29, 94, 1)
-                        HoverFill: =ColorFade( RGBA(107, 29, 94, 1),70%)
-                        Width: =60
-                        X: =230
-                        Y: =254
-                        ZIndex: =7
-
-                    OA_TextInput2_1 As text:
-                        BorderColor: =RGBA(107, 29, 94, 1)
-                        Default: =""
-                        Height: =60
-                        HoverBorderColor: =RGBA(107, 29, 94, 1)
-                        HoverFill: =ColorFade( RGBA(107, 29, 94, 1),70%)
-                        Width: =60
-                        X: =540
-                        Y: =254
-                        ZIndex: =8
-
-                    OA_TextInput2_2 As text:
-                        BorderColor: =RGBA(107, 29, 94, 1)
-                        Default: =""
-                        Height: =60
-                        HoverBorderColor: =RGBA(107, 29, 94, 1)
-                        HoverFill: =ColorFade( RGBA(107, 29, 94, 1),70%)
-                        Width: =60
-                        X: =307
-                        Y: =254
-                        ZIndex: =9
-
-                    OA_TextInput2_3 As text:
-                        BorderColor: =RGBA(107, 29, 94, 1)
-                        Default: =""
-                        Height: =60
-                        HoverBorderColor: =RGBA(107, 29, 94, 1)
-                        HoverFill: =ColorFade( RGBA(107, 29, 94, 1),70%)
-                        Width: =60
-                        X: =385
-                        Y: =254
-                        ZIndex: =10
-
-                    OA_TextInput2_4 As text:
-                        BorderColor: =RGBA(107, 29, 94, 1)
-                        Default: =""
-                        Height: =60
-                        HoverBorderColor: =RGBA(107, 29, 94, 1)
-                        HoverFill: =ColorFade( RGBA(107, 29, 94, 1),70%)
-                        Width: =60
-                        X: =461
-                        Y: =254
-                        ZIndex: =11
-
-                    OA_TextInput2_5 As text:
-                        BorderColor: =RGBA(107, 29, 94, 1)
-                        Default: =""
-                        Height: =60
-                        HoverBorderColor: =RGBA(107, 29, 94, 1)
-                        HoverFill: =ColorFade( RGBA(107, 29, 94, 1),70%)
-                        Width: =60
-                        X: =613
-                        Y: =254
-                        ZIndex: =12
-
-                    OA_Label9 As label:
-                        Align: =Align.Right
-                        Color: =RGBA(107, 29, 94, 1)
-                        FontWeight: =FontWeight.Bold
-                        Size: =9
-                        Text: ="Resend OTP"
-                        X: =535
-                        Y: =314
-                        ZIndex: =13
-
-                    MPV_Button2_6 As button:
+                    OA_Button2_6 As button:
                         Fill: =RGBA(11, 163, 54, 1)
                         HoverFill: |-
                             =ColorFade(ColorValue("#0ba336"), -20%)
@@ -313,7 +226,7 @@ OpenAccountScreen As screen:
                         Y: =(MPV_Container1_2.Y+MPV_Container1_2.Height)+(Parent.Height-(MPV_Container1_2.Y+MPV_Container1_2.Height)-Self.Height)/2
                         ZIndex: =14
 
-                    MPV_Button2_7 As button:
+                    OA_Button2_7 As button:
                         BorderColor: |-
                             =ColorFade(ColorValue("#6B1D5E"), -15%)
                         Color: =RGBA(107, 29, 94, 1)
@@ -328,7 +241,100 @@ OpenAccountScreen As screen:
                         Size: =11
                         Text: ="Back"
                         Width: =Parent.Width*.09
-                        X: =Parent.Width-MPV_Button2_6.Width-Self.Width-Parent.Width*0.05
+                        X: =Parent.Width-OA_Button2_6.Width-Self.Width-Parent.Width*0.05
                         Y: =(MPV_Container1_2.Y+MPV_Container1_2.Height)+(Parent.Height-(MPV_Container1_2.Y+MPV_Container1_2.Height)-Self.Height)/2
                         ZIndex: =15
+
+                    OA_Label8_1 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(107, 29, 94, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =44
+                        Size: =11
+                        Text: ="Enter OTP you recieved on Email"
+                        Width: =Parent.Width*.55
+                        X: |+
+                            =(Parent.Width-Self.Width)/2+Parent.Width*.02
+                            
+                        Y: =OA_HtmlText1.Y+OA_HtmlText1.Height+Parent.Height*.05
+                        ZIndex: =17
+
+                    OA_TextInput2_6 As text:
+                        BorderColor: =RGBA(107, 29, 94, 1)
+                        Default: =""
+                        Height: =60
+                        HoverBorderColor: =RGBA(107, 29, 94, 1)
+                        HoverFill: =ColorFade( RGBA(107, 29, 94, 1),70%)
+                        Width: =60
+                        X: =(OA_TextInput2_8.X)-Self.Width-Parent.Width*0.025
+                        Y: =OA_Label8_1.Y+OA_Label8_1.Height+Parent.Height*0.03
+                        ZIndex: =18
+
+                    OA_TextInput2_7 As text:
+                        BorderColor: =RGBA(107, 29, 94, 1)
+                        Default: =""
+                        Height: =60
+                        HoverBorderColor: =RGBA(107, 29, 94, 1)
+                        HoverFill: =ColorFade( RGBA(107, 29, 94, 1),70%)
+                        Width: =60
+                        X: =OA_TextInput2_10.X+OA_TextInput2_10.Width+Parent.Width*0.025
+                        Y: =OA_Label8_1.Y+OA_Label8_1.Height+Parent.Height*0.03
+                        ZIndex: =19
+
+                    OA_TextInput2_8 As text:
+                        BorderColor: =RGBA(107, 29, 94, 1)
+                        Default: =""
+                        Height: =60
+                        HoverBorderColor: =RGBA(107, 29, 94, 1)
+                        HoverFill: =ColorFade( RGBA(107, 29, 94, 1),70%)
+                        Width: =60
+                        X: =(OA_TextInput2_9.X)-Self.Width-Parent.Width*0.025
+                        Y: =OA_Label8_1.Y+OA_Label8_1.Height+Parent.Height*0.03
+                        ZIndex: =20
+
+                    OA_TextInput2_9 As text:
+                        BorderColor: =RGBA(107, 29, 94, 1)
+                        Default: =""
+                        Height: =60
+                        HoverBorderColor: =RGBA(107, 29, 94, 1)
+                        HoverFill: =ColorFade( RGBA(107, 29, 94, 1),70%)
+                        Width: =60
+                        X: =(Parent.Width-Self.Width)/2-Parent.Width*0.0125
+                        Y: =OA_Label8_1.Y+OA_Label8_1.Height+Parent.Height*0.03
+                        ZIndex: =21
+
+                    OA_TextInput2_10 As text:
+                        BorderColor: =RGBA(107, 29, 94, 1)
+                        Default: =""
+                        Height: =60
+                        HoverBorderColor: =RGBA(107, 29, 94, 1)
+                        HoverFill: =ColorFade( RGBA(107, 29, 94, 1),70%)
+                        Width: =60
+                        X: =(Parent.Width+Self.Width)/2+Parent.Width*0.0125
+                        Y: =OA_Label8_1.Y+OA_Label8_1.Height+Parent.Height*0.03
+                        ZIndex: =22
+
+                    OA_TextInput2_11 As text:
+                        BorderColor: =RGBA(107, 29, 94, 1)
+                        Default: =""
+                        Height: =60
+                        HoverBorderColor: =RGBA(107, 29, 94, 1)
+                        HoverFill: =ColorFade( RGBA(107, 29, 94, 1),70%)
+                        Width: =60
+                        X: =OA_TextInput2_7.X+OA_TextInput2_7.Width+Parent.Width*0.025
+                        Y: =OA_Label8_1.Y+OA_Label8_1.Height+Parent.Height*0.03
+                        ZIndex: =23
+
+                    OA_Label9_1 As label:
+                        Align: =Align.Right
+                        Color: =RGBA(107, 29, 94, 1)
+                        FontWeight: =FontWeight.Bold
+                        PaddingRight: =0
+                        Size: =9
+                        Text: ="Resend OTP"
+                        Underline: =true
+                        Width: =Parent.Width*.40
+                        X: =OA_TextInput2_11.X+OA_TextInput2_11.Width-Self.Width
+                        Y: =OA_TextInput2_11.Y+OA_TextInput2_11.Height+Parent.Height*0.01
+                        ZIndex: =24
 
