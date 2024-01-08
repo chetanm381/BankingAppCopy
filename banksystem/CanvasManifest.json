@@ -137,6 +137,7 @@
     "UploadSignaturePhotoScreen",
     "MatchPhoto&VideoScreen",
     "OpenAccountScreen",
-    "PersonalDetailsUploadDocumentsScreen"
+    "PersonalDetailsUploadDocumentsScreen",
+    "PersonalDetailsFormScreen"
   ]
 }
