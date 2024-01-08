@@ -75,7 +75,7 @@ PersonalDetailsFormScreen As screen:
             X: =PDF_HeaderContainer_1.Height
             ZIndex: =3
 
-            Label1_1 As label:
+            PDF_Label1_1 As label:
                 Color: =RGBA(107, 29, 94, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =64
