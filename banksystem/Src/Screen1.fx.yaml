@@ -93,7 +93,7 @@ Screen1 As screen:
         ScrollableContainer As groupContainer.manualLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
-            Height: =Parent.Height*1.10
+            Height: =Parent.Height*.82
             LayoutMinHeight: =1000
             LayoutMinWidth: =250
             Width: =Parent.Width
@@ -117,12 +117,12 @@ Screen1 As screen:
                 BorderStyle: =BorderStyle.None
                 DropShadow: =DropShadow.Regular
                 Fill: =RGBA(255, 255, 255, 1)
-                Height: =Screen1.Height*.95
+                Height: =Screen1.Height*.75
                 RadiusBottomLeft: =20
                 RadiusBottomRight: =20
                 RadiusTopLeft: =20
                 RadiusTopRight: =20
-                Width: =Parent.Width*.8
+                Width: =Parent.Width*.90
                 X: =(Parent.Width-Self.Width)/2
                 Y: =Container11.Height/2
                 ZIndex: =2
@@ -429,6 +429,7 @@ Screen1 As screen:
                         RadiusBottomRight: =22
                         RadiusTopLeft: =22
                         RadiusTopRight: =22
+                        Size: =12
                         Text: =""
                         Width: =Parent.Width
                         ZIndex: =3
@@ -480,6 +481,7 @@ Screen1 As screen:
                         RadiusBottomRight: =20
                         RadiusTopLeft: =20
                         RadiusTopRight: =20
+                        Size: =12
                         Text: =""
                         Width: =Parent.Width
                         ZIndex: =3
