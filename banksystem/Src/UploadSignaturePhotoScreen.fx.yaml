@@ -114,7 +114,7 @@ UploadSignaturePhotoScreen As screen:
                 BorderStyle: =BorderStyle.None
                 DropShadow: =DropShadow.Regular
                 Fill: =RGBA(255, 255, 255, 1)
-                Height: =Screen1.Height*.75
+                Height: =UploadSignaturePhotoScreen.Height*.75
                 RadiusBottomLeft: =20
                 RadiusBottomRight: =20
                 RadiusTopLeft: =20
@@ -240,7 +240,7 @@ UploadSignaturePhotoScreen As screen:
                     RadiusTopLeft: =20
                     RadiusTopRight: =20
                     Size: =11
-                    Text: ="Submit"
+                    Text: ="Next"
                     Width: =Parent.Width*.09
                     X: =Parent.Width-Self.Width-Parent.Width*0.03
                     Y: =(USP_Container1_1.Y+USP_Container1_1.Height)+(Parent.Height-(USP_Container1_1.Y+USP_Container1_1.Height)-Self.Height)/2
