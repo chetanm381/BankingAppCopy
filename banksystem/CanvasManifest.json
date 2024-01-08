@@ -135,6 +135,7 @@
     "Screen1",
     "ThankyouScreen",
     "UploadSignaturePhotoScreen",
-    "MatchPhoto&VideoScreen"
+    "MatchPhoto&VideoScreen",
+    "OpenAccountScreen"
   ]
 }
