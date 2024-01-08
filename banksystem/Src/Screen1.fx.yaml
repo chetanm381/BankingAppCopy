@@ -68,7 +68,7 @@ Screen1 As screen:
             DropShadow: =DropShadow.None
             Fill: =RGBA(252, 242, 247, 1)
             FillPortions: =0
-            Height: =Parent.Height*.1
+            Height: =Parent.Height*.08
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             RadiusBottomLeft: =0
@@ -83,7 +83,7 @@ Screen1 As screen:
                 Color: =RGBA(107, 29, 94, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =64
-                Size: =25
+                Size: =20
                 Text: ="DOOR STEP BANKING"
                 Width: =520
                 X: =Parent.Width*.02
@@ -93,7 +93,7 @@ Screen1 As screen:
         ScrollableContainer As groupContainer.manualLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
-            Height: =Parent.Height*.82
+            Height: =Parent.Height*.84
             LayoutMinHeight: =1000
             LayoutMinWidth: =250
             Width: =Parent.Width
@@ -104,7 +104,7 @@ Screen1 As screen:
                 BorderStyle: =BorderStyle.None
                 DropShadow: =DropShadow.None
                 Fill: =RGBA(107, 29, 94, 1)
-                Height: =doorstepbankingContainer.Height*.95
+                Height: =doorstepbankingContainer.Height*1.5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -124,7 +124,7 @@ Screen1 As screen:
                 RadiusTopRight: =20
                 Width: =Parent.Width*.90
                 X: =(Parent.Width-Self.Width)/2
-                Y: =Container11.Height/2
+                Y: =Container11.Height*.35
                 ZIndex: =2
 
                 Label2 As label:
@@ -168,25 +168,25 @@ Screen1 As screen:
                     Height: =Parent.Height*.75
                     Width: =Parent.Width*0.60
                     X: =Container3.X+Container3.Width+Parent.Width*0.03
-                    Y: =Rectangle1.Y+Rectangle1.Height+Parent.Height*0.03
+                    Y: =Rectangle1.Y+Rectangle1.Height+Parent.Height*0.02
                     ZIndex: =6
 
                     Label4 As label:
                         FontWeight: =FontWeight.Semibold
-                        Size: =12
+                        Size: =11
                         Text: ="Name "
                         Width: =Parent.Width*.40
                         X: =Parent.Width*.05
-                        Y: =Parent.Height*.04
+                        Y: =Parent.Height*.03
                         ZIndex: =1
 
                     Label4_1 As label:
                         FontWeight: =FontWeight.Semibold
-                        Size: =12
+                        Size: =11
                         Text: ="Adhar Card Number"
                         Width: =Parent.Width*.40
                         X: =Parent.Width*.55
-                        Y: =Parent.Height*.04
+                        Y: =Parent.Height*.03
                         ZIndex: =2
 
                     TextInput1 As text:
@@ -196,6 +196,8 @@ Screen1 As screen:
                         DisabledColor: =RGBA(44, 54, 84, 1)
                         DisabledFill: =RGBA(250, 250, 250, 1)
                         DisplayMode: =DisplayMode.Disabled
+                        Height: =35
+                        Size: =11
                         Width: =Parent.Width*.40
                         X: =Parent.Width*.05
                         Y: =Label4.Y+Label4.Height+Parent.Height*.01
@@ -208,6 +210,8 @@ Screen1 As screen:
                         DisabledFill: =RGBA(250, 250, 250, 1)
                         DisplayMode: =DisplayMode.Disabled
                         Format: =TextFormat.Number
+                        Height: =35
+                        Size: =11
                         Width: =Parent.Width*.40
                         X: =Parent.Width*.55
                         Y: =Label4.Y+Label4.Height+Parent.Height*.01
@@ -215,20 +219,20 @@ Screen1 As screen:
 
                     Label4_2 As label:
                         FontWeight: =FontWeight.Semibold
-                        Size: =12
+                        Size: =11
                         Text: ="Country of Birth"
                         Width: =Parent.Width*.40
                         X: =Parent.Width*.05
-                        Y: =TextInput1.Y+TextInput1.Height+Parent.Height*.04
+                        Y: =TextInput1.Y+TextInput1.Height+Parent.Height*.03
                         ZIndex: =5
 
                     Label4_3 As label:
                         FontWeight: =FontWeight.Semibold
-                        Size: =12
+                        Size: =11
                         Text: ="PAN Card Number"
                         Width: =Parent.Width*.40
                         X: =Parent.Width*.55
-                        Y: =TextInput1.Y+TextInput1.Height+Parent.Height*.04
+                        Y: =TextInput1.Y+TextInput1.Height+Parent.Height*.03
                         ZIndex: =6
 
                     TextInput1_2 As text:
@@ -238,6 +242,8 @@ Screen1 As screen:
                         DisabledFill: =RGBA(250, 250, 250, 1)
                         DisplayMode: =DisplayMode.Disabled
                         Format: =TextFormat.Number
+                        Height: =35
+                        Size: =11
                         Width: =Parent.Width*.40
                         X: =Parent.Width*.55
                         Y: =Label4_2.Y+Label4_2.Height+Parent.Height*0.01
@@ -248,7 +254,7 @@ Screen1 As screen:
                         BorderThickness: =2
                         DropShadow: =DropShadow.None
                         Fill: =RGBA(250, 250, 250, 1)
-                        Height: =40
+                        Height: =35
                         Width: =Parent.Width*.40
                         X: =Parent.Width*.05
                         Y: =Label4_2.Y+Label4_2.Height+Parent.Height*0.01
@@ -269,17 +275,18 @@ Screen1 As screen:
                             ZIndex: =2
 
                         Label5 As label:
+                            Size: =11
                             Text: ="+91-123456789"
                             X: =73
                             ZIndex: =3
 
                     Label4_4 As label:
                         FontWeight: =FontWeight.Semibold
-                        Size: =12
+                        Size: =11
                         Text: ="Date of Birth"
                         Width: =Parent.Width*.40
                         X: =Parent.Width*.05
-                        Y: =TextInput1_2.Height+TextInput1_2.Y+Parent.Height*0.04
+                        Y: =TextInput1_2.Height+TextInput1_2.Y+Parent.Height*0.03
                         ZIndex: =9
 
                     Container2_1 As groupContainer.manualLayoutContainer:
@@ -287,7 +294,7 @@ Screen1 As screen:
                         BorderThickness: =2
                         DropShadow: =DropShadow.None
                         Fill: =RGBA(250, 250, 250, 1)
-                        Height: =40
+                        Height: =35
                         Width: =Parent.Width*.40
                         X: =Parent.Width*.05
                         Y: =Label4_4.Y+Label4_4.Height+Parent.Height*0.01
@@ -298,7 +305,7 @@ Screen1 As screen:
                             Image: =cake
                             Width: =30
                             X: =Parent.Width*.05
-                            Y: =5
+                            Y: =(Parent.Height-Self.Height)/2
                             ZIndex: =1
 
                         Rectangle3_1 As rectangle:
@@ -311,23 +318,24 @@ Screen1 As screen:
 
                         DatePicker1 As datepicker:
                             BorderThickness: =0
+                            Height: =Parent.Height
                             IconBackground: =Color.White
                             IconFill: |-
                                 =ColorValue("#969696")
                             PaddingLeft: =5
                             PaddingTop: =5
-                            Size: =13
+                            Size: =11
                             Width: =Parent.Width-Rectangle3_1.X+Rectangle3_1.Width
                             X: =Rectangle3_1.X+Rectangle3_1.Width
                             ZIndex: =3
 
                     Label4_5 As label:
                         FontWeight: =FontWeight.Semibold
-                        Size: =12
+                        Size: =11
                         Text: ="Address"
                         Width: =Parent.Width*.40
                         X: =Parent.Width*.55
-                        Y: =TextInput1_2.Height+TextInput1_2.Y+Parent.Height*0.04
+                        Y: =TextInput1_2.Height+TextInput1_2.Y+Parent.Height*0.03
                         ZIndex: =11
 
                     TextInput1_3 As text:
@@ -339,6 +347,7 @@ Screen1 As screen:
                         Height: =Parent.Height*0.3
                         HintText: ="Enter Address"
                         Mode: =TextMode.MultiLine
+                        Size: =11
                         Width: =Parent.Width*.40
                         X: =Parent.Width*.55
                         Y: =Label4_4.Y+Label4_4.Height+Parent.Height*0.01
@@ -346,11 +355,11 @@ Screen1 As screen:
 
                     Label4_6 As label:
                         FontWeight: =FontWeight.Semibold
-                        Size: =12
+                        Size: =11
                         Text: ="Signature"
                         Width: =Parent.Width*.40
                         X: =Parent.Width*.05
-                        Y: =Container2_1.Y+Container2_1.Height+Parent.Height*0.04
+                        Y: =Container2_1.Y+Container2_1.Height+Parent.Height*0.03
                         ZIndex: =13
 
                     Container4 As groupContainer.manualLayoutContainer:
@@ -371,7 +380,7 @@ Screen1 As screen:
                     Height: =Parent.Height*.75
                     Width: =Parent.Width*.30
                     X: =Parent.Width*.04
-                    Y: =Rectangle1.Y+Rectangle1.Height+Parent.Height*0.03
+                    Y: =Rectangle1.Y+Rectangle1.Height+Parent.Height*0.02
                     ZIndex: =7
 
                     Label3 As label:
@@ -383,106 +392,4 @@ Screen1 As screen:
                         X: =(Parent.Width-Self.Width)/2
                         Y: =Parent.Height-Self.Height-Parent.Height*0.03
                         ZIndex: =1
-
-                Container6_1 As groupContainer.manualLayoutContainer:
-                    BorderColor: =RGBA(12, 164, 54, 1)
-                    BorderThickness: =2
-                    DropShadow: =DropShadow.None
-                    Fill: =RGBA(12, 164, 54, 1)
-                    Height: =50
-                    RadiusBottomLeft: =20
-                    RadiusBottomRight: =20
-                    RadiusTopLeft: =20
-                    RadiusTopRight: =20
-                    Width: =Parent.Width*.12
-                    X: =Parent.Width-Parent.Width*.03-Self.Width
-                    Y: =Container3.Y+Container3.Height+Parent.Height*.04
-                    ZIndex: =9
-
-                    Icon1_1 As icon.ArrowLeft:
-                        Color: =RGBA(255, 255, 255, 1)
-                        Height: =Parent.Height*.80
-                        Icon: =Icon.ArrowRight
-                        Width: =Parent.Width*.15
-                        X: =Label6_1.Width-Parent.Width*.02
-                        Y: =(Parent.Height-Self.Height)/2
-                        ZIndex: =1
-
-                    Label6_1 As label:
-                        Align: =Align.Center
-                        Color: =RGBA(255, 255, 255, 1)
-                        FontWeight: =FontWeight.Semibold
-                        Height: =Parent.Height
-                        Size: =16
-                        Text: ="Submit"
-                        Width: =Parent.Width*.75
-                        ZIndex: =2
-
-                    Button2 As button:
-                        Fill: =RGBA(0, 0, 0, 0)
-                        Height: =Parent.Height
-                        HoverFill: =RGBA(0,0,0,0)
-                        PressedBorderColor: |-
-                            =ColorValue("#FFFFFF")
-                        PressedFill: =RGBA(0,0,0,0)
-                        RadiusBottomLeft: =22
-                        RadiusBottomRight: =22
-                        RadiusTopLeft: =22
-                        RadiusTopRight: =22
-                        Size: =12
-                        Text: =""
-                        Width: =Parent.Width
-                        ZIndex: =3
-
-                Container6_2 As groupContainer.manualLayoutContainer:
-                    BorderColor: =RGBA(107, 29, 94, 1)
-                    BorderThickness: =2
-                    DropShadow: =DropShadow.None
-                    Fill: =RGBA(255, 255, 255, 1)
-                    Height: =50
-                    RadiusBottomLeft: =20
-                    RadiusBottomRight: =20
-                    RadiusTopLeft: =20
-                    RadiusTopRight: =20
-                    Width: =Parent.Width*.12
-                    X: =Container6_1.X-Parent.Width*0.04-Self.Width
-                    Y: =Container3.Y+Container3.Height+Parent.Height*.04
-                    ZIndex: =10
-
-                    Icon1 As icon.ArrowLeft:
-                        Color: =RGBA(107, 29, 94, 1)
-                        Height: =Parent.Height*.80
-                        Icon: =Icon.ArrowLeft
-                        Width: =Parent.Width*.15
-                        X: =Parent.Width*0.2
-                        Y: =(Parent.Height-Self.Height)/2
-                        ZIndex: =1
-
-                    Label6 As label:
-                        Align: =Align.Center
-                        Color: =RGBA(107, 29, 94, 1)
-                        FontWeight: =FontWeight.Semibold
-                        Height: =Parent.Height
-                        Size: =16
-                        Text: ="Back"
-                        Width: =Parent.Width*.75
-                        X: =Parent.Width-Self.Width
-                        ZIndex: =2
-
-                    Button2_1 As button:
-                        BorderColor: =RGBA(246, 246, 246, 1)
-                        Fill: =RGBA(0, 0, 0, 0)
-                        Height: =Parent.Height
-                        HoverBorderColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =RGBA(0,0,0,0)
-                        PressedBorderColor: =ColorFade(Container6_2.BorderColor,-70%)
-                        PressedFill: =RGBA(0,0,0,0)
-                        RadiusBottomLeft: =20
-                        RadiusBottomRight: =20
-                        RadiusTopLeft: =20
-                        RadiusTopRight: =20
-                        Size: =12
-                        Text: =""
-                        Width: =Parent.Width
-                        ZIndex: =3
 
