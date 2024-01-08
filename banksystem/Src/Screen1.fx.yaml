@@ -398,7 +398,7 @@ Screen1 As screen:
                     RadiusTopRight: =20
                     Size: =11
                     Text: ="Submit"
-                    Width: =131
+                    Width: =Parent.Width*.09
                     X: =Parent.Width-Self.Width-Parent.Width*0.03
                     Y: =(Container1.Y+Container1.Height)+(Parent.Height-(Container1.Y+Container1.Height)-Self.Height)/2
                     ZIndex: =8
@@ -417,7 +417,7 @@ Screen1 As screen:
                     RadiusTopRight: =20
                     Size: =11
                     Text: ="Cancel"
-                    Width: =131
+                    Width: =Parent.Width*.09
                     X: =Parent.Width-Button2.Width-Self.Width-Parent.Width*0.05
                     Y: =(Container1.Y+Container1.Height)+(Parent.Height-(Container1.Y+Container1.Height)-Self.Height)/2
                     ZIndex: =9
