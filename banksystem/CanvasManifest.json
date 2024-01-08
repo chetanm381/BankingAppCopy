@@ -134,6 +134,7 @@
   "ScreenOrder": [
     "Screen1",
     "ThankyouScreen",
-    "UploadSignaturePhotoScreen"
+    "UploadSignaturePhotoScreen",
+    "MatchPhoto&VideoScreen"
   ]
 }
