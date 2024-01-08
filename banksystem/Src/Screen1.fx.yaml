@@ -68,7 +68,7 @@ Screen1 As screen:
             DropShadow: =DropShadow.None
             Fill: =RGBA(252, 242, 247, 1)
             FillPortions: =0
-            Height: =Parent.Height*.1
+            Height: =Parent.Height*.08
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             RadiusBottomLeft: =0
@@ -83,7 +83,7 @@ Screen1 As screen:
                 Color: =RGBA(107, 29, 94, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =64
-                Size: =25
+                Size: =20
                 Text: ="DOOR STEP BANKING"
                 Width: =520
                 X: =Parent.Width*.02
@@ -93,7 +93,7 @@ Screen1 As screen:
         ScrollableContainer As groupContainer.manualLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
-            Height: =Parent.Height*.82
+            Height: =Parent.Height*.84
             LayoutMinHeight: =1000
             LayoutMinWidth: =250
             Width: =Parent.Width
@@ -104,7 +104,7 @@ Screen1 As screen:
                 BorderStyle: =BorderStyle.None
                 DropShadow: =DropShadow.None
                 Fill: =RGBA(107, 29, 94, 1)
-                Height: =doorstepbankingContainer.Height*.95
+                Height: =doorstepbankingContainer.Height*1.5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -124,7 +124,7 @@ Screen1 As screen:
                 RadiusTopRight: =20
                 Width: =Parent.Width*.90
                 X: =(Parent.Width-Self.Width)/2
-                Y: =Container11.Height/2
+                Y: =Container11.Height*.35
                 ZIndex: =2
 
                 Label2 As label:
