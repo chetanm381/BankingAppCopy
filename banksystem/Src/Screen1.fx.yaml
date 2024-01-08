@@ -388,3 +388,37 @@ Screen1 As screen:
                         Y: =Parent.Height-Self.Height-Parent.Height*0.03
                         ZIndex: =1
 
+                Button2 As button:
+                    Fill: =RGBA(11, 163, 54, 1)
+                    HoverFill: |-
+                        =ColorFade(ColorValue("#0ba336"), -20%)
+                    RadiusBottomLeft: =20
+                    RadiusBottomRight: =20
+                    RadiusTopLeft: =20
+                    RadiusTopRight: =20
+                    Size: =11
+                    Text: ="Submit"
+                    Width: =131
+                    X: =Parent.Width-Self.Width-Parent.Width*0.03
+                    Y: =(Container1.Y+Container1.Height)+(Parent.Height-(Container1.Y+Container1.Height)-Self.Height)/2
+                    ZIndex: =8
+
+                Button2_1 As button:
+                    BorderColor: |-
+                        =ColorFade(ColorValue("#6B1D5E"), -15%)
+                    Color: =RGBA(107, 29, 94, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    HoverColor: =RGBA(107, 29, 94, 1)
+                    HoverFill: |-
+                        =ColorFade(ColorValue("#A6A6A6"), 80%)
+                    RadiusBottomLeft: =20
+                    RadiusBottomRight: =20
+                    RadiusTopLeft: =20
+                    RadiusTopRight: =20
+                    Size: =11
+                    Text: ="Cancel"
+                    Width: =131
+                    X: =Parent.Width-Button2.Width-Self.Width-Parent.Width*0.05
+                    Y: =(Container1.Y+Container1.Height)+(Parent.Height-(Container1.Y+Container1.Height)-Self.Height)/2
+                    ZIndex: =9
+
