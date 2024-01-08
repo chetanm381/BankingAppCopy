@@ -176,7 +176,7 @@ OpenAccountScreen As screen:
                         Size: =17
                         Width: =Parent.Width*.55
                         X: =(Parent.Width-Self.Width)/2+Parent.Width*.02
-                        Y: =OA_Label6.Y
+                        Y: =OA_Label6.Y+Parent.Height*.05
                         ZIndex: =2
 
                     OA_Label2_2 As label:
@@ -267,7 +267,7 @@ OpenAccountScreen As screen:
                         HoverFill: =ColorFade( RGBA(107, 29, 94, 1),70%)
                         Width: =60
                         X: =(OA_TextInput2_8.X)-Self.Width-Parent.Width*0.025
-                        Y: =OA_Label8_1.Y+OA_Label8_1.Height+Parent.Height*0.03
+                        Y: =OA_Label8_1.Y+OA_Label8_1.Height+Parent.Height*0.05
                         ZIndex: =18
 
                     OA_TextInput2_7 As text:
@@ -278,7 +278,7 @@ OpenAccountScreen As screen:
                         HoverFill: =ColorFade( RGBA(107, 29, 94, 1),70%)
                         Width: =60
                         X: =OA_TextInput2_10.X+OA_TextInput2_10.Width+Parent.Width*0.025
-                        Y: =OA_Label8_1.Y+OA_Label8_1.Height+Parent.Height*0.03
+                        Y: =OA_Label8_1.Y+OA_Label8_1.Height+Parent.Height*0.05
                         ZIndex: =19
 
                     OA_TextInput2_8 As text:
@@ -289,7 +289,7 @@ OpenAccountScreen As screen:
                         HoverFill: =ColorFade( RGBA(107, 29, 94, 1),70%)
                         Width: =60
                         X: =(OA_TextInput2_9.X)-Self.Width-Parent.Width*0.025
-                        Y: =OA_Label8_1.Y+OA_Label8_1.Height+Parent.Height*0.03
+                        Y: =OA_Label8_1.Y+OA_Label8_1.Height+Parent.Height*0.05
                         ZIndex: =20
 
                     OA_TextInput2_9 As text:
@@ -300,7 +300,7 @@ OpenAccountScreen As screen:
                         HoverFill: =ColorFade( RGBA(107, 29, 94, 1),70%)
                         Width: =60
                         X: =(Parent.Width-Self.Width)/2-Parent.Width*0.0125
-                        Y: =OA_Label8_1.Y+OA_Label8_1.Height+Parent.Height*0.03
+                        Y: =OA_Label8_1.Y+OA_Label8_1.Height+Parent.Height*0.05
                         ZIndex: =21
 
                     OA_TextInput2_10 As text:
@@ -311,7 +311,7 @@ OpenAccountScreen As screen:
                         HoverFill: =ColorFade( RGBA(107, 29, 94, 1),70%)
                         Width: =60
                         X: =(Parent.Width+Self.Width)/2+Parent.Width*0.0125
-                        Y: =OA_Label8_1.Y+OA_Label8_1.Height+Parent.Height*0.03
+                        Y: =OA_Label8_1.Y+OA_Label8_1.Height+Parent.Height*0.05
                         ZIndex: =22
 
                     OA_TextInput2_11 As text:
@@ -322,7 +322,7 @@ OpenAccountScreen As screen:
                         HoverFill: =ColorFade( RGBA(107, 29, 94, 1),70%)
                         Width: =60
                         X: =OA_TextInput2_7.X+OA_TextInput2_7.Width+Parent.Width*0.025
-                        Y: =OA_Label8_1.Y+OA_Label8_1.Height+Parent.Height*0.03
+                        Y: =OA_Label8_1.Y+OA_Label8_1.Height+Parent.Height*0.05
                         ZIndex: =23
 
                     OA_Label9_1 As label:

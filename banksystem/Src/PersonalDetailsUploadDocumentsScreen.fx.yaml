@@ -131,56 +131,60 @@ PersonalDetailsUploadDocumentsScreen As screen:
                     ZIndex: =1
 
                     PDUD_Label7 As label:
-                        Align: =Align.Center
                         Color: =RGBA(107, 29, 94, 1)
                         FontWeight: =FontWeight.Bold
+                        PaddingLeft: =0
                         Size: =20
                         Text: ="PERSONAL DETAILS"
                         Width: =Parent.Width*.85
-                        X: =30
-                        Y: =26
+                        X: =Parent.Width*0.15
+                        Y: =Parent.Height*0.05
                         ZIndex: =1
 
                     PDUD_Label6 As label:
                         FontWeight: =FontWeight.Semibold
                         Height: =37
+                        PaddingLeft: =0
                         Size: =12
                         Text: ="Name"
                         Width: =82
-                        X: =47
+                        X: =Parent.Width*0.15
                         Y: =82
                         ZIndex: =2
 
                     PDUD_TextInput2_6 As text:
                         BorderColor: =RGBA(107, 29, 94, 1)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =0
                         Default: =""
                         Height: =42
                         HintText: ="First Name"
                         HoverBorderColor: =RGBA(107, 29, 94, 1)
                         HoverFill: =ColorFade( RGBA(107, 29, 94, 1),70%)
                         Size: =12
-                        Width: =274
-                        X: =47
+                        Width: =Parent.Width*.70
+                        X: =Parent.Width*0.15
                         Y: =126
                         ZIndex: =3
 
                     PDUD_Label6_1 As label:
                         FontWeight: =FontWeight.Semibold
+                        PaddingLeft: =0
                         Size: =12
                         Text: ="Date of Birth"
                         Width: =128
-                        X: =47
+                        X: =Parent.Width*0.15
                         Y: =193
                         ZIndex: =4
 
                     PDUD_Container2_2 As groupContainer.manualLayoutContainer:
                         BorderColor: =RGBA(107, 29, 94, 1)
-                        BorderThickness: =2
+                        BorderStyle: =BorderStyle.None
                         DropShadow: =DropShadow.None
-                        Fill: =RGBA(250, 250, 250, 1)
+                        Fill: =RGBA(255, 255, 255, 1)
                         Height: =40
-                        Width: =274
-                        X: =47
+                        Width: =Parent.Width*.70
+                        X: =Parent.Width*0.15
                         Y: =232
                         ZIndex: =5
 
@@ -216,15 +220,18 @@ PersonalDetailsUploadDocumentsScreen As screen:
 
                     PDUD_Label6_2 As label:
                         FontWeight: =FontWeight.Semibold
+                        PaddingLeft: =0
                         Size: =12
                         Text: ="Address"
                         Width: =128
-                        X: =47
+                        X: =Parent.Width*0.15
                         Y: =294
                         ZIndex: =6
 
                     PDUD_TextInput2_7 As text:
                         BorderColor: =RGBA(107, 29, 94, 1)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =0
                         Default: =""
                         Height: =140
                         HintText: ="Enter Address"
@@ -232,8 +239,8 @@ PersonalDetailsUploadDocumentsScreen As screen:
                         HoverFill: =ColorFade( RGBA(107, 29, 94, 1),70%)
                         Mode: =TextMode.MultiLine
                         Size: =12
-                        Width: =274
-                        X: =47
+                        Width: =Parent.Width*.70
+                        X: =Parent.Width*0.15
                         Y: =334
                         ZIndex: =7
 
@@ -248,7 +255,7 @@ PersonalDetailsUploadDocumentsScreen As screen:
                         Color: =RGBA(107, 29, 94, 1)
                         FontWeight: =FontWeight.Bold
                         Text: ="UPLOAD DOCUMENTS"
-                        Width: =318
+                        Width: =PDUD_Rectangle1_1.Width*.60
                         X: =PDUD_Rectangle1_1.X
                         Y: =Parent.Height*0.015
                         ZIndex: =1
@@ -284,8 +291,8 @@ PersonalDetailsUploadDocumentsScreen As screen:
                         Size: =15
                         Text: ="Please Select Format Of Aadhar Card"
                         Width: =381
-                        X: =25
-                        Y: =72
+                        X: =PDUD_Rectangle1_1.X
+                        Y: =PDUD_Rectangle1_1.Y+PDUD_Rectangle1_1.Height+Parent.Height*0.02
                         ZIndex: =4
 
                     PDUD_Radio1 As radio:
@@ -304,8 +311,8 @@ PersonalDetailsUploadDocumentsScreen As screen:
                         RadioSize: =25
                         Size: =10
                         Width: =206
-                        X: =600
-                        Y: =72
+                        X: =Parent.Width-Self.Width-Parent.Width*0.03 
+                        Y: =PDUD_Rectangle1_1.Y+PDUD_Rectangle1_1.Height+Parent.Height*0.02
                         ZIndex: =5
 
                     PDUD_Container5 As groupContainer.manualLayoutContainer:
@@ -313,10 +320,10 @@ PersonalDetailsUploadDocumentsScreen As screen:
                         BorderStyle: =BorderStyle.Dotted
                         BorderThickness: =2
                         DropShadow: =DropShadow.None
-                        Height: =362
-                        Width: =Parent.Width*.94
-                        X: =25
-                        Y: =120
+                        Height: =Parent.Height*.65
+                        Width: =Parent.Width*.95
+                        X: =Parent.Width*0.025
+                        Y: =PDUD_Radio1.Y+PDUD_Radio1.Height+Parent.Height*.05
                         ZIndex: =6
 
                         PDUD_Container6_2 As groupContainer.manualLayoutContainer:
@@ -324,40 +331,44 @@ PersonalDetailsUploadDocumentsScreen As screen:
                             BorderThickness: =2
                             DropShadow: =DropShadow.None
                             Fill: =RGBA(250, 250, 250, 1)
-                            Height: =313
-                            Width: =277
-                            X: =458
-                            Y: =24
+                            Height: =Parent.Height*0.85
+                            Width: =Parent.Width*0.40
+                            X: =Parent.Width/2+Parent.Width*0.05
+                            Y: =(Parent.Height-Self.Height)/2
                             ZIndex: =2
 
                             PDUD_Image1_1 As image:
+                                Height: |
+                                    =Parent.Height*0.35
                                 Image: ='cloud-computing'
-                                X: =88
-                                Y: =84
+                                Width: =Parent.Width*0.4
+                                X: =(Parent.Width-Self.Width)/2
+                                Y: =Parent.Height*0.25
                                 ZIndex: =1
 
                             PDUD_Label8_1 As label:
+                                Align: =Align.Center
                                 Height: =31
                                 Size: =9
                                 Text: ="Drop file here/click to upload"
                                 Width: =186
-                                X: =45
-                                Y: =170
+                                X: =(Parent.Width-Self.Width)/2
+                                Y: =PDUD_Image1_1.Y+PDUD_Image1_1.Height+Parent.Height*0.02
                                 ZIndex: =2
 
                             PDUD_Label9_1 As label:
                                 Align: =Align.Center
                                 FontWeight: =FontWeight.Bold
                                 Text: ="PAN CARD"
-                                X: =63
-                                Y: =263
+                                X: =(Parent.Width-Self.Width)/2
+                                Y: =Parent.Height*.85
                                 ZIndex: =3
 
                             PDUD_Circle2_1 As circle:
                                 Fill: =RGBA(27, 79, 191, 1)
                                 Height: =30
                                 Width: =30
-                                X: =12
+                                X: =Parent.Width*0.02
                                 Y: =8
                                 ZIndex: =4
 
@@ -367,8 +378,8 @@ PersonalDetailsUploadDocumentsScreen As screen:
                                 Height: =20
                                 Icon: =Icon.Check
                                 Width: =20
-                                X: =17
-                                Y: =13
+                                X: =PDUD_Circle2_1.X+(PDUD_Circle2_1.Width-Self.Width)/2
+                                Y: =PDUD_Circle2_1.Y+(PDUD_Circle2_1.Height-Self.Height)/2
                                 ZIndex: =5
 
                         PDUD_Container6_3 As groupContainer.manualLayoutContainer:
@@ -376,40 +387,43 @@ PersonalDetailsUploadDocumentsScreen As screen:
                             BorderThickness: =2
                             DropShadow: =DropShadow.None
                             Fill: =RGBA(250, 250, 250, 1)
-                            Height: =313
-                            Width: =277
-                            X: =50
-                            Y: =24
+                            Height: =Parent.Height*0.85
+                            Width: =Parent.Width*0.40
+                            X: =((Parent.Width/2)-Self.Width)-Parent.Width*0.05
+                            Y: =(Parent.Height-Self.Height)/2
                             ZIndex: =3
 
                             PDUD_Image1_2 As image:
+                                Height: =Parent.Height*0.35
                                 Image: ='cloud-computing'
-                                X: =88
-                                Y: =84
+                                Width: =Parent.Width*0.4
+                                X: =(Parent.Width-Self.Width)/2
+                                Y: =Parent.Height*0.25
                                 ZIndex: =1
 
                             PDUD_Label8_2 As label:
+                                Align: =Align.Center
                                 Height: =31
                                 Size: =9
                                 Text: ="Drop file here/click to upload"
                                 Width: =186
-                                X: =45
-                                Y: =170
+                                X: =(Parent.Width-Self.Width)/2
+                                Y: =PDUD_Image1_1.Y+PDUD_Image1_1.Height+Parent.Height*0.02
                                 ZIndex: =2
 
                             PDUD_Label9_2 As label:
                                 Align: =Align.Center
                                 FontWeight: =FontWeight.Bold
                                 Text: ="AADHAR CARD"
-                                X: =63
-                                Y: =263
+                                X: =(Parent.Width-Self.Width)/2
+                                Y: =Parent.Height*.85
                                 ZIndex: =3
 
                             PDUD_Circle2_2 As circle:
                                 Fill: =RGBA(27, 79, 191, 1)
                                 Height: =30
                                 Width: =30
-                                X: =12
+                                X: =Parent.Width*0.02
                                 Y: =8
                                 ZIndex: =4
 
@@ -419,11 +433,11 @@ PersonalDetailsUploadDocumentsScreen As screen:
                                 Height: =20
                                 Icon: =Icon.Check
                                 Width: =20
-                                X: =17
-                                Y: =13
+                                X: =PDUD_Circle2_2.X+(PDUD_Circle2_2.Width-Self.Width)/2
+                                Y: =PDUD_Circle2_2.Y+(PDUD_Circle2_2.Height-Self.Height)/2
                                 ZIndex: =5
 
-                    Button2_2 As button:
+                    PDUD_Button2_2 As button:
                         Fill: =RGBA(11, 163, 54, 1)
                         HoverFill: |-
                             =ColorFade(ColorValue("#0ba336"), -20%)
@@ -438,7 +452,7 @@ PersonalDetailsUploadDocumentsScreen As screen:
                         Y: =(PDUD_Container5.Y+PDUD_Container5.Height)+(Parent.Height-(PDUD_Container5.Y+PDUD_Container5.Height)-Self.Height)/2
                         ZIndex: =7
 
-                    Button2_3 As button:
+                    PDUD_Button2_3 As button:
                         BorderColor: |-
                             =ColorFade(ColorValue("#6B1D5E"), -15%)
                         Color: =RGBA(107, 29, 94, 1)
@@ -453,7 +467,7 @@ PersonalDetailsUploadDocumentsScreen As screen:
                         Size: =11
                         Text: ="Back"
                         Width: =Parent.Width*.09
-                        X: =Parent.Width-Button2_2.Width-Self.Width-Parent.Width*0.05
+                        X: =Parent.Width-PDUD_Button2_2.Width-Self.Width-Parent.Width*0.05
                         Y: =(PDUD_Container5.Y+PDUD_Container5.Height)+(Parent.Height-(PDUD_Container5.Y+PDUD_Container5.Height)-Self.Height)/2
                         ZIndex: =8
 
