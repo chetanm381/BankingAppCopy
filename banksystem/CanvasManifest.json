@@ -133,6 +133,7 @@
   },
   "ScreenOrder": [
     "Screen1",
-    "ThankyouScreen"
+    "ThankyouScreen",
+    "UploadSignaturePhotoScreen"
   ]
 }

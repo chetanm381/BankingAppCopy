@@ -1,0 +1,220 @@
+UploadSignaturePhotoScreen As screen:
+
+    USP_BgContainer As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        LayoutOverflowY: =LayoutOverflow.Scroll
+        Width: =Parent.Width
+        ZIndex: =1
+
+        USP_HeaderContainer As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            BorderStyle: =BorderStyle.None
+            DropShadow: =DropShadow.None
+            FillPortions: =0
+            Height: =Parent.Height*.08
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            Width: =Parent.Width
+            ZIndex: =2
+
+            USP_img_xebiaLogo_2 As image:
+                Height: =Parent.Height*.80
+                Image: ='download (7) 1'
+                PaddingBottom: =5
+                PaddingLeft: =5
+                PaddingTop: =5
+                Width: =153
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =1
+
+            USP_lbl_HomeTab_2 As label:
+                Align: =Align.Center
+                Color: =RGBA(107, 29, 94, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =35
+                Size: =11
+                Text: ="Home"
+                Width: =100
+                X: =USP_btn_createApp_2.X-Self.Width-Parent.Width*.015
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =2
+
+            USP_btn_createApp_2 As button:
+                BorderColor: =RGBA(107, 29, 94, 1)
+                Color: =RGBA(107, 29, 94, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =35
+                HoverFill: =ColorFade(Self.BorderColor, 20%)
+                RadiusBottomLeft: =50
+                RadiusBottomRight: =50
+                RadiusTopLeft: =50
+                RadiusTopRight: =50
+                Size: =11
+                Text: ="Check Application Status"
+                Width: =220
+                X: =Parent.Width-Self.Width-Parent.Width*.02
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =3
+
+        USP_doorstepbankingContainer As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            BorderStyle: =BorderStyle.None
+            DropShadow: =DropShadow.None
+            Fill: =RGBA(252, 242, 247, 1)
+            FillPortions: =0
+            Height: =Parent.Height*.08
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Width: =Parent.Width
+            X: =USP_HeaderContainer.Height
+            ZIndex: =3
+
+            USP_Label1_1 As label:
+                Color: =RGBA(107, 29, 94, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =64
+                Size: =20
+                Text: ="DOOR STEP BANKING"
+                Width: =520
+                X: =Parent.Width*.02
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =1
+
+        USP_ScrollableContainer As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            FillPortions: =0
+            Height: =Parent.Height*.84
+            LayoutMinHeight: =1000
+            LayoutMinWidth: =250
+            Width: =Parent.Width
+            Y: =USP_HeaderContainer.Height+USP_doorstepbankingContainer.Height
+            ZIndex: =4
+
+            USP_Container11_1 As groupContainer.manualLayoutContainer:
+                BorderStyle: =BorderStyle.None
+                DropShadow: =DropShadow.None
+                Fill: =RGBA(107, 29, 94, 1)
+                Height: =USP_doorstepbankingContainer.Height*1.5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Width: =Parent.Width
+                ZIndex: =1
+
+            USP_Container12_1 As groupContainer.manualLayoutContainer:
+                BorderColor: =RGBA(219, 219, 219, 1)
+                BorderStyle: =BorderStyle.None
+                DropShadow: =DropShadow.Regular
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =Screen1.Height*.75
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Width: =Parent.Width*.90
+                X: =(Parent.Width-Self.Width)/2
+                Y: =USP_Container11_1.Height*.35
+                ZIndex: =2
+
+                USP_Label2_1 As label:
+                    Color: =RGBA(107, 29, 94, 1)
+                    FontWeight: =FontWeight.Bold
+                    Text: ="UPLOAD LIVE SIGNATURE PHOTO"
+                    Width: =318
+                    X: =USP_Rectangle1_1.X
+                    Y: =Parent.Height*0.015
+                    ZIndex: =1
+
+                USP_Rectangle1_1 As rectangle:
+                    Fill: =RGBA(202, 202, 202, 1)
+                    Height: =2
+                    Width: =Parent.Width*.94
+                    X: =(Parent.Width-Self.Width)/2
+                    Y: =USP_Label2_1.Y+USP_Label2_1.Height+Parent.Height*.015
+                    ZIndex: =2
+
+                USP_Button1_1 As button:
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =0
+                    Color: =RGBA(107, 29, 94, 1)
+                    Fill: =RGBA(252, 242, 247, 1)
+                    Height: =30
+                    HoverFill: =ColorFade(Self.Color, 20%)
+                    Size: =9
+                    Text: ="Primary Holder"
+                    Width: =100
+                    X: |-
+                        =//Parent.Width-Self.Width-Parent.Width*0.03
+                        USP_Rectangle1_1.X+USP_Rectangle1_1.Width-Self.Width
+                    Y: =USP_Label2_1.Y+USP_Label2_1.Height/2-Self.Height/2
+                    ZIndex: =3
+
+                USP_Container1_1 As groupContainer.manualLayoutContainer:
+                    BorderColor: =RGBA(107, 29, 94, 1)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    DropShadow: =DropShadow.None
+                    Fill: =RGBA(252, 242, 247, 1)
+                    Height: =Parent.Height*.75
+                    Width: =Parent.Width*0.55
+                    X: =USP_Container3_1.X+USP_Container3_1.Width+Parent.Width*0.03
+                    Y: =USP_Rectangle1_1.Y+USP_Rectangle1_1.Height+Parent.Height*0.02
+                    ZIndex: =6
+
+                USP_Container3_1 As groupContainer.manualLayoutContainer:
+                    BorderStyle: =BorderStyle.None
+                    DropShadow: =DropShadow.None
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =Parent.Height*.75
+                    Width: =Parent.Width*.35
+                    X: =Parent.Width*.04
+                    Y: =USP_Rectangle1_1.Y+USP_Rectangle1_1.Height+Parent.Height*0.02
+                    ZIndex: =7
+
+                    USP_Image1 As image:
+                        Height: =Parent.Height
+                        Image: =rafiki_1
+                        Width: =Parent.Width
+                        ZIndex: =1
+
+                USP_Button2_2 As button:
+                    Fill: =RGBA(11, 163, 54, 1)
+                    HoverFill: |-
+                        =ColorFade(ColorValue("#0ba336"), -20%)
+                    RadiusBottomLeft: =20
+                    RadiusBottomRight: =20
+                    RadiusTopLeft: =20
+                    RadiusTopRight: =20
+                    Size: =11
+                    Text: ="Submit"
+                    Width: =Parent.Width*.09
+                    X: =Parent.Width-Self.Width-Parent.Width*0.03
+                    Y: =(USP_Container1_1.Y+USP_Container1_1.Height)+(Parent.Height-(USP_Container1_1.Y+USP_Container1_1.Height)-Self.Height)/2
+                    ZIndex: =8
+
+                USP_Button2_3 As button:
+                    BorderColor: |-
+                        =ColorFade(ColorValue("#6B1D5E"), -15%)
+                    Color: =RGBA(107, 29, 94, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    HoverColor: =RGBA(107, 29, 94, 1)
+                    HoverFill: |-
+                        =ColorFade(ColorValue("#A6A6A6"), 80%)
+                    RadiusBottomLeft: =20
+                    RadiusBottomRight: =20
+                    RadiusTopLeft: =20
+                    RadiusTopRight: =20
+                    Size: =11
+                    Text: ="Back"
+                    Width: =Parent.Width*.09
+                    X: =Parent.Width-USP_Button2_2.Width-Self.Width-Parent.Width*0.05
+                    Y: =(USP_Container1_1.Y+USP_Container1_1.Height)+(Parent.Height-(USP_Container1_1.Y+USP_Container1_1.Height)-Self.Height)/2
+                    ZIndex: =9
+

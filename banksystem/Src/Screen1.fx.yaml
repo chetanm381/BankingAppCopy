@@ -416,7 +416,7 @@ Screen1 As screen:
                     RadiusTopLeft: =20
                     RadiusTopRight: =20
                     Size: =11
-                    Text: ="Cancel"
+                    Text: ="Back"
                     Width: =Parent.Width*.09
                     X: =Parent.Width-Button2.Width-Self.Width-Parent.Width*0.05
                     Y: =(Container1.Y+Container1.Height)+(Parent.Height-(Container1.Y+Container1.Height)-Self.Height)/2
