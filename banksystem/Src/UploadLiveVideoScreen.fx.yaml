@@ -1,0 +1,267 @@
+UploadLiveVideoScreen As screen:
+
+    ULV_BgContainer_2 As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        LayoutOverflowY: =LayoutOverflow.Scroll
+        Width: =Parent.Width
+        ZIndex: =1
+
+        ULV_HeaderContainer_2 As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            BorderStyle: =BorderStyle.None
+            DropShadow: =DropShadow.None
+            FillPortions: =0
+            Height: =Parent.Height*.08
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            Width: =Parent.Width
+            ZIndex: =2
+
+            ULV_img_xebiaLogo_4 As image:
+                Height: =Parent.Height*.80
+                Image: ='download (7) 1'
+                PaddingBottom: =5
+                PaddingLeft: =5
+                PaddingTop: =5
+                Width: =153
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =1
+
+            ULV_lbl_HomeTab_4 As label:
+                Align: =Align.Center
+                Color: =RGBA(107, 29, 94, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =35
+                Size: =11
+                Text: ="Home"
+                Width: =100
+                X: =ULV_btn_createApp_4.X-Self.Width-Parent.Width*.015
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =2
+
+            ULV_btn_createApp_4 As button:
+                BorderColor: =RGBA(107, 29, 94, 1)
+                Color: =RGBA(107, 29, 94, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =35
+                HoverFill: =ColorFade(Self.BorderColor, 20%)
+                RadiusBottomLeft: =50
+                RadiusBottomRight: =50
+                RadiusTopLeft: =50
+                RadiusTopRight: =50
+                Size: =11
+                Text: ="Check Application Status"
+                Width: =220
+                X: =Parent.Width-Self.Width-Parent.Width*.02
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =3
+
+        ULV_doorstepbankingContainer_2 As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            BorderStyle: =BorderStyle.None
+            DropShadow: =DropShadow.None
+            Fill: =RGBA(252, 242, 247, 1)
+            FillPortions: =0
+            Height: =Parent.Height*.08
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Width: =Parent.Width
+            X: =ULV_HeaderContainer_2.Height
+            ZIndex: =3
+
+            ULV_Label1_3 As label:
+                Color: =RGBA(107, 29, 94, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =64
+                Size: =20
+                Text: ="DOOR STEP BANKING"
+                Width: =520
+                X: =Parent.Width*.02
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =1
+
+        ULV_ScrollableContainer_2 As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            DropShadow: =DropShadow.None
+            FillPortions: =0
+            Height: =Parent.Height*.84
+            LayoutMinHeight: =1000
+            LayoutMinWidth: =250
+            Width: =Parent.Width
+            Y: =ULV_HeaderContainer_2.Height+ULV_doorstepbankingContainer_2.Height
+            ZIndex: =4
+
+            ULV_Container11_3 As groupContainer.manualLayoutContainer:
+                BorderStyle: =BorderStyle.None
+                DropShadow: =DropShadow.None
+                Fill: =RGBA(107, 29, 94, 1)
+                Height: =ULV_doorstepbankingContainer_2.Height*1.5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Width: =Parent.Width
+                ZIndex: =1
+
+            ULV_Container12_3 As groupContainer.manualLayoutContainer:
+                BorderColor: =RGBA(219, 219, 219, 1)
+                BorderStyle: =BorderStyle.None
+                DropShadow: =DropShadow.Regular
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: ='MatchPhoto&VideoScreen'.Height*.75
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Width: =Parent.Width*.90
+                X: =(Parent.Width-Self.Width)/2
+                Y: =ULV_Container11_3.Height*.35
+                ZIndex: =2
+
+                ULV_Label2_3 As label:
+                    Color: =RGBA(107, 29, 94, 1)
+                    FontWeight: =FontWeight.Bold
+                    Text: ="UPLOAD LIVE VIDEO "
+                    Width: =318
+                    X: =ULV_Rectangle1_3.X
+                    Y: =Parent.Height*0.015
+                    ZIndex: =1
+
+                ULV_Rectangle1_3 As rectangle:
+                    Fill: =RGBA(202, 202, 202, 1)
+                    Height: =2
+                    Width: =Parent.Width*.94
+                    X: =(Parent.Width-Self.Width)/2
+                    Y: =ULV_Label2_3.Y+ULV_Label2_3.Height+Parent.Height*.015
+                    ZIndex: =2
+
+                ULV_Button1_3 As button:
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =0
+                    Color: =RGBA(107, 29, 94, 1)
+                    Fill: =RGBA(252, 242, 247, 1)
+                    Height: =30
+                    HoverFill: =ColorFade(Self.Color, 20%)
+                    Size: =9
+                    Text: ="Primary Holder"
+                    Width: =100
+                    X: |-
+                        =//Parent.Width-Self.Width-Parent.Width*0.03
+                        ULV_Rectangle1_3.X+ULV_Rectangle1_3.Width-Self.Width
+                    Y: =ULV_Label2_3.Y+ULV_Label2_3.Height/2-Self.Height/2
+                    ZIndex: =3
+
+                ULV_Container1_3 As groupContainer.manualLayoutContainer:
+                    BorderColor: =RGBA(107, 29, 94, 1)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    DropShadow: =DropShadow.None
+                    Fill: =RGBA(252, 242, 247, 1)
+                    Height: =Parent.Height*.75
+                    Width: =Parent.Width*.45
+                    X: =Parent.Width-Self.Width-Parent.Width*.03
+                    Y: =ULV_Rectangle1_3.Y+ULV_Rectangle1_3.Height+Parent.Height*0.02
+                    ZIndex: =6
+
+                    ULV_Label6 As label:
+                        Color: =RGBA(107, 29, 94, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =37
+                        Size: =12
+                        Text: ="VIDEO OUTPUT (SPEECH TO TEXT)"
+                        Width: =330
+                        X: =32
+                        Y: =28
+                        ZIndex: =1
+
+                    ULV_Label6_1 As label:
+                        Color: =RGBA(107, 29, 94, 1)
+                        FontWeight: =FontWeight.Semibold
+                        Height: =37
+                        Size: =12
+                        Text: |-
+                            ="PS: Speech to Text"
+                        Width: =330
+                        X: =32
+                        Y: =65
+                        ZIndex: =2
+
+                    ULV_Label6_2 As label:
+                        Color: =RGBA(107, 29, 94, 1)
+                        FontWeight: =FontWeight.Semibold
+                        Height: =37
+                        Size: =12
+                        Text: ="My Name is ............."
+                        Width: =330
+                        X: =32
+                        Y: =150
+                        ZIndex: =3
+
+                ULV_Container3_3 As groupContainer.manualLayoutContainer:
+                    BorderStyle: =BorderStyle.None
+                    DropShadow: =DropShadow.None
+                    Fill: =RGBA(252, 242, 247, 1)
+                    Height: =Parent.Height*.75
+                    Width: =Parent.Width*.45
+                    X: =Parent.Width*.03
+                    Y: =ULV_Rectangle1_3.Y+ULV_Rectangle1_3.Height+Parent.Height*0.02
+                    ZIndex: =7
+
+                    ULV_Container5_2 As groupContainer.manualLayoutContainer:
+                        DropShadow: =DropShadow.None
+                        Fill: =RGBA(255, 255, 255, 1)
+                        Height: =Parent.Height*.75
+                        Width: =Parent.Width*.75
+                        X: =(Parent.Width-Self.Width)/2
+                        Y: =(Parent.Height-Self.Height)/2+Parent.Height*.03
+                        ZIndex: =1
+
+                    ULV_Label7_2 As label:
+                        Color: =RGBA(107, 29, 94, 1)
+                        FontWeight: =FontWeight.Bold
+                        Size: =15
+                        Text: ="Video"
+                        X: =Parent.Width*.05
+                        Y: =Parent.Height*.03
+                        ZIndex: =2
+
+                ULV_Button2_7 As button:
+                    Fill: =RGBA(11, 163, 54, 1)
+                    HoverFill: |-
+                        =ColorFade(ColorValue("#0ba336"), -20%)
+                    RadiusBottomLeft: =20
+                    RadiusBottomRight: =20
+                    RadiusTopLeft: =20
+                    RadiusTopRight: =20
+                    Size: =11
+                    Text: ="Next"
+                    Width: =Parent.Width*.09
+                    X: =Parent.Width-Self.Width-Parent.Width*0.03
+                    Y: =(ULV_Container1_3.Y+ULV_Container1_3.Height)+(Parent.Height-(ULV_Container1_3.Y+ULV_Container1_3.Height)-Self.Height)/2
+                    ZIndex: =8
+
+                ULV_Button2_6 As button:
+                    BorderColor: |-
+                        =ColorFade(ColorValue("#6B1D5E"), -15%)
+                    Color: =RGBA(107, 29, 94, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    HoverColor: =RGBA(107, 29, 94, 1)
+                    HoverFill: |-
+                        =ColorFade(ColorValue("#A6A6A6"), 80%)
+                    RadiusBottomLeft: =20
+                    RadiusBottomRight: =20
+                    RadiusTopLeft: =20
+                    RadiusTopRight: =20
+                    Size: =11
+                    Text: ="Back"
+                    Width: =Parent.Width*.09
+                    X: =Parent.Width-ULV_Button2_7.Width-Self.Width-Parent.Width*0.05
+                    Y: =(ULV_Container1_3.Y+ULV_Container1_3.Height)+(Parent.Height-(ULV_Container1_3.Y+ULV_Container1_3.Height)-Self.Height)/2
+                    ZIndex: =9
+
