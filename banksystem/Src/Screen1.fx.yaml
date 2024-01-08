@@ -1,10 +1,5 @@
 Screen1 As screen:
 
-    Container5 As groupContainer.manualLayoutContainer:
-        Height: =Parent.Height
-        Width: =Parent.Width
-        ZIndex: =1
-
     BgContainer As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
         LayoutDirection: =LayoutDirection.Vertical
