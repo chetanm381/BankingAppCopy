@@ -183,8 +183,8 @@
                         FontWeight: =FontWeight.Bold
                         Size: =15
                         Text: ="Photo"
-                        X: =28
-                        Y: =12
+                        X: =Parent.Width*.05
+                        Y: =Parent.Height*.03
                         ZIndex: =2
 
                 MPV_Container3_2 As groupContainer.manualLayoutContainer:
@@ -211,8 +211,8 @@
                         FontWeight: =FontWeight.Bold
                         Size: =15
                         Text: ="Video"
-                        X: =28
-                        Y: =12
+                        X: =Parent.Width*.05
+                        Y: =Parent.Height*.03
                         ZIndex: =2
 
                 MPV_Button2_5 As button:
