@@ -29,32 +29,30 @@ PersonalDetailsUploadDocumentsScreen As screen:
                 Y: =(Parent.Height-Self.Height)/2
                 ZIndex: =1
 
-            PDUD_lbl_HomeTab_3 As label:
-                Align: =Align.Center
-                Color: =RGBA(107, 29, 94, 1)
-                FontWeight: =FontWeight.Semibold
-                Height: =35
-                Size: =11
-                Text: ="Home"
-                Width: =100
-                X: =PDUD_btn_createApp_3.X-Self.Width-Parent.Width*.015
-                Y: =(Parent.Height-Self.Height)/2
-                ZIndex: =2
-
-            PDUD_btn_createApp_3 As button:
-                BorderColor: =RGBA(107, 29, 94, 1)
-                Color: =RGBA(107, 29, 94, 1)
-                Fill: =RGBA(255, 255, 255, 1)
-                Height: =35
-                HoverFill: =ColorFade(Self.BorderColor, 20%)
+            USP_userimage_4 As image:
+                Height: =50
+                Image: =User().Image
                 RadiusBottomLeft: =50
                 RadiusBottomRight: =50
                 RadiusTopLeft: =50
                 RadiusTopRight: =50
-                Size: =11
-                Text: ="Check Application Status"
-                Width: =220
-                X: =Parent.Width-Self.Width-Parent.Width*.02
+                Width: =50
+                X: =Parent.Width-Self.Width-Parent.Width*.01
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =2
+
+            USP_Button1_6 As button:
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =0
+                Color: =RGBA(107, 29, 94, 1)
+                Fill: =RGBA(252, 242, 247, 1)
+                Height: =30
+                HoverFill: =ColorFade(Self.Color, 20%)
+                OnSelect: =Navigate('Dashboard Screen',ScreenTransition.CoverRight)
+                Size: =9
+                Text: ="Home"
+                Width: =100
+                X: =USP_userimage_4.X-Self.Width-Parent.Width*.015
                 Y: =(Parent.Height-Self.Height)/2
                 ZIndex: =3
 
@@ -252,22 +250,6 @@ PersonalDetailsUploadDocumentsScreen As screen:
                         Y: =PDUD_Label2_1.Y+PDUD_Label2_1.Height+Parent.Height*.015
                         ZIndex: =2
 
-                    PDUD_Button1_1 As button:
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =0
-                        Color: =RGBA(107, 29, 94, 1)
-                        Fill: =RGBA(252, 242, 247, 1)
-                        Height: =30
-                        HoverFill: =ColorFade(Self.Color, 20%)
-                        Size: =9
-                        Text: ="Primary Holder"
-                        Width: =100
-                        X: |-
-                            =//Parent.Width-Self.Width-Parent.Width*0.03
-                            PDUD_Rectangle1_1.X+PDUD_Rectangle1_1.Width-Self.Width
-                        Y: =PDUD_Label2_1.Y+PDUD_Label2_1.Height/2-Self.Height/2
-                        ZIndex: =3
-
                     PDUD_Label As label:
                         Color: =RGBA(107, 29, 94, 1)
                         FontWeight: =FontWeight.Bold
@@ -279,26 +261,6 @@ PersonalDetailsUploadDocumentsScreen As screen:
                         Y: =PDUD_Rectangle1_1.Y+PDUD_Rectangle1_1.Height+Parent.Height*0.02
                         ZIndex: =4
 
-                    PDUD_Radio1 As radio:
-                        Align: =Align.Center
-                        BorderStyle: =BorderStyle.None
-                        Color: =RGBA(107, 29, 94, 1)
-                        FontWeight: =FontWeight.Bold
-                        Height: =33
-                        Items: =["Front","Back"]
-                        Layout: =Layout.Horizontal
-                        LineHeight: =1
-                        PaddingBottom: =0
-                        PaddingTop: =5
-                        RadioBorderColor: =RGBA(107, 29, 94, 1)
-                        RadioSelectionFill: =RGBA(107, 29, 94, 1)
-                        RadioSize: =25
-                        Size: =10
-                        Width: =206
-                        X: =Parent.Width-Self.Width-Parent.Width*0.03 
-                        Y: =PDUD_Rectangle1_1.Y+PDUD_Rectangle1_1.Height+Parent.Height*0.02
-                        ZIndex: =5
-
                     PDUD_Container5 As groupContainer.manualLayoutContainer:
                         BorderColor: =RGBA(107, 29, 94, 1)
                         BorderStyle: =BorderStyle.Dotted
@@ -307,7 +269,7 @@ PersonalDetailsUploadDocumentsScreen As screen:
                         Height: =Parent.Height*.65
                         Width: =Parent.Width*.95
                         X: =Parent.Width*0.025
-                        Y: =PDUD_Radio1.Y+PDUD_Radio1.Height+Parent.Height*.05
+                        Y: =PDUD_Label.Y+PDUD_Label.Height+Parent.Height*.05
                         ZIndex: =6
 
                         PDUD_Container6_2 As groupContainer.manualLayoutContainer:

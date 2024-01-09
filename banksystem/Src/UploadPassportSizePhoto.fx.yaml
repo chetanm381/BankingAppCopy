@@ -29,32 +29,30 @@ UploadPassportSizePhoto As screen:
                 Y: =(Parent.Height-Self.Height)/2
                 ZIndex: =1
 
-            UPS_lbl_HomeTab_3 As label:
-                Align: =Align.Center
-                Color: =RGBA(107, 29, 94, 1)
-                FontWeight: =FontWeight.Semibold
-                Height: =35
-                Size: =11
-                Text: ="Home"
-                Width: =100
-                X: =UPS_btn_createApp_3.X-Self.Width-Parent.Width*.015
-                Y: =(Parent.Height-Self.Height)/2
-                ZIndex: =2
-
-            UPS_btn_createApp_3 As button:
-                BorderColor: =RGBA(107, 29, 94, 1)
-                Color: =RGBA(107, 29, 94, 1)
-                Fill: =RGBA(255, 255, 255, 1)
-                Height: =35
-                HoverFill: =ColorFade(Self.BorderColor, 20%)
+            USP_userimage_9 As image:
+                Height: =50
+                Image: =User().Image
                 RadiusBottomLeft: =50
                 RadiusBottomRight: =50
                 RadiusTopLeft: =50
                 RadiusTopRight: =50
-                Size: =11
-                Text: ="Check Application Status"
-                Width: =220
-                X: =Parent.Width-Self.Width-Parent.Width*.02
+                Width: =50
+                X: =Parent.Width-Self.Width-Parent.Width*.01
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =2
+
+            USP_Button1_11 As button:
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =0
+                Color: =RGBA(107, 29, 94, 1)
+                Fill: =RGBA(252, 242, 247, 1)
+                Height: =30
+                HoverFill: =ColorFade(Self.Color, 20%)
+                OnSelect: =Navigate('Dashboard Screen',ScreenTransition.CoverRight)
+                Size: =9
+                Text: ="Home"
+                Width: =100
+                X: =USP_userimage_9.X-Self.Width-Parent.Width*.015
                 Y: =(Parent.Height-Self.Height)/2
                 ZIndex: =3
 
@@ -123,22 +121,6 @@ UploadPassportSizePhoto As screen:
                     X: =(Parent.Width-Self.Width)/2
                     Y: =UPS_Label2_2.Y+UPS_Label2_2.Height+Parent.Height*.015
                     ZIndex: =2
-
-                UPS_Button1_2 As button:
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =0
-                    Color: =RGBA(107, 29, 94, 1)
-                    Fill: =RGBA(252, 242, 247, 1)
-                    Height: =30
-                    HoverFill: =ColorFade(Self.Color, 20%)
-                    Size: =9
-                    Text: ="Primary Holder"
-                    Width: =100
-                    X: |-
-                        =//Parent.Width-Self.Width-Parent.Width*0.03
-                        UPS_Rectangle1_2.X+UPS_Rectangle1_2.Width-Self.Width
-                    Y: =UPS_Label2_2.Y+UPS_Label2_2.Height/2-Self.Height/2
-                    ZIndex: =3
 
                 UPS_Container1_2 As groupContainer.manualLayoutContainer:
                     BorderColor: =RGBA(107, 29, 94, 1)

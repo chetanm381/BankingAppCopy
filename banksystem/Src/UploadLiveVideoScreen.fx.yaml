@@ -29,32 +29,30 @@ UploadLiveVideoScreen As screen:
                 Y: =(Parent.Height-Self.Height)/2
                 ZIndex: =1
 
-            ULV_lbl_HomeTab_4 As label:
-                Align: =Align.Center
-                Color: =RGBA(107, 29, 94, 1)
-                FontWeight: =FontWeight.Semibold
-                Height: =35
-                Size: =11
-                Text: ="Home"
-                Width: =100
-                X: =ULV_btn_createApp_4.X-Self.Width-Parent.Width*.015
-                Y: =(Parent.Height-Self.Height)/2
-                ZIndex: =2
-
-            ULV_btn_createApp_4 As button:
-                BorderColor: =RGBA(107, 29, 94, 1)
-                Color: =RGBA(107, 29, 94, 1)
-                Fill: =RGBA(255, 255, 255, 1)
-                Height: =35
-                HoverFill: =ColorFade(Self.BorderColor, 20%)
+            USP_userimage_6 As image:
+                Height: =50
+                Image: =User().Image
                 RadiusBottomLeft: =50
                 RadiusBottomRight: =50
                 RadiusTopLeft: =50
                 RadiusTopRight: =50
-                Size: =11
-                Text: ="Check Application Status"
-                Width: =220
-                X: =Parent.Width-Self.Width-Parent.Width*.02
+                Width: =50
+                X: =Parent.Width-Self.Width-Parent.Width*.01
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =2
+
+            USP_Button1_8 As button:
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =0
+                Color: =RGBA(107, 29, 94, 1)
+                Fill: =RGBA(252, 242, 247, 1)
+                Height: =30
+                HoverFill: =ColorFade(Self.Color, 20%)
+                OnSelect: =Navigate('Dashboard Screen',ScreenTransition.CoverRight)
+                Size: =9
+                Text: ="Home"
+                Width: =100
+                X: =USP_userimage_6.X-Self.Width-Parent.Width*.015
                 Y: =(Parent.Height-Self.Height)/2
                 ZIndex: =3
 
@@ -81,19 +79,30 @@ UploadLiveVideoScreen As screen:
                 Width: =Parent.Width
                 ZIndex: =1
 
+                PDF_Label1_2 As label:
+                    Color: =RGBA(255, 255, 255, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =64
+                    Size: =20
+                    Text: ="DOOR STEP BANKING"
+                    Width: =520
+                    X: =Parent.Width*.02
+                    Y: =Parent.Height*0.1
+                    ZIndex: =1
+
             ULV_Container12_3 As groupContainer.manualLayoutContainer:
                 BorderColor: =RGBA(219, 219, 219, 1)
                 BorderStyle: =BorderStyle.None
                 DropShadow: =DropShadow.Regular
                 Fill: =RGBA(255, 255, 255, 1)
-                Height: ='MatchPhoto&VideoScreen'.Height*.75
+                Height: ='UploadLiveVideoScreen'.Height*.75
                 RadiusBottomLeft: =20
                 RadiusBottomRight: =20
                 RadiusTopLeft: =20
                 RadiusTopRight: =20
                 Width: =Parent.Width*.90
                 X: =(Parent.Width-Self.Width)/2
-                Y: =ULV_Container11_3.Height*.35
+                Y: =ULV_Container11_3.Height*.55
                 ZIndex: =2
 
                 ULV_Label2_3 As label:
@@ -112,22 +121,6 @@ UploadLiveVideoScreen As screen:
                     X: =(Parent.Width-Self.Width)/2
                     Y: =ULV_Label2_3.Y+ULV_Label2_3.Height+Parent.Height*.015
                     ZIndex: =2
-
-                ULV_Button1_3 As button:
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =0
-                    Color: =RGBA(107, 29, 94, 1)
-                    Fill: =RGBA(252, 242, 247, 1)
-                    Height: =30
-                    HoverFill: =ColorFade(Self.Color, 20%)
-                    Size: =9
-                    Text: ="Primary Holder"
-                    Width: =100
-                    X: |-
-                        =//Parent.Width-Self.Width-Parent.Width*0.03
-                        ULV_Rectangle1_3.X+ULV_Rectangle1_3.Width-Self.Width
-                    Y: =ULV_Label2_3.Y+ULV_Label2_3.Height/2-Self.Height/2
-                    ZIndex: =3
 
                 ULV_Container1_3 As groupContainer.manualLayoutContainer:
                     BorderColor: =RGBA(107, 29, 94, 1)

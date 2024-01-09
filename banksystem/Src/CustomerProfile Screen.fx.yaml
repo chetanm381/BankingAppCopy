@@ -29,32 +29,30 @@
                 Y: =(Parent.Height-Self.Height)/2
                 ZIndex: =1
 
-            lbl_HomeTab_1 As label:
-                Align: =Align.Center
-                Color: =RGBA(107, 29, 94, 1)
-                FontWeight: =FontWeight.Semibold
-                Height: =35
-                Size: =11
-                Text: ="Home"
-                Width: =100
-                X: =btn_createApp_1.X-Self.Width-Parent.Width*.015
-                Y: =(Parent.Height-Self.Height)/2
-                ZIndex: =2
-
-            btn_createApp_1 As button:
-                BorderColor: =RGBA(107, 29, 94, 1)
-                Color: =RGBA(107, 29, 94, 1)
-                Fill: =RGBA(255, 255, 255, 1)
-                Height: =35
-                HoverFill: =ColorFade(Self.BorderColor, 20%)
+            USP_userimage_1 As image:
+                Height: =50
+                Image: =User().Image
                 RadiusBottomLeft: =50
                 RadiusBottomRight: =50
                 RadiusTopLeft: =50
                 RadiusTopRight: =50
-                Size: =11
-                Text: ="Check Application Status"
-                Width: =220
-                X: =Parent.Width-Self.Width-Parent.Width*.02
+                Width: =50
+                X: =Parent.Width-Self.Width-Parent.Width*.01
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =2
+
+            USP_Button1_3 As button:
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =0
+                Color: =RGBA(107, 29, 94, 1)
+                Fill: =RGBA(252, 242, 247, 1)
+                Height: =30
+                HoverFill: =ColorFade(Self.Color, 20%)
+                OnSelect: =Navigate('Dashboard Screen',ScreenTransition.CoverRight)
+                Size: =9
+                Text: ="Home"
+                Width: =100
+                X: =USP_userimage_1.X-Self.Width-Parent.Width*.015
                 Y: =(Parent.Height-Self.Height)/2
                 ZIndex: =3
 
@@ -122,22 +120,6 @@
                     X: =(Parent.Width-Self.Width)/2
                     Y: =Label2.Y+Label2.Height+Parent.Height*.015
                     ZIndex: =2
-
-                Button1 As button:
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =0
-                    Color: =RGBA(107, 29, 94, 1)
-                    Fill: =RGBA(252, 242, 247, 1)
-                    Height: =30
-                    HoverFill: =ColorFade(Self.Color, 20%)
-                    Size: =9
-                    Text: ="Primary Holder"
-                    Width: =100
-                    X: |-
-                        =//Parent.Width-Self.Width-Parent.Width*0.03
-                        Rectangle1.X+Rectangle1.Width-Self.Width
-                    Y: =Label2.Y+Label2.Height/2-Self.Height/2
-                    ZIndex: =3
 
                 Container1 As groupContainer.manualLayoutContainer:
                     BorderColor: =RGBA(107, 29, 94, 1)
