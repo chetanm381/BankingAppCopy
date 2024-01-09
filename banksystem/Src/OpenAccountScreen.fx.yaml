@@ -155,8 +155,10 @@ OpenAccountScreen As screen:
 
                     OA_Image1 As image:
                         Height: =Parent.Height*.45
-                        Image: =rafiki
+                        Image: ='Banknote-rafiki'
+                        ImagePosition: =ImagePosition.Fill
                         Width: =Parent.Width
+                        X: =Parent.Width*.01
                         Y: =316
                         ZIndex: =3
 
@@ -180,6 +182,7 @@ OpenAccountScreen As screen:
                         ZIndex: =2
 
                     OA_Label2_2 As label:
+                        Color: =RGBA(107, 29, 94, 1)
                         FontWeight: =FontWeight.Bold
                         Text: ="VERIFY OTP"
                         Width: =318

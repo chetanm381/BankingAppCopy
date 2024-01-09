@@ -127,7 +127,7 @@ UploadSignaturePhotoScreen As screen:
                 USP_Label2_1 As label:
                     Color: =RGBA(107, 29, 94, 1)
                     FontWeight: =FontWeight.Bold
-                    Text: ="UPLOAD LIVE SIGNATURE PHOTO"
+                    Text: ="UPLOAD PASSPORT SIZE PHOTO"
                     Width: =318
                     X: =USP_Rectangle1_1.X
                     Y: =Parent.Height*0.015
@@ -159,27 +159,15 @@ UploadSignaturePhotoScreen As screen:
 
                 USP_Container1_1 As groupContainer.manualLayoutContainer:
                     BorderColor: =RGBA(107, 29, 94, 1)
-                    BorderStyle: =BorderStyle.None
+                    BorderStyle: =BorderStyle.Dashed
                     BorderThickness: =2
                     DropShadow: =DropShadow.None
-                    Fill: =RGBA(252, 242, 247, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
                     Height: =Parent.Height*.75
                     Width: =Parent.Width*0.55
                     X: =USP_Container3_1.X+USP_Container3_1.Width+Parent.Width*0.03
                     Y: =USP_Rectangle1_1.Y+USP_Rectangle1_1.Height+Parent.Height*0.02
                     ZIndex: =6
-
-                    USP_Label6 As label:
-                        Align: =Align.Center
-                        Color: =RGBA(107, 29, 94, 1)
-                        FontWeight: =FontWeight.Semibold
-                        Height: =97
-                        Size: =20
-                        Text: ="Please Click a clear photo in JPG format & Image should be in <10MB"
-                        Width: =505
-                        X: =(Parent.Width-Self.Width)/2
-                        Y: =(Parent.Height-Self.Height)/2-Parent.Height*.05
-                        ZIndex: =1
 
                     USP_Button3 As button:
                         Fill: =RGBA(107, 29, 94, 1)

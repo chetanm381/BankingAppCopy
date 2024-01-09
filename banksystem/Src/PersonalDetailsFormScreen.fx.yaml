@@ -162,7 +162,7 @@ PersonalDetailsFormScreen As screen:
                         FontWeight: =FontWeight.Bold
                         PaddingLeft: =0
                         Size: =20
-                        Text: ="PERSONAL DETAILS"
+                        Text: ="YOUR DETAILS"
                         Width: =Parent.Width*.85
                         X: =Parent.Width*0.15
                         Y: =Parent.Height*0.05
@@ -280,7 +280,7 @@ PersonalDetailsFormScreen As screen:
                     PDF_Label2_1 As label:
                         Color: =RGBA(107, 29, 94, 1)
                         FontWeight: =FontWeight.Bold
-                        Text: ="UPLOAD LIVE SIGNATURE PHOTO"
+                        Text: ="PERSONAL DETAILS"
                         Width: =318
                         X: =PDF_Rectangle1_1.X
                         Y: =Parent.Height*0.015

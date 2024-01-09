@@ -139,6 +139,7 @@
     "OpenAccountScreen",
     "PersonalDetailsUploadDocumentsScreen",
     "PersonalDetailsFormScreen",
-    "UploadLiveVideoScreen"
+    "UploadLiveVideoScreen",
+    "Dashboard Screen"
   ]
 }
