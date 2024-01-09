@@ -58,56 +58,39 @@ UploadSignaturePhotoScreen As screen:
                 Y: =(Parent.Height-Self.Height)/2
                 ZIndex: =3
 
-        USP_doorstepbankingContainer As groupContainer.manualLayoutContainer:
-            AlignInContainer: =AlignInContainer.SetByContainer
-            BorderStyle: =BorderStyle.None
-            DropShadow: =DropShadow.None
-            Fill: =RGBA(252, 242, 247, 1)
-            FillPortions: =0
-            Height: =Parent.Height*.08
-            LayoutMinHeight: =100
-            LayoutMinWidth: =250
-            RadiusBottomLeft: =0
-            RadiusBottomRight: =0
-            RadiusTopLeft: =0
-            RadiusTopRight: =0
-            Width: =Parent.Width
-            X: =USP_HeaderContainer.Height
-            ZIndex: =3
-
-            USP_Label1_1 As label:
-                Color: =RGBA(107, 29, 94, 1)
-                FontWeight: =FontWeight.Bold
-                Height: =64
-                Size: =20
-                Text: ="DOOR STEP BANKING"
-                Width: =520
-                X: =Parent.Width*.02
-                Y: =(Parent.Height-Self.Height)/2
-                ZIndex: =1
-
         USP_ScrollableContainer As groupContainer.manualLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             DropShadow: =DropShadow.None
             FillPortions: =0
-            Height: =Parent.Height*.84
+            Height: =Parent.Height*.92
             LayoutMinHeight: =1000
             LayoutMinWidth: =250
             Width: =Parent.Width
-            Y: =USP_HeaderContainer.Height+USP_doorstepbankingContainer.Height
+            Y: =USP_HeaderContainer.Height
             ZIndex: =4
 
             USP_Container11_1 As groupContainer.manualLayoutContainer:
                 BorderStyle: =BorderStyle.None
                 DropShadow: =DropShadow.None
                 Fill: =RGBA(107, 29, 94, 1)
-                Height: =USP_doorstepbankingContainer.Height*1.5
+                Height: =Parent.Height*0.20
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Width: =Parent.Width
                 ZIndex: =1
+
+                USP_Label1_1 As label:
+                    Color: =RGBA(255, 255, 255, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =64
+                    Size: =20
+                    Text: ="DOOR STEP BANKING"
+                    Width: =520
+                    X: =Parent.Width*.02
+                    Y: =Parent.Height*.1
+                    ZIndex: =1
 
             USP_Container12_1 As groupContainer.manualLayoutContainer:
                 BorderColor: =RGBA(219, 219, 219, 1)
@@ -121,13 +104,13 @@ UploadSignaturePhotoScreen As screen:
                 RadiusTopRight: =20
                 Width: =Parent.Width*.90
                 X: =(Parent.Width-Self.Width)/2
-                Y: =USP_Container11_1.Height*.35
+                Y: =USP_Container11_1.Height*.55
                 ZIndex: =2
 
                 USP_Label2_1 As label:
                     Color: =RGBA(107, 29, 94, 1)
                     FontWeight: =FontWeight.Bold
-                    Text: ="UPLOAD PASSPORT SIZE PHOTO"
+                    Text: ="UPLOAD LIVE SIGNATURE PHOTO"
                     Width: =318
                     X: =USP_Rectangle1_1.X
                     Y: =Parent.Height*0.015
@@ -223,6 +206,7 @@ UploadSignaturePhotoScreen As screen:
                     Fill: =RGBA(11, 163, 54, 1)
                     HoverFill: |-
                         =ColorFade(ColorValue("#0ba336"), -20%)
+                    OnSelect: =Navigate(Screen1,ScreenTransition.Cover)
                     RadiusBottomLeft: =20
                     RadiusBottomRight: =20
                     RadiusTopLeft: =20

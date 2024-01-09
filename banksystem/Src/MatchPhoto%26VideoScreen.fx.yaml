@@ -58,56 +58,39 @@
                 Y: =(Parent.Height-Self.Height)/2
                 ZIndex: =3
 
-        MPV_doorstepbankingContainer_1 As groupContainer.manualLayoutContainer:
-            AlignInContainer: =AlignInContainer.SetByContainer
-            BorderStyle: =BorderStyle.None
-            DropShadow: =DropShadow.None
-            Fill: =RGBA(252, 242, 247, 1)
-            FillPortions: =0
-            Height: =Parent.Height*.08
-            LayoutMinHeight: =100
-            LayoutMinWidth: =250
-            RadiusBottomLeft: =0
-            RadiusBottomRight: =0
-            RadiusTopLeft: =0
-            RadiusTopRight: =0
-            Width: =Parent.Width
-            X: =MPV_HeaderContainer_1.Height
-            ZIndex: =3
-
-            USP_Label1_2 As label:
-                Color: =RGBA(107, 29, 94, 1)
-                FontWeight: =FontWeight.Bold
-                Height: =64
-                Size: =20
-                Text: ="DOOR STEP BANKING"
-                Width: =520
-                X: =Parent.Width*.02
-                Y: =(Parent.Height-Self.Height)/2
-                ZIndex: =1
-
         MPV_ScrollableContainer_1 As groupContainer.manualLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             DropShadow: =DropShadow.None
             FillPortions: =0
-            Height: =Parent.Height*.84
+            Height: =Parent.Height*.92
             LayoutMinHeight: =1000
             LayoutMinWidth: =250
             Width: =Parent.Width
-            Y: =MPV_HeaderContainer_1.Height+MPV_doorstepbankingContainer_1.Height
+            Y: =MPV_HeaderContainer_1.Height
             ZIndex: =4
 
             MPV_Container11_2 As groupContainer.manualLayoutContainer:
                 BorderStyle: =BorderStyle.None
                 DropShadow: =DropShadow.None
                 Fill: =RGBA(107, 29, 94, 1)
-                Height: =MPV_doorstepbankingContainer_1.Height*1.5
+                Height: =Parent.Height*.20
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Width: =Parent.Width
                 ZIndex: =1
+
+                USP_Label1_2 As label:
+                    Color: =RGBA(255, 255, 255, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =64
+                    Size: =20
+                    Text: ="DOOR STEP BANKING"
+                    Width: =520
+                    X: =Parent.Width*.02
+                    Y: =Parent.Height*.1
+                    ZIndex: =1
 
             MPV_Container12_2 As groupContainer.manualLayoutContainer:
                 BorderColor: =RGBA(219, 219, 219, 1)
@@ -121,7 +104,7 @@
                 RadiusTopRight: =20
                 Width: =Parent.Width*.90
                 X: =(Parent.Width-Self.Width)/2
-                Y: =MPV_Container11_2.Height*.35
+                Y: =MPV_Container11_2.Height*.55
                 ZIndex: =2
 
                 MPV_Label2_2 As label:
@@ -178,7 +161,7 @@
                         Y: =(Parent.Height-Self.Height)/2+Parent.Height*.03
                         ZIndex: =1
 
-                        Circle1_1 As circle:
+                        MPV_Circle1_1 As circle:
                             Fill: =RGBA(12, 204, 67, 1)
                             Height: =50
                             Width: =50
@@ -186,14 +169,14 @@
                             Y: =12
                             ZIndex: =1
 
-                        Icon1_1 As icon.Check:
+                        MPV_Icon1_1 As icon.Check:
                             Color: =RGBA(255, 255, 255, 1)
                             DisplayMode: =DisplayMode.View
                             Height: =30
                             Icon: =Icon.Check
                             Width: =30
-                            X: =Parent.Width-Self.Width-Parent.Width*.055
-                            Y: =22
+                            X: =MPV_Circle1_1.X+(MPV_Circle1_1.Width-Self.Width)/2
+                            Y: =MPV_Circle1_1.Y+(MPV_Circle1_1.Height-Self.Height)/2
                             ZIndex: =2
 
                     MPV_Label7_1 As label:
@@ -224,7 +207,7 @@
                         Y: =(Parent.Height-Self.Height)/2+Parent.Height*.03
                         ZIndex: =1
 
-                        Circle1 As circle:
+                        MPV_Circle1 As circle:
                             Fill: =RGBA(12, 204, 67, 1)
                             Height: =50
                             Width: =50
@@ -232,14 +215,14 @@
                             Y: =12
                             ZIndex: =1
 
-                        Icon1 As icon.Check:
+                        MPV_Icon1 As icon.Check:
                             Color: =RGBA(255, 255, 255, 1)
                             DisplayMode: =DisplayMode.View
                             Height: =30
                             Icon: =Icon.Check
                             Width: =30
-                            X: =Parent.Width-Self.Width-Parent.Width*.055
-                            Y: =22
+                            X: =MPV_Circle1.X+(MPV_Circle1.Width-Self.Width)/2
+                            Y: =MPV_Circle1.Y+(MPV_Circle1.Height-Self.Height)/2
                             ZIndex: =2
 
                     MPV_Label7 As label:
@@ -255,6 +238,7 @@
                     Fill: =RGBA(11, 163, 54, 1)
                     HoverFill: |-
                         =ColorFade(ColorValue("#0ba336"), -20%)
+                    OnSelect: =Navigate(UploadSignaturePhotoScreen,ScreenTransition.UnCoverRight)
                     RadiusBottomLeft: =20
                     RadiusBottomRight: =20
                     RadiusTopLeft: =20

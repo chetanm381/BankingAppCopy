@@ -58,50 +58,22 @@ UploadLiveVideoScreen As screen:
                 Y: =(Parent.Height-Self.Height)/2
                 ZIndex: =3
 
-        ULV_doorstepbankingContainer_2 As groupContainer.manualLayoutContainer:
-            AlignInContainer: =AlignInContainer.SetByContainer
-            BorderStyle: =BorderStyle.None
-            DropShadow: =DropShadow.None
-            Fill: =RGBA(252, 242, 247, 1)
-            FillPortions: =0
-            Height: =Parent.Height*.08
-            LayoutMinHeight: =100
-            LayoutMinWidth: =250
-            RadiusBottomLeft: =0
-            RadiusBottomRight: =0
-            RadiusTopLeft: =0
-            RadiusTopRight: =0
-            Width: =Parent.Width
-            X: =ULV_HeaderContainer_2.Height
-            ZIndex: =3
-
-            ULV_Label1_3 As label:
-                Color: =RGBA(107, 29, 94, 1)
-                FontWeight: =FontWeight.Bold
-                Height: =64
-                Size: =20
-                Text: ="DOOR STEP BANKING"
-                Width: =520
-                X: =Parent.Width*.02
-                Y: =(Parent.Height-Self.Height)/2
-                ZIndex: =1
-
         ULV_ScrollableContainer_2 As groupContainer.manualLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             DropShadow: =DropShadow.None
             FillPortions: =0
-            Height: =Parent.Height*.84
+            Height: =Parent.Height*.92
             LayoutMinHeight: =1000
             LayoutMinWidth: =250
             Width: =Parent.Width
-            Y: =ULV_HeaderContainer_2.Height+ULV_doorstepbankingContainer_2.Height
+            Y: =ULV_HeaderContainer_2.Height
             ZIndex: =4
 
             ULV_Container11_3 As groupContainer.manualLayoutContainer:
                 BorderStyle: =BorderStyle.None
                 DropShadow: =DropShadow.None
                 Fill: =RGBA(107, 29, 94, 1)
-                Height: =ULV_doorstepbankingContainer_2.Height*1.5
+                Height: =Parent.Height*.20
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -165,7 +137,7 @@ UploadLiveVideoScreen As screen:
                     Fill: =RGBA(252, 242, 247, 1)
                     Height: =Parent.Height*.75
                     Width: =Parent.Width*.45
-                    X: =Parent.Width-Self.Width-Parent.Width*.03
+                    X: =Parent.Width/2+(Parent.Width/2-Self.Width)/2
                     Y: =ULV_Rectangle1_3.Y+ULV_Rectangle1_3.Height+Parent.Height*0.02
                     ZIndex: =6
 
@@ -176,8 +148,8 @@ UploadLiveVideoScreen As screen:
                         Size: =12
                         Text: ="VIDEO OUTPUT (SPEECH TO TEXT)"
                         Width: =330
-                        X: =32
-                        Y: =28
+                        X: =Parent.Width*0.05
+                        Y: =Parent.Height*0.05
                         ZIndex: =1
 
                     ULV_Label6_1 As label:
@@ -188,8 +160,8 @@ UploadLiveVideoScreen As screen:
                         Text: |-
                             ="PS: Speech to Text"
                         Width: =330
-                        X: =32
-                        Y: =65
+                        X: =Parent.Width*0.05
+                        Y: =ULV_Label6.Y+ULV_Label6.Height+Parent.Height*0.02
                         ZIndex: =2
 
                     ULV_Label6_2 As label:
@@ -199,8 +171,8 @@ UploadLiveVideoScreen As screen:
                         Size: =12
                         Text: ="My Name is ............."
                         Width: =330
-                        X: =32
-                        Y: =150
+                        X: =Parent.Width*0.05
+                        Y: =ULV_Label6_1.Y+ULV_Label6_1.Height+Parent.Height*0.05
                         ZIndex: =3
 
                 ULV_Container3_3 As groupContainer.manualLayoutContainer:
@@ -209,7 +181,7 @@ UploadLiveVideoScreen As screen:
                     Fill: =RGBA(252, 242, 247, 1)
                     Height: =Parent.Height*.75
                     Width: =Parent.Width*.45
-                    X: =Parent.Width*.03
+                    X: =(Parent.Width/2-Self.Width)/2
                     Y: =ULV_Rectangle1_3.Y+ULV_Rectangle1_3.Height+Parent.Height*0.02
                     ZIndex: =7
 
@@ -221,6 +193,24 @@ UploadLiveVideoScreen As screen:
                         X: =(Parent.Width-Self.Width)/2
                         Y: =(Parent.Height-Self.Height)/2+Parent.Height*.03
                         ZIndex: =1
+
+                        PDUD_Image1_3 As image:
+                            Height: =Parent.Height*0.35
+                            Image: ='cloud-computing'
+                            Width: =Parent.Width*0.35
+                            X: =(Parent.Width-Self.Width)/2
+                            Y: =Parent.Height*0.20
+                            ZIndex: =1
+
+                        PDUD_Label8_3 As label:
+                            Align: =Align.Center
+                            Height: =31
+                            Size: =9
+                            Text: ="Drop file here/click to upload"
+                            Width: =186
+                            X: =(Parent.Width-Self.Width)/2
+                            Y: =PDUD_Image1_1.Y+PDUD_Image1_1.Height
+                            ZIndex: =2
 
                     ULV_Label7_2 As label:
                         Color: =RGBA(107, 29, 94, 1)
@@ -235,6 +225,7 @@ UploadLiveVideoScreen As screen:
                     Fill: =RGBA(11, 163, 54, 1)
                     HoverFill: |-
                         =ColorFade(ColorValue("#0ba336"), -20%)
+                    OnSelect: =Navigate('MatchPhoto&VideoScreen',ScreenTransition.CoverRight)
                     RadiusBottomLeft: =20
                     RadiusBottomRight: =20
                     RadiusTopLeft: =20

@@ -1,6 +1,7 @@
 App As appinfo:
     BackEnabled: =true
     OnStart: =Set(ThankyouPopUp,false)
+    StartScreen: =OpenAccountScreen
     Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:
