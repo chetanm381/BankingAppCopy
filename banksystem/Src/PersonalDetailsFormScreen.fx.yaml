@@ -130,114 +130,6 @@ PersonalDetailsFormScreen As screen:
                     Width: =Parent.Width*.32
                     ZIndex: =1
 
-                    PDF_Label7_1 As label:
-                        Align: =Align.Center
-                        Color: =RGBA(107, 29, 94, 1)
-                        FontWeight: =FontWeight.Bold
-                        Size: =20
-                        Text: ="PERSONAL DETAILS"
-                        Width: =Parent.Width*.85
-                        X: =32
-                        Y: =24
-                        ZIndex: =1
-
-                    PDF_Label6_3 As label:
-                        FontWeight: =FontWeight.Semibold
-                        Height: =37
-                        Size: =12
-                        Text: ="Name"
-                        Width: =82
-                        X: =47
-                        Y: =75
-                        ZIndex: =2
-
-                    PDF_TextInput2_8 As text:
-                        BorderColor: =RGBA(107, 29, 94, 1)
-                        BorderThickness: =0
-                        Default: =""
-                        Height: =42
-                        HintText: ="First Name"
-                        HoverBorderColor: =RGBA(107, 29, 94, 1)
-                        HoverFill: =ColorFade( RGBA(107, 29, 94, 1),70%)
-                        Size: =12
-                        Width: =274
-                        X: =47
-                        Y: =119
-                        ZIndex: =3
-
-                    PDF_Label6_4 As label:
-                        FontWeight: =FontWeight.Semibold
-                        Size: =12
-                        Text: ="Date of Birth"
-                        Width: =128
-                        X: =47
-                        Y: =186
-                        ZIndex: =4
-
-                    PDF_Container2_3 As groupContainer.manualLayoutContainer:
-                        BorderColor: =RGBA(107, 29, 94, 1)
-                        DropShadow: =DropShadow.None
-                        Fill: =RGBA(250, 250, 250, 1)
-                        Height: =40
-                        Width: =274
-                        X: =47
-                        Y: =225
-                        ZIndex: =5
-
-                        PDF_Image2_3 As image:
-                            Height: =30
-                            Image: =cake
-                            Width: =30
-                            X: =12
-                            Y: =(Parent.Height-Self.Height)/2
-                            ZIndex: =1
-
-                        PDF_Rectangle3_3 As rectangle:
-                            BorderThickness: =1
-                            Fill: =RGBA(202, 202, 202, 1)
-                            Height: =30
-                            Width: =2
-                            X: =PDF_Image2_3.X+PDF_Image2_3.Width+Parent.Width*0.05
-                            Y: =5
-                            ZIndex: =2
-
-                        PDF_DatePicker As datepicker:
-                            BorderThickness: =0
-                            Height: =Parent.Height
-                            IconBackground: =Color.White
-                            IconFill: |-
-                                =ColorValue("#969696")
-                            PaddingLeft: =5
-                            PaddingTop: =5
-                            Size: =11
-                            Width: =Parent.Width-PDF_Rectangle3_3.X+PDF_Rectangle3_3.Width
-                            X: =53.69999999999999
-                            ZIndex: =3
-
-                    PDF_Label6_5 As label:
-                        FontWeight: =FontWeight.Semibold
-                        Size: =12
-                        Text: ="Address"
-                        Width: =128
-                        X: =47
-                        Y: =287
-                        ZIndex: =6
-
-                    PDF_TextInput2_9 As text:
-                        BorderColor: =RGBA(107, 29, 94, 1)
-                        BorderThickness: =0
-                        Default: =""
-                        Height: =140
-                        HintText: ="Enter Address"
-                        HoverBorderColor: =RGBA(107, 29, 94, 1)
-                        HoverFill: =ColorFade( RGBA(107, 29, 94, 1),70%)
-                        Mode: =TextMode.MultiLine
-                        Size: =12
-                        Width: =274
-                        X: =47
-                        Y: =327
-                        ZIndex: =7
-
                     PDF_Icon3 As icon.Check:
                         Color: =RGBA(11, 163, 54, 1)
                         Height: =20
@@ -256,7 +148,7 @@ PersonalDetailsFormScreen As screen:
                         Y: =195
                         ZIndex: =10
 
-                    PDF_Icon3_1 As icon.Check:
+                    PDF_Icon30_1 As icon.Check:
                         Color: =RGBA(11, 163, 54, 1)
                         Height: =20
                         Icon: =Icon.Check
@@ -265,10 +157,124 @@ PersonalDetailsFormScreen As screen:
                         Y: =297
                         ZIndex: =11
 
+                    PDF_Label7_10 As label:
+                        Color: =RGBA(107, 29, 94, 1)
+                        FontWeight: =FontWeight.Bold
+                        PaddingLeft: =0
+                        Size: =20
+                        Text: ="PERSONAL DETAILS"
+                        Width: =Parent.Width*.85
+                        X: =Parent.Width*0.15
+                        Y: =Parent.Height*0.05
+                        ZIndex: =12
+
+                    PDF_Label6_30 As label:
+                        FontWeight: =FontWeight.Semibold
+                        PaddingLeft: =0
+                        Size: =12
+                        Text: ="Name"
+                        Width: =82
+                        X: =Parent.Width*0.15
+                        Y: =PDF_Label7_10.Y+PDF_Label7_10.Height+Parent.Height*0.01
+                        ZIndex: =13
+
+                    PDF_TextInput2_80 As text:
+                        BorderColor: =RGBA(107, 29, 94, 1)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =0
+                        Default: =""
+                        Height: =42
+                        HintText: ="First Name"
+                        HoverBorderColor: =RGBA(107, 29, 94, 1)
+                        HoverFill: =ColorFade( RGBA(107, 29, 94, 1),70%)
+                        Size: =12
+                        Width: =Parent.Width*.70
+                        X: =Parent.Width*0.15
+                        Y: =PDF_Label6_30.Y+PDF_Label6_30.Height+Parent.Height*.01
+                        ZIndex: =14
+
+                    PDF_Label6_4 As label:
+                        FontWeight: =FontWeight.Semibold
+                        PaddingLeft: =0
+                        Size: =12
+                        Text: ="Date of Birth"
+                        Width: =128
+                        X: =Parent.Width*0.15
+                        Y: =PDF_TextInput2_80.Y+PDF_TextInput2_80.Height+Parent.Height*.03
+                        ZIndex: =15
+
+                    PDF_Label6_5 As label:
+                        FontWeight: =FontWeight.Semibold
+                        PaddingLeft: =0
+                        Size: =12
+                        Text: ="Address"
+                        Width: =128
+                        X: =Parent.Width*0.15
+                        Y: =PDF_Container2_23.Y+PDF_Container2_23.Height+Parent.Height*.03
+                        ZIndex: =17
+
+                    PDF_TextInput2_9 As text:
+                        BorderColor: =RGBA(107, 29, 94, 1)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =0
+                        Default: =""
+                        Height: =140
+                        HintText: ="Enter Address"
+                        HoverBorderColor: =RGBA(107, 29, 94, 1)
+                        HoverFill: =ColorFade( RGBA(107, 29, 94, 1),70%)
+                        Mode: =TextMode.MultiLine
+                        Size: =12
+                        Width: =Parent.Width*.70
+                        X: =Parent.Width*0.15
+                        Y: =PDF_Label6_5.Y+PDF_Label6_5.Height+Parent.Height*.01
+                        ZIndex: =18
+
+                    PDF_Container2_23 As groupContainer.manualLayoutContainer:
+                        BorderColor: =RGBA(107, 29, 94, 1)
+                        BorderStyle: =BorderStyle.None
+                        DropShadow: =DropShadow.None
+                        Fill: =RGBA(255, 255, 255, 1)
+                        Height: =40
+                        Width: =Parent.Width*.70
+                        X: =Parent.Width*0.15
+                        Y: =PDF_Label6_4.Y+PDF_Label6_4.Height+Parent.Height*.01
+                        ZIndex: =19
+
+                        PDF_Image2_133 As image:
+                            Height: =30
+                            Image: =cake
+                            Width: =30
+                            X: =(PDF_Rectangle3_300.X-Self.Width)/2
+                            Y: =(Parent.Height-Self.Height)/2
+                            ZIndex: =1
+
+                        PDF_Rectangle3_300 As rectangle:
+                            BorderColor: =RGBA(107, 29, 94, 1)
+                            BorderThickness: =1
+                            Fill: =RGBA(202, 202, 202, 1)
+                            Height: =30
+                            Width: =2
+                            X: =PDF_DatePicker1_29.X-Self.Width
+                            Y: =5
+                            ZIndex: =2
+
+                        PDF_DatePicker1_29 As datepicker:
+                            BorderThickness: =0
+                            Height: =Parent.Height
+                            IconBackground: =Color.White
+                            IconFill: |-
+                                =ColorValue("#969696")
+                            PaddingLeft: =5
+                            PaddingTop: =5
+                            Size: =11
+                            Width: =Parent.Width*.80
+                            X: =Parent.Width-Self.Width
+                            ZIndex: =3
+
                 PDF_Container7 As groupContainer.manualLayoutContainer:
                     Height: =576
-                    Width: =Parent.Width-PDF_Container5_2.Width
-                    X: =393
+                    Width: =Parent.Width*.68
+                    X: =PDF_Container5_2.X+PDF_Container5_2.Width
                     ZIndex: =2
 
                     PDF_Label2_1 As label:
