@@ -29,7 +29,7 @@
                 Y: =(Parent.Height-Self.Height)/2
                 ZIndex: =1
 
-            USP_userimage_1 As image:
+            CPS_userimage_1 As image:
                 Height: =50
                 Image: =User().Image
                 RadiusBottomLeft: =50
@@ -41,8 +41,8 @@
                 Y: =(Parent.Height-Self.Height)/2
                 ZIndex: =2
 
-            USP_Button1_3 As button:
-                BorderStyle: =BorderStyle.None
+            CPS_Button1_3 As button:
+                BorderColor: =
                 BorderThickness: =0
                 Color: =RGBA(107, 29, 94, 1)
                 Fill: =RGBA(252, 242, 247, 1)
@@ -52,7 +52,7 @@
                 Size: =9
                 Text: ="Home"
                 Width: =100
-                X: =USP_userimage_1.X-Self.Width-Parent.Width*.015
+                X: =CPS_userimage_1.X-Self.Width-Parent.Width*.015
                 Y: =(Parent.Height-Self.Height)/2
                 ZIndex: =3
 
@@ -390,14 +390,14 @@
                     Y: =(Container1.Y+Container1.Height)+(Parent.Height-(Container1.Y+Container1.Height)-Self.Height)/2
                     ZIndex: =9
 
-    TS_ContainerForThankYouPop_1 As groupContainer.manualLayoutContainer:
+    CPS_ContainerForThankYouPop_1 As groupContainer.manualLayoutContainer:
         Fill: =RGBA(219, 219, 219, 0.71)
         Height: =Parent.Height
         Visible: =ThankyouPopUp
         Width: =Parent.Width
         ZIndex: =3
 
-        TS_PopUpContainerDetails_1 As groupContainer.manualLayoutContainer:
+        CPS_PopUpContainerDetails_1 As groupContainer.manualLayoutContainer:
             Fill: =RGBA(255, 255, 255, 1)
             Height: =Parent.Height*.6
             RadiusBottomLeft: =20

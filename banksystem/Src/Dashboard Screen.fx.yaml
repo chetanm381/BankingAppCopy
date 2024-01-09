@@ -1,6 +1,6 @@
 "'Dashboard Screen' As screen":
 
-    HeaderContainer_1 As groupContainer.manualLayoutContainer:
+    DS_HeaderContainer_1 As groupContainer.manualLayoutContainer:
         BorderStyle: =BorderStyle.None
         DropShadow: =DropShadow.None
         Height: =Parent.Height*.08
@@ -17,7 +17,7 @@
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =1
 
-        USP_userimage_7 As image:
+        DS_userimage_7 As image:
             Height: =50
             Image: =User().Image
             RadiusBottomLeft: =50
@@ -29,7 +29,7 @@
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =2
 
-        USP_Button1_9 As button:
+        DS_Button1_9 As button:
             BorderStyle: =BorderStyle.None
             BorderThickness: =0
             Color: =RGBA(107, 29, 94, 1)
@@ -40,7 +40,7 @@
             Size: =9
             Text: ="Home"
             Width: =100
-            X: =USP_userimage_7.X-Self.Width-Parent.Width*.015
+            X: =DS_userimage_7.X-Self.Width-Parent.Width*.015
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =3
 

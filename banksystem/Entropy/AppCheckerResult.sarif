@@ -704,19 +704,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'CustomerProfile Screen'.TS_ContainerForThankYouPop_1.TS_PopUpContainerDetails_1.Icon2.AccessibleLabel"
+                  "fullyQualifiedName": "'CustomerProfile Screen'.CPS_ContainerForThankYouPop_1.CPS_PopUpContainerDetails_1.Icon2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'CustomerProfile Screen'.TS_ContainerForThankYouPop_1.TS_PopUpContainerDetails_1.Icon2.AccessibleLabel",
+                  "fullyQualifiedName": "'CustomerProfile Screen'.CPS_ContainerForThankYouPop_1.CPS_PopUpContainerDetails_1.Icon2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "CustomerProfile Screen",
-                "type": "'CustomerProfile Screen'.TS_ContainerForThankYouPop_1.TS_PopUpContainerDetails_1.Icon2"
+                "type": "'CustomerProfile Screen'.CPS_ContainerForThankYouPop_1.CPS_PopUpContainerDetails_1.Icon2"
               }
             }
           ],
@@ -734,19 +734,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'CustomerProfile Screen'.TS_ContainerForThankYouPop_1.TS_PopUpContainerDetails_1.Icon2.TabIndex"
+                  "fullyQualifiedName": "'CustomerProfile Screen'.CPS_ContainerForThankYouPop_1.CPS_PopUpContainerDetails_1.Icon2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'CustomerProfile Screen'.TS_ContainerForThankYouPop_1.TS_PopUpContainerDetails_1.Icon2.TabIndex",
+                  "fullyQualifiedName": "'CustomerProfile Screen'.CPS_ContainerForThankYouPop_1.CPS_PopUpContainerDetails_1.Icon2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "CustomerProfile Screen",
-                "type": "'CustomerProfile Screen'.TS_ContainerForThankYouPop_1.TS_PopUpContainerDetails_1.Icon2"
+                "type": "'CustomerProfile Screen'.CPS_ContainerForThankYouPop_1.CPS_PopUpContainerDetails_1.Icon2"
               }
             }
           ],
@@ -775,6 +775,36 @@
               },
               "properties": {
                 "member": "cloud-computing",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.rafiki"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.rafiki",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "rafiki",
                 "module": "App",
                 "type": "App"
               }

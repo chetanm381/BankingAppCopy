@@ -29,7 +29,7 @@ UploadLiveVideoScreen As screen:
                 Y: =(Parent.Height-Self.Height)/2
                 ZIndex: =1
 
-            USP_userimage_6 As image:
+            ULV_userimage_6 As image:
                 Height: =50
                 Image: =User().Image
                 RadiusBottomLeft: =50
@@ -41,7 +41,7 @@ UploadLiveVideoScreen As screen:
                 Y: =(Parent.Height-Self.Height)/2
                 ZIndex: =2
 
-            USP_Button1_8 As button:
+            ULV_Button1_8 As button:
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =0
                 Color: =RGBA(107, 29, 94, 1)
@@ -52,7 +52,7 @@ UploadLiveVideoScreen As screen:
                 Size: =9
                 Text: ="Home"
                 Width: =100
-                X: =USP_userimage_6.X-Self.Width-Parent.Width*.015
+                X: =ULV_userimage_6.X-Self.Width-Parent.Width*.015
                 Y: =(Parent.Height-Self.Height)/2
                 ZIndex: =3
 

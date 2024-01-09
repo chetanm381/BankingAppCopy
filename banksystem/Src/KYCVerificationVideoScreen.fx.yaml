@@ -29,7 +29,7 @@ KYCVerificationVideoScreen As screen:
                 Y: =(Parent.Height-Self.Height)/2
                 ZIndex: =1
 
-            USP_userimage_8 As image:
+            KVV_userimage_8 As image:
                 Height: =50
                 Image: =User().Image
                 RadiusBottomLeft: =50
@@ -41,7 +41,7 @@ KYCVerificationVideoScreen As screen:
                 Y: =(Parent.Height-Self.Height)/2
                 ZIndex: =2
 
-            USP_Button1_10 As button:
+            KVV_Button1_10 As button:
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =0
                 Color: =RGBA(107, 29, 94, 1)
@@ -52,7 +52,7 @@ KYCVerificationVideoScreen As screen:
                 Size: =9
                 Text: ="Home"
                 Width: =100
-                X: =USP_userimage_8.X-Self.Width-Parent.Width*.015
+                X: =KVV_userimage_8.X-Self.Width-Parent.Width*.015
                 Y: =(Parent.Height-Self.Height)/2
                 ZIndex: =3
 
