@@ -135,8 +135,8 @@ PersonalDetailsFormScreen As screen:
                         Height: =20
                         Icon: =Icon.Check
                         Width: =20
-                        X: =291
-                        Y: =83
+                        X: =PDF_TextInput2_80.X+PDF_TextInput2_80.Width-Self.Width
+                        Y: =(PDF_Label6_30.Height-Self.Height)/2+PDF_Label6_30.Y
                         ZIndex: =8
 
                     PDF_Icon3_2 As icon.Check:
@@ -144,8 +144,8 @@ PersonalDetailsFormScreen As screen:
                         Height: =20
                         Icon: =Icon.Check
                         Width: =20
-                        X: =291
-                        Y: =195
+                        X: =PDF_Container2_23.X+PDF_Container2_23.Width-Self.Width
+                        Y: =(PDF_Label6_4.Height-Self.Height)/2+PDF_Label6_4.Y
                         ZIndex: =10
 
                     PDF_Icon30_1 As icon.Check:
@@ -153,8 +153,8 @@ PersonalDetailsFormScreen As screen:
                         Height: =20
                         Icon: =Icon.Check
                         Width: =20
-                        X: =291
-                        Y: =297
+                        X: =PDF_Icon3.X
+                        Y: =(PDF_Label6_5.Height-Self.Height)/2+PDF_Label6_5.Y
                         ZIndex: =11
 
                     PDF_Label7_10 As label:
@@ -272,7 +272,7 @@ PersonalDetailsFormScreen As screen:
                             ZIndex: =3
 
                 PDF_Container7 As groupContainer.manualLayoutContainer:
-                    Height: =576
+                    Height: =Parent.Height
                     Width: =Parent.Width*.68
                     X: =PDF_Container5_2.X+PDF_Container5_2.Width
                     ZIndex: =2
@@ -315,10 +315,10 @@ PersonalDetailsFormScreen As screen:
                         BorderStyle: =BorderStyle.Dashed
                         BorderThickness: =1
                         DropShadow: =DropShadow.None
-                        Height: =400
-                        Width: =785
+                        Height: =Parent.Height*.70
+                        Width: =PDF_Rectangle1_1.Width
                         X: =(Parent.Width-Self.Width)/2
-                        Y: =80
+                        Y: =PDF_Rectangle1_1.Y+PDF_Rectangle1_1.Height+Parent.Height*0.04
                         ZIndex: =4
 
                         PDF_Label4_7 As label:
@@ -327,7 +327,7 @@ PersonalDetailsFormScreen As screen:
                             Text: ="Name "
                             Width: =Parent.Width*.40
                             X: =Parent.Width*.05
-                            Y: =Parent.Height*.03
+                            Y: =Parent.Height*.06
                             ZIndex: =1
 
                         PDF_Label4_8 As label:
@@ -336,7 +336,7 @@ PersonalDetailsFormScreen As screen:
                             Text: ="Name"
                             Width: =Parent.Width*.40
                             X: =Parent.Width*.55
-                            Y: =Parent.Height*.03
+                            Y: =Parent.Height*.06
                             ZIndex: =2
 
                         PDF_TextInput1_4 As text:
@@ -349,7 +349,7 @@ PersonalDetailsFormScreen As screen:
                             Height: =35
                             Size: =11
                             Width: =Parent.Width*.40
-                            X: =Parent.Width*.05
+                            X: =(Parent.Width/2-Self.Width)/2
                             Y: =PDF_Label4_7.Y+PDF_Label4_7.Height+Parent.Height*.01
                             ZIndex: =3
 
@@ -362,7 +362,7 @@ PersonalDetailsFormScreen As screen:
                             Height: =35
                             Size: =11
                             Width: =Parent.Width*.40
-                            X: =Parent.Width*.55
+                            X: =Parent.Width/2+(Parent.Width/2-Self.Width)/2
                             Y: =PDF_Label4_7.Y+PDF_Label4_7.Height+Parent.Height*.01
                             ZIndex: =4
 
@@ -394,7 +394,7 @@ PersonalDetailsFormScreen As screen:
                             Height: =35
                             Size: =11
                             Width: =Parent.Width*.40
-                            X: =Parent.Width*.55
+                            X: =Parent.Width/2+(Parent.Width/2-Self.Width)/2
                             Y: =PDF_Label4_9.Y+PDF_Label4_9.Height+Parent.Height*0.01
                             ZIndex: =7
 
@@ -405,15 +405,15 @@ PersonalDetailsFormScreen As screen:
                             Fill: =RGBA(250, 250, 250, 1)
                             Height: =35
                             Width: =Parent.Width*.40
-                            X: =39
-                            Y: =153
+                            X: =(Parent.Width/2-Self.Width)/2
+                            Y: =PDF_Label4_9.Y+PDF_Label4_9.Height+Parent.Height*0.01
                             ZIndex: =11
 
                             PDF_Image2_4 As image:
                                 Height: =30
                                 Image: =cake
                                 Width: =30
-                                X: =Parent.Width*.05
+                                X: =(PDF_Rectangle3_4.X-Self.Width)/2
                                 Y: =(Parent.Height-Self.Height)/2
                                 ZIndex: =1
 
@@ -423,7 +423,7 @@ PersonalDetailsFormScreen As screen:
                                 Fill: =RGBA(202, 202, 202, 1)
                                 Height: =30
                                 Width: =2
-                                X: =55
+                                X: =Parent.Width*.20
                                 Y: =1.5
                                 ZIndex: =2
 
@@ -436,8 +436,8 @@ PersonalDetailsFormScreen As screen:
                                 PaddingLeft: =5
                                 PaddingTop: =5
                                 Size: =11
-                                Width: =254
-                                X: =60
+                                Width: =Parent.Width-PDF_Rectangle3_4.X-PDF_Rectangle3_4.Width
+                                X: =Parent.Width-Self.Width
                                 ZIndex: =3
 
                         PDF_Label4_11 As label:
@@ -446,7 +446,7 @@ PersonalDetailsFormScreen As screen:
                             Text: ="Aadhar Card Name"
                             Width: =Parent.Width*.40
                             X: =Parent.Width*.05
-                            Y: =217
+                            Y: =PDF_TextInput1_6.Y+PDF_TextInput1_6.Height+Parent.Height*0.03
                             ZIndex: =12
 
                         PDF_Label4_12 As label:
@@ -454,8 +454,8 @@ PersonalDetailsFormScreen As screen:
                             Size: =11
                             Text: ="PAN Card Number"
                             Width: =Parent.Width*.40
-                            X: =431
-                            Y: =217
+                            X: =Parent.Width*.55
+                            Y: =PDF_TextInput1_6.Y+PDF_TextInput1_6.Height+Parent.Height*0.03
                             ZIndex: =13
 
                         PDF_TextInput1_7 As text:
@@ -469,8 +469,8 @@ PersonalDetailsFormScreen As screen:
                             Height: =35
                             Size: =11
                             Width: =Parent.Width*.40
-                            X: =39
-                            Y: =257
+                            X: =(Parent.Width/2-Self.Width)/2
+                            Y: =PDF_Label4_12.Y+PDF_Label4_12.Height+Parent.Height*0.01
                             ZIndex: =14
 
                         PDF_TextInput1_8 As text:
@@ -483,24 +483,26 @@ PersonalDetailsFormScreen As screen:
                             Height: =35
                             Size: =11
                             Width: =Parent.Width*.40
-                            X: =431
-                            Y: =257
+                            X: =Parent.Width/2+(Parent.Width/2-Self.Width)/2
+                            Y: =PDF_Label4_12.Y+PDF_Label4_12.Height+Parent.Height*0.01
                             ZIndex: =15
 
                         PDF_Label10 As label:
                             Align: =Align.Center
                             FontWeight: =FontWeight.Bold
                             Text: ="AADHAR CARD"
-                            X: =104
-                            Y: =348
+                            Width: =Parent.Width*.40
+                            X: =(Parent.Width/2-Self.Width)/2
+                            Y: =(PDF_TextInput1_8.Y+PDF_TextInput1_8.Height)+(Parent.Height-(PDF_TextInput1_8.Y+PDF_TextInput1_8.Height)-Self.Height)/2
                             ZIndex: =16
 
                         PDF_Label10_1 As label:
                             Align: =Align.Center
                             FontWeight: =FontWeight.Bold
                             Text: ="PAN CARD"
-                            X: =513
-                            Y: =348
+                            Width: =Parent.Width*.40
+                            X: =Parent.Width/2+(Parent.Width/2-Self.Width)/2
+                            Y: =(PDF_TextInput1_8.Y+PDF_TextInput1_8.Height)+(Parent.Height-(PDF_TextInput1_8.Y+PDF_TextInput1_8.Height)-Self.Height)/2
                             ZIndex: =17
 
                         PDF_Icon3_3 As icon.Check:
@@ -508,8 +510,8 @@ PersonalDetailsFormScreen As screen:
                             Height: =20
                             Icon: =Icon.Check
                             Width: =20
-                            X: =322
-                            Y: =22
+                            X: =PDF_TextInput1_4.Width+PDF_TextInput1_4.X-Self.Width
+                            Y: =PDF_Label4_7.Y+(PDF_Label4_7.Height-Self.Height)/2
                             ZIndex: =18
 
                         PDF_Icon3_4 As icon.Check:
@@ -517,8 +519,8 @@ PersonalDetailsFormScreen As screen:
                             Height: =20
                             Icon: =Icon.Check
                             Width: =20
-                            X: =322
-                            Y: =113
+                            X: =PDF_TextInput1_4.Width+PDF_TextInput1_4.X-Self.Width
+                            Y: =PDF_Label4_9.Y+(PDF_Label4_9.Height-Self.Height)/2
                             ZIndex: =19
 
                         PDF_Icon3_5 As icon.Check:
@@ -526,8 +528,8 @@ PersonalDetailsFormScreen As screen:
                             Height: =20
                             Icon: =Icon.Check
                             Width: =20
-                            X: =322
-                            Y: =227
+                            X: =PDF_TextInput1_4.Width+PDF_TextInput1_4.X-Self.Width
+                            Y: =PDF_Label4_11.Y+(PDF_Label4_11.Height-Self.Height)/2
                             ZIndex: =20
 
                         PDF_Icon3_6 As icon.Check:
@@ -535,8 +537,8 @@ PersonalDetailsFormScreen As screen:
                             Height: =20
                             Icon: =Icon.Check
                             Width: =20
-                            X: =715
-                            Y: =22
+                            X: =PDF_TextInput1_5.Width+PDF_TextInput1_5.X-Self.Width
+                            Y: =PDF_Label4_7.Y+(PDF_Label4_7.Height-Self.Height)/2
                             ZIndex: =21
 
                         PDF_Icon3_7 As icon.Check:
@@ -544,8 +546,8 @@ PersonalDetailsFormScreen As screen:
                             Height: =20
                             Icon: =Icon.Check
                             Width: =20
-                            X: =715
-                            Y: =112
+                            X: =PDF_TextInput1_5.Width+PDF_TextInput1_5.X-Self.Width
+                            Y: =PDF_Label4_9.Y+(PDF_Label4_9.Height-Self.Height)/2
                             ZIndex: =22
 
                         PDF_Icon3_8 As icon.Check:
@@ -553,8 +555,8 @@ PersonalDetailsFormScreen As screen:
                             Height: =20
                             Icon: =Icon.Check
                             Width: =20
-                            X: =715
-                            Y: =230
+                            X: =PDF_TextInput1_5.Width+PDF_TextInput1_5.X-Self.Width
+                            Y: =PDF_Label4_11.Y+(PDF_Label4_11.Height-Self.Height)/2
                             ZIndex: =23
 
                     PDF_Button2_4 As button:
