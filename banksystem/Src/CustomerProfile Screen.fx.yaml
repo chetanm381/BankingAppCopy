@@ -1,4 +1,4 @@
-Screen1 As screen:
+"'CustomerProfile Screen' As screen":
 
     BgContainer As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
@@ -96,7 +96,7 @@ Screen1 As screen:
                 BorderStyle: =BorderStyle.None
                 DropShadow: =DropShadow.Regular
                 Fill: =RGBA(255, 255, 255, 1)
-                Height: =Screen1.Height*.75
+                Height: ='CustomerProfile Screen'.Height*.75
                 RadiusBottomLeft: =20
                 RadiusBottomRight: =20
                 RadiusTopLeft: =20
@@ -396,6 +396,7 @@ Screen1 As screen:
                     HoverColor: =RGBA(107, 29, 94, 1)
                     HoverFill: |-
                         =ColorFade(ColorValue("#A6A6A6"), 80%)
+                    OnSelect: =Back()
                     RadiusBottomLeft: =20
                     RadiusBottomRight: =20
                     RadiusTopLeft: =20
@@ -451,9 +452,9 @@ Screen1 As screen:
 
             TS_ThankYouLabel_5 As label:
                 Align: =Align.Center
-                Color: =RGBA(107, 29, 94, 1)
+                Color: =RGBA(158, 108, 151, 1)
+                FontWeight: =FontWeight.Semibold
                 Height: =50
-                Size: =15
                 Text: ="Your Account will be opened shortly."
                 Width: =Parent.Width*.80
                 X: =(Parent.Width-Self.Width)/2
@@ -468,17 +469,13 @@ Screen1 As screen:
                 Y: =Parent.Height*.02
                 ZIndex: =4
 
-            TS_Close As button:
+            Icon2 As icon.Cancel:
                 Color: =RGBA(107, 29, 94, 1)
-                Fill: =RGBA(246, 246, 246, 1)
-                HoverBorderColor: =RGBA(107, 29, 94, 1)
-                HoverColor: =RGBA(107, 29, 94, 1)
-                HoverFill: =ColorFade(Self.Fill, 60%)
+                Height: =35
+                Icon: =Icon.Cancel
                 OnSelect: =Set(ThankyouPopUp,false)
-                Size: =12
-                Text: ="Close"
-                Width: =Parent.Width*.20
-                X: =(Parent.Width-Self.Width)/2
-                Y: =Parent.Height-Self.Height-Parent.Height*0.04
-                ZIndex: =5
+                Width: =Parent.Width*.05
+                X: =Parent.Width*.9
+                Y: =Parent.Height-Self.Height-Parent.Height*0.9
+                ZIndex: =6
 

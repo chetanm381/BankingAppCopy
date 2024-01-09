@@ -186,6 +186,24 @@ UploadSignaturePhotoScreen As screen:
                         Y: =Parent.Height-Self.Height-Parent.Height*0.15
                         ZIndex: =3
 
+                    USP_Image1_5 As image:
+                        Height: =Parent.Height*0.2
+                        Image: ='cloud-computing (1)'
+                        Width: =Parent.Width*0.2
+                        X: =(Parent.Width-Self.Width)/2
+                        Y: =Parent.Height*0.3
+                        ZIndex: =4
+
+                    USP_Label8_5 As label:
+                        Align: =Align.Center
+                        Height: =31
+                        Size: =9
+                        Text: ="Drop file here/click to upload"
+                        Width: =186
+                        X: =(Parent.Width-Self.Width)/2
+                        Y: =USP_Image1_5.Y+USP_Image1_5.Height
+                        ZIndex: =5
+
                 USP_Container3_1 As groupContainer.manualLayoutContainer:
                     BorderStyle: =BorderStyle.None
                     DropShadow: =DropShadow.None
@@ -206,7 +224,7 @@ UploadSignaturePhotoScreen As screen:
                     Fill: =RGBA(11, 163, 54, 1)
                     HoverFill: |-
                         =ColorFade(ColorValue("#0ba336"), -20%)
-                    OnSelect: =Navigate(Screen1,ScreenTransition.Cover)
+                    OnSelect: =Navigate('CustomerProfile Screen',ScreenTransition.Cover)
                     RadiusBottomLeft: =20
                     RadiusBottomRight: =20
                     RadiusTopLeft: =20
@@ -226,6 +244,7 @@ UploadSignaturePhotoScreen As screen:
                     HoverColor: =RGBA(107, 29, 94, 1)
                     HoverFill: |-
                         =ColorFade(ColorValue("#A6A6A6"), 80%)
+                    OnSelect: =Back()
                     RadiusBottomLeft: =20
                     RadiusBottomRight: =20
                     RadiusTopLeft: =20

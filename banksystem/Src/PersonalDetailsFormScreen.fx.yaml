@@ -96,7 +96,7 @@ PersonalDetailsFormScreen As screen:
                 BorderStyle: =BorderStyle.None
                 DropShadow: =DropShadow.Regular
                 Fill: =RGBA(255, 255, 255, 1)
-                Height: =Screen1.Height*.75
+                Height: ='CustomerProfile Screen'.Height*.75
                 RadiusBottomLeft: =20
                 RadiusBottomRight: =20
                 RadiusTopLeft: =20
@@ -546,7 +546,7 @@ PersonalDetailsFormScreen As screen:
                         Fill: =RGBA(11, 163, 54, 1)
                         HoverFill: |-
                             =ColorFade(ColorValue("#0ba336"), -20%)
-                        OnSelect: =
+                        OnSelect: =Navigate(UploadPassportSizePhoto,ScreenTransition.CoverRight)
                         RadiusBottomLeft: =20
                         RadiusBottomRight: =20
                         RadiusTopLeft: =20
@@ -566,6 +566,7 @@ PersonalDetailsFormScreen As screen:
                         HoverColor: =RGBA(107, 29, 94, 1)
                         HoverFill: |-
                             =ColorFade(ColorValue("#A6A6A6"), 80%)
+                        OnSelect: =Back()
                         RadiusBottomLeft: =20
                         RadiusBottomRight: =20
                         RadiusTopLeft: =20

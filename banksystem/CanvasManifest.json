@@ -132,7 +132,7 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "Screen1",
+    "CustomerProfile Screen",
     "ThankyouScreen",
     "UploadSignaturePhotoScreen",
     "MatchPhoto&VideoScreen",
@@ -140,6 +140,8 @@
     "PersonalDetailsUploadDocumentsScreen",
     "PersonalDetailsFormScreen",
     "UploadLiveVideoScreen",
-    "Dashboard Screen"
+    "Dashboard Screen",
+    "KYCVerificationVideoScreen",
+    "UploadPassportSizePhoto"
   ]
 }
