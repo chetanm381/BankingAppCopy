@@ -328,6 +328,54 @@ PersonalDetailsUploadDocumentsScreen As screen:
                                 Y: =PDUD_Circle2_1.Y+(PDUD_Circle2_1.Height-Self.Height)/2
                                 ZIndex: =5
 
+                            PDUD_DataCardValue6_3 As attachments:
+                                AddAttachmentText: ="Upload file"
+                                BorderColor: =RGBA(107, 29, 94, 1)
+                                BorderStyle: =BorderStyle.None
+                                BorderThickness: =1
+                                Color: =RGBA(107, 29, 94, 1)
+                                DropTargetBorderColor: |-
+                                    =ColorValue("#6B1D5E")
+                                DropTargetBorderThickness: =1
+                                DropTargetTextColor: |-
+                                    =ColorValue("#6B1D5E")
+                                FontWeight: =FontWeight.Semibold
+                                Height: =Parent.Height*.70
+                                HoverColor: =RGBA(255, 255, 255, 1)
+                                HoverFill: =ColorFade(Self.HoverBorderColor,30%)
+                                IsInDataCard: =true
+                                ItemFill: |-
+                                    =ColorValue("#6B1D5E")
+                                ItemHoverColor: =Color.White
+                                ItemHoverFill: |-
+                                    =ColorFade(ColorValue("#6B1D5E"),40%)
+                                ItemPressedColor: =ColorFade(Self.HoverColor,70%)
+                                ItemPressedFill: =ColorFade(Self.HoverFill,70%)
+                                Items: =
+                                MaxAttachments: =1
+                                MaxAttachmentsText: =""
+                                NoAttachmentsText: ="Drop or Drag/ Click here to Upload file"
+                                PaddingBottom: =5
+                                PaddingLeft: =Self.Width*.15
+                                PaddingRight: =5
+                                PaddingTop: =PDUD_Image1_61.Y+PDUD_Image1_61.Height-Parent.Height*0.05
+                                PressedColor: =ColorFade(Self.HoverColor,70%)
+                                PressedFill: =ColorFade(Self.HoverFill,70%)
+                                Size: =9
+                                Tooltip: =
+                                Width: =Parent.Width*.90
+                                X: =(Parent.Width-Self.Width)/2
+                                Y: =Parent.Height*.15
+                                ZIndex: =6
+
+                            PDUD_Image1_7 As image:
+                                Height: =Parent.Height*0.25
+                                Image: ='cloud-computing (2)'
+                                Width: =Parent.Width*0.25
+                                X: =PDUD_DataCardValue6_3.X+(PDUD_DataCardValue6_3.Width-Self.Width)/2
+                                Y: =PDUD_DataCardValue6_2.Y+Parent.Height*0.01
+                                ZIndex: =7
+
                         PDUD_Container6_3 As groupContainer.manualLayoutContainer:
                             BorderColor: =RGBA(181, 177, 177, 1)
                             BorderThickness: =2
@@ -382,6 +430,54 @@ PersonalDetailsUploadDocumentsScreen As screen:
                                 X: =PDUD_Circle2_2.X+(PDUD_Circle2_2.Width-Self.Width)/2
                                 Y: =PDUD_Circle2_2.Y+(PDUD_Circle2_2.Height-Self.Height)/2
                                 ZIndex: =5
+
+                            PDUD_DataCardValue6_2 As attachments:
+                                AddAttachmentText: ="Upload file"
+                                BorderColor: =RGBA(107, 29, 94, 1)
+                                BorderStyle: =BorderStyle.None
+                                BorderThickness: =1
+                                Color: =RGBA(107, 29, 94, 1)
+                                DropTargetBorderColor: |-
+                                    =ColorValue("#6B1D5E")
+                                DropTargetBorderThickness: =1
+                                DropTargetTextColor: |-
+                                    =ColorValue("#6B1D5E")
+                                FontWeight: =FontWeight.Semibold
+                                Height: =Parent.Height*.70
+                                HoverColor: =RGBA(255, 255, 255, 1)
+                                HoverFill: =ColorFade(Self.HoverBorderColor,30%)
+                                IsInDataCard: =true
+                                ItemFill: |-
+                                    =ColorValue("#6B1D5E")
+                                ItemHoverColor: =Color.White
+                                ItemHoverFill: |-
+                                    =ColorFade(ColorValue("#6B1D5E"),40%)
+                                ItemPressedColor: =ColorFade(Self.HoverColor,70%)
+                                ItemPressedFill: =ColorFade(Self.HoverFill,70%)
+                                Items: =
+                                MaxAttachments: =1
+                                MaxAttachmentsText: =""
+                                NoAttachmentsText: ="Drop or Drag/ Click here to Upload file"
+                                PaddingBottom: =5
+                                PaddingLeft: =Self.Width*.15
+                                PaddingRight: =5
+                                PaddingTop: =PDUD_Image1_61.Y+PDUD_Image1_61.Height-Parent.Height*0.05
+                                PressedColor: =ColorFade(Self.HoverColor,70%)
+                                PressedFill: =ColorFade(Self.HoverFill,70%)
+                                Size: =9
+                                Tooltip: =
+                                Width: =Parent.Width*.90
+                                X: =(Parent.Width-Self.Width)/2
+                                Y: =Parent.Height*.15
+                                ZIndex: =6
+
+                            PDUD_Image1_61 As image:
+                                Height: =Parent.Height*0.25
+                                Image: ='cloud-computing (2)'
+                                Width: =Parent.Width*0.25
+                                X: =PDUD_DataCardValue6_2.X+(PDUD_DataCardValue6_2.Width-Self.Width)/2
+                                Y: =PDUD_DataCardValue6_2.Y+Parent.Height*0.01
+                                ZIndex: =7
 
                     PDUD_Button2_2 As button:
                         Fill: =RGBA(11, 163, 54, 1)
