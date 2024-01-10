@@ -93,7 +93,7 @@ ThankyouScreen As screen:
                 FontWeight: =FontWeight.Semibold
                 Height: =132
                 Size: =20
-                Text: ="Your Account Opening Detail have been successfully captured."
+                Text: ="The Account Opening Detail have been successfully captured."
                 Width: =Parent.Width*.80
                 X: =(Parent.Width-Self.Width)/2
                 Y: =TS_ThankYouLabel_1.Y+TS_ThankYouLabel_1.Height
@@ -114,7 +114,7 @@ ThankyouScreen As screen:
                 Align: =Align.Center
                 Color: =RGBA(107, 29, 94, 1)
                 Size: =15
-                Text: ="Your Account will be opened shortly."
+                Text: ="Account will be opened shortly."
                 Width: =Parent.Width*.80
                 X: =(Parent.Width-Self.Width)/2
                 Y: =TS_ThankYouLabel.Y+TS_ThankYouLabel.Height+Parent.Height*.03

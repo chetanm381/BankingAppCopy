@@ -415,7 +415,7 @@
                 FontWeight: =FontWeight.Semibold
                 Height: =132
                 Size: =20
-                Text: ="Your Account Opening Detail have been successfully captured."
+                Text: ="The Account Opening Detail have been successfully captured."
                 Width: =Parent.Width*.80
                 X: =(Parent.Width-Self.Width)/2
                 Y: =TS_ThankYouLabel_3.Y+TS_ThankYouLabel_3.Height
@@ -437,7 +437,7 @@
                 Color: =RGBA(158, 108, 151, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =50
-                Text: ="Your Account will be opened shortly."
+                Text: ="Account will be opened shortly."
                 Width: =Parent.Width*.80
                 X: =(Parent.Width-Self.Width)/2
                 Y: =TS_ThankYouLabel_4.Y+TS_ThankYouLabel_4.Height+Parent.Height*.01
