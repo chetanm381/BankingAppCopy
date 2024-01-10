@@ -168,7 +168,7 @@
             Image: |-
                 ="data:image/svg+xml;utf8, %3Csvg%20%20viewBox%3D%270%200%202048%202048%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cpath%20d%3D%27M1297%2038q166%2045%20304%20140t237%20226%20155%20289%2055%20331q0%20141-36%20272t-103%20245-160%20207-208%20160-245%20103-272%2037q-141%200-272-36t-245-103-207-160-160-208-103-244-37-273q0-140%2037-272t105-248%20167-212%20221-164H256V0h512v512H640V215q-117%2056-211%20140T267%20545%20164%20773t-36%20251q0%20123%2032%20237t90%20214%20141%20182%20181%20140%20214%2091%20238%2032q123%200%20237-32t214-90%20182-141%20140-181%2091-214%2032-238q0-150-48-289t-136-253-207-197-266-124l34-123z%27%20fill%3D%27%23000000%27%3E%3C%2Fpath%3E%3C%2Fsvg%3E"
             Width: =43
-            X: =888
+            X: =Parent.Width-Self.Width-Parent.Width*.01
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =1
 
@@ -299,6 +299,7 @@
             Color: =RGBA(107, 29, 94, 1)
             FontWeight: =FontWeight.Bold
             Height: =54
+            Size: =12
             Text: ="Application number"
             Width: =Parent.Width*.2
             X: =Parent.Width*.01
@@ -310,6 +311,7 @@
             Color: =RGBA(107, 29, 94, 1)
             FontWeight: =FontWeight.Bold
             Height: =54
+            Size: =12
             Text: ="Full Name"
             Width: =Parent.Width*.2
             X: =DS_Label13.Width+DS_Label13.X
@@ -321,6 +323,7 @@
             Color: =RGBA(107, 29, 94, 1)
             FontWeight: =FontWeight.Bold
             Height: =54
+            Size: =12
             Text: ="Date"
             Width: =Parent.Width*.2
             X: =DS_Label13_1.X+DS_Label13_1.Width
@@ -332,6 +335,7 @@
             Color: =RGBA(107, 29, 94, 1)
             FontWeight: =FontWeight.Bold
             Height: =54
+            Size: =12
             Text: ="Status"
             Width: =Parent.Width*.19
             X: =DS_Label13_2.X+DS_Label13_2.Width
@@ -343,6 +347,7 @@
             Color: =RGBA(107, 29, 94, 1)
             FontWeight: =FontWeight.Bold
             Height: =54
+            Size: =12
             Text: ="DOB"
             Width: =Parent.Width*.19
             X: =DS_Label13_3.X+DS_Label13_3.Width
