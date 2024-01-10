@@ -146,16 +146,8 @@ UploadPassportSizePhoto As screen:
                         Text: ="Upload"
                         Width: =Parent.Width*.25
                         X: =(Parent.Width-Self.Width)/2
-                        Y: =Parent.Height-Self.Height-Parent.Height*0.15
-                        ZIndex: =2
-
-                    UPS_Image1_4 As image:
-                        Height: =Parent.Height*0.25
-                        Image: ='cloud-computing (1)'
-                        Width: =Parent.Width*0.25
-                        X: =(Parent.Width-Self.Width)*.25
-                        Y: =Parent.Height*0.25
-                        ZIndex: =4
+                        Y: =Parent.Height-Self.Height-Parent.Height*0.10
+                        ZIndex: =1
 
                     UPS_Label8_4 As label:
                         Align: =Align.Center
@@ -164,33 +156,55 @@ UploadPassportSizePhoto As screen:
                         Width: =UPS_Image1_4.Width
                         X: =UPS_Image1_4.X
                         Y: =UPS_Image1_4.Y+UPS_Image1_4.Height
-                        ZIndex: =5
+                        ZIndex: =2
 
                     DataCardValue6 As attachments:
                         AddAttachmentText: ="Upload file"
                         BorderColor: =RGBA(107, 29, 94, 1)
-                        BorderStyle: =BorderStyle.Dashed
+                        BorderStyle: =BorderStyle.None
                         BorderThickness: =1
                         Color: =RGBA(107, 29, 94, 1)
+                        DropTargetBorderColor: |-
+                            =ColorValue("#6B1D5E")
+                        DropTargetBorderThickness: =1
+                        DropTargetTextColor: |-
+                            =ColorValue("#6B1D5E")
                         FontWeight: =FontWeight.Semibold
-                        Height: =226
+                        Height: =Parent.Height*.70
                         HoverColor: =RGBA(255, 255, 255, 1)
                         HoverFill: =ColorFade(Self.HoverBorderColor,30%)
                         IsInDataCard: =true
+                        ItemFill: |-
+                            =ColorValue("#6B1D5E")
+                        ItemHoverColor: =Color.White
+                        ItemHoverFill: |-
+                            =ColorFade(ColorValue("#6B1D5E"),40%)
+                        ItemPressedColor: =ColorFade(Self.HoverColor,70%)
+                        ItemPressedFill: =ColorFade(Self.HoverFill,70%)
                         Items: =
                         MaxAttachments: =1
                         MaxAttachmentsText: =""
-                        NoAttachmentsText: ="There is no file."
+                        NoAttachmentsText: ="Drop or Drag/ Click here to Upload file"
                         PaddingBottom: =5
-                        PaddingLeft: =Parent.Width*0.05
+                        PaddingLeft: =UPS_Image1_4.X-UPS_Image1_4.Width/2
                         PaddingRight: =5
-                        PaddingTop: =Self.Height*0.1
+                        PaddingTop: =UPS_Image1_4.Y+UPS_Image1_4.Height
+                        PressedColor: =ColorFade(Self.HoverColor,70%)
+                        PressedFill: =ColorFade(Self.HoverFill,70%)
                         Size: =10
                         Tooltip: =
-                        Width: =Parent.Width*.45
-                        X: =Parent.Width*.50
-                        Y: =49
-                        ZIndex: =6
+                        Width: =Parent.Width*.75
+                        X: =(Parent.Width-Self.Width)/2
+                        Y: =29
+                        ZIndex: =3
+
+                    UPS_Image1_4 As image:
+                        Height: =Parent.Height*0.25
+                        Image: ='cloud-computing (1)'
+                        Width: =Parent.Width*0.25
+                        X: =(Parent.Width-Self.Width)/2
+                        Y: =Parent.Height*0.2
+                        ZIndex: =4
 
                 UPS_Container3_2 As groupContainer.manualLayoutContainer:
                     BorderStyle: =BorderStyle.None
