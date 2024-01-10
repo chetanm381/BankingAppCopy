@@ -287,7 +287,7 @@
         ZIndex: =9
 
         DS_Rectangle4 As rectangle:
-            Fill: =RGBA(209, 209, 209, 1)
+            Fill: =RGBA(219, 219, 219, 1)
             Height: =2
             Width: =Parent.Width*.95
             X: =24
@@ -296,6 +296,7 @@
 
         DS_Label13 As label:
             Align: =Align.Center
+            Color: =RGBA(107, 29, 94, 1)
             FontWeight: =FontWeight.Bold
             Height: =54
             Text: ="Application number"
@@ -306,6 +307,7 @@
 
         DS_Label13_1 As label:
             Align: =Align.Center
+            Color: =RGBA(107, 29, 94, 1)
             FontWeight: =FontWeight.Bold
             Height: =54
             Text: ="Full Name"
@@ -316,6 +318,7 @@
 
         DS_Label13_2 As label:
             Align: =Align.Center
+            Color: =RGBA(107, 29, 94, 1)
             FontWeight: =FontWeight.Bold
             Height: =54
             Text: ="Date"
@@ -326,6 +329,7 @@
 
         DS_Label13_3 As label:
             Align: =Align.Center
+            Color: =RGBA(107, 29, 94, 1)
             FontWeight: =FontWeight.Bold
             Height: =54
             Text: ="Status"
@@ -336,6 +340,7 @@
 
         DS_Label13_4 As label:
             Align: =Align.Center
+            Color: =RGBA(107, 29, 94, 1)
             FontWeight: =FontWeight.Bold
             Height: =54
             Text: ="DOB"
@@ -346,7 +351,7 @@
 
         "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
             DelayItemLoading: =true
-            Height: =276.6
+            Height: =Parent.Height-DS_Rectangle4.Y-DS_Rectangle4.Height
             Items: |-
                 =[
                     {
@@ -389,26 +394,26 @@
             LoadingSpinner: =LoadingSpinner.Data
             ShowScrollbar: =false
             TemplatePadding: =0
-            TemplateSize: =67
+            TemplateSize: =69
             Width: =956
             Y: =69
             ZIndex: =7
 
             Label14 As label:
                 Align: =Align.Center
-                Color: =RGBA(82, 82, 82, 1)
+                Color: =RGBA(107, 29, 94, 1)
                 FontWeight: =FontWeight.Semibold
                 OnSelect: =Select(Parent)
                 Size: =12
                 Text: =ThisItem.ApplicationNumber
                 Width: =Parent.Width*.15
-                X: =DS_Label11_3.X
+                X: =DS_Label11_3.X+(DS_Label13.Width-Self.Width)/2
                 Y: =(Gallery1.TemplateHeight-Self.Height)/2
                 ZIndex: =1
 
             Label15 As label:
                 Align: =Align.Center
-                Color: =RGBA(82, 82, 82, 1)
+                Color: =RGBA(107, 29, 94, 1)
                 FontWeight: =FontWeight.Semibold
                 OnSelect: =Select(Parent)
                 Size: =12
@@ -420,7 +425,7 @@
 
             Label19 As label:
                 Align: =Align.Center
-                Color: =RGBA(82, 82, 82, 1)
+                Color: =RGBA(107, 29, 94, 1)
                 FontWeight: =FontWeight.Semibold
                 OnSelect: =Select(Parent)
                 Size: =12
@@ -445,16 +450,43 @@
                 Y: =(Gallery1.TemplateHeight-Self.Height)/2
                 ZIndex: =6
 
-            Label20 As label:
+            Label19_2 As label:
                 Align: =Align.Center
-                Color: =RGBA(82, 82, 82, 1)
+                Color: =RGBA(107, 29, 94, 1)
                 FontWeight: =FontWeight.Semibold
                 OnSelect: =Select(Parent)
                 Size: =12
                 Text: |
-                    =Text(DateTimeValue(ThisItem.DOB),  "[$-en-US]dd mmm' yy")
+                    =Text(DateTimeValue(ThisItem.Date),  "[$-en-US]dd mmm' yy")
                 Width: =Parent.Width*.2
                 X: =DS_Label13_4.X
                 Y: =(Gallery1.TemplateHeight-Self.Height)/2
                 ZIndex: =7
+
+            Rectangle2 As rectangle:
+                Fill: =RGBA(107, 29, 94, 0.75)
+                Height: =2
+                OnSelect: =Select(Parent)
+                Width: =DS_Rectangle4.Width
+                X: =DS_Rectangle4.X
+                Y: =Gallery1.TemplateHeight-Self.Height
+                ZIndex: =8
+
+            Rectangle2_1 As rectangle:
+                Fill: =RGBA(107, 29, 94, 0.45)
+                Height: =Gallery1.TemplateHeight*.75
+                OnSelect: =Select(Parent)
+                Width: =2
+                X: =DS_Rectangle4.X
+                Y: =Gallery1.TemplateHeight-Self.Height
+                ZIndex: =9
+
+            Rectangle2_2 As rectangle:
+                Fill: =RGBA(107, 29, 94, 0.45)
+                Height: =Gallery1.TemplateHeight*.75
+                OnSelect: =Select(Parent)
+                Width: =2
+                X: =DS_Rectangle4.X+DS_Rectangle4.Width-Self.Width
+                Y: =Gallery1.TemplateHeight-Self.Height
+                ZIndex: =10
 
