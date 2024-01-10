@@ -36,10 +36,10 @@
             Fill: =RGBA(252, 242, 247, 1)
             Height: =30
             HoverFill: =ColorFade(Self.Color, 20%)
-            OnSelect: =Navigate('Dashboard Screen',ScreenTransition.CoverRight)
+            OnSelect: =Navigate('OpenAccountScreen',ScreenTransition.CoverRight)
             Size: =9
-            Text: ="Home"
-            Width: =100
+            Text: ="New Customer"
+            Width: =125
             X: =DS_userimage_7.X-Self.Width-Parent.Width*.015
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =3
