@@ -399,7 +399,7 @@
             Y: =69
             ZIndex: =7
 
-            Label14 As label:
+            DS_Label14 As label:
                 Align: =Align.Center
                 Color: =RGBA(107, 29, 94, 1)
                 FontWeight: =FontWeight.Semibold
@@ -411,7 +411,7 @@
                 Y: =(Gallery1.TemplateHeight-Self.Height)/2
                 ZIndex: =1
 
-            Label15 As label:
+            DS_Label15 As label:
                 Align: =Align.Center
                 Color: =RGBA(107, 29, 94, 1)
                 FontWeight: =FontWeight.Semibold
@@ -423,7 +423,7 @@
                 Y: =(Gallery1.TemplateHeight-Self.Height)/2
                 ZIndex: =2
 
-            Label19 As label:
+            DS_Label19 As label:
                 Align: =Align.Center
                 Color: =RGBA(107, 29, 94, 1)
                 FontWeight: =FontWeight.Semibold
@@ -436,7 +436,7 @@
                 Y: =(Gallery1.TemplateHeight-Self.Height)/2
                 ZIndex: =4
 
-            Label19_1 As label:
+            DS_Label19_1 As label:
                 Align: =Align.Center
                 Color: |-
                     =If(ThisItem.Status="Pending",ColorValue("#0071b3"),If(ThisItem.Status="Approved",ColorValue("#377b59"),ColorValue("#a40e0e")))
@@ -450,7 +450,7 @@
                 Y: =(Gallery1.TemplateHeight-Self.Height)/2
                 ZIndex: =6
 
-            Label19_2 As label:
+            DS_Label19_2 As label:
                 Align: =Align.Center
                 Color: =RGBA(107, 29, 94, 1)
                 FontWeight: =FontWeight.Semibold
@@ -463,7 +463,7 @@
                 Y: =(Gallery1.TemplateHeight-Self.Height)/2
                 ZIndex: =7
 
-            Rectangle2 As rectangle:
+            DS_Rectangle78 As rectangle:
                 Fill: =RGBA(107, 29, 94, 0.75)
                 Height: =2
                 OnSelect: =Select(Parent)
@@ -472,7 +472,7 @@
                 Y: =Gallery1.TemplateHeight-Self.Height
                 ZIndex: =8
 
-            Rectangle2_1 As rectangle:
+            DS_Rectangle2_1 As rectangle:
                 Fill: =RGBA(107, 29, 94, 0.45)
                 Height: =Gallery1.TemplateHeight*.75
                 OnSelect: =Select(Parent)
@@ -481,7 +481,7 @@
                 Y: =Gallery1.TemplateHeight-Self.Height
                 ZIndex: =9
 
-            Rectangle2_2 As rectangle:
+            DS_Rectangle2_2 As rectangle:
                 Fill: =RGBA(107, 29, 94, 0.45)
                 Height: =Gallery1.TemplateHeight*.75
                 OnSelect: =Select(Parent)
