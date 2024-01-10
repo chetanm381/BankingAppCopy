@@ -173,7 +173,7 @@ UploadSignaturePhotoScreen As screen:
                         Image: ='cloud-computing (1)'
                         Width: =Parent.Width*0.2
                         X: =(Parent.Width-Self.Width)/2
-                        Y: =Parent.Height*0.3
+                        Y: =Parent.Height*0.25
                         ZIndex: =4
 
                     USP_Label8_5 As label:
