@@ -3352,7 +3352,7 @@
       "MetaDataIDKey": "",
       "Name": "ULV_img_xebiaLogo_4",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6292,7 +6292,7 @@
       "MetaDataIDKey": "",
       "Name": "ULV_userimage_6",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
