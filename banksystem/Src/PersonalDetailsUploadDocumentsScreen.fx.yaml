@@ -92,7 +92,7 @@ PersonalDetailsUploadDocumentsScreen As screen:
             PDUD_Container12_2 As groupContainer.manualLayoutContainer:
                 BorderColor: =RGBA(219, 219, 219, 1)
                 BorderStyle: =BorderStyle.None
-                DropShadow: =DropShadow.Regular
+                DropShadow: =DropShadow.Bold
                 Fill: =RGBA(255, 255, 255, 1)
                 Height: =PersonalDetailsUploadDocumentsScreen.Height*.75
                 RadiusBottomLeft: =20

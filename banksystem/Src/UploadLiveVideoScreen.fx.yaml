@@ -95,7 +95,7 @@ UploadLiveVideoScreen As screen:
                 BorderStyle: =BorderStyle.None
                 DropShadow: =DropShadow.Regular
                 Fill: =RGBA(255, 255, 255, 1)
-                Height: ='UploadLiveVideoScreen'.Height*.75
+                Height: =UploadLiveVideoScreen.Height*.75
                 RadiusBottomLeft: =20
                 RadiusBottomRight: =20
                 RadiusTopLeft: =20
@@ -241,7 +241,7 @@ UploadLiveVideoScreen As screen:
                     Fill: =RGBA(11, 163, 54, 1)
                     HoverFill: |-
                         =ColorFade(ColorValue("#0ba336"), -20%)
-                    OnSelect: =Navigate('KYCVerificationVideoScreen',ScreenTransition.CoverRight)
+                    OnSelect: =Navigate(KYCVerificationVideoScreen,ScreenTransition.CoverRight)
                     RadiusBottomLeft: =20
                     RadiusBottomRight: =20
                     RadiusTopLeft: =20

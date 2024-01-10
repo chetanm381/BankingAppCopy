@@ -206,7 +206,7 @@ UploadPassportSizePhoto As screen:
                     Fill: =RGBA(11, 163, 54, 1)
                     HoverFill: |-
                         =ColorFade(ColorValue("#0ba336"), -20%)
-                    OnSelect: =Navigate('UploadLiveVideoScreen',ScreenTransition.Cover)
+                    OnSelect: =Navigate(UploadLiveVideoScreen,ScreenTransition.Cover)
                     RadiusBottomLeft: =20
                     RadiusBottomRight: =20
                     RadiusTopLeft: =20
