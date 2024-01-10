@@ -135,12 +135,12 @@ OpenAccountScreen As screen:
                         ZIndex: =2
 
                     OA_Image1 As image:
-                        Height: =Parent.Height*.45
+                        BorderStyle: =BorderStyle.None
+                        Height: =Parent.Height*.5
                         Image: ='Banknote-rafiki'
-                        ImagePosition: =ImagePosition.Fill
                         Width: =Parent.Width
-                        X: =Parent.Width*.01
-                        Y: =316
+                        X: =Parent.Width-Self.Width
+                        Y: =288
                         ZIndex: =3
 
                 OA_Container6 As groupContainer.manualLayoutContainer:

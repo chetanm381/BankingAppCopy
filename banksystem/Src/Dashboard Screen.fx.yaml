@@ -61,7 +61,7 @@
         RadiusTopLeft: =20
         RadiusTopRight: =20
         Width: =Parent.Width*.25
-        X: =Parent.Width*.015
+        X: =Parent.Width*.01
         Y: =Rectangle2.Y+Rectangle2.Height+Parent.Height*.015
         ZIndex: =3
 
@@ -69,18 +69,258 @@
             BorderColor: =RGBA(255, 255, 255, 1)
             BorderThickness: =20
             DropShadow: =DropShadow.None
+            Height: =Parent.Height*.25
             RadiusBottomLeft: =20
             RadiusBottomRight: =20
             RadiusTopLeft: =20
             RadiusTopRight: =20
             Width: =Parent.Width*.7
-            X: =60
-            Y: =48
+            X: =(Parent.Width-Self.Width)/2
+            Y: =(Parent.Height-Self.Height)*.15
             ZIndex: =1
 
             Image1 As image:
+                Height: =Parent.Height*.4
                 Image: =iconoir_bank
+                Width: =Parent.Width*.4
                 X: =(Parent.Width-Self.Width)/2
-                Y: =(Parent.Height-Self.Height)*.2
+                Y: =(Parent.Height-Self.Height)*.3
                 ZIndex: =1
+
+            Label6 As label:
+                Align: =Align.Center
+                Color: =RGBA(107, 29, 94, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =12
+                Text: ="DOOR STEP BANKING"
+                Width: =Parent.Width
+                X: =(Parent.Width-Self.Width)/2
+                Y: =Image1.Y+Image1.Height+Parent.Height*.015
+                ZIndex: =2
+
+        Image4 As image:
+            Height: =Parent.Height*.5
+            Image: ='Banknote-rafiki'
+            Width: =Parent.Width
+            X: =Parent.Width-Self.Width
+            Y: =Parent.Height-Self.Height
+            ZIndex: =2
+
+    Container7 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.None
+        Height: =(Parent.Height-img_xebiaLogo_3.Height-Rectangle2.Height)*.2
+        Width: =Parent.Width*.5
+        X: =(Container5.Width+Container5.X)+Parent.Width*.01
+        Y: =Rectangle2.Y+Rectangle2.Height+Parent.Height*.015
+        ZIndex: =4
+
+        Circle2 As circle:
+            BorderColor: =RGBA(227, 227, 227, 1)
+            BorderThickness: =1
+            Fill: =RGBA(252, 242, 247, 1)
+            X: =(Parent.Width-Self.Width)*.05
+            Y: =(Parent.Height-Self.Height)*.5
+            ZIndex: =1
+
+        Label7 As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Bold
+            Size: =18
+            Text: |
+                =Text(DateTimeValue(Today()), "dd")
+            Width: =65
+            X: =Circle2.X+(Circle2.Width-Self.Width)/2
+            Y: =Circle2.Y+(Circle2.Height-Self.Height)/2
+            ZIndex: =2
+
+        Label9 As label:
+            Color: =RGBA(107, 29, 94, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =46
+            Size: =15
+            Text: |
+                =Text(DateTimeValue(Today()),  "[$-en-US]ddd,")
+            X: =Circle2.Width+Circle2.X+Parent.Width*.01
+            Y: =Circle2.Y+Parent.Height*.04
+            ZIndex: =3
+
+        Label9_1 As label:
+            Color: =RGBA(107, 29, 94, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =39
+            Size: =15
+            Text: |
+                =Text(DateTimeValue(Today()),  "[$-en-US]mmmm")
+            X: =Circle2.Width+Circle2.X+Parent.Width*.01
+            Y: =Label9.Height+Label9.Y-Parent.Height*.03
+            ZIndex: =4
+
+    Container9 As groupContainer.manualLayoutContainer:
+        Height: =65
+        Width: =Parent.Width-Container5.Width-Container5.X-Parent.Width*.05
+        X: =(Container5.Width+Container5.X)+(Parent.Width-Container5.Width-Container5.X-Self.Width)/2
+        Y: =Container8.Y+Container8.Height+Parent.Height*.02
+        ZIndex: =8
+
+    Group1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =8
+
+        Container8 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.None
+            Fill: =RGBA(255, 246, 232, 1)
+            Height: =Parent.Height*.1
+            Width: =Parent.Width*.2
+            X: =(Container5.Width+Container5.X)+Parent.Width*.04
+            Y: =Container7.Y+Container7.Height+Parent.Height*.015
+            ZIndex: =5
+
+            Label11 As label:
+                Color: =RGBA(82, 82, 82, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =15
+                Text: ="PENDING"
+                Width: =Len(Self.Text)*Self.Size
+                X: =Parent.Width*.04
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =1
+
+            Label11_1 As label:
+                Align: =Align.Right
+                Color: =RGBA(82, 82, 82, 1)
+                FontWeight: =FontWeight.Bold
+                PaddingRight: =20
+                Size: =15
+                Text: ="34"
+                X: =Parent.Width-Self.Width
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =2
+
+        Container8_1 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.None
+            Fill: =RGBA(240, 247, 235, 1)
+            Height: =Parent.Height*.1
+            Width: =Parent.Width*.2
+            X: =(Container8.Width+Container8.X)+Parent.Width*.03
+            Y: =Container7.Y+Container7.Height+Parent.Height*.015
+            ZIndex: =6
+
+            Label11_2 As label:
+                Color: =RGBA(82, 82, 82, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =15
+                Text: ="IN-PROGRESS"
+                Width: =Len(Self.Text)*Self.Size
+                X: =Parent.Width*.04
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =1
+
+            Label11_4 As label:
+                Align: =Align.Right
+                Color: =RGBA(82, 82, 82, 1)
+                FontWeight: =FontWeight.Bold
+                PaddingRight: =20
+                Size: =15
+                Text: ="34"
+                X: =Parent.Width-Self.Width
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =2
+
+        Container8_2 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.None
+            Fill: =RGBA(252, 237, 237, 1)
+            Height: =Parent.Height*.1
+            Width: =Parent.Width*.2
+            X: =(Container8_1.Width+Container8_1.X)+Parent.Width*.03
+            Y: =Container7.Y+Container7.Height+Parent.Height*.015
+            ZIndex: =7
+
+            Label11_3 As label:
+                Color: =RGBA(82, 82, 82, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =15
+                Text: ="NEW"
+                Width: =Len(Self.Text)*Self.Size*2
+                X: =Parent.Width*.04
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =1
+
+            Label11_5 As label:
+                Align: =Align.Right
+                Color: =RGBA(82, 82, 82, 1)
+                FontWeight: =FontWeight.Bold
+                PaddingRight: =20
+                Size: =15
+                Text: ="34"
+                X: =Parent.Width-Self.Width
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =2
+
+    Container10 As groupContainer.manualLayoutContainer:
+        Height: =Parent.Height*0.45
+        Width: =Parent.Width-Container5.Width-Container5.X-Parent.Width*.05
+        X: =(Container5.Width+Container5.X)+(Parent.Width-Container5.Width-Container5.X-Self.Width)/2
+        Y: =Container9.Y+Container9.Height+Parent.Height*0.01
+        ZIndex: =9
+
+        Rectangle4 As rectangle:
+            Fill: =RGBA(201, 201, 201, 1)
+            Height: =2
+            Width: =Parent.Width*.95
+            X: =24
+            Y: =60
+            ZIndex: =1
+
+        Label13 As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Bold
+            Height: =54
+            Text: ="Application number"
+            Width: =186
+            X: =17
+            Y: =6
+            ZIndex: =2
+
+        Label13_1 As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Bold
+            Height: =54
+            Text: ="Name"
+            Width: =186
+            X: =201
+            Y: =6
+            ZIndex: =3
+
+        Label13_2 As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Bold
+            Height: =54
+            Text: ="Date"
+            Width: =186
+            X: =366
+            Y: =8
+            ZIndex: =4
+
+        Label13_3 As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Bold
+            Height: =54
+            Text: ="Status"
+            Width: =186
+            X: =566
+            Y: =6
+            ZIndex: =5
+
+        Label13_4 As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Bold
+            Height: =54
+            Text: ="DOB"
+            Width: =186
+            X: =756
+            Y: =6
+            ZIndex: =6
 
