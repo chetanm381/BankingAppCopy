@@ -403,7 +403,7 @@
                 Text: =ThisItem.ApplicationNumber
                 Width: =Parent.Width*.15
                 X: =DS_Label11_3.X
-                Y: =12
+                Y: =(Gallery1.TemplateHeight-Self.Height)/2
                 ZIndex: =1
 
             Label15 As label:
@@ -415,7 +415,7 @@
                 Text: =ThisItem.FullName
                 Width: =Parent.Width*.2
                 X: =DS_Label13_1.X
-                Y: =12
+                Y: =(Gallery1.TemplateHeight-Self.Height)/2
                 ZIndex: =2
 
             Label19 As label:
@@ -428,21 +428,8 @@
                     =Text(DateTimeValue(ThisItem.Date),  "[$-en-US]dd mmm' yy")
                 Width: =Parent.Width*.2
                 X: =DS_Label13_2.X
-                Y: =12
+                Y: =(Gallery1.TemplateHeight-Self.Height)/2
                 ZIndex: =4
-
-            Label20 As label:
-                Align: =Align.Center
-                Color: =RGBA(82, 82, 82, 1)
-                FontWeight: =FontWeight.Semibold
-                OnSelect: =Select(Parent)
-                Size: =12
-                Text: |
-                    =Text(DateTimeValue(ThisItem.DOB),  "[$-en-US]dd mmm' yy")
-                Width: =Parent.Width*.2
-                X: =DS_Label13_4.X
-                Y: =12
-                ZIndex: =5
 
             Label19_1 As label:
                 Align: =Align.Center
@@ -455,6 +442,19 @@
                     =ThisItem.Status
                 Width: =Parent.Width*.2
                 X: =DS_Label13_3.X
-                Y: =12
+                Y: =(Gallery1.TemplateHeight-Self.Height)/2
                 ZIndex: =6
+
+            Label20 As label:
+                Align: =Align.Center
+                Color: =RGBA(82, 82, 82, 1)
+                FontWeight: =FontWeight.Semibold
+                OnSelect: =Select(Parent)
+                Size: =12
+                Text: |
+                    =Text(DateTimeValue(ThisItem.DOB),  "[$-en-US]dd mmm' yy")
+                Width: =Parent.Width*.2
+                X: =DS_Label13_4.X
+                Y: =(Gallery1.TemplateHeight-Self.Height)/2
+                ZIndex: =7
 
