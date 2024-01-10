@@ -3006,7 +3006,7 @@
       "MetaDataIDKey": "",
       "Name": "DS_img_xebiaLogo_3",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10197,7 +10197,7 @@
       "MetaDataIDKey": "",
       "Name": "DS_userimage_7",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

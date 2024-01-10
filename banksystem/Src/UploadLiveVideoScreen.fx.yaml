@@ -210,23 +210,53 @@ UploadLiveVideoScreen As screen:
                         Y: =(Parent.Height-Self.Height)/2+Parent.Height*.03
                         ZIndex: =1
 
-                        ULV_Image1_3 As image:
-                            Height: =Parent.Height*0.2
-                            Image: ='cloud-computing (1)'
-                            Width: =Parent.Width*0.2
-                            X: =(Parent.Width-Self.Width)/2
-                            Y: =Parent.Height*0.3
-                            ZIndex: =1
-
-                        ULV_Label8_3 As label:
-                            Align: =Align.Center
-                            Height: =31
+                        ULV_DataCardValue6_1 As attachments:
+                            AddAttachmentText: ="Upload file"
+                            BorderColor: =RGBA(107, 29, 94, 1)
+                            BorderStyle: =BorderStyle.None
+                            BorderThickness: =1
+                            Color: =RGBA(107, 29, 94, 1)
+                            DropTargetBorderColor: |-
+                                =ColorValue("#6B1D5E")
+                            DropTargetBorderThickness: =1
+                            DropTargetTextColor: |-
+                                =ColorValue("#6B1D5E")
+                            FontWeight: =FontWeight.Semibold
+                            Height: =Parent.Height*.70
+                            HoverColor: =RGBA(255, 255, 255, 1)
+                            HoverFill: =ColorFade(Self.HoverBorderColor,30%)
+                            IsInDataCard: =true
+                            ItemFill: |-
+                                =ColorValue("#6B1D5E")
+                            ItemHoverColor: =Color.White
+                            ItemHoverFill: |-
+                                =ColorFade(ColorValue("#6B1D5E"),40%)
+                            ItemPressedColor: =ColorFade(Self.HoverColor,70%)
+                            ItemPressedFill: =ColorFade(Self.HoverFill,70%)
+                            Items: =
+                            MaxAttachments: =1
+                            MaxAttachmentsText: =""
+                            NoAttachmentsText: ="Drop or Drag/ Click here to Upload file"
+                            PaddingBottom: =5
+                            PaddingLeft: =Self.Width*.15
+                            PaddingRight: =5
+                            PaddingTop: =ULV_Image1_5.Y+ULV_Image1_5.Height
+                            PressedColor: =ColorFade(Self.HoverColor,70%)
+                            PressedFill: =ColorFade(Self.HoverFill,70%)
                             Size: =9
-                            Text: ="Drop file here/click to upload"
-                            Width: =186
+                            Tooltip: =
+                            Width: =Parent.Width*.90
                             X: =(Parent.Width-Self.Width)/2
-                            Y: =ULV_Image1_3.Y+ULV_Image1_3.Height
-                            ZIndex: =2
+                            Y: =Parent.Height*.15
+                            ZIndex: =3
+
+                        ULV_Image1_5 As image:
+                            Height: =Parent.Height*0.25
+                            Image: ='cloud-computing (1)'
+                            Width: =Parent.Width*0.25
+                            X: =ULV_DataCardValue6_1.X+(ULV_DataCardValue6_1.Width-Self.Width)/2
+                            Y: =ULV_DataCardValue6_1.Y
+                            ZIndex: =4
 
                     ULV_Label7_2 As label:
                         Color: =RGBA(107, 29, 94, 1)
