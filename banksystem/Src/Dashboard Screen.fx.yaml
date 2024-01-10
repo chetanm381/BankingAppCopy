@@ -40,7 +40,7 @@
             Size: =9
             Text: ="New Customer"
             Width: =125
-            X: =DS_userimage_7.X-Self.Width-Parent.Width*.015
+            X: =DS_userimage_7.X-Self.Width-Parent.Width*.01
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =3
 
