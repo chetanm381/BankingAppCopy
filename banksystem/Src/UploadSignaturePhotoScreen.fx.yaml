@@ -134,40 +134,6 @@ UploadSignaturePhotoScreen As screen:
                     Y: =USP_Rectangle1_1.Y+USP_Rectangle1_1.Height+Parent.Height*0.02
                     ZIndex: =6
 
-                    USP_Button3 As button:
-                        Fill: =RGBA(107, 29, 94, 1)
-                        HoverFill: |-
-                            =ColorFade(ColorValue("#6B1D5E"), 20%)
-                        RadiusBottomLeft: =20
-                        RadiusBottomRight: =20
-                        RadiusTopLeft: =20
-                        RadiusTopRight: =20
-                        Size: =12
-                        Text: ="Upload"
-                        Width: =Parent.Width*.25
-                        X: =Parent.Width/2+Parent.Width*.03
-                        Y: =Parent.Height-Self.Height-Parent.Height*0.15
-                        ZIndex: =2
-
-                    USP_Button3_1 As button:
-                        BorderColor: |-
-                            =ColorFade(ColorValue("#6B1D5E"), -15%)
-                        Color: =RGBA(107, 29, 94, 1)
-                        Fill: =RGBA(255, 255, 255, 1)
-                        HoverColor: =RGBA(107, 29, 94, 1)
-                        HoverFill: |-
-                            =ColorFade(ColorValue("#A6A6A6"), 70%)
-                        RadiusBottomLeft: =20
-                        RadiusBottomRight: =20
-                        RadiusTopLeft: =20
-                        RadiusTopRight: =20
-                        Size: =12
-                        Text: ="Retake"
-                        Width: =Parent.Width*.25
-                        X: =Parent.Width/2-Parent.Width*.03-Self.Width
-                        Y: =Parent.Height-Self.Height-Parent.Height*0.15
-                        ZIndex: =3
-
                     USP_Image1_5 As image:
                         Height: =Parent.Height*0.2
                         Image: ='cloud-computing (1)'
@@ -185,6 +151,69 @@ UploadSignaturePhotoScreen As screen:
                         X: =(Parent.Width-Self.Width)/2
                         Y: =USP_Image1_5.Y+USP_Image1_5.Height
                         ZIndex: =5
+
+                    USP_Button3_411 As button:
+                        Fill: =RGBA(107, 29, 94, 1)
+                        HoverFill: |-
+                            =ColorFade(ColorValue("#6B1D5E"), 20%)
+                        RadiusBottomLeft: =20
+                        RadiusBottomRight: =20
+                        RadiusTopLeft: =20
+                        RadiusTopRight: =20
+                        Size: =12
+                        Text: ="Upload"
+                        Width: =Parent.Width*.25
+                        X: =(Parent.Width-Self.Width)/2
+                        Y: =Parent.Height-Self.Height-Parent.Height*0.10
+                        ZIndex: =6
+
+                    USP_DataCardValue6_1 As attachments:
+                        AddAttachmentText: ="Upload file"
+                        BorderColor: =RGBA(107, 29, 94, 1)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =1
+                        Color: =RGBA(107, 29, 94, 1)
+                        DropTargetBorderColor: |-
+                            =ColorValue("#6B1D5E")
+                        DropTargetBorderThickness: =1
+                        DropTargetTextColor: |-
+                            =ColorValue("#6B1D5E")
+                        FontWeight: =FontWeight.Semibold
+                        Height: =Parent.Height*.70
+                        HoverColor: =RGBA(255, 255, 255, 1)
+                        HoverFill: =ColorFade(Self.HoverBorderColor,30%)
+                        IsInDataCard: =true
+                        ItemFill: |-
+                            =ColorValue("#6B1D5E")
+                        ItemHoverColor: =Color.White
+                        ItemHoverFill: |-
+                            =ColorFade(ColorValue("#6B1D5E"),40%)
+                        ItemPressedColor: =ColorFade(Self.HoverColor,70%)
+                        ItemPressedFill: =ColorFade(Self.HoverFill,70%)
+                        Items: =
+                        MaxAttachments: =1
+                        MaxAttachmentsText: =""
+                        NoAttachmentsText: ="Drop or Drag/ Click here to Upload file"
+                        PaddingBottom: =5
+                        PaddingLeft: =USP_Image1_5111.X-USP_Image1_5111.Width/2
+                        PaddingRight: =5
+                        PaddingTop: =USP_Image1_5111.Y+USP_Image1_5111.Height
+                        PressedColor: =ColorFade(Self.HoverColor,70%)
+                        PressedFill: =ColorFade(Self.HoverFill,70%)
+                        Size: =10
+                        Tooltip: =
+                        Width: =Parent.Width*.75
+                        X: =(Parent.Width-Self.Width)/2
+                        Y: =40
+                        ZIndex: =7
+
+                    USP_Image1_5111 As image:
+                        Height: =Parent.Height*0.25
+                        Image: ='cloud-computing (1)'
+                        Width: =Parent.Width*0.25
+                        X: =(Parent.Width-Self.Width)/2
+                        Y: =Parent.Height*0.2
+                        ZIndex: =8
 
                 USP_Container3_1 As groupContainer.manualLayoutContainer:
                     BorderStyle: =BorderStyle.None
