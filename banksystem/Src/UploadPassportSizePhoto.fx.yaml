@@ -147,9 +147,9 @@ UploadPassportSizePhoto As screen:
                             
                             Patch(
                                 'Identification Details',
-                                {Id:Idfordata},
+                                LookUp('Identification Details',Id=Idfordata),
                                 {
-                                    'Adhaar Card Image': {FileName:"file" , Value:First(DataCardValue6.Attachments).Value}
+                                    'Passport size photo' : {FileName:"file" , Value:First(DataCardValue6.Attachments).Value}
                                 }
                             )
                         RadiusBottomLeft: =20

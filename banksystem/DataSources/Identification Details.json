@@ -37,6 +37,8 @@
       "app_pancardimage": "PAN Card Image",
       "app_pannumber": "PAN Number",
       "app_passportnumber": "Adhaar Number",
+      "app_passportsizephoto": "Passport size photo",
+      "app_passportsizephotoid": "app_PassportsizephotoId",
       "app_racedancecountryabroad": "Racedance Country Abroad",
       "app_scheduledate": "Schedule Date",
       "app_signaturephoto": "Signature Photo",
