@@ -433,13 +433,21 @@
 
             DS_Label19_1 As label:
                 Align: =Align.Center
-                Color: |-
-                    =If(ThisItem.Status="Pending",ColorValue("#0071b3"),If(ThisItem.Status="Approved",ColorValue("#377b59"),ColorValue("#a40e0e")))
+                Color: |
+                    =If(
+                        Text(ThisItem.Application_Status) = "In-Process",
+                        ColorValue("#0071b3"),
+                        If(
+                            Text(ThisItem.Application_Status) = "New",
+                            ColorValue("#377b59"),
+                            ColorValue("#a40e0e")
+                        )
+                    )
                 FontWeight: =FontWeight.Semibold
                 OnSelect: =Select(Parent)
                 Size: =12
                 Text: |
-                    =ThisItem.Status
+                    =ThisItem.Application_Status
                 Width: =Parent.Width*.2
                 X: =DS_Label13_3.X
                 Y: =(Gallery1.TemplateHeight-Self.Height)/2

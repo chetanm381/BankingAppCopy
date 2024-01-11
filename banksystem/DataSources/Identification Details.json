@@ -13,6 +13,8 @@
       "{Attachments}": "Attachments",
       "app_address": "Address",
       "app_adhaarcardimage": "Adhaar Card Image",
+      "app_application_status": "Application_Status",
+      "app_applicationnumber": "ApplicationNumber",
       "app_dateofbirth": "Date of Birth",
       "app_emailid": "Email ID",
       "app_firstname": "First Name",
@@ -75,6 +77,28 @@
       "b84ec897-f52c-4b34-8e07-68df636c85f1": "Inactive Identification Details",
       "f4d08ff3-c81d-4aa1-b262-09e4a55febc9": "Identification Details Advanced Find View"
     }
+  },
+  {
+    "DisplayName": "ApplicationStatus",
+    "Name": "app_applicationstatus",
+    "OptionSetInfoNameMapping": {
+      "1": "New",
+      "2": "In-Process",
+      "3": "Visited",
+      "4": "Opened"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "app_application_status",
+        "OptionSetReferenceEntityName": "Identification Details"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "app_application_status",
+    "RelatedEntityName": "Identification Details",
+    "Type": "OptionSetInfo"
   },
   {
     "DisplayName": "Status (Identification Details)",
