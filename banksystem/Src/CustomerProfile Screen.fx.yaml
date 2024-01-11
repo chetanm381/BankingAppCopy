@@ -220,9 +220,9 @@
                         ZIndex: =8
 
                         Image2 As image:
-                            Height: =40
+                            Height: =Parent.Height
                             Image: =india
-                            Width: =57
+                            Width: =Rectangle3.X
                             ZIndex: =1
 
                         Rectangle3 As rectangle:
@@ -234,9 +234,11 @@
                             ZIndex: =2
 
                         Label5 As label:
+                            Height: =Parent.Height
                             Size: =11
                             Text: ="+91"&First(data_application).'Mobile Number'
-                            X: =73
+                            Width: =Parent.Width-Rectangle3.X-2
+                            X: =Rectangle3.X+2
                             ZIndex: =3
 
                     Label4_4 As label:

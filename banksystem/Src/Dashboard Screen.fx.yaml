@@ -400,7 +400,7 @@
                 FontWeight: =FontWeight.Semibold
                 OnSelect: =Select(Parent)
                 Size: =12
-                Text: =ThisItem.Id
+                Text: =ThisItem.ApplicationNumber
                 Width: =Parent.Width*.15
                 X: =DS_Label11_3.X+(DS_Label13.Width-Self.Width)/2
                 Y: =(Gallery1.TemplateHeight-Self.Height)/2
