@@ -139,25 +139,18 @@ UploadPassportSizePhoto As screen:
                         FontWeight: =FontWeight.Bold
                         HoverFill: |-
                             =ColorFade(ColorValue("#6B1D5E"), 20%)
-                        OnSelect: |-
+                        OnSelect: |
                             =//UploadAadharCard.Run("ID-1",{file:{
                             //contentBytes: First(DataCardValue6.Attachments).Value,
                             //name : "file"
                             //}})
-                            
-                            Patch(
-                                'Identification Details',
-                                LookUp('Identification Details',Id=Idfordata),
-                                {
-                                    'Passport size photo' : {FileName:"file" , Value:First(DataCardValue6.Attachments).Value}
-                                }
-                            )
                         RadiusBottomLeft: =20
                         RadiusBottomRight: =20
                         RadiusTopLeft: =20
                         RadiusTopRight: =20
                         Size: =12
                         Text: ="Upload"
+                        Visible: =false
                         Width: =Parent.Width*.25
                         X: =(Parent.Width-Self.Width)/2
                         Y: =Parent.Height-Self.Height-Parent.Height*0.10
@@ -237,10 +230,33 @@ UploadPassportSizePhoto As screen:
                         ZIndex: =1
 
                 UPS_Button2_5 As button:
+                    DisplayMode: |-
+                        =
+                        
+                        
+                        If(
+                           
+                             
+                           IsEmpty(DataCardValue6.Attachments)
+                          ,
+                         
+                            DisplayMode.Disabled ,  DisplayMode.Edit
+                        )
                     Fill: =RGBA(11, 163, 54, 1)
                     HoverFill: |-
                         =ColorFade(ColorValue("#0ba336"), -20%)
-                    OnSelect: =Navigate(UploadLiveVideoScreen,ScreenTransition.Cover)
+                    OnSelect: |-
+                        =
+                        Patch(
+                            'Identification Details',
+                            LookUp('Identification Details',Id=Idfordata),
+                            {
+                                Photo: {FileName:"file" , Value:First(DataCardValue6.Attachments).Value}
+                            }
+                        );
+                        
+                        
+                        Navigate(UploadLiveVideoScreen,ScreenTransition.Cover);
                     RadiusBottomLeft: =20
                     RadiusBottomRight: =20
                     RadiusTopLeft: =20

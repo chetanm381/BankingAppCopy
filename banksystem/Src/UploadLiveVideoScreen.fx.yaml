@@ -271,7 +271,18 @@ UploadLiveVideoScreen As screen:
                     Fill: =RGBA(11, 163, 54, 1)
                     HoverFill: |-
                         =ColorFade(ColorValue("#0ba336"), -20%)
-                    OnSelect: =Navigate(KYCVerificationVideoScreen,ScreenTransition.CoverRight)
+                    OnSelect: |-
+                        =
+                        Patch(
+                            'Identification Details',
+                            LookUp('Identification Details',Id=Idfordata),
+                            {
+                             'KYC Video': {FileName:"file" , Value:First(ULV_DataCardValue6_1.Attachments).Value}
+                            }
+                        )
+                        
+                        ;
+                        Navigate(KYCVerificationVideoScreen,ScreenTransition.CoverRight)
                     RadiusBottomLeft: =20
                     RadiusBottomRight: =20
                     RadiusTopLeft: =20
