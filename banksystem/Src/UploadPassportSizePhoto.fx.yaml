@@ -202,7 +202,7 @@ UploadPassportSizePhoto As screen:
                         Tooltip: =
                         Width: =Parent.Width*.75
                         X: =(Parent.Width-Self.Width)/2
-                        Y: =29
+                        Y: =Parent.Height*0.1
                         ZIndex: =3
 
                     UPS_Image1_4 As image:

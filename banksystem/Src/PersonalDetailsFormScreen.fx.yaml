@@ -628,6 +628,7 @@ PersonalDetailsFormScreen As screen:
                                     'Adhaar Number' : PDF_TextInput1_7.Text,'PAN Number':PDF_TextInput1_8.Text
                                 }
                             );
+                            Reset(DataCardValue6);
                             Navigate(UploadPassportSizePhoto,ScreenTransition.CoverRight);
                         RadiusBottomLeft: =20
                         RadiusBottomRight: =20

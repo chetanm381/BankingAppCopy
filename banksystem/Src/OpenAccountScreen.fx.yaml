@@ -191,6 +191,8 @@ OpenAccountScreen As screen:
                             Reset(OA_TextInput2_10);
                             Reset(OA_TextInput2_7);
                             Reset(OA_TextInput2_11);
+                            Reset(PDUD_aadharCard);
+                            Reset(PDUD_pancard);
                             Set(visibility,false);
                             ClearCollect(
                                 data_application,

@@ -362,6 +362,7 @@ PersonalDetailsUploadDocumentsScreen As screen:
                                 PaddingTop: =PDUD_Image1_61.Y+PDUD_Image1_61.Height-Parent.Height*0.05
                                 PressedColor: =ColorFade(Self.HoverColor,70%)
                                 PressedFill: =ColorFade(Self.HoverFill,70%)
+                                Reset: =true
                                 Size: =9
                                 Tooltip: =
                                 Width: =Parent.Width*.90
@@ -465,6 +466,7 @@ PersonalDetailsUploadDocumentsScreen As screen:
                                 PaddingTop: =PDUD_Image1_61.Y+PDUD_Image1_61.Height-Parent.Height*0.05
                                 PressedColor: =ColorFade(Self.HoverColor,70%)
                                 PressedFill: =ColorFade(Self.HoverFill,70%)
+                                Reset: =true
                                 Size: =9
                                 Tooltip: =
                                 Width: =Parent.Width*.90
