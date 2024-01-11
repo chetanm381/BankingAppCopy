@@ -201,6 +201,13 @@ KYCVerificationVideoScreen As screen:
                         Y: =(Parent.Height-Self.Height)/2+Parent.Height*.03
                         ZIndex: =1
 
+                        KVV_Video1 As videoPlayback:
+                            BorderColor: =RGBA(107, 29, 94, 1)
+                            Fill: =RGBA(107, 29, 94, 1)
+                            Height: =Parent.Height
+                            Width: =Parent.Width
+                            ZIndex: =1
+
                     KVV_Label7_4 As label:
                         Color: =RGBA(107, 29, 94, 1)
                         FontWeight: =FontWeight.Bold

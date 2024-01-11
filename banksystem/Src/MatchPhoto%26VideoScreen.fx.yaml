@@ -143,23 +143,10 @@
                         Y: =(Parent.Height-Self.Height)/2+Parent.Height*.03
                         ZIndex: =1
 
-                        MPV_Circle1_1 As circle:
-                            Fill: =RGBA(12, 204, 67, 1)
-                            Height: =50
-                            Width: =50
-                            X: =Parent.Width-Self.Width-Parent.Width*.035
-                            Y: =12
-                            ZIndex: =1
-
-                        MPV_Icon1_1 As icon.Check:
-                            Color: =RGBA(255, 255, 255, 1)
-                            DisplayMode: =DisplayMode.View
-                            Height: =30
-                            Icon: =Icon.Check
-                            Width: =30
-                            X: =MPV_Circle1_1.X+(MPV_Circle1_1.Width-Self.Width)/2
-                            Y: =MPV_Circle1_1.Y+(MPV_Circle1_1.Height-Self.Height)/2
-                            ZIndex: =2
+                        MPV_Image1 As image:
+                            Height: =Parent.Height
+                            Width: =Parent.Width
+                            ZIndex: =3
 
                     MPV_Label7_1 As label:
                         Color: =RGBA(107, 29, 94, 1)
@@ -169,6 +156,24 @@
                         X: =Parent.Width*.05
                         Y: =Parent.Height*.03
                         ZIndex: =2
+
+                    MPV_Circle1_1 As circle:
+                        Fill: =RGBA(12, 204, 67, 1)
+                        Height: =50
+                        Width: =50
+                        X: =Parent.Width-Self.Width-Parent.Width*.025
+                        Y: =Parent.Height*0.025
+                        ZIndex: =3
+
+                    MPV_Icon1_1 As icon.Check:
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisplayMode: =DisplayMode.View
+                        Height: =30
+                        Icon: =Icon.Check
+                        Width: =30
+                        X: =MPV_Circle1_1.X+(MPV_Circle1_1.Width-Self.Width)/2
+                        Y: =MPV_Circle1_1.Y+(MPV_Circle1_1.Height-Self.Height)/2
+                        ZIndex: =4
 
                 MPV_Container3_2 As groupContainer.manualLayoutContainer:
                     BorderStyle: =BorderStyle.None
@@ -189,23 +194,12 @@
                         Y: =(Parent.Height-Self.Height)/2+Parent.Height*.03
                         ZIndex: =1
 
-                        MPV_Circle1 As circle:
-                            Fill: =RGBA(12, 204, 67, 1)
-                            Height: =50
-                            Width: =50
-                            X: =Parent.Width-Self.Width-Parent.Width*.035
-                            Y: =12
-                            ZIndex: =1
-
-                        MPV_Icon1 As icon.Check:
-                            Color: =RGBA(255, 255, 255, 1)
-                            DisplayMode: =DisplayMode.View
-                            Height: =30
-                            Icon: =Icon.Check
-                            Width: =30
-                            X: =MPV_Circle1.X+(MPV_Circle1.Width-Self.Width)/2
-                            Y: =MPV_Circle1.Y+(MPV_Circle1.Height-Self.Height)/2
-                            ZIndex: =2
+                        MPV_Video2 As videoPlayback:
+                            BorderColor: =RGBA(107, 29, 94, 1)
+                            Fill: =RGBA(107, 29, 94, 1)
+                            Height: =Parent.Height
+                            Width: =Parent.Width
+                            ZIndex: =3
 
                     MPV_Label7 As label:
                         Color: =RGBA(107, 29, 94, 1)
@@ -215,6 +209,24 @@
                         X: =Parent.Width*.05
                         Y: =Parent.Height*.03
                         ZIndex: =2
+
+                    MPV_Circle1 As circle:
+                        Fill: =RGBA(12, 204, 67, 1)
+                        Height: =50
+                        Width: =50
+                        X: =Parent.Width-Self.Width-Parent.Width*.025
+                        Y: =Parent.Height*0.025
+                        ZIndex: =3
+
+                    MPV_Icon1 As icon.Check:
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisplayMode: =DisplayMode.View
+                        Height: =30
+                        Icon: =Icon.Check
+                        Width: =30
+                        X: =MPV_Circle1.X+(MPV_Circle1.Width-Self.Width)/2
+                        Y: =MPV_Circle1.Y+(MPV_Circle1.Height-Self.Height)/2
+                        ZIndex: =4
 
                 MPV_Button2_5 As button:
                     Fill: =RGBA(11, 163, 54, 1)

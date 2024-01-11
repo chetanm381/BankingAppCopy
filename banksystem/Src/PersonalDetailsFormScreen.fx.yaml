@@ -619,7 +619,16 @@ PersonalDetailsFormScreen As screen:
                         Fill: =RGBA(11, 163, 54, 1)
                         HoverFill: |-
                             =ColorFade(ColorValue("#0ba336"), -20%)
-                        OnSelect: =Navigate(UploadPassportSizePhoto,ScreenTransition.CoverRight)
+                        OnSelect: |-
+                            =
+                            Patch(
+                                'Identification Details',
+                                LookUp('Identification Details',Id=Idfordata),
+                                {
+                                    'Adhaar Number' : PDF_TextInput1_7.Text,'PAN Number':PDF_TextInput1_8.Text
+                                }
+                            );
+                            Navigate(UploadPassportSizePhoto,ScreenTransition.CoverRight);
                         RadiusBottomLeft: =20
                         RadiusBottomRight: =20
                         RadiusTopLeft: =20

@@ -162,6 +162,7 @@ UploadSignaturePhotoScreen As screen:
                         RadiusTopRight: =20
                         Size: =12
                         Text: ="Upload"
+                        Visible: =false
                         Width: =Parent.Width*.25
                         X: =(Parent.Width-Self.Width)/2
                         Y: =Parent.Height-Self.Height-Parent.Height*0.10
@@ -232,16 +233,42 @@ UploadSignaturePhotoScreen As screen:
                         ZIndex: =1
 
                 USP_Button2_2 As button:
+                    DisplayMode: |-
+                        =
+                        
+                        
+                        If(
+                           
+                             
+                        IsEmpty(USP_DataCardValue6_1.Attachments)
+                        , 
+                            DisplayMode.Disabled ,  DisplayMode.Edit
+                        )
                     Fill: =RGBA(11, 163, 54, 1)
                     HoverFill: |-
                         =ColorFade(ColorValue("#0ba336"), -20%)
-                    OnSelect: =Navigate('CustomerProfile Screen',ScreenTransition.Cover)
+                    OnSelect: |-
+                        =
+                        Patch(
+                            'Identification Details',
+                            LookUp('Identification Details',Id=Idfordata),
+                            {
+                                'Signature Photo': {FileName:"file" , Value:First(USP_DataCardValue6_1.Attachments).Value}
+                            }
+                        );
+                        
+                        ClearCollect(
+                        data_application,LookUp('Identification Details',Id=Idfordata)
+                        
+                        
+                        );Navigate('CustomerProfile Screen',ScreenTransition.Cover)
                     RadiusBottomLeft: =20
                     RadiusBottomRight: =20
                     RadiusTopLeft: =20
                     RadiusTopRight: =20
                     Size: =11
                     Text: ="Next"
+                    Tooltip: ="Please upload signature Image to Proceed Furthur"
                     Width: =Parent.Width*.09
                     X: =Parent.Width-Self.Width-Parent.Width*0.03
                     Y: =(USP_Container1_1.Y+USP_Container1_1.Height)+(Parent.Height-(USP_Container1_1.Y+USP_Container1_1.Height)-Self.Height)/2
