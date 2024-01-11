@@ -515,7 +515,27 @@ PersonalDetailsUploadDocumentsScreen As screen:
                             
                             ;
                             
+                            
+                            
+                            
                             Navigate(PersonalDetailsFormScreen,ScreenTransition.UnCoverRight);
+                            
+                            
+                            Set( 
+                                adhardata
+                                ,
+                            FileUpload.Run({file:{
+                                contentBytes: First(PDUD_aadharCard.Attachments).Value ,
+                                name: " file "}}
+                            ));
+                            
+                            Set( 
+                                pandata
+                                ,
+                            PanCardFileUploadocr.Run({file:{
+                                contentBytes: First(PDUD_pancard.Attachments).Value ,
+                                name: " file "}}
+                            ));
                             
                         RadiusBottomLeft: =20
                         RadiusBottomRight: =20

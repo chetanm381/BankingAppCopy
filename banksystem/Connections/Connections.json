@@ -1,4 +1,80 @@
 {
+  "22f8fa1c-f941-4992-97ad-7750d240b033": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "dca28d40-2a19-4cad-bcfa-50ac45c294d3": {
+          "value": "shared_commondataserviceforapps"
+        },
+        "workflowEntityId": {
+          "value": "39639087-69b0-ee11-a569-6045bdaa8a35"
+        },
+        "workflowName": {
+          "value": "acd0fba8-98e0-cee3-bd15-a2f5046ca027"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_commondataserviceforapps": {
+          "value": "dca28d40-2a19-4cad-bcfa-50ac45c294d3"
+        },
+        "workflowEntityId": {
+          "value": "39639087-69b0-ee11-a569-6045bdaa8a35"
+        },
+        "workflowName": {
+          "value": "acd0fba8-98e0-cee3-bd15-a2f5046ca027"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "PanCardFileUploadocr"
+    ],
+    "dependencies": {
+      "shared_commondataserviceforapps": "dca28d40-2a19-4cad-bcfa-50ac45c294d3"
+    },
+    "dependents": [],
+    "id": "22f8fa1c-f941-4992-97ad-7750d240b033"
+  },
+  "990eedd9-e76a-474e-a77a-45927cbb0447": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "dca28d40-2a19-4cad-bcfa-50ac45c294d3": {
+          "value": "shared_commondataserviceforapps"
+        },
+        "workflowEntityId": {
+          "value": "f7b546d2-4db0-ee11-a569-6045bdaa8a35"
+        },
+        "workflowName": {
+          "value": "658b087e-f35c-d9f8-99da-d749f24c0302"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_commondataserviceforapps": {
+          "value": "dca28d40-2a19-4cad-bcfa-50ac45c294d3"
+        },
+        "workflowEntityId": {
+          "value": "f7b546d2-4db0-ee11-a569-6045bdaa8a35"
+        },
+        "workflowName": {
+          "value": "658b087e-f35c-d9f8-99da-d749f24c0302"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "FileUpload"
+    ],
+    "dependencies": {
+      "shared_commondataserviceforapps": "dca28d40-2a19-4cad-bcfa-50ac45c294d3"
+    },
+    "dependents": [],
+    "id": "990eedd9-e76a-474e-a77a-45927cbb0447"
+  },
   "cae46ba5-af31-4373-a3fc-1bede7ff7044": {
     "connectionRef": {
       "displayName": "Logic flows",
@@ -47,7 +123,9 @@
     "dataSources": [],
     "dependencies": {},
     "dependents": [
-      "cae46ba5-af31-4373-a3fc-1bede7ff7044"
+      "cae46ba5-af31-4373-a3fc-1bede7ff7044",
+      "990eedd9-e76a-474e-a77a-45927cbb0447",
+      "22f8fa1c-f941-4992-97ad-7750d240b033"
     ],
     "id": "dca28d40-2a19-4cad-bcfa-50ac45c294d3"
   }
