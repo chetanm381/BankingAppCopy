@@ -191,6 +191,7 @@ OpenAccountScreen As screen:
                             Reset(OA_TextInput2_10);
                             Reset(OA_TextInput2_7);
                             Reset(OA_TextInput2_11);
+                            Set(visibility,false);
                             ClearCollect(
                                 data_application,
                                 LookUp('Identification Details',Id=Idfordata)
@@ -405,9 +406,9 @@ OpenAccountScreen As screen:
                             );
                             
                             Set(data_record,
-                            First(
-                                Filter('Identification Details','OTP Send'=Value(Entered_otp))
-                            )
+                            
+                                LookUp('Identification Details','OTP Send'=Value(Entered_otp))
+                            
                             );
                             Set(Idfordata,data_record.Id);
                             

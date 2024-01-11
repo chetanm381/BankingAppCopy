@@ -137,7 +137,7 @@ PersonalDetailsUploadDocumentsScreen As screen:
                         BorderColor: =RGBA(107, 29, 94, 1)
                         BorderStyle: =BorderStyle.None
                         BorderThickness: =0
-                        Default: =""
+                        Default: =First(data_application).'Full Name'
                         Height: =42
                         HintText: ="First Name"
                         HoverBorderColor: =RGBA(107, 29, 94, 1)
@@ -189,6 +189,7 @@ PersonalDetailsUploadDocumentsScreen As screen:
 
                         PDUD_DatePicker1_1 As datepicker:
                             BorderThickness: =0
+                            DefaultDate: =First(data_application).'Date of Birth'
                             Height: =Parent.Height
                             IconBackground: =Color.White
                             IconFill: |-
@@ -214,7 +215,7 @@ PersonalDetailsUploadDocumentsScreen As screen:
                         BorderColor: =RGBA(107, 29, 94, 1)
                         BorderStyle: =BorderStyle.None
                         BorderThickness: =0
-                        Default: =""
+                        Default: =First(data_application).Address
                         Height: =140
                         HintText: ="Enter Address"
                         HoverBorderColor: =RGBA(107, 29, 94, 1)
@@ -328,7 +329,7 @@ PersonalDetailsUploadDocumentsScreen As screen:
                                 Y: =PDUD_Circle2_1.Y+(PDUD_Circle2_1.Height-Self.Height)/2
                                 ZIndex: =5
 
-                            PDUD_DataCardValue6_3 As attachments:
+                            PDUD_pancard As attachments:
                                 AddAttachmentText: ="Upload file"
                                 BorderColor: =RGBA(107, 29, 94, 1)
                                 BorderStyle: =BorderStyle.None
@@ -372,8 +373,8 @@ PersonalDetailsUploadDocumentsScreen As screen:
                                 Height: =Parent.Height*0.25
                                 Image: ='cloud-computing (2)'
                                 Width: =Parent.Width*0.25
-                                X: =PDUD_DataCardValue6_3.X+(PDUD_DataCardValue6_3.Width-Self.Width)/2
-                                Y: =PDUD_DataCardValue6_2.Y+Parent.Height*0.01
+                                X: =PDUD_pancard.X+(PDUD_pancard.Width-Self.Width)/2
+                                Y: =PDUD_aadharCard.Y+Parent.Height*0.01
                                 ZIndex: =7
 
                         PDUD_Container6_3 As groupContainer.manualLayoutContainer:
@@ -431,7 +432,7 @@ PersonalDetailsUploadDocumentsScreen As screen:
                                 Y: =PDUD_Circle2_2.Y+(PDUD_Circle2_2.Height-Self.Height)/2
                                 ZIndex: =5
 
-                            PDUD_DataCardValue6_2 As attachments:
+                            PDUD_aadharCard As attachments:
                                 AddAttachmentText: ="Upload file"
                                 BorderColor: =RGBA(107, 29, 94, 1)
                                 BorderStyle: =BorderStyle.None
@@ -475,21 +476,53 @@ PersonalDetailsUploadDocumentsScreen As screen:
                                 Height: =Parent.Height*0.25
                                 Image: ='cloud-computing (2)'
                                 Width: =Parent.Width*0.25
-                                X: =PDUD_DataCardValue6_2.X+(PDUD_DataCardValue6_2.Width-Self.Width)/2
-                                Y: =PDUD_DataCardValue6_2.Y+Parent.Height*0.01
+                                X: =PDUD_aadharCard.X+(PDUD_aadharCard.Width-Self.Width)/2
+                                Y: =PDUD_aadharCard.Y+Parent.Height*0.01
                                 ZIndex: =7
 
                     PDUD_Button2_2 As button:
+                        DisplayMode: |-
+                            =
+                            
+                            
+                            If(
+                               
+                                 
+                               Or(IsEmpty(PDUD_aadharCard.Attachments),IsEmpty(PDUD_pancard.Attachments)
+                              ),
+                             
+                                DisplayMode.Disabled ,  DisplayMode.Edit
+                            )
                         Fill: =RGBA(11, 163, 54, 1)
                         HoverFill: |-
                             =ColorFade(ColorValue("#0ba336"), -20%)
-                        OnSelect: =Navigate(PersonalDetailsFormScreen,ScreenTransition.UnCoverRight);
+                        OnSelect: |-
+                            =Patch(
+                                'Identification Details',
+                                LookUp('Identification Details',Id=Idfordata),
+                                {
+                                    'Adhaar Card Image': {
+                                        FileName: First(PDUD_aadharCard.Attachments).Name,
+                                        Value: First(PDUD_aadharCard.Attachments).Value
+                                    }
+                                    ,
+                                    'PAN Card Image': {
+                                        FileName: First(PDUD_pancard.Attachments).Name,
+                                        Value: First(PDUD_pancard.Attachments).Value
+                                    }
+                                }
+                            )
+                            
+                            ;
+                            
+                            Navigate(PersonalDetailsFormScreen,ScreenTransition.UnCoverRight);
                         RadiusBottomLeft: =20
                         RadiusBottomRight: =20
                         RadiusTopLeft: =20
                         RadiusTopRight: =20
                         Size: =11
                         Text: ="Next"
+                        Tooltip: ="Please attach files to proceed further"
                         Width: =Parent.Width*.09
                         X: =Parent.Width-Self.Width-Parent.Width*0.03
                         Y: =(PDUD_Container5.Y+PDUD_Container5.Height)+(Parent.Height-(PDUD_Container5.Y+PDUD_Container5.Height)-Self.Height)/2

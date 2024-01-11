@@ -554,19 +554,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "PersonalDetailsUploadDocumentsScreen.PDUD_BgContainer_2.PDUD_ScrollableContainer_2.PDUD_Container12_2.PDUD_Container6_1.PDUD_Container5.PDUD_Container6_3.PDUD_DataCardValue6_2.AccessibleLabel"
+                  "fullyQualifiedName": "PersonalDetailsUploadDocumentsScreen.PDUD_BgContainer_2.PDUD_ScrollableContainer_2.PDUD_Container12_2.PDUD_Container6_1.PDUD_Container5.PDUD_Container6_3.PDUD_aadharCard.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "PersonalDetailsUploadDocumentsScreen.PDUD_BgContainer_2.PDUD_ScrollableContainer_2.PDUD_Container12_2.PDUD_Container6_1.PDUD_Container5.PDUD_Container6_3.PDUD_DataCardValue6_2.AccessibleLabel",
+                  "fullyQualifiedName": "PersonalDetailsUploadDocumentsScreen.PDUD_BgContainer_2.PDUD_ScrollableContainer_2.PDUD_Container12_2.PDUD_Container6_1.PDUD_Container5.PDUD_Container6_3.PDUD_aadharCard.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "PersonalDetailsUploadDocumentsScreen",
-                "type": "PersonalDetailsUploadDocumentsScreen.PDUD_BgContainer_2.PDUD_ScrollableContainer_2.PDUD_Container12_2.PDUD_Container6_1.PDUD_Container5.PDUD_Container6_3.PDUD_DataCardValue6_2"
+                "type": "PersonalDetailsUploadDocumentsScreen.PDUD_BgContainer_2.PDUD_ScrollableContainer_2.PDUD_Container12_2.PDUD_Container6_1.PDUD_Container5.PDUD_Container6_3.PDUD_aadharCard"
               }
             }
           ],
@@ -584,19 +584,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "PersonalDetailsUploadDocumentsScreen.PDUD_BgContainer_2.PDUD_ScrollableContainer_2.PDUD_Container12_2.PDUD_Container6_1.PDUD_Container5.PDUD_Container6_2.PDUD_DataCardValue6_3.AccessibleLabel"
+                  "fullyQualifiedName": "PersonalDetailsUploadDocumentsScreen.PDUD_BgContainer_2.PDUD_ScrollableContainer_2.PDUD_Container12_2.PDUD_Container6_1.PDUD_Container5.PDUD_Container6_2.PDUD_pancard.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "PersonalDetailsUploadDocumentsScreen.PDUD_BgContainer_2.PDUD_ScrollableContainer_2.PDUD_Container12_2.PDUD_Container6_1.PDUD_Container5.PDUD_Container6_2.PDUD_DataCardValue6_3.AccessibleLabel",
+                  "fullyQualifiedName": "PersonalDetailsUploadDocumentsScreen.PDUD_BgContainer_2.PDUD_ScrollableContainer_2.PDUD_Container12_2.PDUD_Container6_1.PDUD_Container5.PDUD_Container6_2.PDUD_pancard.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "PersonalDetailsUploadDocumentsScreen",
-                "type": "PersonalDetailsUploadDocumentsScreen.PDUD_BgContainer_2.PDUD_ScrollableContainer_2.PDUD_Container12_2.PDUD_Container6_1.PDUD_Container5.PDUD_Container6_2.PDUD_DataCardValue6_3"
+                "type": "PersonalDetailsUploadDocumentsScreen.PDUD_BgContainer_2.PDUD_ScrollableContainer_2.PDUD_Container12_2.PDUD_Container6_1.PDUD_Container5.PDUD_Container6_2.PDUD_pancard"
               }
             }
           ],
