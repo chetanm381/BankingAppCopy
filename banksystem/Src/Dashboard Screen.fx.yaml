@@ -415,7 +415,7 @@
             ShowScrollbar: =false
             TemplatePadding: =0
             TemplateSize: =69
-            Width: =956
+            Width: =Parent.Width
             Y: =69
             ZIndex: =7
 

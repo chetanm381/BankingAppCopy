@@ -395,7 +395,7 @@ PersonalDetailsFormScreen As screen:
 
                             PDF_DatePicker1_2 As datepicker:
                                 BorderThickness: =0
-                                DefaultDate: =DateValue(Text(Mid(adhardata.dob, 4, 2) & "/" & Mid(adhardata.dob, 1, 2) & "/" & Mid(adhardata.dob, 7, 4), "[$-en-US]mm/dd/yyyy"))
+                                DefaultDate: =If(IsBlank(adhardata.dob),Blank(),DateValue(Text(Mid(adhardata.dob, 4, 2) & "/" & Mid(adhardata.dob, 1, 2) & "/" & Mid(adhardata.dob, 7, 4), "[$-en-US]mm/dd/yyyy")))
                                 Height: =Parent.Height
                                 IconBackground: =Color.White
                                 IconFill: |-
@@ -556,7 +556,7 @@ PersonalDetailsFormScreen As screen:
 
                             PDF_DatePicker1_3 As datepicker:
                                 BorderThickness: =0
-                                DefaultDate: =DateValue(Text(Mid(pandata.dob, 4, 2) & "/" & Mid(pandata.dob, 1, 2) & "/" & Mid(pandata.dob, 7, 4), "[$-en-US]mm/dd/yyyy"))
+                                DefaultDate: =If(IsBlank(pandata.dob),Blank(),DateValue(Text(Mid(pandata.dob, 4, 2) & "/" & Mid(pandata.dob, 1, 2) & "/" & Mid(pandata.dob, 7, 4), "[$-en-US]mm/dd/yyyy")))
                                 Height: =Parent.Height
                                 IconBackground: =Color.White
                                 IconFill: |-

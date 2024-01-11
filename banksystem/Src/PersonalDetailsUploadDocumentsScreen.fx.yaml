@@ -496,7 +496,7 @@ PersonalDetailsUploadDocumentsScreen As screen:
                         Fill: =RGBA(11, 163, 54, 1)
                         HoverFill: |-
                             =ColorFade(ColorValue("#0ba336"), -20%)
-                        OnSelect: |+
+                        OnSelect: |
                             =Patch(
                                 'Identification Details',
                                 LookUp('Identification Details',Id=Idfordata),
@@ -520,7 +520,7 @@ PersonalDetailsUploadDocumentsScreen As screen:
                             
                             Navigate(PersonalDetailsFormScreen,ScreenTransition.UnCoverRight);
                             
-                            
+                            Set(loadervisibility,true);
                             Set( 
                                 adhardata
                                 ,
@@ -537,6 +537,7 @@ PersonalDetailsUploadDocumentsScreen As screen:
                                 name: " file "}}
                             ));
                             
+                            Set(loadervisibility,false);
                         RadiusBottomLeft: =20
                         RadiusBottomRight: =20
                         RadiusTopLeft: =20

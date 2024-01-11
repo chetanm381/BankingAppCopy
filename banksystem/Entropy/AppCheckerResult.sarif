@@ -14,276 +14,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container12_2.UPS_Container1_2.DataCardValue6.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container12_2.UPS_Container1_2.DataCardValue6.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "UploadPassportSizePhoto",
-                "type": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container12_2.UPS_Container1_2.DataCardValue6"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "UploadSignaturePhotoScreen.USP_BgContainer.USP_ScrollableContainer.USP_Container12_1.USP_Container1_1.USP_DataCardValue6_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "UploadSignaturePhotoScreen.USP_BgContainer.USP_ScrollableContainer.USP_Container12_1.USP_Container1_1.USP_DataCardValue6_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "UploadSignaturePhotoScreen",
-                "type": "UploadSignaturePhotoScreen.USP_BgContainer.USP_ScrollableContainer.USP_Container12_1.USP_Container1_1.USP_DataCardValue6_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'CustomerProfile Screen'.BgContainer.ScrollableContainer.Container12.Container1.TextInput1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'CustomerProfile Screen'.BgContainer.ScrollableContainer.Container12.Container1.TextInput1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "CustomerProfile Screen",
-                "type": "'CustomerProfile Screen'.BgContainer.ScrollableContainer.Container12.Container1.TextInput1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'CustomerProfile Screen'.BgContainer.ScrollableContainer.Container12.Container1.TextInput1_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'CustomerProfile Screen'.BgContainer.ScrollableContainer.Container12.Container1.TextInput1_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "CustomerProfile Screen",
-                "type": "'CustomerProfile Screen'.BgContainer.ScrollableContainer.Container12.Container1.TextInput1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'CustomerProfile Screen'.BgContainer.ScrollableContainer.Container12.Container1.TextInput1_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'CustomerProfile Screen'.BgContainer.ScrollableContainer.Container12.Container1.TextInput1_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "CustomerProfile Screen",
-                "type": "'CustomerProfile Screen'.BgContainer.ScrollableContainer.Container12.Container1.TextInput1_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'CustomerProfile Screen'.BgContainer.ScrollableContainer.Container12.Container1.Container2_1.DatePicker1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'CustomerProfile Screen'.BgContainer.ScrollableContainer.Container12.Container1.Container2_1.DatePicker1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "CustomerProfile Screen",
-                "type": "'CustomerProfile Screen'.BgContainer.ScrollableContainer.Container12.Container1.Container2_1.DatePicker1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'CustomerProfile Screen'.BgContainer.ScrollableContainer.Container12.Container1.TextInput1_3.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'CustomerProfile Screen'.BgContainer.ScrollableContainer.Container12.Container1.TextInput1_3.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "CustomerProfile Screen",
-                "type": "'CustomerProfile Screen'.BgContainer.ScrollableContainer.Container12.Container1.TextInput1_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'CustomerProfile Screen'.CPS_ContainerForThankYouPop_1.CPS_PopUpContainerDetails_1.Icon2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'CustomerProfile Screen'.CPS_ContainerForThankYouPop_1.CPS_PopUpContainerDetails_1.Icon2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "CustomerProfile Screen",
-                "type": "'CustomerProfile Screen'.CPS_ContainerForThankYouPop_1.CPS_PopUpContainerDetails_1.Icon2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'CustomerProfile Screen'.CPS_ContainerForThankYouPop_1.CPS_PopUpContainerDetails_1.Icon2.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'CustomerProfile Screen'.CPS_ContainerForThankYouPop_1.CPS_PopUpContainerDetails_1.Icon2.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "CustomerProfile Screen",
-                "type": "'CustomerProfile Screen'.CPS_ContainerForThankYouPop_1.CPS_PopUpContainerDetails_1.Icon2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'Dashboard Screen'.DS_Container10.Gallery1.AccessibleLabel"
                 }
               ],
@@ -357,6 +87,36 @@
                 "member": "AccessibleLabel",
                 "module": "UploadLiveVideoScreen",
                 "type": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container12_3.ULV_Container3_3.ULV_Container5_2.ULV_DataCardValue6_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container12_2.UPS_Container1_2.DataCardValue6.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container12_2.UPS_Container1_2.DataCardValue6.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "UploadPassportSizePhoto",
+                "type": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container12_2.UPS_Container1_2.DataCardValue6"
               }
             }
           ],
@@ -1004,6 +764,276 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "UploadSignaturePhotoScreen.USP_BgContainer.USP_ScrollableContainer.USP_Container12_1.USP_Container1_1.USP_DataCardValue6_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "UploadSignaturePhotoScreen.USP_BgContainer.USP_ScrollableContainer.USP_Container12_1.USP_Container1_1.USP_DataCardValue6_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "UploadSignaturePhotoScreen",
+                "type": "UploadSignaturePhotoScreen.USP_BgContainer.USP_ScrollableContainer.USP_Container12_1.USP_Container1_1.USP_DataCardValue6_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'CustomerProfile Screen'.BgContainer.ScrollableContainer.Container12.Container1.TextInput1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'CustomerProfile Screen'.BgContainer.ScrollableContainer.Container12.Container1.TextInput1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "CustomerProfile Screen",
+                "type": "'CustomerProfile Screen'.BgContainer.ScrollableContainer.Container12.Container1.TextInput1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'CustomerProfile Screen'.BgContainer.ScrollableContainer.Container12.Container1.TextInput1_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'CustomerProfile Screen'.BgContainer.ScrollableContainer.Container12.Container1.TextInput1_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "CustomerProfile Screen",
+                "type": "'CustomerProfile Screen'.BgContainer.ScrollableContainer.Container12.Container1.TextInput1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'CustomerProfile Screen'.BgContainer.ScrollableContainer.Container12.Container1.TextInput1_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'CustomerProfile Screen'.BgContainer.ScrollableContainer.Container12.Container1.TextInput1_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "CustomerProfile Screen",
+                "type": "'CustomerProfile Screen'.BgContainer.ScrollableContainer.Container12.Container1.TextInput1_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'CustomerProfile Screen'.BgContainer.ScrollableContainer.Container12.Container1.Container2_1.DatePicker1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'CustomerProfile Screen'.BgContainer.ScrollableContainer.Container12.Container1.Container2_1.DatePicker1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "CustomerProfile Screen",
+                "type": "'CustomerProfile Screen'.BgContainer.ScrollableContainer.Container12.Container1.Container2_1.DatePicker1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'CustomerProfile Screen'.BgContainer.ScrollableContainer.Container12.Container1.TextInput1_3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'CustomerProfile Screen'.BgContainer.ScrollableContainer.Container12.Container1.TextInput1_3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "CustomerProfile Screen",
+                "type": "'CustomerProfile Screen'.BgContainer.ScrollableContainer.Container12.Container1.TextInput1_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'CustomerProfile Screen'.CPS_ContainerForThankYouPop_1.CPS_PopUpContainerDetails_1.Icon2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'CustomerProfile Screen'.CPS_ContainerForThankYouPop_1.CPS_PopUpContainerDetails_1.Icon2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "CustomerProfile Screen",
+                "type": "'CustomerProfile Screen'.CPS_ContainerForThankYouPop_1.CPS_PopUpContainerDetails_1.Icon2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'CustomerProfile Screen'.CPS_ContainerForThankYouPop_1.CPS_PopUpContainerDetails_1.Icon2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'CustomerProfile Screen'.CPS_ContainerForThankYouPop_1.CPS_PopUpContainerDetails_1.Icon2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "CustomerProfile Screen",
+                "type": "'CustomerProfile Screen'.CPS_ContainerForThankYouPop_1.CPS_PopUpContainerDetails_1.Icon2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.loadervisibility"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.loadervisibility",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "loadervisibility",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.cloud-computing"
                 }
               ],
@@ -1027,7 +1057,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 2
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -1057,7 +1087,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 2
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -1087,7 +1117,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 2
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -1117,7 +1147,7 @@
             "level": "Medium"
           },
           "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 3
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1147,7 +1177,7 @@
             "level": "Medium"
           },
           "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 3
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1177,7 +1207,7 @@
             "level": "Medium"
           },
           "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 3
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1207,7 +1237,7 @@
             "level": "Medium"
           },
           "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 3
+          "ruleIndex": 4
         }
       ],
       "tool": {
@@ -1247,6 +1277,23 @@
                 "level": "Medium",
                 "primaryCategory": "accessibility",
                 "whyFix": "People who use the keyboard with your app will not be able to access this element without a tab stop."
+              }
+            },
+            {
+              "id": "app-UnusedVariables",
+              "messageStrings": {
+                "issue": {
+                  "text": "Unused variable"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Remove the unused variable."
+                ],
+                "level": "Medium",
+                "primaryCategory": "performance",
+                "whyFix": "This variable is declared but is not referenced by any control, so it is not needed."
               }
             },
             {
