@@ -180,16 +180,30 @@ OpenAccountScreen As screen:
                         ZIndex: =4
 
                     OA_Button2_6 As button:
+                        DisplayMode: =If(visibility,DisplayMode.Edit,DisplayMode.Disabled)
                         Fill: =RGBA(11, 163, 54, 1)
                         HoverFill: |-
                             =ColorFade(ColorValue("#0ba336"), -20%)
-                        OnSelect: =Navigate(PersonalDetailsUploadDocumentsScreen,ScreenTransition.CoverRight);
+                        OnSelect: |+
+                            =Reset(OA_TextInput2_6);
+                            Reset(OA_TextInput2_8);
+                            Reset(OA_TextInput2_9);
+                            Reset(OA_TextInput2_10);
+                            Reset(OA_TextInput2_7);
+                            Reset(OA_TextInput2_11);
+                            ClearCollect(
+                                data_application,
+                                LookUp('Identification Details',Id=Idfordata)
+                            );
+                            Navigate(PersonalDetailsUploadDocumentsScreen,ScreenTransition.CoverRight);
+                            
+                            
                         RadiusBottomLeft: =20
                         RadiusBottomRight: =20
                         RadiusTopLeft: =20
                         RadiusTopRight: =20
                         Size: =11
-                        Text: ="Verify OTP"
+                        Text: ="Submit"
                         Width: =Parent.Width*.13
                         X: =Parent.Width-Self.Width-Parent.Width*0.03
                         Y: =(MPV_Container1_2.Y+MPV_Container1_2.Height)+(Parent.Height-(MPV_Container1_2.Y+MPV_Container1_2.Height)-Self.Height)/2
@@ -230,66 +244,114 @@ OpenAccountScreen As screen:
                         ZIndex: =17
 
                     OA_TextInput2_6 As text:
+                        Align: =Align.Center
                         BorderColor: =RGBA(107, 29, 94, 1)
+                        Color: =RGBA(107, 29, 94, 1)
                         Default: =""
+                        FontWeight: =FontWeight.Bold
+                        Format: =TextFormat.Number
                         Height: =60
                         HoverBorderColor: =RGBA(107, 29, 94, 1)
                         HoverFill: =ColorFade( RGBA(107, 29, 94, 1),70%)
+                        MaxLength: =1
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        Size: =15
                         Width: =60
                         X: =(OA_TextInput2_8.X)-Self.Width-Parent.Width*0.025
                         Y: =OA_Label8_1.Y+OA_Label8_1.Height+Parent.Height*0.05
                         ZIndex: =18
 
                     OA_TextInput2_7 As text:
+                        Align: =Align.Center
                         BorderColor: =RGBA(107, 29, 94, 1)
+                        Color: =RGBA(107, 29, 94, 1)
                         Default: =""
+                        FontWeight: =FontWeight.Bold
+                        Format: =TextFormat.Number
                         Height: =60
                         HoverBorderColor: =RGBA(107, 29, 94, 1)
                         HoverFill: =ColorFade( RGBA(107, 29, 94, 1),70%)
+                        MaxLength: =1
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        Size: =15
                         Width: =60
                         X: =OA_TextInput2_10.X+OA_TextInput2_10.Width+Parent.Width*0.025
                         Y: =OA_Label8_1.Y+OA_Label8_1.Height+Parent.Height*0.05
                         ZIndex: =19
 
                     OA_TextInput2_8 As text:
+                        Align: =Align.Center
                         BorderColor: =RGBA(107, 29, 94, 1)
+                        Color: =RGBA(107, 29, 94, 1)
                         Default: =""
+                        FontWeight: =FontWeight.Bold
+                        Format: =TextFormat.Number
                         Height: =60
                         HoverBorderColor: =RGBA(107, 29, 94, 1)
                         HoverFill: =ColorFade( RGBA(107, 29, 94, 1),70%)
+                        MaxLength: =1
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        Size: =15
                         Width: =60
                         X: =(OA_TextInput2_9.X)-Self.Width-Parent.Width*0.025
                         Y: =OA_Label8_1.Y+OA_Label8_1.Height+Parent.Height*0.05
                         ZIndex: =20
 
                     OA_TextInput2_9 As text:
+                        Align: =Align.Center
                         BorderColor: =RGBA(107, 29, 94, 1)
+                        Color: =RGBA(107, 29, 94, 1)
                         Default: =""
+                        FontWeight: =FontWeight.Bold
+                        Format: =TextFormat.Number
                         Height: =60
                         HoverBorderColor: =RGBA(107, 29, 94, 1)
                         HoverFill: =ColorFade( RGBA(107, 29, 94, 1),70%)
+                        MaxLength: =1
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        Size: =15
                         Width: =60
                         X: =(Parent.Width-Self.Width)/2-Parent.Width*0.0125
                         Y: =OA_Label8_1.Y+OA_Label8_1.Height+Parent.Height*0.05
                         ZIndex: =21
 
                     OA_TextInput2_10 As text:
+                        Align: =Align.Center
                         BorderColor: =RGBA(107, 29, 94, 1)
+                        Color: =RGBA(107, 29, 94, 1)
                         Default: =""
+                        FontWeight: =FontWeight.Bold
+                        Format: =TextFormat.Number
                         Height: =60
                         HoverBorderColor: =RGBA(107, 29, 94, 1)
                         HoverFill: =ColorFade( RGBA(107, 29, 94, 1),70%)
+                        MaxLength: =1
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        Size: =15
                         Width: =60
                         X: =(Parent.Width+Self.Width)/2+Parent.Width*0.0125
                         Y: =OA_Label8_1.Y+OA_Label8_1.Height+Parent.Height*0.05
                         ZIndex: =22
 
                     OA_TextInput2_11 As text:
+                        Align: =Align.Center
                         BorderColor: =RGBA(107, 29, 94, 1)
+                        Color: =RGBA(107, 29, 94, 1)
                         Default: =""
+                        FontWeight: =FontWeight.Bold
+                        Format: =TextFormat.Number
                         Height: =60
                         HoverBorderColor: =RGBA(107, 29, 94, 1)
                         HoverFill: =ColorFade( RGBA(107, 29, 94, 1),70%)
+                        MaxLength: =1
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        Size: =15
                         Width: =60
                         X: =OA_TextInput2_7.X+OA_TextInput2_7.Width+Parent.Width*0.025
                         Y: =OA_Label8_1.Y+OA_Label8_1.Height+Parent.Height*0.05
@@ -301,7 +363,7 @@ OpenAccountScreen As screen:
                         FontWeight: =FontWeight.Bold
                         PaddingRight: =0
                         Size: =9
-                        Text: ="Resend OTP"
+                        Text: ="Verify OTP"
                         Underline: =true
                         Width: =Parent.Width*.40
                         X: =OA_TextInput2_11.X+OA_TextInput2_11.Width-Self.Width
@@ -312,8 +374,58 @@ OpenAccountScreen As screen:
                         Color: =RGBA(12, 204, 67, 1)
                         Height: =50
                         Icon: =Icon.Check
+                        Visible: =visibility
                         Width: =50
                         X: =OA_TextInput2_11.X+OA_TextInput2_11.Width+Parent.Width*0.025
                         Y: =OA_Label8_1.Y+OA_Label8_1.Height+Parent.Height*0.05
                         ZIndex: =25
+
+                    OA_Button2_8 As button:
+                        BorderColor: |-
+                            =ColorFade(ColorValue("#6B1D5E"), -15%)
+                        BorderThickness: =0
+                        Color: =RGBA(0, 0, 0, 0)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledFill: =RGBA(0, 0, 0, 0)
+                        Fill: =RGBA(0, 0, 0, 0)
+                        HoverBorderColor: =RGBA(0,0,0,0)
+                        HoverColor: =RGBA(0, 0, 0, 0)
+                        HoverFill: =RGBA(0,0,0,0)
+                        OnSelect: |-
+                            =Set(
+                                Entered_otp,
+                                Concatenate(
+                                    OA_TextInput2_6.Text,
+                                    OA_TextInput2_8.Text,
+                                    OA_TextInput2_9.Text,
+                                    OA_TextInput2_10.Text,
+                                    OA_TextInput2_7.Text,
+                                    OA_TextInput2_11.Text
+                                )
+                            );
+                            
+                            Set(data_record,
+                            First(
+                                Filter('Identification Details','OTP Send'=Value(Entered_otp))
+                            )
+                            );
+                            Set(Idfordata,data_record.Id);
+                            
+                            If(
+                              IsBlank(LookUp('Identification Details','OTP Send'=Value(Entered_otp))),
+                                Notify("Otp Invalid",NotificationType.Error);Set(visibility,false),Notify("Otp Verified",NotificationType.Success);Set(visibility,true)
+                            );
+                        PressedBorderColor: =RGBA(0,0,0,0)
+                        PressedColor: =RGBA(0,0,0,0)
+                        PressedFill: =RGBA(0,0,0,0)
+                        RadiusBottomLeft: =20
+                        RadiusBottomRight: =20
+                        RadiusTopLeft: =20
+                        RadiusTopRight: =20
+                        Size: =11
+                        Text: =""
+                        Width: =Parent.Width*.09
+                        X: =OA_Label9_1.X+OA_Label9_1.Width-Self.Width
+                        Y: =OA_Label9_1.Y
+                        ZIndex: =26
 

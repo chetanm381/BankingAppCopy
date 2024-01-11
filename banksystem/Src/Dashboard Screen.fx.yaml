@@ -36,7 +36,22 @@
             Fill: =RGBA(252, 242, 247, 1)
             Height: =30
             HoverFill: =ColorFade(Self.Color, 20%)
-            OnSelect: =Navigate(OpenAccountScreen,ScreenTransition.CoverRight)
+            OnSelect: |
+                =Set(
+                    visibility,
+                    false
+                );
+                Reset(OA_TextInput2_6);
+                Reset(OA_TextInput2_8);
+                Reset(OA_TextInput2_9);
+                Reset(OA_TextInput2_10);
+                Reset(OA_TextInput2_7);
+                Reset(OA_TextInput2_11);
+                
+                Navigate(
+                    OpenAccountScreen,
+                    ScreenTransition.CoverRight
+                );
             Size: =9
             Text: ="New Customer"
             Width: =125
