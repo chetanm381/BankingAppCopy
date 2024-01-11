@@ -472,18 +472,18 @@ PersonalDetailsFormScreen As screen:
                             ZIndex: =17
 
                         PDF_Icon3_3 As icon.Check:
-                            Color: =RGBA(11, 163, 54, 1)
+                            Color: =If(Lower(First(data_application).'Full Name')=Lower(adhardata.name),RGBA(11, 163, 54, 1),Color.Red)
                             Height: =20
-                            Icon: =Icon.Check
+                            Icon: =If(Lower(First(data_application).'Full Name')=Lower(adhardata.name),Icon.Check,Icon.Cancel)
                             Width: =20
                             X: =PDF_TextInput1_4.Width+PDF_TextInput1_4.X-Self.Width
                             Y: =PDF_Label4_7.Y+(PDF_Label4_7.Height-Self.Height)/2
                             ZIndex: =18
 
                         PDF_Icon3_4 As icon.Check:
-                            Color: =RGBA(11, 163, 54, 1)
+                            Color: =If(Text(First(data_application).'Date of Birth',"dd/mm/yyyy")=pandata.dob,Color.Green,Color.Red)
                             Height: =20
-                            Icon: =Icon.Check
+                            Icon: =If(Text(First(data_application).'Date of Birth',"dd/mm/yyyy")=adhardata.dob,Icon.Check,Icon.Cancel)
                             Width: =20
                             X: =PDF_TextInput1_4.Width+PDF_TextInput1_4.X-Self.Width
                             Y: =PDF_Label4_9.Y+(PDF_Label4_9.Height-Self.Height)/2
@@ -493,15 +493,16 @@ PersonalDetailsFormScreen As screen:
                             Color: =RGBA(11, 163, 54, 1)
                             Height: =20
                             Icon: =Icon.Check
+                            Visible: =false
                             Width: =20
                             X: =PDF_TextInput1_4.Width+PDF_TextInput1_4.X-Self.Width
                             Y: =PDF_Label4_11.Y+(PDF_Label4_11.Height-Self.Height)/2
                             ZIndex: =20
 
                         PDF_Icon3_6 As icon.Check:
-                            Color: =RGBA(11, 163, 54, 1)
+                            Color: =If(Lower(First(data_application).'Full Name')=Lower(pandata.name),RGBA(11, 163, 54, 1),Color.Red)
                             Height: =20
-                            Icon: =Icon.Check
+                            Icon: =If(Lower(First(data_application).'Full Name')=Lower(pandata.name),Icon.Check,Icon.Cancel)
                             Width: =20
                             X: =PDF_TextInput1_5.Width+PDF_TextInput1_5.X-Self.Width
                             Y: =PDF_Label4_7.Y+(PDF_Label4_7.Height-Self.Height)/2
@@ -520,6 +521,7 @@ PersonalDetailsFormScreen As screen:
                             Color: =RGBA(11, 163, 54, 1)
                             Height: =20
                             Icon: =Icon.Check
+                            Visible: =false
                             Width: =20
                             X: =PDF_TextInput1_5.Width+PDF_TextInput1_5.X-Self.Width
                             Y: =PDF_Label4_11.Y+(PDF_Label4_11.Height-Self.Height)/2
@@ -571,6 +573,7 @@ PersonalDetailsFormScreen As screen:
                         PDF_Container5 As groupContainer.manualLayoutContainer:
                             Fill: =RGBA(237, 237, 237, 0.55)
                             Height: =Parent.Height
+                            Visible: =loadervisibility
                             Width: =Parent.Width
                             ZIndex: =25
 
