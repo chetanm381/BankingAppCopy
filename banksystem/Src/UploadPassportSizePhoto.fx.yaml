@@ -147,7 +147,7 @@ UploadPassportSizePhoto As screen:
                             
                             Patch(
                                 'Identification Details',
-                                {Id:"ID-2"},
+                                {Id:Idfordata},
                                 {
                                     'Adhaar Card Image': {FileName:"file" , Value:First(DataCardValue6.Attachments).Value}
                                 }

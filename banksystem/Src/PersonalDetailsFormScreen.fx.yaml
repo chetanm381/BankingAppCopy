@@ -115,6 +115,7 @@ PersonalDetailsFormScreen As screen:
                         Color: =RGBA(11, 163, 54, 1)
                         Height: =20
                         Icon: =Icon.Check
+                        Visible: =false
                         Width: =20
                         X: =PDF_TextInput2_80.X+PDF_TextInput2_80.Width-Self.Width
                         Y: =(PDF_Label6_30.Height-Self.Height)/2+PDF_Label6_30.Y
@@ -124,6 +125,7 @@ PersonalDetailsFormScreen As screen:
                         Color: =RGBA(11, 163, 54, 1)
                         Height: =20
                         Icon: =Icon.Check
+                        Visible: =false
                         Width: =20
                         X: =PDF_Container2_23.X+PDF_Container2_23.Width-Self.Width
                         Y: =(PDF_Label6_4.Height-Self.Height)/2+PDF_Label6_4.Y
@@ -133,6 +135,7 @@ PersonalDetailsFormScreen As screen:
                         Color: =RGBA(11, 163, 54, 1)
                         Height: =20
                         Icon: =Icon.Check
+                        Visible: =false
                         Width: =20
                         X: =PDF_Icon3.X
                         Y: =(PDF_Label6_5.Height-Self.Height)/2+PDF_Label6_5.Y
@@ -306,13 +309,16 @@ PersonalDetailsFormScreen As screen:
                             ZIndex: =2
 
                         PDF_TextInput1_4 As text:
+                            BorderColor: =RGBA(107, 29, 94, 1)
                             Clear: =true
                             Default: =adhardata.name
                             DisabledBorderColor: =RGBA(237, 237, 237, 1)
                             DisabledColor: =RGBA(44, 54, 84, 1)
                             DisabledFill: =RGBA(250, 250, 250, 1)
-                            DisplayMode: =DisplayMode.Disabled
                             Height: =35
+                            HoverBorderColor: =ColorFade(Self.BorderColor,10%)
+                            HoverColor: =Color.White
+                            HoverFill: =ColorFade(Self.BorderColor,50%)
                             Size: =11
                             Width: =Parent.Width*.40
                             X: =(Parent.Width/2-Self.Width)/2
@@ -320,12 +326,15 @@ PersonalDetailsFormScreen As screen:
                             ZIndex: =3
 
                         PDF_TextInput1_5 As text:
+                            BorderColor: =RGBA(107, 29, 94, 1)
                             Default: =pandata.name
                             DisabledBorderColor: =RGBA(237, 237, 237, 1)
                             DisabledColor: =RGBA(44, 54, 84, 1)
                             DisabledFill: =RGBA(250, 250, 250, 1)
-                            DisplayMode: =DisplayMode.Disabled
                             Height: =35
+                            HoverBorderColor: =ColorFade(Self.BorderColor,10%)
+                            HoverColor: =Color.White
+                            HoverFill: =ColorFade(Self.BorderColor,50%)
                             Size: =11
                             Width: =Parent.Width*.40
                             X: =Parent.Width/2+(Parent.Width/2-Self.Width)/2
@@ -365,7 +374,7 @@ PersonalDetailsFormScreen As screen:
                             ZIndex: =7
 
                         PDF_Container2_4 As groupContainer.manualLayoutContainer:
-                            BorderColor: =RGBA(237, 237, 237, 1)
+                            BorderColor: =RGBA(107, 29, 94, 1)
                             BorderThickness: =2
                             DropShadow: =DropShadow.None
                             Fill: =RGBA(250, 250, 250, 1)
@@ -426,13 +435,16 @@ PersonalDetailsFormScreen As screen:
                             ZIndex: =13
 
                         PDF_TextInput1_7 As text:
+                            BorderColor: =RGBA(107, 29, 94, 1)
                             Clear: =true
                             Default: =adhardata.adhar
                             DisabledBorderColor: =RGBA(237, 237, 237, 1)
                             DisabledColor: =RGBA(44, 54, 84, 1)
                             DisabledFill: =RGBA(250, 250, 250, 1)
-                            DisplayMode: =DisplayMode.Disabled
                             Height: =35
+                            HoverBorderColor: =ColorFade(Self.BorderColor,10%)
+                            HoverColor: =Color.White
+                            HoverFill: =ColorFade(Self.BorderColor,50%)
                             Size: =11
                             Width: =Parent.Width*.40
                             X: =(Parent.Width/2-Self.Width)/2
@@ -440,13 +452,16 @@ PersonalDetailsFormScreen As screen:
                             ZIndex: =14
 
                         PDF_TextInput1_8 As text:
+                            BorderColor: =RGBA(107, 29, 94, 1)
                             Clear: =true
                             Default: =pandata.pan
                             DisabledBorderColor: =RGBA(237, 237, 237, 1)
                             DisabledColor: =RGBA(44, 54, 84, 1)
                             DisabledFill: =RGBA(250, 250, 250, 1)
-                            DisplayMode: =DisplayMode.Disabled
                             Height: =35
+                            HoverBorderColor: =ColorFade(Self.BorderColor,10%)
+                            HoverColor: =Color.White
+                            HoverFill: =ColorFade(Self.BorderColor,50%)
                             Size: =11
                             Width: =Parent.Width*.40
                             X: =Parent.Width/2+(Parent.Width/2-Self.Width)/2
@@ -472,18 +487,18 @@ PersonalDetailsFormScreen As screen:
                             ZIndex: =17
 
                         PDF_Icon3_3 As icon.Check:
-                            Color: =If(Lower(First(data_application).'Full Name')=Lower(adhardata.name),RGBA(11, 163, 54, 1),Color.Red)
+                            Color: =If(Lower(First(data_application).'Full Name')=Lower(PDF_TextInput1_4.Text),RGBA(11, 163, 54, 1),Color.Red)
                             Height: =20
-                            Icon: =If(Lower(First(data_application).'Full Name')=Lower(adhardata.name),Icon.Check,Icon.Cancel)
+                            Icon: =If(Lower(First(data_application).'Full Name')=Lower(PDF_TextInput1_4.Text),Icon.Check,Icon.Cancel)
                             Width: =20
                             X: =PDF_TextInput1_4.Width+PDF_TextInput1_4.X-Self.Width
                             Y: =PDF_Label4_7.Y+(PDF_Label4_7.Height-Self.Height)/2
                             ZIndex: =18
 
                         PDF_Icon3_4 As icon.Check:
-                            Color: =If(Text(First(data_application).'Date of Birth',"dd/mm/yyyy")=pandata.dob,Color.Green,Color.Red)
+                            Color: =If(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_2.SelectedDate,Color.Green,Color.Red)
                             Height: =20
-                            Icon: =If(Text(First(data_application).'Date of Birth',"dd/mm/yyyy")=adhardata.dob,Icon.Check,Icon.Cancel)
+                            Icon: =If(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_2.SelectedDate,Icon.Check,Icon.Cancel)
                             Width: =20
                             X: =PDF_TextInput1_4.Width+PDF_TextInput1_4.X-Self.Width
                             Y: =PDF_Label4_9.Y+(PDF_Label4_9.Height-Self.Height)/2
@@ -500,18 +515,18 @@ PersonalDetailsFormScreen As screen:
                             ZIndex: =20
 
                         PDF_Icon3_6 As icon.Check:
-                            Color: =If(Lower(First(data_application).'Full Name')=Lower(pandata.name),RGBA(11, 163, 54, 1),Color.Red)
+                            Color: =If(Lower(First(data_application).'Full Name')=Lower(PDF_TextInput1_5.Text),RGBA(11, 163, 54, 1),Color.Red)
                             Height: =20
-                            Icon: =If(Lower(First(data_application).'Full Name')=Lower(pandata.name),Icon.Check,Icon.Cancel)
+                            Icon: =If(Lower(First(data_application).'Full Name')=Lower(PDF_TextInput1_5.Text),Icon.Check,Icon.Cancel)
                             Width: =20
                             X: =PDF_TextInput1_5.Width+PDF_TextInput1_5.X-Self.Width
                             Y: =PDF_Label4_7.Y+(PDF_Label4_7.Height-Self.Height)/2
                             ZIndex: =21
 
                         PDF_Icon3_7 As icon.Check:
-                            Color: =RGBA(11, 163, 54, 1)
+                            Color: =If(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_3.SelectedDate,Color.Green,Color.Red)
                             Height: =20
-                            Icon: =Icon.Check
+                            Icon: =If(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_3.SelectedDate,Icon.Check,Icon.Cancel)
                             Width: =20
                             X: =PDF_TextInput1_5.Width+PDF_TextInput1_5.X-Self.Width
                             Y: =PDF_Label4_9.Y+(PDF_Label4_9.Height-Self.Height)/2
@@ -528,7 +543,7 @@ PersonalDetailsFormScreen As screen:
                             ZIndex: =23
 
                         PDF_Container2_5 As groupContainer.manualLayoutContainer:
-                            BorderColor: =RGBA(237, 237, 237, 1)
+                            BorderColor: =RGBA(107, 29, 94, 1)
                             BorderThickness: =2
                             DropShadow: =DropShadow.None
                             Fill: =RGBA(250, 250, 250, 1)
@@ -595,6 +610,12 @@ PersonalDetailsFormScreen As screen:
                                 ZIndex: =2
 
                     PDF_Button2_4 As button:
+                        DisplayMode: |-
+                            =If(And(
+                                Lower(First(data_application).'Full Name')=Lower(PDF_TextInput1_4.Text),Lower(First(data_application).'Full Name')=Lower(PDF_TextInput1_5.Text)
+                                ,DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_2.SelectedDate,DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_3.SelectedDate
+                            )
+                                ,DisplayMode.Edit,DisplayMode.Disabled)
                         Fill: =RGBA(11, 163, 54, 1)
                         HoverFill: |-
                             =ColorFade(ColorValue("#0ba336"), -20%)
@@ -605,6 +626,7 @@ PersonalDetailsFormScreen As screen:
                         RadiusTopRight: =20
                         Size: =11
                         Text: ="Next"
+                        Tooltip: ="Extracted information Does not matches."
                         Width: =Parent.Width*.09
                         X: =Parent.Width-Self.Width-Parent.Width*0.03
                         Y: =(PDF_Container1_1.Y+PDF_Container1_1.Height)+(Parent.Height-(PDF_Container1_1.Y+PDF_Container1_1.Height)-Self.Height)/2
