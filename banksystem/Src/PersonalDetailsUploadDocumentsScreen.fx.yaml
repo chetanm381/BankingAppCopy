@@ -501,45 +501,57 @@ PersonalDetailsUploadDocumentsScreen As screen:
                         OnSelect: |
                             =Patch(
                                 'Identification Details',
-                                LookUp('Identification Details',Id=Idfordata),
+                                LookUp(
+                                    'Identification Details',
+                                    Id = Idfordata
+                                ),
                                 {
                                     'Adhaar Card Image': {
                                         FileName: First(PDUD_aadharCard.Attachments).Name,
                                         Value: First(PDUD_aadharCard.Attachments).Value
-                                    }
-                                    ,
+                                    },
                                     'PAN Card Image': {
                                         FileName: First(PDUD_pancard.Attachments).Name,
                                         Value: First(PDUD_pancard.Attachments).Value
                                     }
                                 }
-                            )
-                            
-                            ;
-                            
-                            
-                            
-                            
-                            Navigate(PersonalDetailsFormScreen,ScreenTransition.UnCoverRight);
-                            
-                            Set(loadervisibility,true);
-                            Set( 
-                                adhardata
-                                ,
-                            FileUpload.Run({file:{
-                                contentBytes: First(PDUD_aadharCard.Attachments).Value ,
-                                name: " file "}}
-                            ));
-                            
-                            Set( 
-                                pandata
-                                ,
-                            PanCardFileUploadocr.Run({file:{
-                                contentBytes: First(PDUD_pancard.Attachments).Value ,
-                                name: " file "}}
-                            ));
-                            
-                            Set(loadervisibility,false);
+                            );
+                            Navigate(
+                                PersonalDetailsFormScreen,
+                                ScreenTransition.UnCoverRight
+                            );
+                            Set(
+                                loadervisibility,
+                                true
+                            );
+                            Concurrent(
+                                Set(
+                                    adhardata,
+                                    FileUpload.Run(
+                                        {
+                                            file: {
+                                                contentBytes: First(PDUD_aadharCard.Attachments).Value,
+                                                name: " file "
+                                            }
+                                        }
+                                    )
+                                ),
+                                Set(
+                                    pandata,
+                                    PanCardFileUploadocr.Run(
+                                        {
+                                            file: {
+                                                contentBytes: First(PDUD_pancard.Attachments).Value,
+                                                name: " file "
+                                            }
+                                        }
+                                    )
+                                )
+                            );
+                            Set(
+                                loadervisibility,
+                                false
+                            );
                         RadiusBottomLeft: =20
                         RadiusBottomRight: =20
                         RadiusTopLeft: =20
