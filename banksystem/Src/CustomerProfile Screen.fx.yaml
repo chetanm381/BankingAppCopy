@@ -170,7 +170,6 @@
                         DisabledColor: =RGBA(44, 54, 84, 1)
                         DisabledFill: =RGBA(250, 250, 250, 1)
                         DisplayMode: =DisplayMode.Disabled
-                        Format: =TextFormat.Number
                         Height: =35
                         Size: =11
                         Width: =Parent.Width*.40
@@ -202,7 +201,6 @@
                         DisabledColor: =RGBA(44, 54, 84, 1)
                         DisabledFill: =RGBA(250, 250, 250, 1)
                         DisplayMode: =DisplayMode.Disabled
-                        Format: =TextFormat.Number
                         Height: =35
                         Size: =11
                         Width: =Parent.Width*.40
@@ -279,6 +277,7 @@
 
                         DatePicker1 As datepicker:
                             BorderThickness: =0
+                            DefaultDate: =First(data_application).'Date of Birth'
                             Height: =Parent.Height
                             IconBackground: =Color.White
                             IconFill: |-
@@ -469,7 +468,15 @@
                 Color: =RGBA(107, 29, 94, 1)
                 Height: =35
                 Icon: =Icon.Cancel
-                OnSelect: =Set(ThankyouPopUp,false)
+                OnSelect: |
+                    =Navigate(
+                        'Dashboard Screen',
+                        ScreenTransition.Fade
+                    );
+                    Set(
+                        ThankyouPopUp,
+                        false
+                    );
                 Width: =Parent.Width*.05
                 X: =Parent.Width*.9
                 Y: =Parent.Height-Self.Height-Parent.Height*0.9
