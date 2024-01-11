@@ -30,11 +30,10 @@
             ZIndex: =2
 
         DS_Button1_9 As button:
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =0
+            BorderThickness: =1
             Color: =RGBA(107, 29, 94, 1)
             Fill: =RGBA(252, 242, 247, 1)
-            Height: =30
+            Height: =Parent.Height*.5
             HoverFill: =ColorFade(Self.Color, 20%)
             OnSelect: |
                 =Set(
@@ -52,12 +51,24 @@
                     OpenAccountScreen,
                     ScreenTransition.CoverRight
                 );
-            Size: =9
-            Text: ="New Customer"
-            Width: =125
+            Size: =10
+            Text: ="Launch New Customer"
+            Width: =Parent.Width*.15
             X: =DS_userimage_7.X-Self.Width-Parent.Width*.01
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =3
+
+        Label6 As label:
+            Align: =Align.Center
+            Color: =RGBA(107, 29, 94, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =Parent.Height
+            Size: =25
+            Text: ="INTELIGENT AUTOMATION"
+            Width: =Parent.Width/2
+            X: =(Parent.Width-Self.Width)/2
+            Y: =(Parent.Height-Self.Height)/2
+            ZIndex: =4
 
     DS_Rectangle2 As rectangle:
         Fill: =RGBA(201, 201, 201, 1)
@@ -373,44 +384,7 @@
         "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
             DelayItemLoading: =true
             Height: =Parent.Height-DS_Rectangle4.Y-DS_Rectangle4.Height
-            Items: |-
-                =[
-                    {
-                        ApplicationNumber: "A001",
-                        DOB: Date(1990, 1, 1),
-                        FullName: "John Doe",
-                        Status: "Pending",
-                        Date: Today()
-                    },
-                    {
-                        ApplicationNumber: "A002",
-                        DOB: Date(1985, 5, 15),
-                        FullName: "Jane Smith",
-                        Status: "Approved",
-                        Date: Today()
-                    },
-                    {
-                        ApplicationNumber: "A003",
-                        DOB: Date(1998, 8, 20),
-                        FullName: "Sam Johnson",
-                        Status: "Rejected",
-                        Date: Today()
-                    },
-                    {
-                        ApplicationNumber: "A004",
-                        DOB: Date(1982, 12, 10),
-                        FullName: "Emily Brown",
-                        Status: "Pending",
-                        Date: Today()
-                    },
-                    {
-                        ApplicationNumber: "A005",
-                        DOB: Date(1995, 3, 25),
-                        FullName: "Michael Taylor",
-                        Status: "Approved",
-                        Date: Today()
-                    }
-                ]
+            Items: ='Identification Details'
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             ShowScrollbar: =false
@@ -426,7 +400,7 @@
                 FontWeight: =FontWeight.Semibold
                 OnSelect: =Select(Parent)
                 Size: =12
-                Text: =ThisItem.ApplicationNumber
+                Text: =ThisItem.Id
                 Width: =Parent.Width*.15
                 X: =DS_Label11_3.X+(DS_Label13.Width-Self.Width)/2
                 Y: =(Gallery1.TemplateHeight-Self.Height)/2
@@ -438,7 +412,7 @@
                 FontWeight: =FontWeight.Semibold
                 OnSelect: =Select(Parent)
                 Size: =12
-                Text: =ThisItem.FullName
+                Text: =ThisItem.'Full Name'
                 Width: =Parent.Width*.2
                 X: =DS_Label13_1.X
                 Y: =(Gallery1.TemplateHeight-Self.Height)/2
@@ -451,7 +425,7 @@
                 OnSelect: =Select(Parent)
                 Size: =12
                 Text: |
-                    =Text(DateTimeValue(ThisItem.Date),  "[$-en-US]dd mmm' yy")
+                    =Text(DateTimeValue(ThisItem.'Schedule Date'),  "[$-en-US]dd mmm' yy")
                 Width: =Parent.Width*.2
                 X: =DS_Label13_2.X
                 Y: =(Gallery1.TemplateHeight-Self.Height)/2
@@ -478,7 +452,7 @@
                 OnSelect: =Select(Parent)
                 Size: =12
                 Text: |
-                    =Text(DateTimeValue(ThisItem.Date),  "[$-en-US]dd mmm' yy")
+                    =Text(DateTimeValue(ThisItem.'Date of Birth'),  "[$-en-US]dd mmm' yy")
                 Width: =Parent.Width*.2
                 X: =DS_Label13_4.X
                 Y: =(Gallery1.TemplateHeight-Self.Height)/2
