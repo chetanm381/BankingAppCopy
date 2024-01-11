@@ -320,7 +320,7 @@ PersonalDetailsFormScreen As screen:
                             ZIndex: =3
 
                         PDF_TextInput1_5 As text:
-                            Default: ="Pooja Sharma"
+                            Default: =pandata.name
                             DisabledBorderColor: =RGBA(237, 237, 237, 1)
                             DisabledColor: =RGBA(44, 54, 84, 1)
                             DisabledFill: =RGBA(250, 250, 250, 1)
@@ -567,6 +567,12 @@ PersonalDetailsFormScreen As screen:
                                 Width: =Parent.Width-PDF_Rectangle3_5.X-PDF_Rectangle3_5.Width
                                 X: =Parent.Width-Self.Width
                                 ZIndex: =3
+
+                        Container5 As groupContainer.manualLayoutContainer:
+                            Fill: =RGBA(237, 237, 237, 0.55)
+                            Height: =Parent.Height
+                            Width: =Parent.Width
+                            ZIndex: =25
 
                     PDF_Button2_4 As button:
                         Fill: =RGBA(11, 163, 54, 1)
