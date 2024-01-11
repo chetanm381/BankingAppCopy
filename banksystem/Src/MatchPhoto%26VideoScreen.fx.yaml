@@ -145,6 +145,7 @@
 
                         MPV_Image1 As image:
                             Height: =Parent.Height
+                            Image: =First(data_application).Photo.Value
                             Width: =Parent.Width
                             ZIndex: =3
 
@@ -198,6 +199,7 @@
                             BorderColor: =RGBA(107, 29, 94, 1)
                             Fill: =RGBA(107, 29, 94, 1)
                             Height: =Parent.Height
+                            Media: =First(data_application).'KYC Video'.Value
                             Width: =Parent.Width
                             ZIndex: =3
 
@@ -232,7 +234,7 @@
                     Fill: =RGBA(11, 163, 54, 1)
                     HoverFill: |-
                         =ColorFade(ColorValue("#0ba336"), -20%)
-                    OnSelect: =Navigate(UploadSignaturePhotoScreen,ScreenTransition.UnCoverRight)
+                    OnSelect: =Reset(USP_DataCardValue6_1);Navigate(UploadSignaturePhotoScreen,ScreenTransition.UnCoverRight)
                     RadiusBottomLeft: =20
                     RadiusBottomRight: =20
                     RadiusTopLeft: =20

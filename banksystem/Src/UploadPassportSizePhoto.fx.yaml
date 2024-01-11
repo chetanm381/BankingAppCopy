@@ -253,7 +253,7 @@ UploadPassportSizePhoto As screen:
                             {
                                 Photo: {FileName:"file" , Value:First(DataCardValue6.Attachments).Value}
                             }
-                        );
+                        );Reset(ULV_DataCardValue6_1);
                         
                         
                         Navigate(UploadLiveVideoScreen,ScreenTransition.Cover);

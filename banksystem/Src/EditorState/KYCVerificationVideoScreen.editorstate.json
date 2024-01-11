@@ -4519,7 +4519,14 @@
     "KVV_Video1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
-        "Media",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "SampleVideo",
+          "InvariantPropertyName": "Media",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "ImagePosition",
         {
           "AFDDataSourceName": "",
@@ -4585,7 +4592,7 @@
         {
           "Category": "Data",
           "PropertyName": "Media",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",

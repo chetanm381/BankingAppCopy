@@ -3481,7 +3481,14 @@
     "MPV_Image1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
-        "Image",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "SampleImage",
+          "InvariantPropertyName": "Image",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "ImagePosition",
         "ImageRotation",
         {
@@ -3556,7 +3563,7 @@
         {
           "Category": "Data",
           "PropertyName": "Image",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -5498,7 +5505,14 @@
     "MPV_Video2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
-        "Media",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "SampleVideo",
+          "InvariantPropertyName": "Media",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "ImagePosition",
         {
           "AFDDataSourceName": "",
@@ -5564,7 +5578,7 @@
         {
           "Category": "Data",
           "PropertyName": "Media",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",

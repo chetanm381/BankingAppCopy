@@ -205,6 +205,7 @@ KYCVerificationVideoScreen As screen:
                             BorderColor: =RGBA(107, 29, 94, 1)
                             Fill: =RGBA(107, 29, 94, 1)
                             Height: =Parent.Height
+                            Media: =First(data_application).'KYC Video'.Value
                             Width: =Parent.Width
                             ZIndex: =1
 
