@@ -136,8 +136,22 @@ UploadPassportSizePhoto As screen:
 
                     UPS_Button3_3 As button:
                         Fill: =RGBA(107, 29, 94, 1)
+                        FontWeight: =FontWeight.Bold
                         HoverFill: |-
                             =ColorFade(ColorValue("#6B1D5E"), 20%)
+                        OnSelect: |-
+                            =//UploadAadharCard.Run("ID-1",{file:{
+                            //contentBytes: First(DataCardValue6.Attachments).Value,
+                            //name : "file"
+                            //}})
+                            
+                            Patch(
+                                'Identification Details',
+                                {Id:"ID-2"},
+                                {
+                                    'Adhaar Card Image': {FileName:"file" , Value:First(DataCardValue6.Attachments).Value}
+                                }
+                            )
                         RadiusBottomLeft: =20
                         RadiusBottomRight: =20
                         RadiusTopLeft: =20

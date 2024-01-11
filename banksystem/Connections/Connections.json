@@ -1,1 +1,54 @@
-{}
+{
+  "cae46ba5-af31-4373-a3fc-1bede7ff7044": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "dca28d40-2a19-4cad-bcfa-50ac45c294d3": {
+          "value": "shared_commondataserviceforapps"
+        },
+        "workflowEntityId": {
+          "value": "170d1454-47b0-ee11-a569-6045bdaa8a35"
+        },
+        "workflowName": {
+          "value": "7dccccc7-8767-0a3c-01d2-42e6cc88ce15"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_commondataserviceforapps": {
+          "value": "dca28d40-2a19-4cad-bcfa-50ac45c294d3"
+        },
+        "workflowEntityId": {
+          "value": "170d1454-47b0-ee11-a569-6045bdaa8a35"
+        },
+        "workflowName": {
+          "value": "7dccccc7-8767-0a3c-01d2-42e6cc88ce15"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "UploadAadharCard"
+    ],
+    "dependencies": {
+      "shared_commondataserviceforapps": "dca28d40-2a19-4cad-bcfa-50ac45c294d3"
+    },
+    "dependents": [],
+    "id": "cae46ba5-af31-4373-a3fc-1bede7ff7044"
+  },
+  "dca28d40-2a19-4cad-bcfa-50ac45c294d3": {
+    "connectionRef": {
+      "displayName": "Microsoft Dataverse",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1673/1.0.1673.3557/commondataserviceforapps/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_commondataserviceforapps"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "cae46ba5-af31-4373-a3fc-1bede7ff7044"
+    ],
+    "id": "dca28d40-2a19-4cad-bcfa-50ac45c294d3"
+  }
+}
