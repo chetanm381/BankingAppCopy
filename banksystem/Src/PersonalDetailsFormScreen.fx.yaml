@@ -163,7 +163,7 @@ PersonalDetailsFormScreen As screen:
                         BorderColor: =RGBA(107, 29, 94, 1)
                         BorderStyle: =BorderStyle.None
                         BorderThickness: =0
-                        Default: =""
+                        Default: =First(data_application).'Full Name'
                         Height: =42
                         HintText: ="First Name"
                         HoverBorderColor: =RGBA(107, 29, 94, 1)
@@ -198,7 +198,7 @@ PersonalDetailsFormScreen As screen:
                         BorderColor: =RGBA(107, 29, 94, 1)
                         BorderStyle: =BorderStyle.None
                         BorderThickness: =0
-                        Default: =""
+                        Default: =First(data_application).Address
                         Height: =140
                         HintText: ="Enter Address"
                         HoverBorderColor: =RGBA(107, 29, 94, 1)
@@ -241,6 +241,7 @@ PersonalDetailsFormScreen As screen:
 
                         PDF_DatePicker1_29 As datepicker:
                             BorderThickness: =0
+                            DefaultDate: =First(data_application).'Date of Birth'
                             Height: =Parent.Height
                             IconBackground: =Color.White
                             IconFill: |-

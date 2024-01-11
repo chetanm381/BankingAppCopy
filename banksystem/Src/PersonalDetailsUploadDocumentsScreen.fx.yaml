@@ -496,7 +496,7 @@ PersonalDetailsUploadDocumentsScreen As screen:
                         Fill: =RGBA(11, 163, 54, 1)
                         HoverFill: |-
                             =ColorFade(ColorValue("#0ba336"), -20%)
-                        OnSelect: |-
+                        OnSelect: |+
                             =Patch(
                                 'Identification Details',
                                 LookUp('Identification Details',Id=Idfordata),
@@ -516,6 +516,7 @@ PersonalDetailsUploadDocumentsScreen As screen:
                             ;
                             
                             Navigate(PersonalDetailsFormScreen,ScreenTransition.UnCoverRight);
+                            
                         RadiusBottomLeft: =20
                         RadiusBottomRight: =20
                         RadiusTopLeft: =20
