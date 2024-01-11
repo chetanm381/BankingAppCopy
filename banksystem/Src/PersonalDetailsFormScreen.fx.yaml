@@ -568,11 +568,28 @@ PersonalDetailsFormScreen As screen:
                                 X: =Parent.Width-Self.Width
                                 ZIndex: =3
 
-                        Container5 As groupContainer.manualLayoutContainer:
+                        PDF_Container5 As groupContainer.manualLayoutContainer:
                             Fill: =RGBA(237, 237, 237, 0.55)
                             Height: =Parent.Height
                             Width: =Parent.Width
                             ZIndex: =25
+
+                            PDF_Image1 As image:
+                                Fill: =RGBA(255, 255, 255, 1)
+                                Height: =Parent.Height
+                                Image: ='Fast loading'
+                                Width: =Parent.Width
+                                ZIndex: =1
+
+                            PDF_Label6 As label:
+                                Align: =Align.Center
+                                Color: =RGBA(107, 29, 94, 1)
+                                FontWeight: =FontWeight.Bold
+                                Size: =15
+                                Text: ="Please Wait till information is processed"
+                                Width: =Parent.Width
+                                Y: =Parent.Height*.97-Self.Height
+                                ZIndex: =2
 
                     PDF_Button2_4 As button:
                         Fill: =RGBA(11, 163, 54, 1)

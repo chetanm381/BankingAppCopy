@@ -14,606 +14,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_6.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_6.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "OpenAccountScreen",
-                "type": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_6"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_8.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_8.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "OpenAccountScreen",
-                "type": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_8"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_9.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_9.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "OpenAccountScreen",
-                "type": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_9"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_10.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_10.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "OpenAccountScreen",
-                "type": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_10"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_7.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_7.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "OpenAccountScreen",
-                "type": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_7"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_11.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_11.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "OpenAccountScreen",
-                "type": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_11"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container5_2.PDF_TextInput2_80.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container5_2.PDF_TextInput2_80.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "PersonalDetailsFormScreen",
-                "type": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container5_2.PDF_TextInput2_80"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container5_2.PDF_Container2_23.PDF_DatePicker1_29.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container5_2.PDF_Container2_23.PDF_DatePicker1_29.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "PersonalDetailsFormScreen",
-                "type": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container5_2.PDF_Container2_23.PDF_DatePicker1_29"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container5_2.PDF_TextInput2_9.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container5_2.PDF_TextInput2_9.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "PersonalDetailsFormScreen",
-                "type": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container5_2.PDF_TextInput2_9"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_TextInput1_4.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_TextInput1_4.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "PersonalDetailsFormScreen",
-                "type": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_TextInput1_4"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_TextInput1_5.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_TextInput1_5.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "PersonalDetailsFormScreen",
-                "type": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_TextInput1_5"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_Container2_4.PDF_DatePicker1_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_Container2_4.PDF_DatePicker1_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "PersonalDetailsFormScreen",
-                "type": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_Container2_4.PDF_DatePicker1_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_TextInput1_6.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_TextInput1_6.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "PersonalDetailsFormScreen",
-                "type": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_TextInput1_6"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_TextInput1_7.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_TextInput1_7.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "PersonalDetailsFormScreen",
-                "type": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_TextInput1_7"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_TextInput1_8.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_TextInput1_8.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "PersonalDetailsFormScreen",
-                "type": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_TextInput1_8"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "PersonalDetailsUploadDocumentsScreen.PDUD_BgContainer_2.PDUD_ScrollableContainer_2.PDUD_Container12_2.PDUD_Container5_1.PDUD_TextInput2_6.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "PersonalDetailsUploadDocumentsScreen.PDUD_BgContainer_2.PDUD_ScrollableContainer_2.PDUD_Container12_2.PDUD_Container5_1.PDUD_TextInput2_6.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "PersonalDetailsUploadDocumentsScreen",
-                "type": "PersonalDetailsUploadDocumentsScreen.PDUD_BgContainer_2.PDUD_ScrollableContainer_2.PDUD_Container12_2.PDUD_Container5_1.PDUD_TextInput2_6"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "PersonalDetailsUploadDocumentsScreen.PDUD_BgContainer_2.PDUD_ScrollableContainer_2.PDUD_Container12_2.PDUD_Container5_1.PDUD_Container2_2.PDUD_DatePicker1_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "PersonalDetailsUploadDocumentsScreen.PDUD_BgContainer_2.PDUD_ScrollableContainer_2.PDUD_Container12_2.PDUD_Container5_1.PDUD_Container2_2.PDUD_DatePicker1_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "PersonalDetailsUploadDocumentsScreen",
-                "type": "PersonalDetailsUploadDocumentsScreen.PDUD_BgContainer_2.PDUD_ScrollableContainer_2.PDUD_Container12_2.PDUD_Container5_1.PDUD_Container2_2.PDUD_DatePicker1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "PersonalDetailsUploadDocumentsScreen.PDUD_BgContainer_2.PDUD_ScrollableContainer_2.PDUD_Container12_2.PDUD_Container5_1.PDUD_TextInput2_7.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "PersonalDetailsUploadDocumentsScreen.PDUD_BgContainer_2.PDUD_ScrollableContainer_2.PDUD_Container12_2.PDUD_Container5_1.PDUD_TextInput2_7.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "PersonalDetailsUploadDocumentsScreen",
-                "type": "PersonalDetailsUploadDocumentsScreen.PDUD_BgContainer_2.PDUD_ScrollableContainer_2.PDUD_Container12_2.PDUD_Container5_1.PDUD_TextInput2_7"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "PersonalDetailsUploadDocumentsScreen.PDUD_BgContainer_2.PDUD_ScrollableContainer_2.PDUD_Container12_2.PDUD_Container6_1.PDUD_Container5.PDUD_Container6_3.PDUD_aadharCard.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "PersonalDetailsUploadDocumentsScreen.PDUD_BgContainer_2.PDUD_ScrollableContainer_2.PDUD_Container12_2.PDUD_Container6_1.PDUD_Container5.PDUD_Container6_3.PDUD_aadharCard.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "PersonalDetailsUploadDocumentsScreen",
-                "type": "PersonalDetailsUploadDocumentsScreen.PDUD_BgContainer_2.PDUD_ScrollableContainer_2.PDUD_Container12_2.PDUD_Container6_1.PDUD_Container5.PDUD_Container6_3.PDUD_aadharCard"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "PersonalDetailsUploadDocumentsScreen.PDUD_BgContainer_2.PDUD_ScrollableContainer_2.PDUD_Container12_2.PDUD_Container6_1.PDUD_Container5.PDUD_Container6_2.PDUD_pancard.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "PersonalDetailsUploadDocumentsScreen.PDUD_BgContainer_2.PDUD_ScrollableContainer_2.PDUD_Container12_2.PDUD_Container6_1.PDUD_Container5.PDUD_Container6_2.PDUD_pancard.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "PersonalDetailsUploadDocumentsScreen",
-                "type": "PersonalDetailsUploadDocumentsScreen.PDUD_BgContainer_2.PDUD_ScrollableContainer_2.PDUD_Container12_2.PDUD_Container6_1.PDUD_Container5.PDUD_Container6_2.PDUD_pancard"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container12_2.UPS_Container1_2.DataCardValue6.AccessibleLabel"
                 }
               ],
@@ -974,6 +374,216 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container5_2.PDF_TextInput2_80.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container5_2.PDF_TextInput2_80.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "PersonalDetailsFormScreen",
+                "type": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container5_2.PDF_TextInput2_80"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container5_2.PDF_Container2_23.PDF_DatePicker1_29.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container5_2.PDF_Container2_23.PDF_DatePicker1_29.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "PersonalDetailsFormScreen",
+                "type": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container5_2.PDF_Container2_23.PDF_DatePicker1_29"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container5_2.PDF_TextInput2_9.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container5_2.PDF_TextInput2_9.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "PersonalDetailsFormScreen",
+                "type": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container5_2.PDF_TextInput2_9"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_TextInput1_4.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_TextInput1_4.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "PersonalDetailsFormScreen",
+                "type": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_TextInput1_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_TextInput1_5.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_TextInput1_5.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "PersonalDetailsFormScreen",
+                "type": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_TextInput1_5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_Container2_4.PDF_DatePicker1_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_Container2_4.PDF_DatePicker1_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "PersonalDetailsFormScreen",
+                "type": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_Container2_4.PDF_DatePicker1_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_TextInput1_6.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_TextInput1_6.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "PersonalDetailsFormScreen",
+                "type": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_TextInput1_6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_Container2_5.PDF_DatePicker1_3.AccessibleLabel"
                 }
               ],
@@ -987,6 +597,396 @@
                 "member": "AccessibleLabel",
                 "module": "PersonalDetailsFormScreen",
                 "type": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_Container2_5.PDF_DatePicker1_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_TextInput1_7.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_TextInput1_7.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "PersonalDetailsFormScreen",
+                "type": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_TextInput1_7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_TextInput1_8.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_TextInput1_8.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "PersonalDetailsFormScreen",
+                "type": "PersonalDetailsFormScreen.PDF_BgContainer_1.PDF_ScrollableContainer_1.PDF_Container12_1.PDF_Container7.PDF_Container1_1.PDF_TextInput1_8"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_6.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_6.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "OpenAccountScreen",
+                "type": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_8.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_8.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "OpenAccountScreen",
+                "type": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_8"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_9.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_9.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "OpenAccountScreen",
+                "type": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_9"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_10.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_10.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "OpenAccountScreen",
+                "type": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_10"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_7.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_7.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "OpenAccountScreen",
+                "type": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_11.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_11.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "OpenAccountScreen",
+                "type": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_TextInput2_11"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PersonalDetailsUploadDocumentsScreen.PDUD_BgContainer_2.PDUD_ScrollableContainer_2.PDUD_Container12_2.PDUD_Container5_1.PDUD_TextInput2_6.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "PersonalDetailsUploadDocumentsScreen.PDUD_BgContainer_2.PDUD_ScrollableContainer_2.PDUD_Container12_2.PDUD_Container5_1.PDUD_TextInput2_6.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "PersonalDetailsUploadDocumentsScreen",
+                "type": "PersonalDetailsUploadDocumentsScreen.PDUD_BgContainer_2.PDUD_ScrollableContainer_2.PDUD_Container12_2.PDUD_Container5_1.PDUD_TextInput2_6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PersonalDetailsUploadDocumentsScreen.PDUD_BgContainer_2.PDUD_ScrollableContainer_2.PDUD_Container12_2.PDUD_Container5_1.PDUD_Container2_2.PDUD_DatePicker1_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "PersonalDetailsUploadDocumentsScreen.PDUD_BgContainer_2.PDUD_ScrollableContainer_2.PDUD_Container12_2.PDUD_Container5_1.PDUD_Container2_2.PDUD_DatePicker1_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "PersonalDetailsUploadDocumentsScreen",
+                "type": "PersonalDetailsUploadDocumentsScreen.PDUD_BgContainer_2.PDUD_ScrollableContainer_2.PDUD_Container12_2.PDUD_Container5_1.PDUD_Container2_2.PDUD_DatePicker1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PersonalDetailsUploadDocumentsScreen.PDUD_BgContainer_2.PDUD_ScrollableContainer_2.PDUD_Container12_2.PDUD_Container5_1.PDUD_TextInput2_7.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "PersonalDetailsUploadDocumentsScreen.PDUD_BgContainer_2.PDUD_ScrollableContainer_2.PDUD_Container12_2.PDUD_Container5_1.PDUD_TextInput2_7.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "PersonalDetailsUploadDocumentsScreen",
+                "type": "PersonalDetailsUploadDocumentsScreen.PDUD_BgContainer_2.PDUD_ScrollableContainer_2.PDUD_Container12_2.PDUD_Container5_1.PDUD_TextInput2_7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PersonalDetailsUploadDocumentsScreen.PDUD_BgContainer_2.PDUD_ScrollableContainer_2.PDUD_Container12_2.PDUD_Container6_1.PDUD_Container5.PDUD_Container6_3.PDUD_aadharCard.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "PersonalDetailsUploadDocumentsScreen.PDUD_BgContainer_2.PDUD_ScrollableContainer_2.PDUD_Container12_2.PDUD_Container6_1.PDUD_Container5.PDUD_Container6_3.PDUD_aadharCard.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "PersonalDetailsUploadDocumentsScreen",
+                "type": "PersonalDetailsUploadDocumentsScreen.PDUD_BgContainer_2.PDUD_ScrollableContainer_2.PDUD_Container12_2.PDUD_Container6_1.PDUD_Container5.PDUD_Container6_3.PDUD_aadharCard"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PersonalDetailsUploadDocumentsScreen.PDUD_BgContainer_2.PDUD_ScrollableContainer_2.PDUD_Container12_2.PDUD_Container6_1.PDUD_Container5.PDUD_Container6_2.PDUD_pancard.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "PersonalDetailsUploadDocumentsScreen.PDUD_BgContainer_2.PDUD_ScrollableContainer_2.PDUD_Container12_2.PDUD_Container6_1.PDUD_Container5.PDUD_Container6_2.PDUD_pancard.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "PersonalDetailsUploadDocumentsScreen",
+                "type": "PersonalDetailsUploadDocumentsScreen.PDUD_BgContainer_2.PDUD_ScrollableContainer_2.PDUD_Container12_2.PDUD_Container6_1.PDUD_Container5.PDUD_Container6_2.PDUD_pancard"
               }
             }
           ],
@@ -1094,66 +1094,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_Button2_7.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_Button2_7.Y",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "OpenAccountScreen",
-                "type": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_Button2_7"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_Button2_6.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_Button2_6.Y",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "OpenAccountScreen",
-                "type": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_Button2_6"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "UploadPassportSizePhoto.UPS_BgContainer_1.UPS_ScrollableContainer_1.UPS_Container12_2.Height"
                 }
               ],
@@ -1197,6 +1137,66 @@
                 "member": "Height",
                 "module": "KYCVerificationVideoScreen",
                 "type": "KYCVerificationVideoScreen.KVV_BgContainer_3.KVV_ScrollableContainer_3.KVV_Container12_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_Button2_7.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_Button2_7.Y",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "OpenAccountScreen",
+                "type": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_Button2_7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_Button2_6.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_Button2_6.Y",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "OpenAccountScreen",
+                "type": "OpenAccountScreen.OA_BgContainer_1.OA_ScrollableContainer_1.OA_Container12_1.OA_Container6.OA_Button2_6"
               }
             }
           ],
