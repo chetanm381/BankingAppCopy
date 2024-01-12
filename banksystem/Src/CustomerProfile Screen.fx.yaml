@@ -472,6 +472,7 @@
                         ThankyouPopUp,
                         false
                     );
+                    SendEmailAccountProcessed.Run(Idfordata);
                 Width: =Parent.Width*.05
                 X: =Parent.Width*.92
                 Y: =Parent.Height-Self.Height-Parent.Height*0.9
