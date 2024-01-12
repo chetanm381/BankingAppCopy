@@ -358,7 +358,9 @@
                     Fill: =RGBA(11, 163, 54, 1)
                     HoverFill: |-
                         =ColorFade(ColorValue("#0ba336"), -20%)
-                    OnSelect: =Set(ThankyouPopUp,true);
+                    OnSelect: |-
+                        =Set(ThankyouPopUp,true);
+                        SendEmailAccountProcessed.Run(First(data_application).Id);
                     RadiusBottomLeft: =20
                     RadiusBottomRight: =20
                     RadiusTopLeft: =20
@@ -437,7 +439,8 @@
                 Color: =RGBA(158, 108, 151, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =50
-                Text: ="Account will be opened shortly."
+                Text: |-
+                    ="Account will be opened shortly And We mailed you details on this EmailID : "&First(data_application).'Email ID'
                 Width: =Parent.Width*.80
                 X: =(Parent.Width-Self.Width)/2
                 Y: =TS_ThankYouLabel_4.Y+TS_ThankYouLabel_4.Height+Parent.Height*.01
@@ -464,6 +467,7 @@
                         ThankyouPopUp,
                         false
                     );
+                    SendEmailAccountProcessed.Run(Idfordata);
                 Width: =Parent.Width*.05
                 X: =Parent.Width*.92
                 Y: =Parent.Height-Self.Height-Parent.Height*0.9

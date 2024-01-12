@@ -984,6 +984,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Dashboard Screen'.DS_Container9.DS_ButtonCanvas1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Dashboard Screen'.DS_Container9.DS_ButtonCanvas1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Dashboard Screen",
+                "type": "'Dashboard Screen'.DS_Container9.DS_ButtonCanvas1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'Dashboard Screen'.DS_Container10.Gallery1.AccessibleLabel"
                 }
               ],
