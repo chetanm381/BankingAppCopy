@@ -52,7 +52,7 @@
                     ScreenTransition.CoverRight
                 );
             Size: =10
-            Text: ="Launch New Customer"
+            Text: ="New Customer Visit"
             Width: =Parent.Width*.15
             X: =DS_userimage_7.X-Self.Width-Parent.Width*.01
             Y: =(Parent.Height-Self.Height)/2
