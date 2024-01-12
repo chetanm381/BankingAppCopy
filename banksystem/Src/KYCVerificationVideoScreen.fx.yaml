@@ -177,7 +177,8 @@ KYCVerificationVideoScreen As screen:
                         Color: =RGBA(107, 29, 94, 1)
                         FontWeight: =FontWeight.Bold
                         Size: =15
-                        Text: ="Script"
+                        Text: ="Extracted Text from Video"
+                        Width: =Parent.Width-Self.X
                         X: =Parent.Width*.05
                         Y: =Parent.Height*.03
                         ZIndex: =2

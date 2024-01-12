@@ -271,14 +271,6 @@
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =4
 
-            Value1 As pcfDataField.textualColumn:
-                FieldDisplayName: ="Value"
-                FieldName: ="Value"
-                FieldType: ="s"
-                FieldVariantName: ="textualColumn"
-                Order: =1
-                ZIndex: =11
-
         DS_ButtonCanvas1 As Button:
             Appearance: ='ButtonCanvas.Appearance'.Secondary
             DisplayMode: =DisplayMode.Edit

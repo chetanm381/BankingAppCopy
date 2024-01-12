@@ -183,12 +183,13 @@ UploadLiveVideoScreen As screen:
                         ZIndex: =2
 
                     ULV_Label7 As label:
-                        Height: =28
+                        Color: =RGBA(255, 0, 0, 1)
+                        Height: =Parent.Height-Self.Y
                         Size: =8
-                        Text: ="Upload live Video with Aadhar no. and Pan card no. using the above script "
+                        Text: ="Upload Live Video where user holds Adhar card and Pan Card in front of Camera while Reading out script"
                         Width: =ULV_Container5_3.Width
                         X: =ULV_Container5_3.X
-                        Y: =ULV_Container5_3.Height+ULV_Container5_3.Y+Parent.Height*.02
+                        Y: =ULV_Container5_3.Height+ULV_Container5_3.Y
                         ZIndex: =3
 
                 ULV_Container3_3 As groupContainer.manualLayoutContainer:
