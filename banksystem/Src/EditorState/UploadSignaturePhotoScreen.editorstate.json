@@ -163,7 +163,7 @@
       "MetaDataIDKey": "",
       "Name": "USP__Image1111",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1678,7 +1678,7 @@
       "MetaDataIDKey": "",
       "Name": "USP_Button3_411",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3668,7 +3668,7 @@
       "MetaDataIDKey": "",
       "Name": "USP_Icon31111",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4110,7 +4110,7 @@
       "MetaDataIDKey": "",
       "Name": "USP_Image1_5",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4341,7 +4341,7 @@
       "MetaDataIDKey": "",
       "Name": "USP_Image1_5111",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5423,7 +5423,7 @@
       "MetaDataIDKey": "",
       "Name": "USP_Label8_5",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

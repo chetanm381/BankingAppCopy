@@ -255,14 +255,23 @@
             ZIndex: =3
 
         DropdownCanvas1 As Dropdown.pcfdataset:
+            DefaultSelectedItems: =Blank()
             DisplayMode: =DisplayMode.Edit
             Height: =Parent.Height*.6
             Items: |
-                =["New","In-Progress","Visited","Completed"]
+                =[Blank(),"New","In-Progress","Visited","Completed"]
             Width: =320
             X: =18
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =4
+
+            Value1 As pcfDataField.textualColumn:
+                FieldDisplayName: ="Value"
+                FieldName: ="Value"
+                FieldType: ="s"
+                FieldVariantName: ="textualColumn"
+                Order: =1
+                ZIndex: =11
 
     DS_Group1 As group:
         Height: =5
@@ -442,10 +451,11 @@
         "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
             DelayItemLoading: =true
             Height: =Parent.Height-DS_Rectangle4.Y-DS_Rectangle4.Height
-            Items: |-
-                =Filter(
+            Items: |
+                =If(
+                    IsBlank(DropdownCanvas1.Selected.Value),
                     'Identification Details',
-                    Application_Status in DropdownCanvas1.Selected.Value
+                    Filter('Identification Details', Application_Status in DropdownCanvas1.Selected.Value)
                 )
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
