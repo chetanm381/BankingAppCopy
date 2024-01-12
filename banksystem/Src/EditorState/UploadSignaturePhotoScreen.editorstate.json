@@ -1678,7 +1678,7 @@
       "MetaDataIDKey": "",
       "Name": "USP_Button3_411",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 6,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3057,7 +3057,7 @@
       "MetaDataIDKey": "",
       "Name": "USP_DataCardValue6_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4110,7 +4110,7 @@
       "MetaDataIDKey": "",
       "Name": "USP_Image1_5",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4341,7 +4341,7 @@
       "MetaDataIDKey": "",
       "Name": "USP_Image1_5111",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5423,7 +5423,7 @@
       "MetaDataIDKey": "",
       "Name": "USP_Label8_5",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

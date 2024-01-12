@@ -167,6 +167,7 @@ PersonalDetailsFormScreen As screen:
                         BorderStyle: =BorderStyle.None
                         BorderThickness: =0
                         Default: =First(data_application).'Full Name'
+                        DisplayMode: =DisplayMode.Disabled
                         Height: =42
                         HintText: ="First Name"
                         HoverBorderColor: =RGBA(107, 29, 94, 1)
@@ -202,6 +203,7 @@ PersonalDetailsFormScreen As screen:
                         BorderStyle: =BorderStyle.None
                         BorderThickness: =0
                         Default: =First(data_application).Address
+                        DisplayMode: =DisplayMode.Disabled
                         Height: =140
                         HintText: ="Enter Address"
                         HoverBorderColor: =RGBA(107, 29, 94, 1)
@@ -225,6 +227,7 @@ PersonalDetailsFormScreen As screen:
                         ZIndex: =19
 
                         PDF_Image2_133 As image:
+                            DisplayMode: =DisplayMode.Disabled
                             Height: =30
                             Image: =cake
                             Width: =30
@@ -245,6 +248,7 @@ PersonalDetailsFormScreen As screen:
                         PDF_DatePicker1_29 As datepicker:
                             BorderThickness: =0
                             DefaultDate: =First(data_application).'Date of Birth'
+                            DisplayMode: =DisplayMode.Disabled
                             Height: =Parent.Height
                             IconBackground: =Color.White
                             IconFill: |-

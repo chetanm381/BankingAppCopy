@@ -133,7 +133,7 @@
             Y: =Parent.Height-Self.Height
             ZIndex: =2
 
-        OA_Label6_2 As label:
+        DS_Label6_2 As label:
             Color: =RGBA(107, 29, 94, 1)
             FontWeight: =FontWeight.Bold
             Height: =30
@@ -144,7 +144,7 @@
             Y: =DS_Container6.Y+DS_Container6.Height+Parent.Height*.04
             ZIndex: =3
 
-        OA_Label6_3 As label:
+        DS_Label6_3 As label:
             Color: =RGBA(107, 29, 94, 1)
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Bold
@@ -153,12 +153,12 @@
             Text: ="OPENING AN ACCOUNT"
             Width: =198
             X: =(Parent.Width-Self.Width)/2
-            Y: =OA_Label6_2.Height+OA_Label6_2.Y
+            Y: =DS_Label6_2.Height+DS_Label6_2.Y
             ZIndex: =4
 
     DS_Container7 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.None
-        Height: =(Parent.Height-DS_img_xebiaLogo_3.Height-DS_Rectangle2.Height)*.2
+        Height: =(Parent.Height-DS_img_xebiaLogo_3.Height-DS_Rectangle2.Height)*.15
         Width: =Parent.Width*.7
         X: =(DS_Container5.Width+DS_Container5.X)+Parent.Width*.01
         Y: =DS_Rectangle2.Y+DS_Rectangle2.Height+Parent.Height*.015
@@ -209,7 +209,7 @@
             BorderThickness: =1
             Color: =RGBA(107, 29, 94, 1)
             Fill: =RGBA(252, 242, 247, 1)
-            Height: =Parent.Height*.25
+            Height: =Parent.Height*.3
             HoverFill: =ColorFade(Self.Color, 20%)
             OnSelect: |
                 =Set(
@@ -242,7 +242,7 @@
         Y: =DS_Container8.Y+DS_Container8.Height+Parent.Height*.02
         ZIndex: =8
 
-        Icon4 As icon.Reload:
+        DS_Icon4 As icon.Reload:
             BorderColor: =RGBA(107, 29, 94, 1)
             Color: =RGBA(107, 29, 94, 1)
             Height: =35
@@ -267,7 +267,7 @@
             Height: =Parent.Height*.1
             Width: =Parent.Width*.2
             X: =(DS_Container5.Width+DS_Container5.X)+Parent.Width*.04
-            Y: =DS_Container7.Y+DS_Container7.Height+Parent.Height*.015
+            Y: =DS_Container7.Y+DS_Container7.Height+Parent.Height*.02
             ZIndex: =5
 
             DS_Label11 As label:
@@ -286,7 +286,9 @@
                 FontWeight: =FontWeight.Bold
                 PaddingRight: =20
                 Size: =15
-                Text: ="34"
+                Text: |+
+                    =CountIf('Identification Details',  Text(Application_Status) = "Visited")
+                    
                 X: =Parent.Width-Self.Width
                 Y: =(Parent.Height-Self.Height)/2
                 ZIndex: =2
@@ -297,7 +299,7 @@
             Height: =Parent.Height*.1
             Width: =Parent.Width*.2
             X: =(DS_Container8.Width+DS_Container8.X)+Parent.Width*.03
-            Y: =DS_Container7.Y+DS_Container7.Height+Parent.Height*.015
+            Y: =DS_Container7.Y+DS_Container7.Height+Parent.Height*.02
             ZIndex: =6
 
             DS_Label11_2 As label:
@@ -316,7 +318,7 @@
                 FontWeight: =FontWeight.Bold
                 PaddingRight: =20
                 Size: =15
-                Text: ="34"
+                Text: =CountIf('Identification Details',  Text(Application_Status) = "In-Progress")
                 X: =Parent.Width-Self.Width
                 Y: =(Parent.Height-Self.Height)/2
                 ZIndex: =2
@@ -327,7 +329,7 @@
             Height: =Parent.Height*.1
             Width: =Parent.Width*.2
             X: =(DS_Container8_1.Width+DS_Container8_1.X)+Parent.Width*.03
-            Y: =DS_Container7.Y+DS_Container7.Height+Parent.Height*.015
+            Y: =DS_Container7.Y+DS_Container7.Height+Parent.Height*.02
             ZIndex: =7
 
             DS_Label11_3 As label:
@@ -346,14 +348,14 @@
                 FontWeight: =FontWeight.Bold
                 PaddingRight: =20
                 Size: =15
-                Text: ="34"
+                Text: =CountIf('Identification Details',  Text(Application_Status) = "New")
                 X: =Parent.Width-Self.Width
                 Y: =(Parent.Height-Self.Height)/2
                 ZIndex: =2
 
     DS_Container10 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.None
-        Height: =Parent.Height*0.45
+        Height: =Parent.Height*0.5
         Width: =Parent.Width-DS_Container5.Width-DS_Container5.X-Parent.Width*.04
         X: =(DS_Container5.Width+DS_Container5.X)+(Parent.Width-DS_Container5.Width-DS_Container5.X-Self.Width)*.5
         Y: =DS_Container9.Y+DS_Container9.Height+Parent.Height*0.01

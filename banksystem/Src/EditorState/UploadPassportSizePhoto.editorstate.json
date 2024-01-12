@@ -291,7 +291,7 @@
       "MetaDataIDKey": "",
       "Name": "DataCardValue6",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2564,7 +2564,7 @@
       "MetaDataIDKey": "",
       "Name": "UPS_Button3_3",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4184,7 +4184,7 @@
       "MetaDataIDKey": "",
       "Name": "UPS_Image1_4",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4961,7 +4961,7 @@
       "MetaDataIDKey": "",
       "Name": "UPS_Label8_4",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
