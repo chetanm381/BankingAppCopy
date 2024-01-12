@@ -68,7 +68,7 @@
             Size: =25
             Text: ="INTELLIGENT AUTOMATION"
             Width: =Parent.Width/2
-            X: =310
+            X: =(Parent.Width-Self.Width)/2
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =4
 
