@@ -2859,7 +2859,7 @@
       "MetaDataIDKey": "",
       "Name": "OA_Icon1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 11,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6018,7 +6018,7 @@
       "MetaDataIDKey": "",
       "Name": "OA_TextInput2_11",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 12,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
