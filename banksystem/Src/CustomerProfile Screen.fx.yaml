@@ -107,7 +107,7 @@
                 Label2 As label:
                     Color: =RGBA(107, 29, 94, 1)
                     FontWeight: =FontWeight.Bold
-                    Text: ="UPLOAD LIVE SIGNATURE PHOTO"
+                    Text: ="CUSTOMER DETAILS"
                     Width: =318
                     X: =Rectangle1.X
                     Y: =Parent.Height*0.015
@@ -180,7 +180,7 @@
                     Label4_2 As label:
                         FontWeight: =FontWeight.Semibold
                         Size: =11
-                        Text: ="Country of Birth"
+                        Text: ="Mobile Number"
                         Width: =Parent.Width*.40
                         X: =Parent.Width*.05
                         Y: =TextInput1.Y+TextInput1.Height+Parent.Height*.03
@@ -219,26 +219,19 @@
                         Y: =Label4_2.Y+Label4_2.Height+Parent.Height*0.01
                         ZIndex: =8
 
-                        Image2 As image:
-                            Height: =Parent.Height
-                            Image: =india
-                            Width: =Rectangle3.X
-                            ZIndex: =1
-
                         Rectangle3 As rectangle:
                             Fill: =RGBA(202, 202, 202, 1)
                             Height: =30
                             Width: =2
                             X: =57
-                            Y: =5
+                            Y: =1
                             ZIndex: =2
 
                         Label5 As label:
                             Height: =Parent.Height
                             Size: =11
                             Text: ="+91"&First(data_application).'Mobile Number'
-                            Width: =Parent.Width-Rectangle3.X-2
-                            X: =Rectangle3.X+2
+                            Width: =Parent.Width
                             ZIndex: =3
 
                     Label4_4 As label:
@@ -274,7 +267,7 @@
                             Height: =30
                             Width: =2
                             X: =Image2_1.X+Image2_1.Width+Parent.Width*0.05
-                            Y: =5
+                            Y: =2
                             ZIndex: =2
 
                         DatePicker1 As datepicker:

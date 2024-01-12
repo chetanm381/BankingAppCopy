@@ -133,13 +133,12 @@
             ZIndex: =2
 
         OA_Label6_2 As label:
-            Align: =Align.Center
             Color: =RGBA(107, 29, 94, 1)
-            FontWeight: =FontWeight.Semibold
+            FontWeight: =FontWeight.Bold
             Height: =30
             Size: =10
             Text: ="A Few Click Away From"
-            Width: =Parent.Width*.5
+            Width: =198
             X: =(Parent.Width-Self.Width)/2
             Y: =DS_Container6.Y+DS_Container6.Height+Parent.Height*.04
             ZIndex: =3
@@ -148,7 +147,7 @@
             Color: =RGBA(107, 29, 94, 1)
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Bold
-            Height: =81
+            Height: =75
             Size: =20
             Text: ="OPENING AN ACCOUNT"
             Width: =198
