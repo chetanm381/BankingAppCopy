@@ -68,7 +68,7 @@
             Size: =25
             Text: ="INTELLIGENT AUTOMATION"
             Width: =Parent.Width/2
-            X: =(Parent.Width-Self.Width)/2
+            X: =310
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =4
 
@@ -257,22 +257,6 @@
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =3
 
-        DS_ButtonCanvas1 As Button:
-            Appearance: ='ButtonCanvas.Appearance'.Secondary
-            BasePaletteColor: =
-            DisplayMode: =DisplayMode.Edit
-            Font: =Font.'Open Sans'
-            FontColor: =RGBA(107, 29, 94, 1)
-            FontSize: =0
-            FontWeight: =
-            Height: =Parent.Height/2
-            OnSelect: =Reset(DS_Dropdown1)
-            Text: ="Reset"
-            Width: =Parent.Width*.09
-            X: =DS_Icon4.X-Self.Width-Parent.Width*.015
-            Y: =(Parent.Height-Self.Height)/2
-            ZIndex: =5
-
         DS_Label72 As label:
             Color: =RGBA(107, 29, 94, 1)
             FontWeight: =FontWeight.Bold
@@ -303,6 +287,20 @@
             X: =DS_Label72.X+DS_Label72.Width
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =7
+
+        DS_Button1_11 As button:
+            BorderThickness: =1
+            Color: =RGBA(107, 29, 94, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =Parent.Height/2
+            HoverFill: =ColorFade(Self.Color, 20%)
+            OnSelect: =Reset(DS_Dropdown1)
+            Size: =10
+            Text: ="Reset"
+            Width: =Parent.Width*.09
+            X: =DS_Icon4.X-Self.Width-Parent.Width*.015
+            Y: =(Parent.Height-Self.Height)/2
+            ZIndex: =8
 
     DS_Group1 As group:
         Height: =5
