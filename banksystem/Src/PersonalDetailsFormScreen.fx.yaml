@@ -112,20 +112,18 @@ PersonalDetailsFormScreen As screen:
                     ZIndex: =1
 
                     PDF_Icon3 As icon.Check:
-                        Color: =RGBA(11, 163, 54, 1)
+                        Color: =If(Lower(First(data_application).'Full Name')=Lower(PDF_TextInput2_80.Text),RGBA(11, 163, 54, 1),Color.Red)
                         Height: =20
-                        Icon: =Icon.Check
-                        Visible: =false
+                        Icon: =If(Lower(First(data_application).'Full Name')=Lower(PDF_TextInput2_80.Text),Icon.Check,Icon.Cancel)
                         Width: =20
                         X: =PDF_TextInput2_80.X+PDF_TextInput2_80.Width-Self.Width
                         Y: =(PDF_Label6_30.Height-Self.Height)/2+PDF_Label6_30.Y
                         ZIndex: =8
 
                     PDF_Icon3_2 As icon.Check:
-                        Color: =RGBA(11, 163, 54, 1)
+                        Color: =If(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_29.SelectedDate,Color.Green,Color.Red)
                         Height: =20
-                        Icon: =Icon.Check
-                        Visible: =false
+                        Icon: =If(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_29.SelectedDate,Icon.Check,Icon.Cancel)
                         Width: =20
                         X: =PDF_Container2_23.X+PDF_Container2_23.Width-Self.Width
                         Y: =(PDF_Label6_4.Height-Self.Height)/2+PDF_Label6_4.Y
