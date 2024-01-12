@@ -266,7 +266,7 @@ PersonalDetailsUploadDocumentsScreen As screen:
                         Fill: =RGBA(250, 250, 250, 1)
                         Height: =42
                         Width: =Parent.Width*.70
-                        X: =59
+                        X: =PDUD_Label7.X
                         Y: =Label4_7.Y+Label4_7.Height
                         ZIndex: =9
 
