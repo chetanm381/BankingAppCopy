@@ -339,7 +339,7 @@ PersonalDetailsFormScreen As screen:
                         PDF_Label10 As label:
                             Align: =Align.Center
                             FontWeight: =FontWeight.Bold
-                            Text: ="AADHAR CARD"
+                            Text: ="AADHAR CARD DETAILS"
                             Width: =Parent.Width*.40
                             X: =(Parent.Width/2-Self.Width)/2
                             Y: =(PDF_TextInput1_8.Y+PDF_TextInput1_8.Height)+(Parent.Height-(PDF_TextInput1_8.Y+PDF_TextInput1_8.Height)-Self.Height)/2
@@ -348,7 +348,7 @@ PersonalDetailsFormScreen As screen:
                         PDF_Label10_1 As label:
                             Align: =Align.Center
                             FontWeight: =FontWeight.Bold
-                            Text: ="PAN CARD"
+                            Text: ="PAN CARD DETAILS"
                             Width: =Parent.Width*.40
                             X: =Parent.Width/2+(Parent.Width/2-Self.Width)/2
                             Y: =(PDF_TextInput1_8.Y+PDF_TextInput1_8.Height)+(Parent.Height-(PDF_TextInput1_8.Y+PDF_TextInput1_8.Height)-Self.Height)/2
