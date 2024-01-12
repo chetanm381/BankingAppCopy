@@ -412,7 +412,7 @@
             RadiusBottomRight: =20
             RadiusTopLeft: =20
             RadiusTopRight: =20
-            Width: =Parent.Width*.40
+            Width: =Parent.Width*.4
             X: =(Parent.Width-Self.Width)/2
             Y: =(Parent.Height-Self.Height)/2-Parent.Height*.05
             ZIndex: =1
@@ -453,7 +453,7 @@
 
             TS_popupImage_1 As image:
                 Height: =Parent.Height*.40
-                Image: ='Group 2422'
+                Image: ='Make it rain'
                 Width: =Parent.Width*0.35
                 X: =(Parent.Width-Self.Width)/2
                 Y: =Parent.Height*.02
@@ -473,7 +473,7 @@
                         false
                     );
                 Width: =Parent.Width*.05
-                X: =Parent.Width*.9
+                X: =Parent.Width*.92
                 Y: =Parent.Height-Self.Height-Parent.Height*0.9
                 ZIndex: =6
 

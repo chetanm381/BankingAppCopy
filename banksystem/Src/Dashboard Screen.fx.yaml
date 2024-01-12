@@ -53,6 +53,7 @@
                 );
             Size: =10
             Text: ="New Customer Visit"
+            Visible: =false
             Width: =Parent.Width*.15
             X: =DS_userimage_7.X-Self.Width-Parent.Width*.01
             Y: =(Parent.Height-Self.Height)/2
@@ -158,7 +159,7 @@
     DS_Container7 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.None
         Height: =(Parent.Height-DS_img_xebiaLogo_3.Height-DS_Rectangle2.Height)*.2
-        Width: =Parent.Width*.5
+        Width: =Parent.Width*.7
         X: =(DS_Container5.Width+DS_Container5.X)+Parent.Width*.01
         Y: =DS_Rectangle2.Y+DS_Rectangle2.Height+Parent.Height*.015
         ZIndex: =4
@@ -204,6 +205,35 @@
             Y: =DS_Label9.Height+DS_Label9.Y-Parent.Height*.03
             ZIndex: =4
 
+        DS_Button1_10 As button:
+            BorderThickness: =1
+            Color: =RGBA(107, 29, 94, 1)
+            Fill: =RGBA(252, 242, 247, 1)
+            Height: =Parent.Height*.25
+            HoverFill: =ColorFade(Self.Color, 20%)
+            OnSelect: |
+                =Set(
+                    visibility,
+                    false
+                );
+                Reset(OA_TextInput2_6);
+                Reset(OA_TextInput2_8);
+                Reset(OA_TextInput2_9);
+                Reset(OA_TextInput2_10);
+                Reset(OA_TextInput2_7);
+                Reset(OA_TextInput2_11);
+                
+                Navigate(
+                    OpenAccountScreen,
+                    ScreenTransition.CoverRight
+                );
+            Size: =10
+            Text: ="New Customer Visit"
+            Width: =Parent.Width*.15
+            X: =Parent.Width-Self.Width-Parent.Width*.01
+            Y: =(Parent.Height-Self.Height)/2
+            ZIndex: =5
+
     DS_Container9 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.None
         Height: =65
@@ -212,18 +242,12 @@
         Y: =DS_Container8.Y+DS_Container8.Height+Parent.Height*.02
         ZIndex: =8
 
-        Icon3 As icon.FilterFlatFilled:
-            Color: =RGBA(0, 0, 0, 1)
-            Height: =35
-            Icon: =Icon.FilterFlatFilled
-            Width: =35
-            X: =Icon4.X-Self.Width-Parent.Width*.015
-            Y: =(Parent.Height-Self.Height)/2
-            ZIndex: =2
-
         Icon4 As icon.Reload:
-            Color: =RGBA(0, 0, 0, 1)
+            BorderColor: =RGBA(107, 29, 94, 1)
+            Color: =RGBA(107, 29, 94, 1)
             Height: =35
+            HoverColor: |-
+                =ColorFade(ColorValue("#6b1d5eff"), 20%)
             Icon: =Icon.Reload
             Width: =35
             X: =Parent.Width-Self.Width-Parent.Width*.01
