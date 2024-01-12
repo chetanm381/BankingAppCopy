@@ -154,8 +154,8 @@ OpenAccountScreen As screen:
                         DisplayMode: =DisplayMode.View
                         Height: =127
                         HtmlText: |-
-                            ="<p style='color: #6b1d5e; text-align: center'> Please enter  <b><font color=orange>OTP</font></b> you recieved on 
-                            email ID <font color=orange>examplexxx@xebiabank.in</font></p> "
+                            ="<p style='color: #6b1d5e; text-align: center'> Please enter Customer Agent visit <b><font color=orange>Code</font></b> recieved on registered 
+                            email ID </p> "
                         Size: =17
                         Width: =Parent.Width*.55
                         X: =(Parent.Width-Self.Width)/2+Parent.Width*.02
@@ -372,10 +372,10 @@ OpenAccountScreen As screen:
                         Y: =OA_TextInput2_11.Y+OA_TextInput2_11.Height+Parent.Height*0.01
                         ZIndex: =24
 
-                    Icon1 As icon.Check:
-                        Color: =RGBA(12, 204, 67, 1)
+                    OA_Icon1 As icon.Check:
+                        Color: =If(Ic="Valid",RGBA(12, 204, 67, 1),Color.Red)
                         Height: =50
-                        Icon: =Icon.Check
+                        Icon: =If(Ic="Valid",Icon.Check,Icon.Cancel)
                         Visible: =visibility
                         Width: =50
                         X: =OA_TextInput2_11.X+OA_TextInput2_11.Width+Parent.Width*0.025
@@ -393,7 +393,7 @@ OpenAccountScreen As screen:
                         HoverBorderColor: =RGBA(0,0,0,0)
                         HoverColor: =RGBA(0, 0, 0, 0)
                         HoverFill: =RGBA(0,0,0,0)
-                        OnSelect: |-
+                        OnSelect: |
                             =Set(
                                 Entered_otp,
                                 Concatenate(
@@ -405,17 +405,55 @@ OpenAccountScreen As screen:
                                     OA_TextInput2_11.Text
                                 )
                             );
-                            
-                            Set(data_record,
-                            
-                                LookUp('Identification Details','OTP Send'=Value(Entered_otp))
-                            
+                            Set(
+                                data_record,
+                                LookUp(
+                                    'Identification Details',
+                                    'OTP Send' = Value(Entered_otp)
+                                )
                             );
-                            Set(Idfordata,data_record.Id);
-                            
+                            Set(
+                                Idfordata,
+                                data_record.Id
+                            );
                             If(
-                              IsBlank(LookUp('Identification Details','OTP Send'=Value(Entered_otp))),
-                                Notify("Otp Invalid",NotificationType.Error);Set(visibility,false),Notify("Otp Verified",NotificationType.Success);Set(visibility,true)
+                                IsBlank(
+                                    LookUp(
+                                        'Identification Details',
+                                        'OTP Send' = Value(Entered_otp)
+                                    )
+                                ),
+                                Notify(
+                                    "OTP Invalid",
+                                    NotificationType.Error
+                                );
+                                Set(
+                                    visibility,
+                                    true
+                                );
+                                Set(
+                                    Ic,
+                                    "Invalid"
+                                );
+                                Reset(OA_TextInput2_6);
+                                Reset(OA_TextInput2_8);
+                                Reset(OA_TextInput2_9);
+                                Reset(OA_TextInput2_10);
+                                Reset(OA_TextInput2_7);
+                                Reset(OA_TextInput2_11);
+                                ,
+                                Notify(
+                                    "OTP Verified",
+                                    NotificationType.Success
+                                );
+                                Set(
+                                    visibility,
+                                    true
+                                );
+                                Set(
+                                    Ic,
+                                    "Valid"
+                                )
                             );
                         PressedBorderColor: =RGBA(0,0,0,0)
                         PressedColor: =RGBA(0,0,0,0)
