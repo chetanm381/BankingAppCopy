@@ -169,6 +169,8 @@
             BorderColor: =RGBA(227, 227, 227, 1)
             BorderThickness: =1
             Fill: =RGBA(252, 242, 247, 1)
+            Height: =80
+            Width: =80
             X: =(Parent.Width-Self.Width)*.05
             Y: =(Parent.Height-Self.Height)*.5
             ZIndex: =1
@@ -187,7 +189,7 @@
         DS_Label9 As label:
             Color: =RGBA(107, 29, 94, 1)
             FontWeight: =FontWeight.Semibold
-            Height: =46
+            Height: =38
             Size: =15
             Text: |
                 =Text(DateTimeValue(Today()),  "[$-en-US]ddd,")
@@ -198,7 +200,7 @@
         DS_Label9_1 As label:
             Color: =RGBA(107, 29, 94, 1)
             FontWeight: =FontWeight.Semibold
-            Height: =39
+            Height: =38
             Size: =15
             Text: |
                 =Text(DateTimeValue(Today()),  "[$-en-US]mmmm")
@@ -230,7 +232,7 @@
                 );
             Size: =10
             Text: ="New Customer Visit"
-            Width: =Parent.Width*.15
+            Width: =Parent.Width*.2
             X: =Parent.Width-Self.Width-Parent.Width*.01
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =5
@@ -256,6 +258,7 @@
             ZIndex: =3
 
         DS_DropdownCanvas1 As Dropdown.pcfdataset:
+            BasePaletteColor: =RGBA(107, 29, 94, 1)
             DefaultSelectedItems: =Blank()
             DisplayMode: =DisplayMode.Edit
             Height: =Parent.Height*.6
@@ -402,7 +405,7 @@
                 ZIndex: =2
 
     DS_Container10 As groupContainer.manualLayoutContainer:
-        DropShadow: =DropShadow.Semilight
+        DropShadow: =DropShadow.None
         Height: =Parent.Height*0.5
         Width: =Parent.Width-DS_Container5.Width-DS_Container5.X-Parent.Width*.04
         X: =(DS_Container5.Width+DS_Container5.X)+(Parent.Width-DS_Container5.Width-DS_Container5.X-Self.Width)*.5
