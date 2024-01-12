@@ -276,14 +276,14 @@
             ChevronHoverBackground: |-
                 =ColorFade(ColorValue("#6b1d5e"), -20%)
             Color: =RGBA(107, 29, 94, 1)
-            Height: =Parent.Height*.6
+            Height: =Parent.Height*.5
             HoverFill: =RGBA(107, 29, 94, 0.27)
             Items: |
                 =[Blank(),"New","In-Review","Visited","Account-Opened"]
             PressedFill: =RGBA(107, 29, 94, 1)
             SelectionFill: =RGBA(107, 29, 94, 1)
             Size: =12
-            Width: =Parent.Width*.3
+            Width: =Parent.Width*.22
             X: =DS_Label72.X+DS_Label72.Width
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =7
@@ -488,6 +488,8 @@
                 )
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
+            LoadingSpinnerColor: |-
+                =ColorValue("#6b1d5e")
             ShowScrollbar: =false
             TemplatePadding: =0
             TemplateSize: =57
