@@ -683,3 +683,21 @@ PersonalDetailsFormScreen As screen:
                             Width: =Parent.Width
                             ZIndex: =3
 
+                    PDF_Icon3_9 As icon.Check:
+                        Color: =If(Lower(First(data_application).'Full Name')=Lower(PDUD_TextInput2_8.Text),RGBA(11, 163, 54, 1),Color.Red)
+                        Height: =20
+                        Icon: =If(Lower(First(data_application).'Full Name')=Lower(PDUD_TextInput2_8.Text),Icon.Check,Icon.Cancel)
+                        Width: =20
+                        X: =PDUD_Label6_3.X+PDUD_Label6_3.Width-Self.Width
+                        Y: =PDUD_Label6_3.Y+(PDUD_Label6_3.Height-Self.Height)/2
+                        ZIndex: =10
+
+                    PDF_Icon3_10 As icon.Check:
+                        Color: =If(DateValue(First(data_application).'Date of Birth')=PDUD_DatePicker1_2.SelectedDate,Color.Green,Color.Red)
+                        Height: =20
+                        Icon: =If(DateValue(First(data_application).'Date of Birth')=PDUD_DatePicker1_2.SelectedDate,Icon.Check,Icon.Cancel)
+                        Width: =20
+                        X: =PDUD_Label6_4.X+PDUD_Label6_4.Width-Self.Width
+                        Y: =PDUD_Label6_4.Y+(PDUD_Label6_4.Height-Self.Height)/2
+                        ZIndex: =11
+
