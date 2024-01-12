@@ -1,5 +1,5 @@
 "'Dashboard Screen' As screen":
-    OnVisible: =Reset(Dropdown1)
+    OnVisible: =Reset(DS_Dropdown1)
 
     DS_HeaderContainer_1 As groupContainer.manualLayoutContainer:
         BorderStyle: =BorderStyle.None
@@ -266,14 +266,14 @@
             FontSize: =0
             FontWeight: =
             Height: =Parent.Height/2
-            OnSelect: =Reset(Dropdown1)
+            OnSelect: =Reset(DS_Dropdown1)
             Text: ="Reset"
             Width: =Parent.Width*.09
             X: =DS_Icon4.X-Self.Width-Parent.Width*.015
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =5
 
-        Label7 As label:
+        DS_Label72 As label:
             Color: =RGBA(107, 29, 94, 1)
             FontWeight: =FontWeight.Bold
             Height: =39
@@ -284,8 +284,8 @@
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =6
 
-        Dropdown1 As dropdown:
-            BorderColor: =RGBA(107, 29, 94, 1)
+        DS_Dropdown1 As dropdown:
+            BorderColor: =RGBA(107, 29, 94, 0.55)
             BorderThickness: =1
             ChevronBackground: =RGBA(255, 255, 255, 0.52)
             ChevronFill: =RGBA(107, 29, 94, 1)
@@ -300,7 +300,7 @@
             SelectionFill: =RGBA(107, 29, 94, 1)
             Size: =12
             Width: =Parent.Width*.3
-            X: =Label7.X+Label7.Width
+            X: =DS_Label72.X+DS_Label72.Width
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =7
 
@@ -484,9 +484,9 @@
             Height: =Parent.Height-DS_Rectangle4.Y-DS_Rectangle4.Height
             Items: |
                 =If(
-                    IsBlank(Dropdown1.Selected.Value),
+                    IsBlank(DS_Dropdown1.Selected.Value),
                     'Identification Details',
-                    Filter('Identification Details', Application_Status in Dropdown1.Selected.Value)
+                    Filter('Identification Details', Application_Status in DS_Dropdown1.Selected.Value)
                 )
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
