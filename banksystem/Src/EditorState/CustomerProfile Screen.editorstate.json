@@ -2565,7 +2565,7 @@
       "MetaDataIDKey": "",
       "Name": "CPS_Button1_3",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3257,7 +3257,7 @@
       "MetaDataIDKey": "",
       "Name": "CPS_userimage_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5055,7 +5055,7 @@
       "MetaDataIDKey": "",
       "Name": "img_xebiaLogo_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8609,7 +8609,7 @@
       "MetaDataIDKey": "",
       "Name": "Label6_12",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

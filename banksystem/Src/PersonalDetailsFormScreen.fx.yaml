@@ -683,7 +683,7 @@ PersonalDetailsFormScreen As screen:
                         Fill: =RGBA(250, 250, 250, 1)
                         Height: =42
                         Width: =Parent.Width*.70
-                        X: =59
+                        X: =PDUD_Label7_1.X
                         Y: =Label4_8.Y+Label4_8.Height
                         ZIndex: =9
 

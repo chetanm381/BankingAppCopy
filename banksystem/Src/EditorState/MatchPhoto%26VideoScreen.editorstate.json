@@ -117,7 +117,7 @@
       "MetaDataIDKey": "",
       "Name": "Label6_10",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1974,7 +1974,7 @@
       "MetaDataIDKey": "",
       "Name": "MPV_Container1_2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2657,7 +2657,7 @@
       "MetaDataIDKey": "",
       "Name": "MPV_Container3_2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4128,7 +4128,7 @@
       "MetaDataIDKey": "",
       "Name": "MPV_img_xebiaLogo_3",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5669,7 +5669,7 @@
       "MetaDataIDKey": "",
       "Name": "MPV_userimage_2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
