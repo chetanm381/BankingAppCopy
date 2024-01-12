@@ -337,7 +337,7 @@
       "MetaDataIDKey": "",
       "Name": "PDF_Button1_7",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3175,19 +3175,40 @@
         "WeekColor",
         "DayColor",
         "BorderColor",
-        "DisabledFill",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "DisabledFill",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "PressedFill",
         "HoverFill",
         "PressedBorderColor",
         "HoverBorderColor",
-        "DisabledBorderColor",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "DisabledBorderColor",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "BorderStyle",
         "FocusedBorderColor",
         "Fill",
         "Font",
         "FontWeight",
         "Color",
-        "DisabledColor",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "DisabledColor",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -3531,7 +3552,14 @@
         "WeekColor",
         "DayColor",
         "BorderColor",
-        "DisabledFill",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "DisabledFill",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "PressedFill",
         "HoverFill",
         "PressedBorderColor",
@@ -3543,7 +3571,14 @@
         "Font",
         "FontWeight",
         "Color",
-        "DisabledColor",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "DisabledColor",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -3894,7 +3929,14 @@
         "WeekColor",
         "DayColor",
         "BorderColor",
-        "DisabledFill",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "DisabledFill",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "PressedFill",
         "HoverFill",
         "PressedBorderColor",
@@ -3906,7 +3948,14 @@
         "Font",
         "FontWeight",
         "Color",
-        "DisabledColor",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "DisabledColor",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -5279,7 +5328,7 @@
       "MetaDataIDKey": "",
       "Name": "PDF_Icon3_5",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 18,
+      "ParentIndex": 16,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5855,7 +5904,7 @@
       "MetaDataIDKey": "",
       "Name": "PDF_Icon3_8",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 19,
+      "ParentIndex": 17,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7241,7 +7290,7 @@
       "MetaDataIDKey": "",
       "Name": "PDF_img_xebiaLogo_3",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7773,7 +7822,7 @@
       "MetaDataIDKey": "",
       "Name": "PDF_Label10",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 16,
+      "ParentIndex": 20,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8050,7 +8099,7 @@
       "MetaDataIDKey": "",
       "Name": "PDF_Label10_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 17,
+      "ParentIndex": 21,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -13887,7 +13936,7 @@
       "MetaDataIDKey": "",
       "Name": "PDF_TextInput1_7",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 20,
+      "ParentIndex": 18,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -14262,7 +14311,7 @@
       "MetaDataIDKey": "",
       "Name": "PDF_TextInput1_8",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 21,
+      "ParentIndex": 19,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -14500,11 +14549,25 @@
         "BorderStyle",
         "FocusedBorderColor",
         "Color",
-        "DisabledColor",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "DisabledColor",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "PressedColor",
         "HoverColor",
         "Fill",
-        "DisabledFill",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "DisabledFill",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "PressedFill",
         {
           "AFDDataSourceName": "",
@@ -14840,11 +14903,25 @@
         "BorderStyle",
         "FocusedBorderColor",
         "Color",
-        "DisabledColor",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "DisabledColor",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "PressedColor",
         "HoverColor",
         "Fill",
-        "DisabledFill",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "DisabledFill",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "PressedFill",
         {
           "AFDDataSourceName": "",
@@ -15244,7 +15321,7 @@
       "MetaDataIDKey": "",
       "Name": "PDF_userimage_5",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

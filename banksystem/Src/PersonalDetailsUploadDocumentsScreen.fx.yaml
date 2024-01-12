@@ -138,6 +138,8 @@ PersonalDetailsUploadDocumentsScreen As screen:
                         BorderStyle: =BorderStyle.None
                         BorderThickness: =0
                         Default: =First(data_application).'Full Name'
+                        DisabledColor: =RGBA(107, 29, 94, 1)
+                        DisabledFill: =RGBA(250, 250, 250, 1)
                         DisplayMode: =DisplayMode.Disabled
                         Height: =42
                         HintText: ="First Name"
@@ -192,6 +194,8 @@ PersonalDetailsUploadDocumentsScreen As screen:
                         PDUD_DatePicker1_1 As datepicker:
                             BorderThickness: =0
                             DefaultDate: =First(data_application).'Date of Birth'
+                            DisabledColor: =RGBA(107, 29, 94, 1)
+                            DisabledFill: =RGBA(250, 250, 250, 1)
                             DisplayMode: =DisplayMode.Disabled
                             Height: =Parent.Height
                             IconBackground: =Color.White
@@ -219,6 +223,8 @@ PersonalDetailsUploadDocumentsScreen As screen:
                         BorderStyle: =BorderStyle.None
                         BorderThickness: =0
                         Default: =First(data_application).Address
+                        DisabledColor: =RGBA(107, 29, 94, 1)
+                        DisabledFill: =RGBA(250, 250, 250, 1)
                         DisplayMode: =DisplayMode.Disabled
                         Height: =140
                         HintText: ="Enter Address"
@@ -395,13 +401,14 @@ PersonalDetailsUploadDocumentsScreen As screen:
                                 ZIndex: =8
 
                             PDUD_Icon31111_2 As icon.Cancel:
-                                Height: =40
+                                Color: =RGBA(107, 29, 94, 1)
+                                Height: =30
                                 Icon: =Icon.Cancel
                                 OnSelect: =Reset(PDUD_pancard)
                                 Visible: =Not(IsBlank(First(PDUD_pancard.Attachments)))
-                                Width: =40
+                                Width: =30
                                 X: =Parent.Width*.97-Self.Width
-                                Y: =Parent.Height*0.15-Self.Height
+                                Y: =Parent.Height*0.12-Self.Height
                                 ZIndex: =9
 
                         PDUD_Container6_3 As groupContainer.manualLayoutContainer:
@@ -522,13 +529,14 @@ PersonalDetailsUploadDocumentsScreen As screen:
                                 ZIndex: =8
 
                             PDUD_Icon31111_1 As icon.Cancel:
-                                Height: =40
+                                Color: =RGBA(107, 29, 94, 1)
+                                Height: =30
                                 Icon: =Icon.Cancel
                                 OnSelect: =Reset(PDUD_aadharCard)
                                 Visible: =Not(IsBlank(First(PDUD_aadharCard.Attachments)))
-                                Width: =40
+                                Width: =30
                                 X: =Parent.Width*.97-Self.Width
-                                Y: =Parent.Height*0.15-Self.Height
+                                Y: =Parent.Height*0.12-Self.Height
                                 ZIndex: =9
 
                     PDUD_Button2_2 As button:
