@@ -1,4 +1,5 @@
 "'Dashboard Screen' As screen":
+    OnVisible: =Reset(DropdownCanvas1)
 
     DS_HeaderContainer_1 As groupContainer.manualLayoutContainer:
         BorderStyle: =BorderStyle.None
@@ -260,6 +261,8 @@
             Height: =Parent.Height*.6
             Items: |
                 =[Blank(),"New","In-Progress","Visited","Completed"]
+            Visible: |
+                =true
             Width: =320
             X: =18
             Y: =(Parent.Height-Self.Height)/2
@@ -272,6 +275,21 @@
                 FieldVariantName: ="textualColumn"
                 Order: =1
                 ZIndex: =11
+
+        ButtonCanvas1 As Button:
+            Appearance: ='ButtonCanvas.Appearance'.Secondary
+            DisplayMode: =DisplayMode.Edit
+            Font: =Font.'Open Sans'
+            FontColor: =RGBA(107, 29, 94, 1)
+            FontSize: =0
+            FontWeight: =
+            Height: =32
+            OnSelect: =Reset(DropdownCanvas1)
+            Text: ="Reset"
+            Width: =96
+            X: =DS_Icon4.X-Self.Width-Parent.Width*.015
+            Y: =(Parent.Height-Self.Height)/2
+            ZIndex: =5
 
     DS_Group1 As group:
         Height: =5
