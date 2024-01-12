@@ -384,7 +384,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 135,
+                  "charOffset": 138,
                   "snippet": {
                     "text": "in"
                   }
@@ -954,19 +954,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Dashboard Screen'.DS_Container9.DropdownCanvas1.AccessibleLabel"
+                  "fullyQualifiedName": "'Dashboard Screen'.DS_Container9.DS_DropdownCanvas1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Dashboard Screen'.DS_Container9.DropdownCanvas1.AccessibleLabel",
+                  "fullyQualifiedName": "'Dashboard Screen'.DS_Container9.DS_DropdownCanvas1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Dashboard Screen",
-                "type": "'Dashboard Screen'.DS_Container9.DropdownCanvas1"
+                "type": "'Dashboard Screen'.DS_Container9.DS_DropdownCanvas1"
               }
             }
           ],
@@ -1974,19 +1974,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Dashboard Screen'.DS_Container9.ButtonCanvas1.AccessibleLabel"
+                  "fullyQualifiedName": "'Dashboard Screen'.DS_Container9.DS_ButtonCanvas1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Dashboard Screen'.DS_Container9.ButtonCanvas1.AccessibleLabel",
+                  "fullyQualifiedName": "'Dashboard Screen'.DS_Container9.DS_ButtonCanvas1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Dashboard Screen",
-                "type": "'Dashboard Screen'.DS_Container9.ButtonCanvas1"
+                "type": "'Dashboard Screen'.DS_Container9.DS_ButtonCanvas1"
               }
             }
           ],
