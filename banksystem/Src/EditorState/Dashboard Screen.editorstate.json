@@ -3114,12 +3114,12 @@
         {
           "Category": "Design",
           "PropertyName": "Height",
-          "RuleProviderType": "User"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
           "PropertyName": "Width",
-          "RuleProviderType": "User"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
@@ -12605,14 +12605,7 @@
         "Transition",
         "DelayItemLoading",
         "LoadingSpinner",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "Self.BorderColor",
-          "InvariantPropertyName": "LoadingSpinnerColor",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "LoadingSpinnerColor",
         "DisplayMode",
         "BorderColor",
         "DisabledBorderColor",
@@ -12717,7 +12710,7 @@
         {
           "Category": "Design",
           "PropertyName": "LoadingSpinnerColor",
-          "RuleProviderType": "User"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
@@ -13069,7 +13062,7 @@
         {
           "Category": "Design",
           "PropertyName": "X",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
