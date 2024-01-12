@@ -273,6 +273,7 @@
 
         DS_ButtonCanvas1 As Button:
             Appearance: ='ButtonCanvas.Appearance'.Secondary
+            BasePaletteColor: =
             DisplayMode: =DisplayMode.Edit
             Font: =Font.'Open Sans'
             FontColor: =RGBA(107, 29, 94, 1)

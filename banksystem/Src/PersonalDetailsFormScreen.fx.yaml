@@ -219,7 +219,7 @@ PersonalDetailsFormScreen As screen:
                         BorderColor: =RGBA(107, 29, 94, 1)
                         BorderStyle: =BorderStyle.None
                         DropShadow: =DropShadow.None
-                        Fill: =RGBA(255, 255, 255, 1)
+                        Fill: =RGBA(250, 250, 250, 1)
                         Height: =40
                         Width: =Parent.Width*.70
                         X: =Parent.Width*0.15
@@ -319,6 +319,7 @@ PersonalDetailsFormScreen As screen:
                             DisabledBorderColor: =RGBA(237, 237, 237, 1)
                             DisabledColor: =RGBA(44, 54, 84, 1)
                             DisabledFill: =RGBA(250, 250, 250, 1)
+                            DisplayMode: =DisplayMode.Disabled
                             Height: =35
                             HoverBorderColor: =ColorFade(Self.BorderColor,10%)
                             HoverColor: =Color.White
@@ -335,6 +336,7 @@ PersonalDetailsFormScreen As screen:
                             DisabledBorderColor: =RGBA(237, 237, 237, 1)
                             DisabledColor: =RGBA(44, 54, 84, 1)
                             DisabledFill: =RGBA(250, 250, 250, 1)
+                            DisplayMode: =DisplayMode.Disabled
                             Height: =35
                             HoverBorderColor: =ColorFade(Self.BorderColor,10%)
                             HoverColor: =Color.White
@@ -409,6 +411,7 @@ PersonalDetailsFormScreen As screen:
                             PDF_DatePicker1_2 As datepicker:
                                 BorderThickness: =0
                                 DefaultDate: =If(IsBlank(adhardata.dob),Blank(),DateValue(Text(Mid(adhardata.dob, 4, 2) & "/" & Mid(adhardata.dob, 1, 2) & "/" & Mid(adhardata.dob, 7, 4), "[$-en-US]mm/dd/yyyy")))
+                                DisplayMode: =DisplayMode.Disabled
                                 Height: =Parent.Height
                                 IconBackground: =Color.White
                                 IconFill: |-
@@ -578,6 +581,7 @@ PersonalDetailsFormScreen As screen:
                             PDF_DatePicker1_3 As datepicker:
                                 BorderThickness: =0
                                 DefaultDate: =If(IsBlank(pandata.dob),Blank(),DateValue(Text(Mid(pandata.dob, 4, 2) & "/" & Mid(pandata.dob, 1, 2) & "/" & Mid(pandata.dob, 7, 4), "[$-en-US]mm/dd/yyyy")))
+                                DisplayMode: =DisplayMode.Disabled
                                 Height: =Parent.Height
                                 IconBackground: =Color.White
                                 IconFill: |-
