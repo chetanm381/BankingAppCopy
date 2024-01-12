@@ -155,7 +155,7 @@ OpenAccountScreen As screen:
                         Height: =127
                         HtmlText: |-
                             ="<p style='color: #6b1d5e; text-align: center'> Please enter  <b><font color=orange>OTP</font></b> you recieved on 
-                            email ID <font color=orange>examplexxx@yesbank.in</font></p> "
+                            email ID <font color=orange>examplexxx@xebiabank.in</font></p> "
                         Size: =17
                         Width: =Parent.Width*.55
                         X: =(Parent.Width-Self.Width)/2+Parent.Width*.02
