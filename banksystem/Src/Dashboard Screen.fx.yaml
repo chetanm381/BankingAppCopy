@@ -254,6 +254,16 @@
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =3
 
+        DropdownCanvas1 As Dropdown.pcfdataset:
+            DisplayMode: =DisplayMode.Edit
+            Height: =Parent.Height*.6
+            Items: |
+                =["New","In-Progress","Visited","Completed"]
+            Width: =320
+            X: =18
+            Y: =(Parent.Height-Self.Height)/2
+            ZIndex: =4
+
     DS_Group1 As group:
         Height: =5
         Width: =5
@@ -432,7 +442,11 @@
         "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
             DelayItemLoading: =true
             Height: =Parent.Height-DS_Rectangle4.Y-DS_Rectangle4.Height
-            Items: ='Identification Details'
+            Items: |-
+                =Filter(
+                    'Identification Details',
+                    Application_Status in DropdownCanvas1.Selected.Value
+                )
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             ShowScrollbar: =false
