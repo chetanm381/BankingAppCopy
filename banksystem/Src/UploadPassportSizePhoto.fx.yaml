@@ -213,6 +213,27 @@ UploadPassportSizePhoto As screen:
                         Y: =Parent.Height*0.2
                         ZIndex: =4
 
+                    UPS__Image1111_1 As image:
+                        Fill: =RGBA(255, 255, 255, 1)
+                        Height: =DataCardValue6.Height
+                        Image: =If(IsBlank(First(DataCardValue6.Attachments)),SampleImage,First(DataCardValue6.Attachments).Value)
+                        Visible: =Not(IsBlank(First(DataCardValue6.Attachments)))
+                        Width: =DataCardValue6.Width
+                        X: =DataCardValue6.X
+                        Y: =DataCardValue6.Y
+                        ZIndex: =5
+
+                    UPS_Icon31111_1 As icon.Cancel:
+                        Color: =RGBA(107, 29, 94, 1)
+                        Height: =40
+                        Icon: =Icon.Cancel
+                        OnSelect: =Reset(DataCardValue6)
+                        Visible: =Not(IsBlank(First(DataCardValue6.Attachments)))
+                        Width: =40
+                        X: =Parent.Width*.97-Self.Width
+                        Y: =Parent.Height*0.12-Self.Height
+                        ZIndex: =6
+
                 UPS_Container3_2 As groupContainer.manualLayoutContainer:
                     BorderStyle: =BorderStyle.None
                     DropShadow: =DropShadow.None

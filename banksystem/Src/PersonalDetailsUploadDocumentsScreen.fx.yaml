@@ -384,6 +384,26 @@ PersonalDetailsUploadDocumentsScreen As screen:
                                 Y: =PDUD_aadharCard.Y+Parent.Height*0.01
                                 ZIndex: =7
 
+                            PDUD__Image1111_2 As image:
+                                Fill: =RGBA(255, 255, 255, 1)
+                                Height: =PDUD_aadharCard.Height
+                                Image: =If(IsBlank(First(PDUD_pancard.Attachments)),SampleImage,First(PDUD_pancard.Attachments).Value)
+                                Visible: =Not(IsBlank(First(PDUD_pancard.Attachments)))
+                                Width: =PDUD_aadharCard.Width
+                                X: =PDUD_aadharCard.X
+                                Y: =PDUD_aadharCard.Y
+                                ZIndex: =8
+
+                            PDUD_Icon31111_2 As icon.Cancel:
+                                Height: =40
+                                Icon: =Icon.Cancel
+                                OnSelect: =Reset(PDUD_pancard)
+                                Visible: =Not(IsBlank(First(PDUD_pancard.Attachments)))
+                                Width: =40
+                                X: =Parent.Width*.97-Self.Width
+                                Y: =Parent.Height*0.15-Self.Height
+                                ZIndex: =9
+
                         PDUD_Container6_3 As groupContainer.manualLayoutContainer:
                             BorderColor: =RGBA(181, 177, 177, 1)
                             BorderThickness: =2
@@ -490,6 +510,26 @@ PersonalDetailsUploadDocumentsScreen As screen:
                                 X: =PDUD_aadharCard.X+(PDUD_aadharCard.Width-Self.Width)/2
                                 Y: =PDUD_aadharCard.Y+Parent.Height*0.01
                                 ZIndex: =7
+
+                            PDUD__Image1111_1 As image:
+                                Fill: =RGBA(255, 255, 255, 1)
+                                Height: =PDUD_aadharCard.Height
+                                Image: =If(IsBlank(First(PDUD_aadharCard.Attachments)),SampleImage,First(PDUD_aadharCard.Attachments).Value)
+                                Visible: =Not(IsBlank(First(PDUD_aadharCard.Attachments)))
+                                Width: =PDUD_aadharCard.Width
+                                X: =PDUD_aadharCard.X
+                                Y: =PDUD_aadharCard.Y
+                                ZIndex: =8
+
+                            PDUD_Icon31111_1 As icon.Cancel:
+                                Height: =40
+                                Icon: =Icon.Cancel
+                                OnSelect: =Reset(PDUD_aadharCard)
+                                Visible: =Not(IsBlank(First(PDUD_aadharCard.Attachments)))
+                                Width: =40
+                                X: =Parent.Width*.97-Self.Width
+                                Y: =Parent.Height*0.15-Self.Height
+                                ZIndex: =9
 
                     PDUD_Button2_2 As button:
                         DisplayMode: |-
