@@ -286,7 +286,9 @@
                 FontWeight: =FontWeight.Bold
                 PaddingRight: =20
                 Size: =15
-                Text: ="34"
+                Text: |+
+                    =CountIf('Identification Details',  Text(Application_Status) = "Visited")
+                    
                 X: =Parent.Width-Self.Width
                 Y: =(Parent.Height-Self.Height)/2
                 ZIndex: =2
@@ -316,7 +318,7 @@
                 FontWeight: =FontWeight.Bold
                 PaddingRight: =20
                 Size: =15
-                Text: ="34"
+                Text: =CountIf('Identification Details',  Text(Application_Status) = "In-Progress")
                 X: =Parent.Width-Self.Width
                 Y: =(Parent.Height-Self.Height)/2
                 ZIndex: =2
@@ -346,7 +348,7 @@
                 FontWeight: =FontWeight.Bold
                 PaddingRight: =20
                 Size: =15
-                Text: ="34"
+                Text: =CountIf('Identification Details',  Text(Application_Status) = "New")
                 X: =Parent.Width-Self.Width
                 Y: =(Parent.Height-Self.Height)/2
                 ZIndex: =2
