@@ -132,6 +132,26 @@
             Y: =Parent.Height-Self.Height
             ZIndex: =2
 
+        Label7 As label:
+            Align: =Align.Center
+            Color: =RGBA(107, 29, 94, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =Parent.Height*.04
+            Size: =12
+            Text: ="A Few Click Away From "
+            Width: =Parent.Width*.8
+            X: =(Parent.Width-Self.Width)/2
+            Y: =DS_Container6.Y+DS_Container6.Height+Parent.Height*.08
+            ZIndex: =3
+
+        Label9 As label:
+            FontWeight: =FontWeight.Bold
+            Size: =15
+            Text: ="OPENING AN ACCOUNT"
+            X: =75
+            Y: =325
+            ZIndex: =4
+
     DS_Container7 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.None
         Height: =(Parent.Height-DS_img_xebiaLogo_3.Height-DS_Rectangle2.Height)*.2
@@ -189,24 +209,23 @@
         Y: =DS_Container8.Y+DS_Container8.Height+Parent.Height*.02
         ZIndex: =8
 
-        Image6 As image:
-            Height: =30
-            Image: |-
-                ="data:image/svg+xml;utf8, %3Csvg%20%20viewBox%3D%270%200%202048%202048%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cpath%20d%3D%27M1297%2038q166%2045%20304%20140t237%20226%20155%20289%2055%20331q0%20141-36%20272t-103%20245-160%20207-208%20160-245%20103-272%2037q-141%200-272-36t-245-103-207-160-160-208-103-244-37-273q0-140%2037-272t105-248%20167-212%20221-164H256V0h512v512H640V215q-117%2056-211%20140T267%20545%20164%20773t-36%20251q0%20123%2032%20237t90%20214%20141%20182%20181%20140%20214%2091%20238%2032q123%200%20237-32t214-90%20182-141%20140-181%2091-214%2032-238q0-150-48-289t-136-253-207-197-266-124l34-123z%27%20fill%3D%27%23000000%27%3E%3C%2Fpath%3E%3C%2Fsvg%3E"
-            OnSelect: =Refresh('Identification Details');
-            Width: =43
-            X: =Parent.Width-Self.Width-Parent.Width*.01
-            Y: =(Parent.Height-Self.Height)/2
-            ZIndex: =1
-
         Icon3 As icon.FilterFlatFilled:
             Color: =RGBA(0, 0, 0, 1)
-            Height: =30
+            Height: =35
             Icon: =Icon.FilterFlatFilled
-            Width: =30
-            X: =Image6.X-Self.Width-Parent.Width*.015
+            Width: =35
+            X: =Icon4.X-Self.Width-Parent.Width*.015
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =2
+
+        Icon4 As icon.Reload:
+            Color: =RGBA(0, 0, 0, 1)
+            Height: =35
+            Icon: =Icon.Reload
+            Width: =35
+            X: =Parent.Width-Self.Width-Parent.Width*.01
+            Y: =(Parent.Height-Self.Height)/2
+            ZIndex: =3
 
     DS_Group1 As group:
         Height: =5
@@ -351,7 +370,7 @@
             FontWeight: =FontWeight.Bold
             Height: =54
             Size: =12
-            Text: ="Date"
+            Text: ="Application Date"
             Width: =Parent.Width*.2
             X: =DS_Label13_1.X+DS_Label13_1.Width
             Y: =Parent.Height*.02
@@ -363,7 +382,7 @@
             FontWeight: =FontWeight.Bold
             Height: =54
             Size: =12
-            Text: ="Status"
+            Text: ="Schedule Date"
             Width: =Parent.Width*.19
             X: =DS_Label13_2.X+DS_Label13_2.Width
             Y: =Parent.Height*.02
@@ -375,7 +394,7 @@
             FontWeight: =FontWeight.Bold
             Height: =54
             Size: =12
-            Text: ="DOB"
+            Text: ="Status"
             Width: =Parent.Width*.19
             X: =DS_Label13_3.X+DS_Label13_3.Width
             Y: =Parent.Height*.02
@@ -389,7 +408,7 @@
             LoadingSpinner: =LoadingSpinner.Data
             ShowScrollbar: =false
             TemplatePadding: =0
-            TemplateSize: =69
+            TemplateSize: =57
             Width: =Parent.Width
             Y: =69
             ZIndex: =7
@@ -449,8 +468,8 @@
                 Text: |
                     =ThisItem.Application_Status
                 Width: =Parent.Width*.2
-                X: =DS_Label13_3.X
-                Y: =(Gallery1.TemplateHeight-Self.Height)/2
+                X: =DS_Label13_4.X
+                Y: =14
                 ZIndex: =6
 
             DS_Label19_2 As label:
@@ -460,10 +479,10 @@
                 OnSelect: =Select(Parent)
                 Size: =11
                 Text: |
-                    =Text(DateTimeValue(ThisItem.'Date of Birth'),  "[$-en-US]dd mmm' yy")
+                    =Text(DateTimeValue(ThisItem.'Date of Birth'),  "[$-en-US]dd mmm' yyyy")
                 Width: =Parent.Width*.2
-                X: =DS_Label13_4.X
-                Y: =(Gallery1.TemplateHeight-Self.Height)/2
+                X: =DS_Label13_3.X
+                Y: =9
                 ZIndex: =7
 
             DS_Rectangle78 As rectangle:
