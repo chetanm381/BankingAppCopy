@@ -325,7 +325,7 @@ UploadPassportSizePhoto As screen:
                     Color: =RGBA(255, 0, 0, 1)
                     Height: =18
                     Size: =10
-                    Text: ="Please Click a clear photo in JPG format & Image should be in < 10MB."
+                    Text: ="Please Upload a clear photo in JPG format & Image should be in < 10MB."
                     Width: =491
                     X: =UPS_Container1_2.X
                     Y: =(UPS_Container1_2.Height+UPS_Container1_2.Y)+Parent.Height*0.015
