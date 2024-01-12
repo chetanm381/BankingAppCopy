@@ -461,7 +461,7 @@
                 FontWeight: =FontWeight.Semibold
                 Height: =50
                 Text: |-
-                    ="Account will be opened shortly And We mailed you details on this EmailID : "&First(data_application).'Email ID'
+                    ="Account will be opened shortly And details will be sent on Customer Email ID : "&First(data_application).'Email ID'
                 Width: =Parent.Width*.80
                 X: =(Parent.Width-Self.Width)/2
                 Y: =TS_ThankYouLabel_4.Y+TS_ThankYouLabel_4.Height+Parent.Height*.01
