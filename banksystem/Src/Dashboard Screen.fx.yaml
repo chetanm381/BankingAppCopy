@@ -158,7 +158,7 @@
 
     DS_Container7 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.None
-        Height: =(Parent.Height-DS_img_xebiaLogo_3.Height-DS_Rectangle2.Height)*.2
+        Height: =(Parent.Height-DS_img_xebiaLogo_3.Height-DS_Rectangle2.Height)*.15
         Width: =Parent.Width*.7
         X: =(DS_Container5.Width+DS_Container5.X)+Parent.Width*.01
         Y: =DS_Rectangle2.Y+DS_Rectangle2.Height+Parent.Height*.015
@@ -209,7 +209,7 @@
             BorderThickness: =1
             Color: =RGBA(107, 29, 94, 1)
             Fill: =RGBA(252, 242, 247, 1)
-            Height: =Parent.Height*.25
+            Height: =Parent.Height*.3
             HoverFill: =ColorFade(Self.Color, 20%)
             OnSelect: |
                 =Set(
@@ -267,7 +267,7 @@
             Height: =Parent.Height*.1
             Width: =Parent.Width*.2
             X: =(DS_Container5.Width+DS_Container5.X)+Parent.Width*.04
-            Y: =DS_Container7.Y+DS_Container7.Height+Parent.Height*.015
+            Y: =DS_Container7.Y+DS_Container7.Height+Parent.Height*.02
             ZIndex: =5
 
             DS_Label11 As label:
@@ -299,7 +299,7 @@
             Height: =Parent.Height*.1
             Width: =Parent.Width*.2
             X: =(DS_Container8.Width+DS_Container8.X)+Parent.Width*.03
-            Y: =DS_Container7.Y+DS_Container7.Height+Parent.Height*.015
+            Y: =DS_Container7.Y+DS_Container7.Height+Parent.Height*.02
             ZIndex: =6
 
             DS_Label11_2 As label:
@@ -329,7 +329,7 @@
             Height: =Parent.Height*.1
             Width: =Parent.Width*.2
             X: =(DS_Container8_1.Width+DS_Container8_1.X)+Parent.Width*.03
-            Y: =DS_Container7.Y+DS_Container7.Height+Parent.Height*.015
+            Y: =DS_Container7.Y+DS_Container7.Height+Parent.Height*.02
             ZIndex: =7
 
             DS_Label11_3 As label:
@@ -355,7 +355,7 @@
 
     DS_Container10 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.None
-        Height: =Parent.Height*0.45
+        Height: =Parent.Height*0.5
         Width: =Parent.Width-DS_Container5.Width-DS_Container5.X-Parent.Width*.04
         X: =(DS_Container5.Width+DS_Container5.X)+(Parent.Width-DS_Container5.Width-DS_Container5.X-Self.Width)*.5
         Y: =DS_Container9.Y+DS_Container9.Height+Parent.Height*0.01
