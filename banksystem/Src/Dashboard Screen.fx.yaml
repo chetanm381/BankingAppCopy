@@ -1,5 +1,5 @@
 "'Dashboard Screen' As screen":
-    OnVisible: =Reset(DS_DropdownCanvas1)
+    OnVisible: =Reset(DS_Dropdown1)
 
     DS_HeaderContainer_1 As groupContainer.manualLayoutContainer:
         BorderStyle: =BorderStyle.None
@@ -257,20 +257,6 @@
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =3
 
-        DS_DropdownCanvas1 As Dropdown.pcfdataset:
-            BasePaletteColor: =RGBA(107, 29, 94, 1)
-            DefaultSelectedItems: =Blank()
-            DisplayMode: =DisplayMode.Edit
-            Height: =Parent.Height*.6
-            Items: |
-                =["New","In-Review","Visited","Account-Opened"]
-            Visible: |
-                =true
-            Width: =320
-            X: =Label7.Width+Label7.X
-            Y: =(Parent.Height-Self.Height)/2
-            ZIndex: =4
-
         DS_ButtonCanvas1 As Button:
             Appearance: ='ButtonCanvas.Appearance'.Secondary
             BasePaletteColor: =
@@ -279,15 +265,15 @@
             FontColor: =RGBA(107, 29, 94, 1)
             FontSize: =0
             FontWeight: =
-            Height: =32
-            OnSelect: =Reset(DS_DropdownCanvas1)
+            Height: =Parent.Height/2
+            OnSelect: =Reset(DS_Dropdown1)
             Text: ="Reset"
-            Width: =96
+            Width: =Parent.Width*.09
             X: =DS_Icon4.X-Self.Width-Parent.Width*.015
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =5
 
-        Label7 As label:
+        DS_Label72 As label:
             Color: =RGBA(107, 29, 94, 1)
             FontWeight: =FontWeight.Bold
             Height: =39
@@ -297,6 +283,26 @@
             X: =Parent.Width*.02
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =6
+
+        DS_Dropdown1 As dropdown:
+            BorderColor: =RGBA(107, 29, 94, 0.55)
+            BorderThickness: =1
+            ChevronBackground: =RGBA(255, 255, 255, 0.52)
+            ChevronFill: =RGBA(107, 29, 94, 1)
+            ChevronHoverBackground: |-
+                =ColorFade(ColorValue("#6b1d5e"), -20%)
+            Color: =RGBA(107, 29, 94, 1)
+            Height: =Parent.Height*.6
+            HoverFill: =RGBA(107, 29, 94, 0.27)
+            Items: |
+                =[Blank(),"New","In-Review","Visited","Account-Opened"]
+            PressedFill: =RGBA(107, 29, 94, 1)
+            SelectionFill: =RGBA(107, 29, 94, 1)
+            Size: =12
+            Width: =Parent.Width*.3
+            X: =DS_Label72.X+DS_Label72.Width
+            Y: =(Parent.Height-Self.Height)/2
+            ZIndex: =7
 
     DS_Group1 As group:
         Height: =5
@@ -308,7 +314,7 @@
         DS_Container8 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.Semilight
             Fill: =RGBA(255, 246, 232, 1)
-            Height: =Parent.Height*.1
+            Height: =Parent.Height*.09
             Width: =Parent.Width*.2
             X: =(DS_Container5.Width+DS_Container5.X)+Parent.Width*.04
             Y: =DS_Container7.Y+DS_Container7.Height+Parent.Height*.02
@@ -340,7 +346,7 @@
         DS_Container8_1 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.Semilight
             Fill: =RGBA(240, 247, 235, 1)
-            Height: =Parent.Height*.1
+            Height: =Parent.Height*.09
             Width: =Parent.Width*.2
             X: =(DS_Container8.Width+DS_Container8.X)+Parent.Width*.03
             Y: =DS_Container7.Y+DS_Container7.Height+Parent.Height*.02
@@ -370,7 +376,7 @@
         DS_Container8_2 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.Semilight
             Fill: =RGBA(252, 237, 237, 1)
-            Height: =Parent.Height*.1
+            Height: =Parent.Height*.09
             Width: =Parent.Width*.2
             X: =(DS_Container8_1.Width+DS_Container8_1.X)+Parent.Width*.03
             Y: =DS_Container7.Y+DS_Container7.Height+Parent.Height*.02
@@ -478,9 +484,9 @@
             Height: =Parent.Height-DS_Rectangle4.Y-DS_Rectangle4.Height
             Items: |
                 =If(
-                    IsBlank(DS_DropdownCanvas1.Selected.Value),
+                    IsBlank(DS_Dropdown1.Selected.Value),
                     'Identification Details',
-                    Filter('Identification Details', Application_Status in DS_DropdownCanvas1.Selected.Value)
+                    Filter('Identification Details', Application_Status in DS_Dropdown1.Selected.Value)
                 )
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
