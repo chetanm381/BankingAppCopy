@@ -1,5 +1,5 @@
 "'Dashboard Screen' As screen":
-    OnVisible: =Reset(DropdownCanvas1)
+    OnVisible: =Reset(DS_DropdownCanvas1)
 
     DS_HeaderContainer_1 As groupContainer.manualLayoutContainer:
         BorderStyle: =BorderStyle.None
@@ -240,57 +240,59 @@
         Height: =65
         Width: =Parent.Width-DS_Container5.Width-DS_Container5.X-Parent.Width*.05
         X: =(DS_Container5.Width+DS_Container5.X)+(Parent.Width-DS_Container5.Width-DS_Container5.X-Self.Width)/2
-        Y: =DS_Container8.Y+DS_Container8.Height+Parent.Height*.02
+        Y: =DS_Container8.Y+DS_Container8.Height+Parent.Height*.025
         ZIndex: =8
 
         DS_Icon4 As icon.Reload:
             BorderColor: =RGBA(107, 29, 94, 1)
             Color: =RGBA(107, 29, 94, 1)
-            Height: =35
+            Height: =30
             HoverColor: |-
                 =ColorFade(ColorValue("#6b1d5eff"), 20%)
             Icon: =Icon.Reload
-            Width: =35
+            Width: =30
             X: =Parent.Width-Self.Width-Parent.Width*.01
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =3
 
-        DropdownCanvas1 As Dropdown.pcfdataset:
+        DS_DropdownCanvas1 As Dropdown.pcfdataset:
             DefaultSelectedItems: =Blank()
             DisplayMode: =DisplayMode.Edit
             Height: =Parent.Height*.6
             Items: |
-                =[Blank(),"New","In-Review","Visited","Account-Opened"]
+                =["New","In-Review","Visited","Account-Opened"]
             Visible: |
                 =true
             Width: =320
-            X: =18
+            X: =Label7.Width+Label7.X
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =4
 
-            Value1 As pcfDataField.textualColumn:
-                FieldDisplayName: ="Value"
-                FieldName: ="Value"
-                FieldType: ="s"
-                FieldVariantName: ="textualColumn"
-                Order: =1
-                ZIndex: =11
-
-        ButtonCanvas1 As Button:
+        DS_ButtonCanvas1 As Button:
             Appearance: ='ButtonCanvas.Appearance'.Secondary
-            BasePaletteColor: =
             DisplayMode: =DisplayMode.Edit
             Font: =Font.'Open Sans'
             FontColor: =RGBA(107, 29, 94, 1)
             FontSize: =0
             FontWeight: =
             Height: =32
-            OnSelect: =Reset(DropdownCanvas1)
+            OnSelect: =Reset(DS_DropdownCanvas1)
             Text: ="Reset"
             Width: =96
             X: =DS_Icon4.X-Self.Width-Parent.Width*.015
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =5
+
+        Label7 As label:
+            Color: =RGBA(107, 29, 94, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =39
+            Size: =12
+            Text: ="Application Status"
+            Width: =186
+            X: =Parent.Width*.02
+            Y: =(Parent.Height-Self.Height)/2
+            ZIndex: =6
 
     DS_Group1 As group:
         Height: =5
@@ -300,7 +302,7 @@
         ZIndex: =8
 
         DS_Container8 As groupContainer.manualLayoutContainer:
-            DropShadow: =DropShadow.None
+            DropShadow: =DropShadow.Semilight
             Fill: =RGBA(255, 246, 232, 1)
             Height: =Parent.Height*.1
             Width: =Parent.Width*.2
@@ -332,7 +334,7 @@
                 ZIndex: =2
 
         DS_Container8_1 As groupContainer.manualLayoutContainer:
-            DropShadow: =DropShadow.None
+            DropShadow: =DropShadow.Semilight
             Fill: =RGBA(240, 247, 235, 1)
             Height: =Parent.Height*.1
             Width: =Parent.Width*.2
@@ -362,7 +364,7 @@
                 ZIndex: =2
 
         DS_Container8_2 As groupContainer.manualLayoutContainer:
-            DropShadow: =DropShadow.None
+            DropShadow: =DropShadow.Semilight
             Fill: =RGBA(252, 237, 237, 1)
             Height: =Parent.Height*.1
             Width: =Parent.Width*.2
@@ -392,11 +394,11 @@
                 ZIndex: =2
 
     DS_Container10 As groupContainer.manualLayoutContainer:
-        DropShadow: =DropShadow.None
+        DropShadow: =DropShadow.Semilight
         Height: =Parent.Height*0.5
         Width: =Parent.Width-DS_Container5.Width-DS_Container5.X-Parent.Width*.04
         X: =(DS_Container5.Width+DS_Container5.X)+(Parent.Width-DS_Container5.Width-DS_Container5.X-Self.Width)*.5
-        Y: =DS_Container9.Y+DS_Container9.Height+Parent.Height*0.01
+        Y: =DS_Container9.Y+DS_Container9.Height+Parent.Height*0.025
         ZIndex: =9
 
         DS_Rectangle4 As rectangle:
@@ -411,7 +413,7 @@
             Align: =Align.Center
             Color: =RGBA(107, 29, 94, 1)
             FontWeight: =FontWeight.Bold
-            Height: =54
+            Height: =50
             Size: =12
             Text: ="Application number"
             Width: =Parent.Width*.2
@@ -423,7 +425,7 @@
             Align: =Align.Center
             Color: =RGBA(107, 29, 94, 1)
             FontWeight: =FontWeight.Bold
-            Height: =54
+            Height: =50
             Size: =12
             Text: ="Full Name"
             Width: =Parent.Width*.2
@@ -435,7 +437,7 @@
             Align: =Align.Center
             Color: =RGBA(107, 29, 94, 1)
             FontWeight: =FontWeight.Bold
-            Height: =54
+            Height: =50
             Size: =12
             Text: ="Application Date"
             Width: =Parent.Width*.2
@@ -447,7 +449,7 @@
             Align: =Align.Center
             Color: =RGBA(107, 29, 94, 1)
             FontWeight: =FontWeight.Bold
-            Height: =54
+            Height: =50
             Size: =12
             Text: ="Schedule Date"
             Width: =Parent.Width*.19
@@ -459,7 +461,7 @@
             Align: =Align.Center
             Color: =RGBA(107, 29, 94, 1)
             FontWeight: =FontWeight.Bold
-            Height: =54
+            Height: =50
             Size: =12
             Text: ="Status"
             Width: =Parent.Width*.19
@@ -472,9 +474,9 @@
             Height: =Parent.Height-DS_Rectangle4.Y-DS_Rectangle4.Height
             Items: |
                 =If(
-                    IsBlank(DropdownCanvas1.Selected.Value),
+                    IsBlank(DS_DropdownCanvas1.Selected.Value),
                     'Identification Details',
-                    Filter('Identification Details', Application_Status in DropdownCanvas1.Selected.Value)
+                    Filter('Identification Details', Application_Status in DS_DropdownCanvas1.Selected.Value)
                 )
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
@@ -541,7 +543,7 @@
                     =ThisItem.Application_Status
                 Width: =Parent.Width*.2
                 X: =DS_Label13_4.X
-                Y: =14
+                Y: =(Gallery1.TemplateHeight-Self.Height)/2
                 ZIndex: =6
 
             DS_Label19_2 As label:
@@ -554,7 +556,7 @@
                     =Text(DateTimeValue(ThisItem.'Date of Birth'),  "[$-en-US]dd mmm' yyyy")
                 Width: =Parent.Width*.2
                 X: =DS_Label13_3.X
-                Y: =9
+                Y: =(Gallery1.TemplateHeight-Self.Height)/2
                 ZIndex: =7
 
             DS_Rectangle78 As rectangle:

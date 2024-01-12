@@ -83,9 +83,9 @@
     "Name": "app_applicationstatus",
     "OptionSetInfoNameMapping": {
       "1": "New",
-      "2": "In-Review",
+      "2": "In-Process",
       "3": "Visited",
-      "4": "Account-Opened"
+      "4": "Opened"
     },
     "OptionSetIsBooleanValued": false,
     "OptionSetIsGlobal": true,
