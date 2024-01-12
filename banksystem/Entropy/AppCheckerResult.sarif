@@ -103,10 +103,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 72,
+                  "charLength": 74,
                   "charOffset": 0,
                   "snippet": {
-                    "text": "CountIf('Identification Details',  Text(Application_Status) = \"Visited\")"
+                    "text": "CountIf('Identification Details',  Text(Application_Status) = \"In-Review\")"
                   }
                 }
               },
@@ -223,10 +223,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 76,
+                  "charLength": 72,
                   "charOffset": 0,
                   "snippet": {
-                    "text": "CountIf('Identification Details',  Text(Application_Status) = \"In-Progress\")"
+                    "text": "CountIf('Identification Details',  Text(Application_Status) = \"Visited\")"
                   }
                 }
               },

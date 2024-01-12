@@ -260,7 +260,7 @@
             DisplayMode: =DisplayMode.Edit
             Height: =Parent.Height*.6
             Items: |
-                =[Blank(),"New","In-Progress","Visited","Completed"]
+                =[Blank(),"New","In-Review","Visited","Account-Opened"]
             Visible: |
                 =true
             Width: =320
@@ -311,7 +311,7 @@
                 Color: =RGBA(82, 82, 82, 1)
                 FontWeight: =FontWeight.Bold
                 Size: =15
-                Text: ="PENDING"
+                Text: ="IN-REVIEW"
                 Width: =Len(Self.Text)*Self.Size
                 X: =Parent.Width*.04
                 Y: =(Parent.Height-Self.Height)/2
@@ -324,7 +324,7 @@
                 PaddingRight: =20
                 Size: =15
                 Text: |+
-                    =CountIf('Identification Details',  Text(Application_Status) = "Visited")
+                    =CountIf('Identification Details',  Text(Application_Status) = "In-Review")
                     
                 X: =Parent.Width-Self.Width
                 Y: =(Parent.Height-Self.Height)/2
@@ -343,7 +343,7 @@
                 Color: =RGBA(82, 82, 82, 1)
                 FontWeight: =FontWeight.Bold
                 Size: =15
-                Text: ="IN-PROGRESS"
+                Text: ="VISITED"
                 Width: =Len(Self.Text)*Self.Size
                 X: =Parent.Width*.04
                 Y: =(Parent.Height-Self.Height)/2
@@ -355,7 +355,7 @@
                 FontWeight: =FontWeight.Bold
                 PaddingRight: =20
                 Size: =15
-                Text: =CountIf('Identification Details',  Text(Application_Status) = "In-Progress")
+                Text: =CountIf('Identification Details',  Text(Application_Status) = "Visited")
                 X: =Parent.Width-Self.Width
                 Y: =(Parent.Height-Self.Height)/2
                 ZIndex: =2
