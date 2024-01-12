@@ -64,7 +64,7 @@
             FontWeight: =FontWeight.Bold
             Height: =Parent.Height
             Size: =25
-            Text: ="INTELIGENT AUTOMATION"
+            Text: ="INTELLIGENT AUTOMATION"
             Width: =Parent.Width/2
             X: =(Parent.Width-Self.Width)/2
             Y: =(Parent.Height-Self.Height)/2
@@ -399,7 +399,7 @@
                 Color: =RGBA(107, 29, 94, 1)
                 FontWeight: =FontWeight.Semibold
                 OnSelect: =Select(Parent)
-                Size: =12
+                Size: =11
                 Text: =ThisItem.ApplicationNumber
                 Width: =Parent.Width*.15
                 X: =DS_Label11_3.X+(DS_Label13.Width-Self.Width)/2
@@ -411,7 +411,7 @@
                 Color: =RGBA(107, 29, 94, 1)
                 FontWeight: =FontWeight.Semibold
                 OnSelect: =Select(Parent)
-                Size: =12
+                Size: =11
                 Text: =ThisItem.'Full Name'
                 Width: =Parent.Width*.2
                 X: =DS_Label13_1.X
@@ -423,7 +423,7 @@
                 Color: =RGBA(107, 29, 94, 1)
                 FontWeight: =FontWeight.Semibold
                 OnSelect: =Select(Parent)
-                Size: =12
+                Size: =11
                 Text: |
                     =Text(DateTimeValue(ThisItem.'Schedule Date'),  "[$-en-US]dd mmm' yy")
                 Width: =Parent.Width*.2
@@ -445,7 +445,7 @@
                     )
                 FontWeight: =FontWeight.Semibold
                 OnSelect: =Select(Parent)
-                Size: =12
+                Size: =11
                 Text: |
                     =ThisItem.Application_Status
                 Width: =Parent.Width*.2
@@ -458,7 +458,7 @@
                 Color: =RGBA(107, 29, 94, 1)
                 FontWeight: =FontWeight.Semibold
                 OnSelect: =Select(Parent)
-                Size: =12
+                Size: =11
                 Text: |
                     =Text(DateTimeValue(ThisItem.'Date of Birth'),  "[$-en-US]dd mmm' yy")
                 Width: =Parent.Width*.2
