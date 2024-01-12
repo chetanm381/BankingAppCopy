@@ -216,6 +216,26 @@ UploadSignaturePhotoScreen As screen:
                         Y: =Parent.Height*0.2
                         ZIndex: =8
 
+                    USP__Image1111 As image:
+                        Fill: =RGBA(255, 255, 255, 1)
+                        Height: =USP_DataCardValue6_1.Height
+                        Image: =If(IsBlank(First(USP_DataCardValue6_1.Attachments)),SampleImage,First(USP_DataCardValue6_1.Attachments).Value)
+                        Visible: =Not(IsBlank(First(USP_DataCardValue6_1.Attachments)))
+                        Width: =USP_DataCardValue6_1.Width
+                        X: =USP_DataCardValue6_1.X
+                        Y: =USP_DataCardValue6_1.Y
+                        ZIndex: =9
+
+                    USP_Icon31111 As icon.Cancel:
+                        Height: =40
+                        Icon: =Icon.Cancel
+                        OnSelect: =Reset(USP_DataCardValue6_1)
+                        Visible: =Not(IsBlank(First(USP_DataCardValue6_1.Attachments)))
+                        Width: =40
+                        X: =Parent.Width*.97-Self.Width
+                        Y: =Parent.Height*0.12-Self.Height
+                        ZIndex: =10
+
                 USP_Container3_1 As groupContainer.manualLayoutContainer:
                     BorderStyle: =BorderStyle.None
                     DropShadow: =DropShadow.None
