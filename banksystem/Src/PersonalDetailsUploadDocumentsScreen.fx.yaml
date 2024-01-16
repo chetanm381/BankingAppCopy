@@ -656,7 +656,6 @@ PersonalDetailsUploadDocumentsScreen As screen:
                         RadiusTopRight: =20
                         Size: =11
                         Text: ="Next"
-                        Tooltip: ="Please attach files to proceed further"
                         Width: =Parent.Width*.09
                         X: =Parent.Width-Self.Width-Parent.Width*0.03
                         Y: =(PDUD_Container5.Y+PDUD_Container5.Height)+(Parent.Height-(PDUD_Container5.Y+PDUD_Container5.Height)-Self.Height)/2

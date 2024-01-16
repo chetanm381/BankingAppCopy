@@ -507,7 +507,6 @@ PersonalDetailsFormScreen As screen:
                         RadiusTopRight: =20
                         Size: =11
                         Text: ="Next"
-                        Tooltip: ="Extracted information Does not matches."
                         Width: =Parent.Width*.09
                         X: =Parent.Width-Self.Width-Parent.Width*0.03
                         Y: =(PDF_Container1_1.Y+PDF_Container1_1.Height)+(Parent.Height-(PDF_Container1_1.Y+PDF_Container1_1.Height)-Self.Height)/2
@@ -696,18 +695,21 @@ PersonalDetailsFormScreen As screen:
                             ZIndex: =3
 
                     PDF_Icon3_9 As icon.Check:
-                        Color: =If(Lower(First(data_application).'Full Name')=Lower(PDUD_TextInput2_8.Text),RGBA(11, 163, 54, 1),Color.Red)
+                        Color: =If(Lower(First(data_application).'Full Name')=Lower(PDF_TextInput1_4.Text),RGBA(11, 163, 54, 1),Color.Red)
                         Height: =20
-                        Icon: =If(Lower(First(data_application).'Full Name')=Lower(PDUD_TextInput2_8.Text),Icon.Check,Icon.Cancel)
+                        Icon: =If(Lower(First(data_application).'Full Name')=Lower(PDF_TextInput1_4.Text),Icon.Check,Icon.Cancel)
+                        OnSelect: =!loadervisibility
+                        Visible: =!loadervisibility
                         Width: =20
                         X: =PDUD_Label6_3.X+PDUD_Label6_3.Width-Self.Width
                         Y: =PDUD_Label6_3.Y+(PDUD_Label6_3.Height-Self.Height)/2
                         ZIndex: =10
 
                     PDF_Icon3_10 As icon.Check:
-                        Color: =If(DateValue(First(data_application).'Date of Birth')=PDUD_DatePicker1_2.SelectedDate,Color.Green,Color.Red)
+                        Color: =If(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_2.SelectedDate,Color.Green,Color.Red)
                         Height: =20
-                        Icon: =If(DateValue(First(data_application).'Date of Birth')=PDUD_DatePicker1_2.SelectedDate,Icon.Check,Icon.Cancel)
+                        Icon: =If(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_2.SelectedDate,Icon.Check,Icon.Cancel)
+                        Visible: =!loadervisibility
                         Width: =20
                         X: =PDUD_Label6_4.X+PDUD_Label6_4.Width-Self.Width
                         Y: =PDUD_Label6_4.Y+(PDUD_Label6_4.Height-Self.Height)/2
