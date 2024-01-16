@@ -237,6 +237,19 @@
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =5
 
+        DS_Button1_12 As button:
+            BorderThickness: =1
+            Color: =RGBA(107, 29, 94, 1)
+            Fill: =RGBA(252, 242, 247, 1)
+            Height: =Parent.Height*.3
+            HoverFill: =ColorFade(Self.Color, 20%)
+            Size: =10
+            Text: ="Pending Applications"
+            Width: =Parent.Width*.2
+            X: =DS_Button1_10.X-Self.Width-Parent.Width*.015
+            Y: =(Parent.Height-Self.Height)/2
+            ZIndex: =6
+
     DS_Container9 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.None
         Height: =65
@@ -435,7 +448,7 @@
             FontWeight: =FontWeight.Bold
             Height: =50
             Size: =12
-            Text: ="Full Name"
+            Text: ="Name"
             Width: =Parent.Width*.2
             X: =DS_Label13.Width+DS_Label13.X
             Y: =Parent.Height*.02
@@ -479,6 +492,7 @@
 
         "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
             DelayItemLoading: =true
+            DisplayMode: =DisplayMode.View
             Height: =Parent.Height-DS_Rectangle4.Y-DS_Rectangle4.Height
             Items: |
                 =If(
@@ -493,6 +507,7 @@
             ShowScrollbar: =false
             TemplatePadding: =0
             TemplateSize: =57
+            Transition: =Transition.Pop
             Width: =Parent.Width
             Y: =69
             ZIndex: =7
