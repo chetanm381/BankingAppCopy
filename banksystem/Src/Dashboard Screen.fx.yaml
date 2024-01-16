@@ -1,4 +1,5 @@
 "'Dashboard Screen' As screen":
+    ContentLanguage: =""
     OnVisible: =Reset(DS_Dropdown1)
 
     DS_HeaderContainer_1 As groupContainer.manualLayoutContainer:
@@ -420,15 +421,15 @@
         Height: =Parent.Height*0.5
         Width: =Parent.Width-DS_Container5.Width-DS_Container5.X-Parent.Width*.04
         X: =(DS_Container5.Width+DS_Container5.X)+(Parent.Width-DS_Container5.Width-DS_Container5.X-Self.Width)*.5
-        Y: =DS_Container9.Y+DS_Container9.Height+Parent.Height*0.025
+        Y: =DS_Container9.Y+DS_Container9.Height+Parent.Height*0.015
         ZIndex: =9
 
         DS_Rectangle4 As rectangle:
             Fill: =RGBA(219, 219, 219, 1)
             Height: =2
             Width: =Parent.Width*.95
-            X: =24
-            Y: =60
+            X: =(Parent.Width-Self.Width)/2
+            Y: =DS_img_xebiaLogo_3.Y+DS_img_xebiaLogo_3.Height+Parent.Height*.015
             ZIndex: =1
 
         DS_Label13 As label:
@@ -492,9 +493,11 @@
             ZIndex: =6
 
         "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+            AccessibleLabel: ="No Item to display"
             DelayItemLoading: =true
             DisplayMode: =DisplayMode.View
             Height: =Parent.Height-DS_Rectangle4.Y-DS_Rectangle4.Height
+            ItemAccessibleLabel: ="No Item To display"
             Items: |
                 =If(
                     IsBlank(DS_Dropdown1.Selected.Value),
@@ -510,7 +513,7 @@
             TemplateSize: =57
             Transition: =Transition.Pop
             Width: =Parent.Width
-            Y: =69
+            Y: =DS_Rectangle4.Y+DS_Rectangle4.Height+Parent.Height*.015
             ZIndex: =7
 
             DS_Label14 As label:
