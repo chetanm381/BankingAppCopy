@@ -381,7 +381,7 @@
                         
                         
                         );
-                        SendEmailAccountProcessed.Run(First(data_application).Id);
+                        SendEmailAccountProcessed.Run(First(data_application).'Identification Details');
                     RadiusBottomLeft: =20
                     RadiusBottomRight: =20
                     RadiusTopLeft: =20
