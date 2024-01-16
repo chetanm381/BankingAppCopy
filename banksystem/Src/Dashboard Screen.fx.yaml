@@ -161,7 +161,7 @@
     DS_Container7 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.None
         Height: =(Parent.Height-DS_img_xebiaLogo_3.Height-DS_Rectangle2.Height)*.15
-        Width: =Parent.Width*.7
+        Width: =DS_Container10.Width
         X: =(DS_Container5.Width+DS_Container5.X)+Parent.Width*.01
         Y: =DS_Rectangle2.Y+DS_Rectangle2.Height+Parent.Height*.015
         ZIndex: =4
