@@ -265,6 +265,7 @@
             HoverColor: |-
                 =ColorFade(ColorValue("#6b1d5eff"), 20%)
             Icon: =Icon.Reload
+            OnSelect: =Refresh('Identification Details')
             Width: =30
             X: =Parent.Width-Self.Width-Parent.Width*.01
             Y: =(Parent.Height-Self.Height)/2
