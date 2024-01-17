@@ -359,6 +359,7 @@
                         ZIndex: =1
 
                     Image3 As image:
+                        DisplayMode: =DisplayMode.View
                         Height: =Parent.Height*0.7
                         Image: =First(data_application).Photo.Value
                         Width: =Parent.Width*0.85
