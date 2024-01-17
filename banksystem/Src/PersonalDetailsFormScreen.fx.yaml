@@ -539,7 +539,7 @@ PersonalDetailsFormScreen As screen:
                     Width: =Parent.Width*.32
                     ZIndex: =3
 
-                    PDUD_Label7_1 As label:
+                    PDF_Label7_1 As label:
                         Color: =RGBA(107, 29, 94, 1)
                         FontWeight: =FontWeight.Bold
                         PaddingLeft: =0
@@ -550,18 +550,18 @@ PersonalDetailsFormScreen As screen:
                         Y: =Parent.Height*0.05
                         ZIndex: =1
 
-                    PDUD_Label6_3 As label:
+                    PDF_Label6_3 As label:
                         FontWeight: =FontWeight.Semibold
                         Height: =37
                         PaddingLeft: =0
                         Size: =12
                         Text: ="Name"
                         Width: =Parent.Width*0.7
-                        X: =PDUD_Label7_1.X
-                        Y: =PDUD_Label7_1.Y+PDUD_Label7_1.Height+Parent.Height*0.02
+                        X: =PDF_Label7_1.X
+                        Y: =PDF_Label7_1.Y+PDF_Label7_1.Height+Parent.Height*0.02
                         ZIndex: =2
 
-                    PDUD_TextInput2_8 As text:
+                    PDF_TextInput2_8 As text:
                         BorderColor: =RGBA(107, 29, 94, 1)
                         BorderStyle: =BorderStyle.None
                         BorderThickness: =0
@@ -575,29 +575,29 @@ PersonalDetailsFormScreen As screen:
                         HoverFill: =ColorFade( RGBA(107, 29, 94, 1),70%)
                         Size: =12
                         Width: =Parent.Width*0.7
-                        X: =PDUD_Label7_1.X
-                        Y: =PDUD_Label6_3.Y+PDUD_Label6_3.Height
+                        X: =PDF_Label7_1.X
+                        Y: =PDF_Label6_3.Y+PDF_Label6_3.Height
                         ZIndex: =3
 
-                    PDUD_Label6_4 As label:
+                    PDF_Label6_4 As label:
                         FontWeight: =FontWeight.Semibold
                         PaddingLeft: =0
                         Size: =12
                         Text: ="Date of Birth"
                         Width: =Parent.Width*0.7
-                        X: =PDUD_Label7_1.X
-                        Y: =PDUD_TextInput2_8.Y+PDUD_TextInput2_8.Height+Parent.Height*0.02
+                        X: =PDF_Label7_1.X
+                        Y: =PDF_TextInput2_8.Y+PDF_TextInput2_8.Height+Parent.Height*0.02
                         ZIndex: =4
 
-                    PDUD_Container2_3 As groupContainer.manualLayoutContainer:
+                    PDF_Container2_34 As groupContainer.manualLayoutContainer:
                         BorderColor: =RGBA(107, 29, 94, 1)
                         BorderStyle: =BorderStyle.None
                         DropShadow: =DropShadow.None
                         Fill: =RGBA(255, 255, 255, 1)
                         Height: =40
                         Width: =Parent.Width*0.7
-                        X: =PDUD_Label7_1.X
-                        Y: =PDUD_Label6_4.Y+PDUD_Label6_4.Height
+                        X: =PDF_Label7_1.X
+                        Y: =PDF_Label6_4.Y+PDF_Label6_4.Height
                         ZIndex: =5
 
                         PDUD_Image2_3 As image:
@@ -636,17 +636,17 @@ PersonalDetailsFormScreen As screen:
                             X: =Parent.Width-Self.Width
                             ZIndex: =3
 
-                    PDUD_Label6_5 As label:
+                    PDF_Label6_5 As label:
                         FontWeight: =FontWeight.Semibold
                         PaddingLeft: =0
                         Size: =12
                         Text: ="Address"
                         Width: =Parent.Width*0.7
-                        X: =PDUD_Label7_1.X
-                        Y: =Container2_3.Y+Container2_3.Height+Parent.Height*0.02
+                        X: =PDF_Label7_1.X
+                        Y: =PDF_Container2_3.Y+PDF_Container2_3.Height+Parent.Height*0.02
                         ZIndex: =6
 
-                    PDUD_TextInput2_9 As text:
+                    PDF_TextInput2_9 As text:
                         BorderColor: =RGBA(107, 29, 94, 1)
                         BorderStyle: =BorderStyle.None
                         BorderThickness: =0
@@ -661,20 +661,20 @@ PersonalDetailsFormScreen As screen:
                         Mode: =TextMode.MultiLine
                         Size: =12
                         Width: =Parent.Width*0.7
-                        X: =PDUD_Label7_1.X
-                        Y: =PDUD_Label6_5.Y+PDUD_Label6_5.Height+Parent.Height*0.01
+                        X: =PDF_Label7_1.X
+                        Y: =PDF_Label6_5.Y+PDF_Label6_5.Height+Parent.Height*0.01
                         ZIndex: =7
 
-                    Label4_8 As label:
+                    PDF_Label4_80 As label:
                         FontWeight: =FontWeight.Semibold
                         Size: =11
                         Text: ="Mobile Number"
                         Width: =Parent.Width*0.7
-                        X: =PDUD_Label7_1.X
-                        Y: =PDUD_Container2_3.Y+PDUD_Container2_3.Height+Parent.Height*0.02
+                        X: =PDF_Label7_1.X
+                        Y: =PDF_Container2_34.Y+PDF_Container2_34.Height+Parent.Height*0.02
                         ZIndex: =8
 
-                    Container2_3 As groupContainer.manualLayoutContainer:
+                    PDF_Container2_3 As groupContainer.manualLayoutContainer:
                         BorderColor: =RGBA(237, 237, 237, 1)
                         BorderStyle: =BorderStyle.None
                         BorderThickness: =2
@@ -682,16 +682,17 @@ PersonalDetailsFormScreen As screen:
                         Fill: =RGBA(250, 250, 250, 1)
                         Height: =42
                         Width: =Parent.Width*.70
-                        X: =PDUD_Label7_1.X
-                        Y: =Label4_8.Y+Label4_8.Height
+                        X: =PDF_Label7_1.X
+                        Y: =PDF_Label4_80.Y+PDF_Label4_80.Height
                         ZIndex: =9
 
-                        Label5_2 As label:
+                        PDF_Label5_2 As label:
                             BorderStyle: =BorderStyle.None
                             Height: =Parent.Height
                             Size: =11
                             Text: ="+91"&First(data_application).'Mobile Number'
-                            Width: =Parent.Width
+                            Width: =Parent.Width*.8
+                            X: =Parent.Width*.03
                             ZIndex: =3
 
                     PDF_Icon3_9 As icon.Check:
@@ -701,8 +702,8 @@ PersonalDetailsFormScreen As screen:
                         OnSelect: =!loadervisibility
                         Visible: =!loadervisibility
                         Width: =20
-                        X: =PDUD_Label6_3.X+PDUD_Label6_3.Width-Self.Width
-                        Y: =PDUD_Label6_3.Y+(PDUD_Label6_3.Height-Self.Height)/2
+                        X: =PDF_Label6_3.X+PDF_Label6_3.Width-Self.Width
+                        Y: =PDF_Label6_3.Y+(PDF_Label6_3.Height-Self.Height)/2
                         ZIndex: =10
 
                     PDF_Icon3_10 As icon.Check:
@@ -711,7 +712,7 @@ PersonalDetailsFormScreen As screen:
                         Icon: =If(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_2.SelectedDate,Icon.Check,Icon.Cancel)
                         Visible: =!loadervisibility
                         Width: =20
-                        X: =PDUD_Label6_4.X+PDUD_Label6_4.Width-Self.Width
-                        Y: =PDUD_Label6_4.Y+(PDUD_Label6_4.Height-Self.Height)/2
+                        X: =PDF_Label6_4.X+PDF_Label6_4.Width-Self.Width
+                        Y: =PDF_Label6_4.Y+(PDF_Label6_4.Height-Self.Height)/2
                         ZIndex: =11
 
