@@ -318,7 +318,7 @@ UploadLiveVideoScreen As screen:
                     Fill: =RGBA(11, 163, 54, 1)
                     HoverFill: |-
                         =ColorFade(ColorValue("#0ba336"), -20%)
-                    OnSelect: |+
+                    OnSelect: |
                         =
                         Patch(
                             'Identification Details',
@@ -334,9 +334,9 @@ UploadLiveVideoScreen As screen:
                         
                         );
                         Set(SpinnerVisible, true);
+                        KVV_Timer2;
                         
                         Navigate(KYCVerificationVideoScreen,ScreenTransition.CoverRight);
-                        
                     RadiusBottomLeft: =20
                     RadiusBottomRight: =20
                     RadiusTopLeft: =20

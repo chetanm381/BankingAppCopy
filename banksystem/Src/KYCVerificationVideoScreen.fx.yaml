@@ -93,7 +93,7 @@ KYCVerificationVideoScreen As screen:
                 Width: =Parent.Width
                 ZIndex: =1
 
-                PDF_Label1_3 As label:
+                KVV_Label1_3 As label:
                     Color: =RGBA(255, 255, 255, 1)
                     FontWeight: =FontWeight.Bold
                     Height: =64
@@ -157,35 +157,48 @@ KYCVerificationVideoScreen As screen:
                         Y: =(Parent.Height-Self.Height)/2+Parent.Height*.03
                         ZIndex: =1
 
-                        Label6_3 As label:
+                        KVV_Label6_3 As label:
                             Color: =RGBA(107, 29, 94, 1)
                             FontWeight: =FontWeight.Semibold
                             Height: =36
-                            Text: ="My Name is .............."
-                            Width: =207
-                            X: =16
+                            Text: ="My Name is "&adhardata.name
+                            Width: =Parent.Width
+                            X: =Parent.Width*.03
                             Y: =16
                             ZIndex: =1
 
-                        Label6_4 As label:
+                        KVV_Label6_4 As label:
                             Color: =RGBA(107, 29, 94, 1)
                             FontWeight: =FontWeight.Semibold
                             Height: =44
-                            Text: ="My Aadhar Card Number  is .............."
-                            Width: =372
-                            X: =16
+                            Text: ="My Aadhar Card Number  is "&adhardata.adhar
+                            Width: =Parent.Width
+                            X: =Parent.Width*.03
                             Y: =66
                             ZIndex: =2
 
-                        Label6_5 As label:
+                        KVV_Label6_5 As label:
                             Color: =RGBA(107, 29, 94, 1)
                             FontWeight: =FontWeight.Semibold
                             Height: =44
-                            Text: ="My PAN Card Number  is .............."
-                            Width: =372
-                            X: =16
+                            Text: ="My PAN Card Number is "&pandata.pan
+                            Width: =Parent.Width
+                            X: =Parent.Width*.03
                             Y: =121
                             ZIndex: =3
+
+                        KVV_Spinner1_1 As Spinner:
+                            Appearance: ='Spinner.Appearance'.Inverted
+                            BasePaletteColor: =RGBA(107, 29, 94, 0.86)
+                            DisplayMode: =DisplayMode.Edit
+                            FontColor: =
+                            Height: =Parent.Height
+                            SpinnerSize: ='Spinner.SpinnerSize'.Huge
+                            Visible: =SpinnerVisible
+                            Width: =Parent.Width
+                            X: =0
+                            Y: =0
+                            ZIndex: =4
 
                     KVV_Label7_5 As label:
                         Color: =RGBA(107, 29, 94, 1)
@@ -224,7 +237,7 @@ KYCVerificationVideoScreen As screen:
                             Width: =Parent.Width
                             ZIndex: =1
 
-                        Spinner1 As Spinner:
+                        KVV_Spinner1 As Spinner:
                             Appearance: ='Spinner.Appearance'.Inverted
                             BasePaletteColor: =RGBA(107, 29, 94, 0.86)
                             DisplayMode: =DisplayMode.Edit
@@ -281,7 +294,11 @@ KYCVerificationVideoScreen As screen:
                     Y: =(KVV_Container1_4.Y+KVV_Container1_4.Height)+(Parent.Height-(KVV_Container1_4.Y+KVV_Container1_4.Height)-Self.Height)/2
                     ZIndex: =9
 
-    Timer1 As timer:
+    KVV_Timer2 As timer:
+        AutoStart: =true
+        Duration: =30000
+        OnTimerEnd: =Set(SpinnerVisible,false)
+        Text: =Self.Value
         Visible: =false
         X: =40
         Y: =40
