@@ -498,11 +498,14 @@
             DisplayMode: =DisplayMode.View
             Height: =Parent.Height-DS_Rectangle4.Y-DS_Rectangle4.Height
             ItemAccessibleLabel: ="No Item To display"
-            Items: |
+            Items: |-
                 =If(
                     IsBlank(DS_Dropdown1.Selected.Value),
                     'Identification Details',
-                    Filter('Identification Details', Application_Status in DS_Dropdown1.Selected.Value)
+                    Filter(
+                        'Identification Details',
+                        Application_Status in DS_Dropdown1.Selected.Value
+                    )
                 )
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data

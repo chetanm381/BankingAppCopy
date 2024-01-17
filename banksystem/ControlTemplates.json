@@ -238,6 +238,21 @@
     "OverridableProperties": {},
     "Version": "1.0"
   },
+  "Spinner": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/powercontrol/PowerApps_CoreControls_Spinner",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": true,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "PowerApps_CoreControls_Spinner",
+    "OverridableProperties": {},
+    "TemplateDisplayName": "Spinner",
+    "Version": "1.0.28"
+  },
   "text": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
@@ -251,6 +266,20 @@
     "Name": "text",
     "OverridableProperties": {},
     "Version": "2.3.2"
+  },
+  "timer": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/timer",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": false,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": true,
+    "LastModifiedTimestamp": "0",
+    "Name": "timer",
+    "OverridableProperties": {},
+    "Version": "2.1.0"
   },
   "videoPlayback": {
     "CustomGroupControlTemplateName": "",

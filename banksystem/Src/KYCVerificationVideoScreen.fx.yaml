@@ -1,4 +1,6 @@
 KYCVerificationVideoScreen As screen:
+    OnVisible: |
+        =
 
     KVV_BgContainer_3 As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
@@ -222,6 +224,18 @@ KYCVerificationVideoScreen As screen:
                             Width: =Parent.Width
                             ZIndex: =1
 
+                        Spinner1 As Spinner:
+                            Appearance: ='Spinner.Appearance'.Inverted
+                            BasePaletteColor: =RGBA(107, 29, 94, 0.86)
+                            DisplayMode: =DisplayMode.Edit
+                            Height: =Parent.Height
+                            SpinnerSize: ='Spinner.SpinnerSize'.Huge
+                            Visible: =SpinnerVisible
+                            Width: =Parent.Width
+                            X: =0
+                            Y: =0
+                            ZIndex: =2
+
                     KVV_Label7_4 As label:
                         Color: =RGBA(107, 29, 94, 1)
                         FontWeight: =FontWeight.Bold
@@ -266,4 +280,10 @@ KYCVerificationVideoScreen As screen:
                     X: =Parent.Width-KVV_Button2_9.Width-Self.Width-Parent.Width*0.05
                     Y: =(KVV_Container1_4.Y+KVV_Container1_4.Height)+(Parent.Height-(KVV_Container1_4.Y+KVV_Container1_4.Height)-Self.Height)/2
                     ZIndex: =9
+
+    Timer1 As timer:
+        Visible: =false
+        X: =40
+        Y: =40
+        ZIndex: =2
 
