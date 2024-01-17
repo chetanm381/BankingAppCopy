@@ -15,6 +15,7 @@
       "app_adhaarcardimage": "Adhaar Card Image",
       "app_application_status": "Application_Status",
       "app_applicationnumber": "ApplicationNumber",
+      "app_applicationstage": "ApplicationStage",
       "app_dateofbirth": "Date of Birth",
       "app_emailid": "Email ID",
       "app_firstname": "First Name",
