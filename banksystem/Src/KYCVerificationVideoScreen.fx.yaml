@@ -200,6 +200,16 @@ KYCVerificationVideoScreen As screen:
                             Y: =0
                             ZIndex: =4
 
+                        Label7_1 As label:
+                            Align: =Align.Center
+                            Color: =RGBA(255, 255, 255, 1)
+                            Text: ="The information is being extracted from the video so please wait "
+                            Visible: =SpinnerVisible
+                            Width: =Parent.Width*.9
+                            X: =(Parent.Width-Self.Width)/2
+                            Y: =Parent.Height-Self.Height-Parent.Height*.2
+                            ZIndex: =5
+
                     KVV_Label7_5 As label:
                         Color: =RGBA(107, 29, 94, 1)
                         FontWeight: =FontWeight.Bold
@@ -236,18 +246,6 @@ KYCVerificationVideoScreen As screen:
                             Media: =First(data_application).'KYC Video'.Value
                             Width: =Parent.Width
                             ZIndex: =1
-
-                        KVV_Spinner1 As Spinner:
-                            Appearance: ='Spinner.Appearance'.Inverted
-                            BasePaletteColor: =RGBA(107, 29, 94, 0.86)
-                            DisplayMode: =DisplayMode.Edit
-                            Height: =Parent.Height
-                            SpinnerSize: ='Spinner.SpinnerSize'.Huge
-                            Visible: =SpinnerVisible
-                            Width: =Parent.Width
-                            X: =0
-                            Y: =0
-                            ZIndex: =2
 
                     KVV_Label7_4 As label:
                         Color: =RGBA(107, 29, 94, 1)
@@ -299,7 +297,6 @@ KYCVerificationVideoScreen As screen:
         Duration: =30000
         OnTimerEnd: =Set(SpinnerVisible,false)
         Text: =Self.Value
-        Visible: =false
         X: =40
         Y: =40
         ZIndex: =2
