@@ -269,7 +269,7 @@
             Icon: =Icon.Reload
             OnSelect: =Refresh('Identification Details')
             Width: =30
-            X: =Parent.Width-Self.Width-Parent.Width*.01
+            X: =Parent.Width-Self.Width-Parent.Width*.03
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =3
 
