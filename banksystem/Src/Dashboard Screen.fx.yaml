@@ -587,7 +587,7 @@
                 OnSelect: =Select(Parent)
                 Size: =11
                 Text: |
-                    =Text(DateTimeValue(ThisItem.'Date of Birth'),  "[$-en-US]dd mmm' yyyy")
+                    =Text(DateTimeValue(ThisItem.'Schedule Date'),  "[$-en-US]dd mmm' yyyy")
                 Width: =Parent.Width*.2
                 X: =DS_Label13_3.X
                 Y: =(Gallery1.TemplateHeight-Self.Height)/2
