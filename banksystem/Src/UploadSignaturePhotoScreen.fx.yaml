@@ -285,7 +285,7 @@ UploadSignaturePhotoScreen As screen:
                             'Identification Details',
                             LookUp('Identification Details',Id=Idfordata),
                             {
-                                'Signature Photo': {FileName:"file" , Value:First(USP_DataCardValue6_1.Attachments).Value}
+                                'Signature Photo': {FileName:"file" , Value:First(USP_DataCardValue6_1.Attachments).Value},ApplicationStage:7
                             }
                         );
                         

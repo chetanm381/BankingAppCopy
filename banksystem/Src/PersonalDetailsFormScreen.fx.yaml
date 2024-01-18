@@ -496,7 +496,7 @@ PersonalDetailsFormScreen As screen:
                                 'Identification Details',
                                 LookUp('Identification Details',Id=Idfordata),
                                 {
-                                    'Adhaar Number' : PDF_TextInput1_7.Text,'PAN Number':PDF_TextInput1_8.Text
+                                    'Adhaar Number' : PDF_TextInput1_7.Text,'PAN Number':PDF_TextInput1_8.Text,ApplicationStage:2
                                 }
                             );
                             Reset(DataCardValue6);

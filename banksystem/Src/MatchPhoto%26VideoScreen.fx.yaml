@@ -246,7 +246,17 @@
                     Fill: =RGBA(11, 163, 54, 1)
                     HoverFill: |-
                         =ColorFade(ColorValue("#0ba336"), -20%)
-                    OnSelect: =Reset(USP_DataCardValue6_1);Navigate(UploadSignaturePhotoScreen,ScreenTransition.UnCoverRight)
+                    OnSelect: |-
+                        =Patch(
+                            'Identification Details',
+                            LookUp(
+                                'Identification Details',
+                                Id = Idfordata
+                            ),
+                            {ApplicationStage:6}
+                        );
+                        
+                        Reset(USP_DataCardValue6_1);Navigate(UploadSignaturePhotoScreen,ScreenTransition.UnCoverRight)
                     RadiusBottomLeft: =20
                     RadiusBottomRight: =20
                     RadiusTopLeft: =20

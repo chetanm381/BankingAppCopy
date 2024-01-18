@@ -611,7 +611,8 @@ PersonalDetailsUploadDocumentsScreen As screen:
                                     'PAN Card Image': {
                                         FileName: First(PDUD_pancard.Attachments).Name,
                                         Value: First(PDUD_pancard.Attachments).Value
-                                    }
+                                    },
+                                    ApplicationStage: 1,Application_Status:ApplicationStatus.'In-Review'
                                 }
                             );
                             Navigate(

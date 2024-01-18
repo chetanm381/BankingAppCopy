@@ -192,11 +192,11 @@ OpenAccountScreen As screen:
                         ZIndex: =4
 
                     OA_Button2_6 As button:
-                        DisplayMode: =If(visibility,DisplayMode.Edit,DisplayMode.Disabled)
+                        DisplayMode: =If(Ic="Valid",DisplayMode.Edit,DisplayMode.Disabled)
                         Fill: =RGBA(11, 163, 54, 1)
                         HoverFill: |-
                             =ColorFade(ColorValue("#0ba336"), -20%)
-                        OnSelect: |+
+                        OnSelect: |
                             =Reset(OA_TextInput2_6);
                             Reset(OA_TextInput2_8);
                             Reset(OA_TextInput2_9);
@@ -205,13 +205,72 @@ OpenAccountScreen As screen:
                             Reset(OA_TextInput2_11);
                             Reset(PDUD_aadharCard);
                             Reset(PDUD_pancard);
-                            Set(visibility,false);
+                            Set(
+                                visibility,
+                                false
+                            );
                             ClearCollect(
                                 data_application,
-                                LookUp('Identification Details',Id=Idfordata)
+                                LookUp(
+                                    'Identification Details',
+                                    Id = Idfordata
+                                )
                             );
-                            Navigate(PersonalDetailsUploadDocumentsScreen,ScreenTransition.CoverRight);
-                            
+                            Switch(
+                                First(data_application).ApplicationStage,
+                                1,
+                                Navigate(
+                                    PersonalDetailsUploadDocumentsScreen,
+                                    ScreenTransition.CoverRight
+                                ),
+                                2,
+                                Navigate(
+                                    PersonalDetailsFormScreen,
+                                    ScreenTransition.CoverRight
+                                );
+                                ,
+                                3,
+                                Navigate(
+                                    UploadPassportSizePhoto,
+                                    ScreenTransition.CoverRight
+                                );
+                                ,
+                                4,
+                                Navigate(
+                                    UploadLiveVideoScreen,
+                                    ScreenTransition.CoverRight
+                                );
+                                ,
+                                5,
+                                Navigate(
+                                    KYCVerificationVideoScreen,
+                                    ScreenTransition.CoverRight
+                                );
+                                ,
+                                6,
+                                Navigate(
+                                    'MatchPhoto&VideoScreen',
+                                    ScreenTransition.CoverRight
+                                );
+                                ,
+                                7,
+                                Navigate(
+                                    UploadSignaturePhotoScreen,
+                                    ScreenTransition.CoverRight
+                                );
+                                ,
+                                8,
+                                Navigate(
+                                    'CustomerProfile Screen',
+                                    ScreenTransition.CoverRight
+                                );
+                                ,
+                                Navigate(
+                                    PersonalDetailsUploadDocumentsScreen,
+                                    ScreenTransition.CoverRight
+                                );
+                                
+                            );
                         RadiusBottomLeft: =20
                         RadiusBottomRight: =20
                         RadiusTopLeft: =20

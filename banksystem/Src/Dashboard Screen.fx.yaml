@@ -495,7 +495,6 @@
         "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
             AccessibleLabel: ="No Item to display"
             DelayItemLoading: =true
-            DisplayMode: =DisplayMode.View
             Height: =Parent.Height-DS_Rectangle4.Y-DS_Rectangle4.Height
             ItemAccessibleLabel: ="No Item To display"
             Items: |-
@@ -511,6 +510,7 @@
             LoadingSpinner: =LoadingSpinner.Data
             LoadingSpinnerColor: |-
                 =ColorValue("#6b1d5e")
+            OnSelect: =Navigate(OpenAccountScreen)
             ShowScrollbar: =false
             TemplatePadding: =0
             TemplateSize: =57

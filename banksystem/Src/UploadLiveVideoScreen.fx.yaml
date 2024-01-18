@@ -319,24 +319,35 @@ UploadLiveVideoScreen As screen:
                     HoverFill: |-
                         =ColorFade(ColorValue("#0ba336"), -20%)
                     OnSelect: |
-                        =
-                        Patch(
+                        =Patch(
                             'Identification Details',
-                            LookUp('Identification Details',Id=Idfordata),
+                            LookUp(
+                                'Identification Details',
+                                Id = Idfordata
+                            ),
                             {
-                             'KYC Video': {FileName:"file" , Value:First(ULV_DataCardValue6_1.Attachments).Value}
+                                'KYC Video': {
+                                    FileName: "file",
+                                    Value: First(ULV_DataCardValue6_1.Attachments).Value
+                                },ApplicationStage:4
                             }
-                        )
-                        ;
-                        ClearCollect(
-                        data_application,LookUp('Identification Details',Id=Idfordata)
-                        
-                        
                         );
-                        Set(SpinnerVisible, true);
+                        ClearCollect(
+                            data_application,
+                            LookUp(
+                                'Identification Details',
+                                Id = Idfordata
+                            )
+                        );
+                        Set(
+                            SpinnerVisible,
+                            true
+                        );
                         KVV_Timer2;
-                        
-                        Navigate(KYCVerificationVideoScreen,ScreenTransition.CoverRight);
+                        Navigate(
+                            KYCVerificationVideoScreen,
+                            ScreenTransition.CoverRight
+                        );
                     RadiusBottomLeft: =20
                     RadiusBottomRight: =20
                     RadiusTopLeft: =20

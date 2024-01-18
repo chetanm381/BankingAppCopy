@@ -377,7 +377,7 @@
                         'Identification Details',
                         LookUp('Identification Details',Id=First(data_application).Id),
                         {
-                            Application_Status: ApplicationStatus.Visited
+                            Application_Status: ApplicationStatus.Visited,ApplicationStage:8
                         }
                         
                         
