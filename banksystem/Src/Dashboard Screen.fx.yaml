@@ -246,6 +246,7 @@
             HoverFill: =ColorFade(Self.Color, 20%)
             Size: =10
             Text: ="Pending Applications"
+            Visible: =false
             Width: =Parent.Width*.2
             X: =DS_Button1_10.X-Self.Width-Parent.Width*.015
             Y: =(Parent.Height-Self.Height)/2
