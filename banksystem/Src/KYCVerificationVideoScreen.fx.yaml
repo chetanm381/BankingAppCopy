@@ -203,7 +203,7 @@ KYCVerificationVideoScreen As screen:
                         Label7_1 As label:
                             Align: =Align.Center
                             Color: =RGBA(255, 255, 255, 1)
-                            Text: ="The information is being extracted from the video so please wait "
+                            Text: ="The information is being extracted from the video so, Please Wait !! "
                             Visible: =SpinnerVisible
                             Width: =Parent.Width*.9
                             X: =(Parent.Width-Self.Width)/2
@@ -269,6 +269,11 @@ KYCVerificationVideoScreen As screen:
                             ),
                             {ApplicationStage:5}
                         );
+                        Set(
+                            SpinnerVisible2,
+                            true
+                        );
+                        MPV_Timer2;
                         Navigate(
                             'MatchPhoto&VideoScreen',
                             ScreenTransition.CoverRight

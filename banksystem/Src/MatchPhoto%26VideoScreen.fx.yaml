@@ -161,6 +161,29 @@
                             Width: =Parent.Width
                             ZIndex: =3
 
+                        Spinner1 As Spinner:
+                            Appearance: ='Spinner.Appearance'.Inverted
+                            BasePaletteColor: =RGBA(107, 29, 94, 1)
+                            DisplayMode: =DisplayMode.Edit
+                            FontColor: =
+                            Height: =Parent.Height
+                            SpinnerSize: ='Spinner.SpinnerSize'.Huge
+                            Visible: =SpinnerVisible2
+                            Width: =Parent.Width
+                            X: =0
+                            Y: =0
+                            ZIndex: =4
+
+                        MPV_Label7_2 As label:
+                            Align: =Align.Center
+                            Color: =RGBA(255, 255, 255, 1)
+                            Text: ="Comapring the photo with the video, Please Wait !!"
+                            Visible: =SpinnerVisible2
+                            Width: =Parent.Width*.9
+                            X: =(Parent.Width-Self.Width)/2
+                            Y: =Parent.Height-Self.Height-Parent.Height*.2
+                            ZIndex: =5
+
                     MPV_Label7_1 As label:
                         Color: =RGBA(107, 29, 94, 1)
                         FontWeight: =FontWeight.Bold
@@ -173,6 +196,7 @@
                     MPV_Circle1_1 As circle:
                         Fill: =RGBA(107, 29, 94, 1)
                         Height: =50
+                        Visible: =!SpinnerVisible2
                         Width: =50
                         X: =Parent.Width-Self.Width-Parent.Width*.025
                         Y: =Parent.Height*0.025
@@ -183,6 +207,7 @@
                         DisplayMode: =DisplayMode.View
                         Height: =30
                         Icon: =Icon.Check
+                        Visible: =!SpinnerVisible2
                         Width: =30
                         X: =MPV_Circle1_1.X+(MPV_Circle1_1.Width-Self.Width)/2
                         Y: =MPV_Circle1_1.Y+(MPV_Circle1_1.Height-Self.Height)/2
@@ -227,6 +252,7 @@
                     MPV_Circle1 As circle:
                         Fill: =RGBA(107, 29, 94, 1)
                         Height: =50
+                        Visible: =!SpinnerVisible2
                         Width: =50
                         X: =Parent.Width-Self.Width-Parent.Width*.025
                         Y: =Parent.Height*0.025
@@ -237,6 +263,7 @@
                         DisplayMode: =DisplayMode.View
                         Height: =30
                         Icon: =Icon.Check
+                        Visible: =!SpinnerVisible2
                         Width: =30
                         X: =MPV_Circle1.X+(MPV_Circle1.Width-Self.Width)/2
                         Y: =MPV_Circle1.Y+(MPV_Circle1.Height-Self.Height)/2
@@ -287,4 +314,14 @@
                     X: =Parent.Width-MPV_Button2_5.Width-Self.Width-Parent.Width*0.05
                     Y: =(MPV_Container1_2.Y+MPV_Container1_2.Height)+(Parent.Height-(MPV_Container1_2.Y+MPV_Container1_2.Height)-Self.Height)/2
                     ZIndex: =9
+
+                MPV_Timer2 As timer:
+                    AutoStart: =true
+                    Duration: =5000
+                    OnTimerEnd: =Set(SpinnerVisible2,false)
+                    Text: =Self.Value
+                    Visible: =false
+                    X: =589
+                    Y: =8
+                    ZIndex: =10
 
