@@ -114,13 +114,13 @@
     "Id": "fae37f3e-c696-4c9a-ae43-68aa56a5cb9d",
     "InstrumentationKey": "",
     "ManualOfflineProfileId": "",
-    "Name": "Banking System",
+    "Name": "Banking System - copy",
     "OriginatingVersion": "1.336",
     "ParserErrorCount": 0,
     "ShowStatusBar": false
   },
   "PublishInfo": {
-    "AppName": "Banking System",
+    "AppName": "Banking System - copy",
     "BackgroundColor": "rgba(107, 29, 94, 1)",
     "IconColor": "RGBA(255,255,255,1)",
     "IconName": "",
