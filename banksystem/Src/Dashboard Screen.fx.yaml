@@ -67,7 +67,7 @@
             FontWeight: =FontWeight.Bold
             Height: =Parent.Height
             Size: =25
-            Text: =""
+            Text: ="INTELLIGENT AUTOMATION"
             Width: =Parent.Width/2
             X: =(Parent.Width-Self.Width)/2
             Y: =(Parent.Height-Self.Height)/2
