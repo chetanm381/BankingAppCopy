@@ -161,7 +161,7 @@ KYCVerificationVideoScreen As screen:
                             Color: =RGBA(107, 29, 94, 1)
                             FontWeight: =FontWeight.Semibold
                             Height: =36
-                            Text: ="My Name is "&adhardata.name
+                            Text: ="My Name is "&First(data_application).'Full Name'
                             Width: =Parent.Width
                             X: =Parent.Width*.03
                             Y: =16
@@ -171,7 +171,7 @@ KYCVerificationVideoScreen As screen:
                             Color: =RGBA(107, 29, 94, 1)
                             FontWeight: =FontWeight.Semibold
                             Height: =44
-                            Text: ="My Aadhar Card Number  is "&adhardata.adhar
+                            Text: ="My Aadhar Card Number  is "&First(data_application).'Adhaar Number'
                             Width: =Parent.Width
                             X: =Parent.Width*.03
                             Y: =66
@@ -181,7 +181,7 @@ KYCVerificationVideoScreen As screen:
                             Color: =RGBA(107, 29, 94, 1)
                             FontWeight: =FontWeight.Semibold
                             Height: =44
-                            Text: ="My PAN Card Number is "&pandata.pan
+                            Text: ="My PAN Card Number is "&First(data_application).'PAN Number'
                             Width: =Parent.Width
                             X: =Parent.Width*.03
                             Y: =121
