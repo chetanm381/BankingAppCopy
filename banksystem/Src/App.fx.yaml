@@ -1,8 +1,9 @@
 App As appinfo:
     BackEnabled: =true
-    OnStart: |+
+    OnStart: |-
         =Set(ThankyouPopUp,false);
         
+        Set(SelectedSortField , DS_Dropdown1_1.Selected.Value)
     StartScreen: |
         ='Dashboard Screen'
     Theme: =PowerAppsTheme

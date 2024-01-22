@@ -327,8 +327,8 @@
                 =//If(order,true,false)
                 true
             Width: =30
-            X: =711
-            Y: =18
+            X: =725
+            Y: =(Parent.Height-Self.Height)/2
             ZIndex: =9
 
         Icon3_1 As icon.ArrowUp:
@@ -338,8 +338,8 @@
                 =//If(order,true,false)
                 true
             Width: =30
-            X: =741
-            Y: =18
+            X: =748
+            Y: =(Parent.Height-Self.Height)/2
             ZIndex: =10
 
         DS_Dropdown1_1 As dropdown:
@@ -353,14 +353,13 @@
             Height: =Parent.Height*.5
             HoverFill: =RGBA(107, 29, 94, 0.27)
             Items: =[Blank(),"Full Name","Address"]
-            OnChange: |-
-                =UpdateContext({ SelectedSortField : DS_Dropdown1_1.Selected.Value })
+            OnChange: =
             PressedFill: =RGBA(107, 29, 94, 1)
             SelectionFill: =RGBA(107, 29, 94, 1)
             Size: =12
             Width: =Parent.Width*.22
-            X: =495
-            Y: =17
+            X: =510
+            Y: =(Parent.Height-Self.Height)/2
             ZIndex: =11
 
     DS_Group1 As group:
@@ -555,7 +554,7 @@
                             Application_Status in DS_Dropdown1.Selected.Value
                         )
                     ),
-                    "app_fullname",
+                   "app_fullname",
                      If(
                         order,
                         SortOrder.Descending,
