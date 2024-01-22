@@ -1,4 +1,5 @@
 OpenAccountScreen As screen:
+    OnVisible: =Set(Ic,"Invalid")
 
     OA_BgContainer_1 As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
@@ -216,16 +217,69 @@ OpenAccountScreen As screen:
                                     Id = Idfordata
                                 )
                             );
-                            //Switch(First(data_application).ApplicationStage,1,Navigate(PersonalDetailsUploadDocumentsScreen,ScreenTransition.CoverRight),2,Navigate(PersonalDetailsFormScreen,ScreenTransition.CoverRight);,3,Navigate(UploadPassportSizePhoto,ScreenTransition.CoverRight);,4,Navigate(UploadLiveVideoScreen,ScreenTransition.CoverRight);,5,Navigate(KYCVerificationVideoScreen,ScreenTransition.CoverRight);,6,Navigate('MatchPhoto&VideoScreen',ScreenTransition.CoverRight);,7,Navigate(UploadSignaturePhotoScreen,ScreenTransition.CoverRight);,8,Navigate('CustomerProfile Screen',ScreenTransition.CoverRight);,Navigate(PersonalDetailsUploadDocumentsScreen,ScreenTransition.CoverRight););
-                            
-                            Navigate(PersonalDetailsUploadDocumentsScreen,ScreenTransition.CoverRight);
+                            Switch(
+                                First(data_application).ApplicationStage,
+                                1,
+                                Navigate(
+                                    PersonalDetailsUploadDocumentsScreen,
+                                    ScreenTransition.CoverRight
+                                ),
+                                2,
+                                Navigate(
+                                    PersonalDetailsFormScreen,
+                                    ScreenTransition.CoverRight
+                                );
+                                ,
+                                3,
+                                Navigate(
+                                    UploadPassportSizePhoto,
+                                    ScreenTransition.CoverRight
+                                );
+                                ,
+                                4,
+                                Navigate(
+                                    UploadLiveVideoScreen,
+                                    ScreenTransition.CoverRight
+                                );
+                                ,
+                                5,
+                                Navigate(
+                                    KYCVerificationVideoScreen,
+                                    ScreenTransition.CoverRight
+                                );
+                                ,
+                                6,
+                                Navigate(
+                                    'MatchPhoto&VideoScreen',
+                                    ScreenTransition.CoverRight
+                                );
+                                ,
+                                7,
+                                Navigate(
+                                    UploadSignaturePhotoScreen,
+                                    ScreenTransition.CoverRight
+                                );
+                                ,
+                                8,
+                                Navigate(
+                                    'CustomerProfile Screen',
+                                    ScreenTransition.CoverRight
+                                );
+                                ,
+                                Navigate(
+                                    PersonalDetailsUploadDocumentsScreen,
+                                    ScreenTransition.CoverRight
+                                );
+                                
+                            );
+                            //Navigate(PersonalDetailsUploadDocumentsScreen,ScreenTransition.CoverRight);
                         RadiusBottomLeft: =20
                         RadiusBottomRight: =20
                         RadiusTopLeft: =20
                         RadiusTopRight: =20
                         Size: =11
                         Text: ="Submit"
-                        Width: =Parent.Width*.13
+                        Width: =Parent.Width*.1
                         X: =Parent.Width-Self.Width-Parent.Width*0.03
                         Y: =(MPV_Container1_2.Y+MPV_Container1_2.Height)+(Parent.Height-(MPV_Container1_2.Y+MPV_Container1_2.Height)-Self.Height)/2
                         ZIndex: =14
