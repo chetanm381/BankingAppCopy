@@ -298,7 +298,7 @@ PersonalDetailsFormScreen As screen:
                             PDF_DatePicker1_2 As datepicker:
                                 BorderThickness: =0
                                 DefaultDate: |-
-                                    ="  "&If(
+                                    =If(
                                         IsBlank(adhardata.dob),
                                         First(data_application).'Date of Birth',
                                         DateValue(
@@ -495,7 +495,7 @@ PersonalDetailsFormScreen As screen:
                             PDF_DatePicker1_3 As datepicker:
                                 BorderThickness: =0
                                 DefaultDate: |-
-                                    =" "&If(
+                                    =If(
                                         IsBlank(pandata.dob),
                                         First(data_application).'Date of Birth',
                                         DateValue(
