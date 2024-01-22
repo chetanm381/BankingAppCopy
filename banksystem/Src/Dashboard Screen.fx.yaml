@@ -1,6 +1,8 @@
 "'Dashboard Screen' As screen":
     ContentLanguage: =""
-    OnVisible: =Reset(DS_Dropdown1)
+    OnVisible: |
+        =Reset(DS_Dropdown1);
+        Set(order,true);
 
     DS_HeaderContainer_1 As groupContainer.manualLayoutContainer:
         BorderStyle: =BorderStyle.None
@@ -317,6 +319,50 @@
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =8
 
+        Icon3 As icon.ArrowUp:
+            Height: =30
+            Icon: =Icon.ArrowUp
+            OnSelect: =Set(order,!order)
+            Visible: |-
+                =//If(order,true,false)
+                true
+            Width: =30
+            X: =711
+            Y: =18
+            ZIndex: =9
+
+        Icon3_1 As icon.ArrowUp:
+            Height: =30
+            OnSelect: =Set(order,!order)
+            Visible: |-
+                =//If(order,true,false)
+                true
+            Width: =30
+            X: =741
+            Y: =18
+            ZIndex: =10
+
+        DS_Dropdown1_1 As dropdown:
+            BorderColor: =RGBA(107, 29, 94, 0.55)
+            BorderThickness: =1
+            ChevronBackground: =RGBA(255, 255, 255, 0.52)
+            ChevronFill: =RGBA(107, 29, 94, 1)
+            ChevronHoverBackground: |-
+                =ColorFade(ColorValue("#6b1d5e"), -20%)
+            Color: =RGBA(107, 29, 94, 1)
+            Height: =Parent.Height*.5
+            HoverFill: =RGBA(107, 29, 94, 0.27)
+            Items: =[Blank(),"Full Name","Address"]
+            OnChange: |-
+                =UpdateContext({ SelectedSortField : DS_Dropdown1_1.Selected.Value })
+            PressedFill: =RGBA(107, 29, 94, 1)
+            SelectionFill: =RGBA(107, 29, 94, 1)
+            Size: =12
+            Width: =Parent.Width*.22
+            X: =495
+            Y: =17
+            ZIndex: =11
+
     DS_Group1 As group:
         Height: =5
         Width: =5
@@ -437,6 +483,7 @@
             Color: =RGBA(107, 29, 94, 1)
             FontWeight: =FontWeight.Bold
             Height: =50
+            OnSelect: =
             Size: =12
             Text: ="Application number"
             Width: =Parent.Width*.2
@@ -498,14 +545,23 @@
             DisplayMode: =DisplayMode.View
             Height: =Parent.Height-DS_Rectangle4.Y-DS_Rectangle4.Height
             ItemAccessibleLabel: ="No Item To display"
-            Items: |-
-                =If(
-                    IsBlank(DS_Dropdown1.Selected.Value),
-                    'Identification Details',
+            Items: |
+                =SortByColumns(
                     Filter(
                         'Identification Details',
-                        Application_Status in DS_Dropdown1.Selected.Value
+                        If(
+                            IsBlank(DS_Dropdown1.Selected.Value),
+                            true,
+                            Application_Status in DS_Dropdown1.Selected.Value
+                        )
+                    ),
+                    "app_fullname",
+                     If(
+                        order,
+                        SortOrder.Descending,
+                     SortOrder.Ascending
                     )
+                   
                 )
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data

@@ -1,6 +1,8 @@
 App As appinfo:
     BackEnabled: =true
-    OnStart: =Set(ThankyouPopUp,false)
+    OnStart: |+
+        =Set(ThankyouPopUp,false);
+        
     StartScreen: |
         ='Dashboard Screen'
     Theme: =PowerAppsTheme

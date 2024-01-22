@@ -7133,7 +7133,7 @@
       "MetaDataIDKey": "",
       "Name": "PDF_img_xebiaLogo_3",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -17835,7 +17835,7 @@
       "MetaDataIDKey": "",
       "Name": "PDF_userimage_5",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -20107,7 +20107,7 @@
       "MetaDataIDKey": "",
       "Name": "PFD_Rectangle1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 8,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -20254,7 +20254,7 @@
       "MetaDataIDKey": "",
       "Name": "PFD_Rectangle3",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 9,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -20401,7 +20401,7 @@
       "MetaDataIDKey": "",
       "Name": "PFD_Rectangle4",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 10,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -20548,7 +20548,7 @@
       "MetaDataIDKey": "",
       "Name": "PFD_Rectangle5",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 11,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -20695,7 +20695,7 @@
       "MetaDataIDKey": "",
       "Name": "PFD_Rectangle6",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 12,
+      "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -20842,7 +20842,7 @@
       "MetaDataIDKey": "",
       "Name": "PFD_Rectangle7",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 14,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -20989,7 +20989,7 @@
       "MetaDataIDKey": "",
       "Name": "PFD_Rectangle8",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 13,
+      "ParentIndex": 14,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
