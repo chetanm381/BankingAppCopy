@@ -266,8 +266,29 @@ PersonalDetailsFormScreen As screen:
 
                             PDF_DatePicker1_2 As datepicker:
                                 BorderThickness: =0
-                                DefaultDate: |
-                                    =If(IsBlank(adhardata.dob),First(data_application).'Date of Birth',DateValue(Text(Mid(adhardata.dob, 4, 2) & "/" & Mid(adhardata.dob, 1, 2) & "/" & Mid(adhardata.dob, 7, 4), "[$-en-US]mm/dd/yyyy")))
+                                DefaultDate: |-
+                                    ="  "&If(
+                                        IsBlank(adhardata.dob),
+                                        First(data_application).'Date of Birth',
+                                        DateValue(
+                                            Text(
+                                                Mid(
+                                                    adhardata.dob,
+                                                    4,
+                                                    2
+                                                ) & "/" & Mid(
+                                                    adhardata.dob,
+                                                    1,
+                                                    2
+                                                ) & "/" & Mid(
+                                                    adhardata.dob,
+                                                    7,
+                                                    4
+                                                ),
+                                                "[$-en-US]mm/dd/yyyy"
+                                            )
+                                        )
+                                    )
                                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                                 DisabledColor: =RGBA(107, 29, 94, 1)
                                 DisabledFill: =RGBA(250, 250, 250, 1)
@@ -442,7 +463,29 @@ PersonalDetailsFormScreen As screen:
 
                             PDF_DatePicker1_3 As datepicker:
                                 BorderThickness: =0
-                                DefaultDate: =If(IsBlank(pandata.dob),First(data_application).'Date of Birth',DateValue(Text(Mid(pandata.dob, 4, 2) & "/" & Mid(pandata.dob, 1, 2) & "/" & Mid(pandata.dob, 7, 4), "[$-en-US]mm/dd/yyyy")))
+                                DefaultDate: |-
+                                    =" "&If(
+                                        IsBlank(pandata.dob),
+                                        First(data_application).'Date of Birth',
+                                        DateValue(
+                                            Text(
+                                                Mid(
+                                                    pandata.dob,
+                                                    4,
+                                                    2
+                                                ) & "/" & Mid(
+                                                    pandata.dob,
+                                                    1,
+                                                    2
+                                                ) & "/" & Mid(
+                                                    pandata.dob,
+                                                    7,
+                                                    4
+                                                ),
+                                                "[$-en-US]mm/dd/yyyy"
+                                            )
+                                        )
+                                    )
                                 DisabledColor: =RGBA(107, 29, 94, 1)
                                 DisabledFill: =RGBA(250, 250, 250, 1)
                                 DisplayMode: =DisplayMode.Disabled
@@ -567,7 +610,7 @@ PersonalDetailsFormScreen As screen:
                         BorderStyle: =BorderStyle.None
                         BorderThickness: =0
                         Default: =First(data_application).'Full Name'
-                        DisabledColor: =RGBA(107, 29, 94, 1)
+                        DisabledColor: =RGBA(0, 0, 0, 1)
                         DisabledFill: =RGBA(250, 250, 250, 1)
                         DisplayMode: =DisplayMode.Disabled
                         Height: =42
@@ -613,29 +656,30 @@ PersonalDetailsFormScreen As screen:
                         PDUD_Rectangle3_3 As rectangle:
                             BorderColor: =RGBA(107, 29, 94, 1)
                             BorderThickness: =1
-                            Fill: =RGBA(202, 202, 202, 1)
+                            Fill: =RGBA(107, 29, 94, 1)
                             Height: =30
                             Width: =2
-                            X: =PDUD_DatePicker1_2.X-Self.Width
+                            X: =PDUD_Label122.X-Self.Width
                             Y: =5
                             ZIndex: =2
 
-                        PDUD_DatePicker1_2 As datepicker:
-                            BorderThickness: =0
-                            DefaultDate: =First(data_application).'Date of Birth'
-                            DisabledColor: =RGBA(107, 29, 94, 1)
-                            DisabledFill: =RGBA(250, 250, 250, 1)
-                            DisplayMode: =DisplayMode.Disabled
-                            Height: =Parent.Height
-                            IconBackground: =Color.White
-                            IconFill: |-
-                                =ColorValue("#969696")
-                            PaddingLeft: =5
-                            PaddingTop: =5
+                        PDUD_Label122 As label:
                             Size: =11
-                            Width: =Parent.Width*.80
-                            X: =Parent.Width-Self.Width
+                            Text: |-
+                                =" "&Text(
+                                    First(data_application).'Date of Birth',
+                                    "[$-en-US]dd-mm-yyyy"
+                                )
+                            X: =62
                             ZIndex: =3
+
+                        Image1 As image:
+                            Height: =30
+                            Image: =calendar
+                            Width: =30
+                            X: =Parent.Width-Self.Width-Parent.Width*.03
+                            Y: =(Parent.Height-Self.Height)/2
+                            ZIndex: =4
 
                     PDF_Label6_5 As label:
                         FontWeight: =FontWeight.Semibold

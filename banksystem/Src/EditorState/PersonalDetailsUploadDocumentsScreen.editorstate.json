@@ -8184,7 +8184,7 @@
       "MetaDataIDKey": "",
       "Name": "PDUD_img_xebiaLogo_3",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -13153,7 +13153,7 @@
       "MetaDataIDKey": "",
       "Name": "PDUD_userimage_4",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
