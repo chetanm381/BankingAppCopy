@@ -83,7 +83,7 @@
                 BorderStyle: =BorderStyle.None
                 DropShadow: =DropShadow.None
                 Fill: =RGBA(107, 29, 94, 1)
-                Height: =Parent.Height*.20
+                Height: =Parent.Height*.25
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -91,16 +91,220 @@
                 Width: =Parent.Width
                 ZIndex: =1
 
-                USP_Label1_2 As label:
-                    Color: =RGBA(255, 255, 255, 1)
-                    FontWeight: =FontWeight.Bold
-                    Height: =64
-                    Size: =20
-                    Text: ="DOOR STEP BANKING"
-                    Width: =520
-                    X: =Parent.Width*.02
-                    Y: =Parent.Height*.1
-                    ZIndex: =1
+                PDF_Milestone_8 As group:
+                    Height: =5
+                    Width: =5
+                    X: =40
+                    Y: =20
+                    ZIndex: =47
+
+                    PFD_Circle1_8 As circle:
+                        Fill: =RGBA(252, 242, 247, 1)
+                        Height: =60
+                        Width: =60
+                        X: =Parent.Width*.05
+                        Y: =Parent.Height*.06
+                        ZIndex: =24
+
+                    PDF_Label8_71 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(255, 255, 255, 1)
+                        Height: =30
+                        Size: =10
+                        Text: ="Document Upload"
+                        Width: =193
+                        X: =PFD_Circle1_8.X+(PFD_Circle1_8.Width-Self.Width)/2
+                        Y: =PFD_Circle1_8.Y+PFD_Circle1_8.Height
+                        ZIndex: =25
+
+                    PFD_Rectangle1_8 As rectangle:
+                        Fill: =RGBA(252, 242, 247, 1)
+                        Height: =2
+                        Width: =Parent.Width*.07
+                        X: =PFD_Circle1_8.X+PFD_Circle1_8.Width+Parent.Width*.005
+                        Y: =PFD_Circle1_8.Y+(PFD_Circle1_8.Height-Self.Height)/2
+                        ZIndex: =26
+
+                    PFD_Circle2_8 As circle:
+                        Fill: =RGBA(252, 242, 247, 1)
+                        Height: =60
+                        Width: =60
+                        X: =PFD_Rectangle1_8.X+PFD_Rectangle1_8.Width+Parent.Width*.005
+                        Y: =Parent.Height*.06
+                        ZIndex: =27
+
+                    PFD_Rectangle3_8 As rectangle:
+                        Fill: =RGBA(252, 242, 247, 1)
+                        Height: =2
+                        Width: =PFD_Rectangle1_8.Width
+                        X: =PFD_Circle2_8.X+PFD_Circle2_8.Width+Parent.Width*.005
+                        Y: =PFD_Circle1_8.Y+(PFD_Circle1_8.Height-Self.Height)/2
+                        ZIndex: =28
+
+                    PFD_Circle3_8 As circle:
+                        Fill: =RGBA(252, 242, 247, 1)
+                        Height: =60
+                        Width: =60
+                        X: =PFD_Rectangle3_8.X+PFD_Rectangle3_8.Width+Parent.Width*.005
+                        Y: =Parent.Height*.06
+                        ZIndex: =29
+
+                    PFD_Rectangle4_8 As rectangle:
+                        Fill: =RGBA(252, 242, 247, 1)
+                        Height: =2
+                        Width: =PFD_Rectangle1_8.Width
+                        X: =PFD_Circle3_8.X+PFD_Circle3_8.Width+Parent.Width*.005
+                        Y: =PFD_Circle1_8.Y+(PFD_Circle1_8.Height-Self.Height)/2
+                        ZIndex: =30
+
+                    PFD_Rectangle5_8 As rectangle:
+                        Fill: =RGBA(252, 242, 247, 1)
+                        Height: =2
+                        Width: =PFD_Rectangle1_8.Width
+                        X: =PFD_Circle4_8.X+PFD_Circle4_8.Width+Parent.Width*.005
+                        Y: =PFD_Circle1_8.Y+(PFD_Circle1_8.Height-Self.Height)/2
+                        ZIndex: =31
+
+                    PFD_Circle4_8 As circle:
+                        Fill: =RGBA(252, 242, 247, 1)
+                        Height: =60
+                        Width: =60
+                        X: =PFD_Rectangle4_8.X+PFD_Rectangle4_8.Width+Parent.Width*.005
+                        Y: =Parent.Height*.06
+                        ZIndex: =32
+
+                    PFD_Circle5_8 As circle:
+                        Fill: =RGBA(252, 242, 247, 1)
+                        Height: =60
+                        Width: =60
+                        X: =PFD_Rectangle5_8.X+PFD_Rectangle5_8.Width+Parent.Width*.005
+                        Y: =Parent.Height*.06
+                        ZIndex: =33
+
+                    PFD_Rectangle6_8 As rectangle:
+                        Fill: =RGBA(252, 242, 247, 1)
+                        Height: =2
+                        Width: =PFD_Rectangle1_8.Width
+                        X: =PFD_Circle5_8.X+PFD_Circle5_8.Width+Parent.Width*.005
+                        Y: =PFD_Circle1_8.Y+(PFD_Circle1_8.Height-Self.Height)/2
+                        ZIndex: =34
+
+                    PFD_Circle6_8 As circle:
+                        Fill: =RGBA(252, 242, 247, 1)
+                        Height: =60
+                        Width: =60
+                        X: =PFD_Rectangle6_8.X+PFD_Rectangle6_8.Width+Parent.Width*.005
+                        Y: =Parent.Height*.06
+                        ZIndex: =35
+
+                    PFD_Rectangle7_8 As rectangle:
+                        Fill: =RGBA(252, 242, 247, 1)
+                        Height: =2
+                        Width: =PFD_Rectangle1_8.Width
+                        X: =PFD_Circle6_8.X+PFD_Circle6_8.Width+Parent.Width*.005
+                        Y: =PFD_Circle1_8.Y+(PFD_Circle1_8.Height-Self.Height)/2
+                        ZIndex: =36
+
+                    PFD_Circle8_8 As circle:
+                        Fill: =RGBA(252, 242, 247, 1)
+                        Height: =60
+                        Width: =60
+                        X: =PFD_Rectangle7_8.X+PFD_Rectangle7_8.Width+Parent.Width*.005
+                        Y: =Parent.Height*.06
+                        ZIndex: =37
+
+                    PDF_Label8_70 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(255, 255, 255, 1)
+                        Height: =30
+                        Size: =10
+                        Text: ="Signature Upload"
+                        Width: =193
+                        X: =PFD_Circle8_8.X+(PFD_Circle8_8.Width-Self.Width)/2
+                        Y: =PFD_Circle1_8.Y+PFD_Circle1_8.Height
+                        ZIndex: =38
+
+                    PDF_Label8_68 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(255, 255, 255, 1)
+                        Height: =30
+                        Size: =10
+                        Text: ="KYC Verification"
+                        Width: =193
+                        X: =PFD_Circle5_8.X+(PFD_Circle5_8.Width-Self.Width)/2
+                        Y: =PFD_Circle1_8.Y+PFD_Circle1_8.Height
+                        ZIndex: =39
+
+                    PDF_Label8_69 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(255, 255, 255, 1)
+                        Height: =30
+                        Size: =10
+                        Text: ="KYC Video Upload"
+                        Width: =193
+                        X: =PFD_Circle4_8.X+(PFD_Circle4_8.Width-Self.Width)/2
+                        Y: =PFD_Circle1_8.Y+PFD_Circle1_8.Height
+                        ZIndex: =40
+
+                    PDF_Label8_67 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(255, 255, 255, 1)
+                        Height: =30
+                        Size: =10
+                        Text: ="Photo Upload"
+                        Width: =193
+                        X: =PFD_Circle3_8.X+(PFD_Circle3_8.Width-Self.Width)/2
+                        Y: =90
+                        ZIndex: =41
+
+                    PDF_Label8_66 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(255, 255, 255, 1)
+                        Height: =30
+                        Size: =10
+                        Text: ="Media Verification"
+                        Width: =193
+                        X: =PFD_Circle6_8.X+(PFD_Circle6_8.Width-Self.Width)/2
+                        Y: =PFD_Circle1_8.Y+PFD_Circle1_8.Height
+                        ZIndex: =42
+
+                    PDF_Label8_65 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(255, 255, 255, 1)
+                        Height: =30
+                        Size: =10
+                        Text: ="Personal Details"
+                        Width: =193
+                        X: =PFD_Circle2_8.X+(PFD_Circle2_8.Width-Self.Width)/2
+                        Y: =PFD_Circle1_8.Y+PFD_Circle1_8.Height
+                        ZIndex: =43
+
+                    PFD_Circle9_8 As circle:
+                        Fill: =RGBA(252, 242, 247, 1)
+                        Height: =60
+                        Width: =60
+                        X: =PFD_Rectangle8_8.X+PFD_Rectangle8_8.Width+Parent.Width*.005
+                        Y: =Parent.Height*.06
+                        ZIndex: =44
+
+                    PFD_Rectangle8_8 As rectangle:
+                        Fill: =RGBA(252, 242, 247, 1)
+                        Height: =2
+                        Width: =PFD_Rectangle1_8.Width
+                        X: =PFD_Circle8_8.X+PFD_Circle8_8.Width+Parent.Width*.005
+                        Y: =PFD_Circle1_8.Y+(PFD_Circle1_8.Height-Self.Height)/2
+                        ZIndex: =45
+
+                    PDF_Label8_64 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(255, 255, 255, 1)
+                        Height: =30
+                        Size: =10
+                        Text: ="Customer Profile"
+                        Width: =193
+                        X: =PFD_Circle9_8.X+(PFD_Circle9_8.Width-Self.Width)/2
+                        Y: =PFD_Circle1_8.Y+PFD_Circle1_8.Height
+                        ZIndex: =46
 
             MPV_Container12_2 As groupContainer.manualLayoutContainer:
                 BorderColor: =RGBA(219, 219, 219, 1)
@@ -114,7 +318,7 @@
                 RadiusTopRight: =20
                 Width: =Parent.Width*.90
                 X: =(Parent.Width-Self.Width)/2
-                Y: =MPV_Container11_2.Height*.55
+                Y: =MPV_Container11_2.Height*.6
                 ZIndex: =2
 
                 MPV_Label2_2 As label:
