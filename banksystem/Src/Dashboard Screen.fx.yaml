@@ -358,7 +358,7 @@
             SelectionFill: =RGBA(107, 29, 94, 1)
             Size: =12
             Width: =Parent.Width*.22
-            X: =510
+            X: =DS_Dropdown1.X+DS_Dropdown1.Width
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =11
 
