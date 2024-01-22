@@ -90,14 +90,6 @@ PersonalDetailsUploadDocumentsScreen As screen:
                 Width: =Parent.Width
                 ZIndex: =1
 
-                Circle1 As circle:
-                    Fill: =RGBA(252, 242, 247, 1)
-                    Height: =60
-                    Width: =60
-                    X: =295
-                    Y: =Parent.Height*0.06
-                    ZIndex: =1
-
             PDUD_Container12_2 As groupContainer.manualLayoutContainer:
                 BorderColor: =RGBA(219, 219, 219, 1)
                 BorderStyle: =BorderStyle.None
