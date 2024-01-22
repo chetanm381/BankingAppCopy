@@ -458,6 +458,7 @@ OpenAccountScreen As screen:
                     OA_Button2_8 As button:
                         BorderColor: |-
                             =ColorFade(ColorValue("#6B1D5E"), -15%)
+                        BorderStyle: =BorderStyle.None
                         BorderThickness: =0
                         Color: =RGBA(0, 0, 0, 0)
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)

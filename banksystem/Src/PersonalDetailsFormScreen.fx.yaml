@@ -171,7 +171,7 @@ PersonalDetailsFormScreen As screen:
                         PDF_TextInput1_4 As text:
                             BorderColor: =RGBA(107, 29, 94, 1)
                             Clear: =true
-                            Default: =adhardata.name
+                            Default: =If(IsBlank(adhardata.name),First(data_application).'Full Name',adhardata.name)
                             DisabledBorderColor: =RGBA(237, 237, 237, 1)
                             DisabledColor: =RGBA(44, 54, 84, 1)
                             DisabledFill: =RGBA(250, 250, 250, 1)
@@ -188,7 +188,7 @@ PersonalDetailsFormScreen As screen:
 
                         PDF_TextInput1_5 As text:
                             BorderColor: =RGBA(107, 29, 94, 1)
-                            Default: =pandata.name
+                            Default: =If(IsBlank(pandata.name),First(data_application).'Full Name',pandata.name)
                             DisabledBorderColor: =RGBA(237, 237, 237, 1)
                             DisabledColor: =RGBA(44, 54, 84, 1)
                             DisabledFill: =RGBA(250, 250, 250, 1)
@@ -266,7 +266,8 @@ PersonalDetailsFormScreen As screen:
 
                             PDF_DatePicker1_2 As datepicker:
                                 BorderThickness: =0
-                                DefaultDate: =If(IsBlank(adhardata.dob),Blank(),DateValue(Text(Mid(adhardata.dob, 4, 2) & "/" & Mid(adhardata.dob, 1, 2) & "/" & Mid(adhardata.dob, 7, 4), "[$-en-US]mm/dd/yyyy")))
+                                DefaultDate: |
+                                    =If(IsBlank(adhardata.dob),First(data_application).'Date of Birth',DateValue(Text(Mid(adhardata.dob, 4, 2) & "/" & Mid(adhardata.dob, 1, 2) & "/" & Mid(adhardata.dob, 7, 4), "[$-en-US]mm/dd/yyyy")))
                                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                                 DisabledColor: =RGBA(107, 29, 94, 1)
                                 DisabledFill: =RGBA(250, 250, 250, 1)
@@ -303,7 +304,7 @@ PersonalDetailsFormScreen As screen:
                         PDF_TextInput1_7 As text:
                             BorderColor: =RGBA(107, 29, 94, 1)
                             Clear: =true
-                            Default: =adhardata.adhar
+                            Default: =If(IsBlank(adhardata.adhar),First(data_application).'Adhaar Number',adhardata.adhar)
                             DisabledBorderColor: =RGBA(237, 237, 237, 1)
                             DisabledColor: =RGBA(44, 54, 84, 1)
                             DisabledFill: =RGBA(250, 250, 250, 1)
@@ -321,7 +322,7 @@ PersonalDetailsFormScreen As screen:
                         PDF_TextInput1_8 As text:
                             BorderColor: =RGBA(107, 29, 94, 1)
                             Clear: =true
-                            Default: =pandata.pan
+                            Default: =If(IsBlank(pandata.pan),First(data_application).'PAN Number',pandata.pan)
                             DisabledBorderColor: =RGBA(237, 237, 237, 1)
                             DisabledColor: =RGBA(44, 54, 84, 1)
                             DisabledFill: =RGBA(250, 250, 250, 1)
@@ -441,7 +442,7 @@ PersonalDetailsFormScreen As screen:
 
                             PDF_DatePicker1_3 As datepicker:
                                 BorderThickness: =0
-                                DefaultDate: =If(IsBlank(pandata.dob),Blank(),DateValue(Text(Mid(pandata.dob, 4, 2) & "/" & Mid(pandata.dob, 1, 2) & "/" & Mid(pandata.dob, 7, 4), "[$-en-US]mm/dd/yyyy")))
+                                DefaultDate: =If(IsBlank(pandata.dob),First(data_application).'Date of Birth',DateValue(Text(Mid(pandata.dob, 4, 2) & "/" & Mid(pandata.dob, 1, 2) & "/" & Mid(pandata.dob, 7, 4), "[$-en-US]mm/dd/yyyy")))
                                 DisabledColor: =RGBA(107, 29, 94, 1)
                                 DisabledFill: =RGBA(250, 250, 250, 1)
                                 DisplayMode: =DisplayMode.Disabled
