@@ -217,7 +217,7 @@ PersonalDetailsFormScreen As screen:
                         Color: =RGBA(255, 255, 255, 1)
                         Height: =30
                         Size: =10
-                        Text: ="Document Upload"
+                        Text: ="Signature Upload"
                         Width: =193
                         X: =PFD_Circle8.X+(PFD_Circle8.Width-Self.Width)/2
                         Y: =PFD_Circle1.Y+PFD_Circle1.Height
@@ -228,7 +228,7 @@ PersonalDetailsFormScreen As screen:
                         Color: =RGBA(255, 255, 255, 1)
                         Height: =30
                         Size: =10
-                        Text: ="Document Upload"
+                        Text: ="KYC Verification"
                         Width: =193
                         X: =PFD_Circle5.X+(PFD_Circle5.Width-Self.Width)/2
                         Y: =PFD_Circle1.Y+PFD_Circle1.Height
@@ -239,7 +239,7 @@ PersonalDetailsFormScreen As screen:
                         Color: =RGBA(255, 255, 255, 1)
                         Height: =30
                         Size: =10
-                        Text: ="Document Upload"
+                        Text: ="KYC Video Upload"
                         Width: =193
                         X: =PFD_Circle4.X+(PFD_Circle4.Width-Self.Width)/2
                         Y: =PFD_Circle1.Y+PFD_Circle1.Height
@@ -250,7 +250,7 @@ PersonalDetailsFormScreen As screen:
                         Color: =RGBA(255, 255, 255, 1)
                         Height: =30
                         Size: =10
-                        Text: ="Document Upload"
+                        Text: ="Photo Upload"
                         Width: =193
                         X: =PFD_Circle3.X+(PFD_Circle3.Width-Self.Width)/2
                         Y: =70
@@ -261,22 +261,11 @@ PersonalDetailsFormScreen As screen:
                         Color: =RGBA(255, 255, 255, 1)
                         Height: =30
                         Size: =10
-                        Text: ="Document Upload"
+                        Text: ="Media Verification"
                         Width: =193
                         X: =PFD_Circle6.X+(PFD_Circle6.Width-Self.Width)/2
                         Y: =PFD_Circle1.Y+PFD_Circle1.Height
                         ZIndex: =19
-
-                    PDF_Label8_6 As label:
-                        Align: =Align.Center
-                        Color: =RGBA(255, 255, 255, 1)
-                        Height: =30
-                        Size: =10
-                        Text: ="Document Upload"
-                        Width: =193
-                        X: =PFD_Circle3.X+(PFD_Circle3.Width-Self.Width)/2
-                        Y: =PFD_Circle1.Y+PFD_Circle1.Height
-                        ZIndex: =20
 
                     PDF_Label8_7 As label:
                         Align: =Align.Center
@@ -310,7 +299,7 @@ PersonalDetailsFormScreen As screen:
                         Color: =RGBA(255, 255, 255, 1)
                         Height: =30
                         Size: =10
-                        Text: ="Document Upload"
+                        Text: ="Customer Profile"
                         Width: =193
                         X: =PFD_Circle9.X+(PFD_Circle9.Width-Self.Width)/2
                         Y: =PFD_Circle1.Y+PFD_Circle1.Height
