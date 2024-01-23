@@ -14395,7 +14395,15 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "Default"
+        "Default",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "true",
+          "InvariantPropertyName": "Selectable",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        }
       ],
       "GalleryTemplateChildName": "galleryTemplate1",
       "HasDynamicProperties": false,
@@ -14431,6 +14439,11 @@
           "Category": "Data",
           "PropertyName": "Default",
           "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "Selectable",
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
