@@ -589,29 +589,27 @@
             DelayItemLoading: =true
             Height: =Parent.Height-DS_Rectangle4.Y-DS_Rectangle4.Height
             ItemAccessibleLabel: ="No Item To display"
-            Items: |
+            Items: |-
                 =SortByColumns(
                     Filter(
                         'Identification Details',
                         If(
-                                IsBlank(DS_Dropdown1.Selected.Value),
-                                If(
-                                        InReview,
-                                        Application_Status in ("In-Review"),
-                                        true
-                                ),
-                                Application_Status in DS_Dropdown1.Selected.Value
+                            IsBlank(DS_Dropdown1.Selected.Value),
+                            If(
+                                InReview,
+                                Application_Status in "In-Review",
+                                true
+                            ),
+                            Application_Status in DS_Dropdown1.Selected.Value
                         )
-                        
+                       // 'Created By'.cre
                     ),
-                sorting
-                ,
-                     If(
+                    sorting,
+                    If(
                         order,
                         SortOrder.Descending,
-                     SortOrder.Ascending
+                        SortOrder.Ascending
                     )
-                   
                 )
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data

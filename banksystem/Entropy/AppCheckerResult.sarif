@@ -383,10 +383,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 296,
+                  "charLength": 254,
                   "charOffset": 69,
                   "snippet": {
-                    "text": "If(\n                IsBlank(DS_Dropdown1.Selected.Value),\n                If(\n                        InReview,\n                        Application_Status in (\"In-Review\"),\n                        true\n                ),\n                Application_Status in DS_Dropdown1.Selected.Value\n        )"
+                    "text": "If(\n            IsBlank(DS_Dropdown1.Selected.Value),\n            If(\n                InReview,\n                Application_Status in \"In-Review\",\n                true\n            ),\n            Application_Status in DS_Dropdown1.Selected.Value\n        )"
                   }
                 }
               },
