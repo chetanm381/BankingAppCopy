@@ -280,7 +280,7 @@
             Height: =39
             Size: =12
             Text: ="Application Status"
-            Width: =186
+            Width: =165
             X: =Parent.Width*.02
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =6
@@ -330,7 +330,9 @@
             Color: =RGBA(107, 29, 94, 1)
             Height: =30
             Icon: =Icon.FilterFlatFilled
-            OnSelect: =Set(order,!order)
+            OnSelect: |-
+                =Set(order,!order);
+                Set(sorting,DS_Dropdown1_2.Selected.value)
             Width: =30
             X: =DS_Icon4.X-Self.Width-Parent.Width*.015
             Y: =16
@@ -349,6 +351,38 @@
             X: =DS_Dropdown1.X+DS_Dropdown1.Width+Parent.Width*.015
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =14
+
+        DS_Dropdown1_2 As dropdown:
+            BorderColor: =RGBA(107, 29, 94, 0.55)
+            BorderThickness: =1
+            ChevronBackground: =RGBA(255, 255, 255, 0.52)
+            ChevronFill: =RGBA(107, 29, 94, 1)
+            ChevronHoverBackground: |-
+                =ColorFade(ColorValue("#6b1d5e"), -20%)
+            Color: =RGBA(107, 29, 94, 1)
+            Height: =Parent.Height*.5
+            HoverFill: =RGBA(107, 29, 94, 0.27)
+            Items: |-
+                =[Blank(),{ label:"Full Name", value:"app_fullname" }, { label:"Scheduled Date", value:"app_scheduledate" }, { label:"Application Number", value:"app_applicationnumber" } ]
+            PressedFill: =RGBA(107, 29, 94, 1)
+            SelectionFill: =RGBA(107, 29, 94, 1)
+            Size: =12
+            Width: =Parent.Width*.22
+            X: =Icon3.X-Self.Width-Parent.Width*.015
+            Y: =(Parent.Height-Self.Height)/2
+            ZIndex: =15
+
+        DS_Label72_1 As label:
+            Align: =Align.Right
+            Color: =RGBA(107, 29, 94, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =39
+            Size: =12
+            Text: ="Sort By  "
+            Width: =100
+            X: =DS_Dropdown1_2.X-Self.Width-Parent.Width*0.01
+            Y: =(Parent.Height-Self.Height)/2
+            ZIndex: =16
 
     DS_Group1 As group:
         Height: =5
@@ -542,7 +576,8 @@
                             Application_Status in DS_Dropdown1.Selected.Value
                         )
                     ),
-                  "app_fullname",
+                sorting
+                ,
                      If(
                         order,
                         SortOrder.Descending,
