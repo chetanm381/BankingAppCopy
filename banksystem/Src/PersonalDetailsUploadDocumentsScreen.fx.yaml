@@ -90,12 +90,12 @@ PersonalDetailsUploadDocumentsScreen As screen:
                 Width: =Parent.Width
                 ZIndex: =1
 
-                PDF_Milestone_4 As group:
+                PDUD_Milstone As group:
                     Height: =5
                     Width: =5
-                    X: =40
-                    Y: =-1
-                    ZIndex: =24
+                    X: =60
+                    Y: =60
+                    ZIndex: =32
 
                     PFD_Circle1_4 As circle:
                         Fill: =RGBA(252, 242, 247, 1)
@@ -304,6 +304,94 @@ PersonalDetailsUploadDocumentsScreen As screen:
                         X: =PFD_Circle9_4.X+(PFD_Circle9_4.Width-Self.Width)/2
                         Y: =PFD_Circle1_4.Y+PFD_Circle1_4.Height
                         ZIndex: =23
+
+                    PDUD_Icon2_3 As icon.Check:
+                        Color: =RGBA(107, 29, 94, 1)
+                        DisplayMode: =
+                        Height: =40
+                        Icon: =Icon.Check
+                        Visible: =If(IsEmpty(PDUD_aadharCard.Attachments),false,true)
+                        Width: =40
+                        X: =PFD_Circle1_4.X+(PFD_Circle1_4.Width-Self.Width)/2
+                        Y: =21
+                        ZIndex: =24
+
+                    PDUD_Icon2_4 As icon.Check:
+                        Color: =RGBA(107, 29, 94, 1)
+                        DisplayMode: =
+                        Height: =40
+                        Icon: =Icon.Check
+                        Visible: =If(IsEmpty(PDUD_aadharCard.Attachments),false,true)
+                        Width: =40
+                        X: =PFD_Circle2_4.X+(PFD_Circle2_4.Width-Self.Width)/2
+                        Y: =20
+                        ZIndex: =25
+
+                    PDUD_Icon2_5 As icon.Check:
+                        Color: =RGBA(107, 29, 94, 1)
+                        DisplayMode: =
+                        Height: =40
+                        Icon: =Icon.Check
+                        Visible: =If(IsEmpty(PDUD_aadharCard.Attachments),false,true)
+                        Width: =40
+                        X: =PFD_Circle3_4.X+(PFD_Circle3_4.Width-Self.Width)/2
+                        Y: =21
+                        ZIndex: =26
+
+                    PDUD_Icon2_6 As icon.Check:
+                        Color: =RGBA(107, 29, 94, 1)
+                        DisplayMode: =
+                        Height: =40
+                        Icon: =Icon.Check
+                        Visible: =If(IsEmpty(PDUD_aadharCard.Attachments),false,true)
+                        Width: =40
+                        X: =PFD_Circle4_4.X+(PFD_Circle4_4.Width-Self.Width)/2
+                        Y: =21
+                        ZIndex: =27
+
+                    PDUD_Icon2_7 As icon.Check:
+                        Color: =RGBA(107, 29, 94, 1)
+                        DisplayMode: =
+                        Height: =40
+                        Icon: =Icon.Check
+                        Visible: =If(IsEmpty(PDUD_aadharCard.Attachments),false,true)
+                        Width: =40
+                        X: =PFD_Circle5_4.X+(PFD_Circle5_4.Width-Self.Width)/2
+                        Y: =21
+                        ZIndex: =28
+
+                    PDUD_Icon2_8 As icon.Check:
+                        Color: =RGBA(107, 29, 94, 1)
+                        DisplayMode: =
+                        Height: =40
+                        Icon: =Icon.Check
+                        Visible: =If(IsEmpty(PDUD_aadharCard.Attachments),false,true)
+                        Width: =40
+                        X: =PFD_Circle6_4.X+(PFD_Circle6_4.Width-Self.Width)/2
+                        Y: =21
+                        ZIndex: =29
+
+                    PDUD_Icon2_9 As icon.Check:
+                        Color: =RGBA(107, 29, 94, 1)
+                        DisplayMode: =
+                        Height: =40
+                        Icon: =Icon.Check
+                        Visible: =If(IsEmpty(PDUD_aadharCard.Attachments),false,true)
+                        Width: =40
+                        X: =PFD_Circle8_4.X+(PFD_Circle8_4.Width-Self.Width)/2
+                        Y: =21
+                        ZIndex: =30
+
+                    PDUD_Icon2_10 As icon.Check:
+                        Color: =RGBA(107, 29, 94, 1)
+                        DisplayMode: =
+                        Height: =40
+                        Icon: =Icon.Check
+                        Visible: =If(IsEmpty(PDUD_aadharCard.Attachments),false,true)
+                        Width: =40
+                        X: =PFD_Circle9_4.X+(PFD_Circle9_4.Width-Self.Width)/2
+                        Y: =20
+                        ZIndex: =31
 
             PDUD_Container12_2 As groupContainer.manualLayoutContainer:
                 BorderColor: =RGBA(219, 219, 219, 1)
