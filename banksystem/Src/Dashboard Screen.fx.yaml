@@ -269,6 +269,7 @@
                 =ColorFade(ColorValue("#6b1d5eff"), 20%)
             Icon: =Icon.Reload
             OnSelect: =Refresh('Identification Details')
+            Tooltip: ="Refresh the grid"
             Width: =30
             X: =Parent.Width-Self.Width-Parent.Width*.03
             Y: =(Parent.Height-Self.Height)/2
@@ -322,17 +323,18 @@
             Size: =12
             Visible: =false
             Width: =Parent.Width*.22
-            X: =Icon3.X-Self.Width-Parent.Width*.015
+            X: =DS_Icon.X-Self.Width-Parent.Width*.015
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =11
 
-        Icon3 As icon.FilterFlat:
+        DS_Icon As icon.FilterFlat:
             Color: =RGBA(107, 29, 94, 1)
             Height: =30
             Icon: =Icon.Sort
             OnSelect: |-
                 =Set(order,!order);
                 Set(sorting,DS_Dropdown1_2.Selected.value)
+            Tooltip: ="Click to sort the grid accordingly"
             Width: =30
             X: =DS_Icon4.X-Self.Width-Parent.Width*.015
             Y: =16
@@ -363,12 +365,12 @@
             Height: =Parent.Height*.5
             HoverFill: =RGBA(107, 29, 94, 0.27)
             Items: |-
-                =[Blank(),{ label:"Full Name", value:"app_fullname" }, { label:"Scheduled Date", value:"app_scheduledate" }, { label:"Application Date", value:"createdon" } ]
+                =[Blank(),{ label:"Name", value:"app_fullname" }, { label:"Scheduled Date", value:"app_scheduledate" }, { label:"Application Date", value:"createdon" } ]
             PressedFill: =RGBA(107, 29, 94, 1)
             SelectionFill: =RGBA(107, 29, 94, 1)
             Size: =12
             Width: =Parent.Width*.22
-            X: =Icon3.X-Self.Width-Parent.Width*.015
+            X: =DS_Icon.X-Self.Width-Parent.Width*.015
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =15
 

@@ -1884,19 +1884,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Dashboard Screen'.DS_Container9.Icon3.TabIndex"
+                  "fullyQualifiedName": "'Dashboard Screen'.DS_Container9.DS_Icon.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Dashboard Screen'.DS_Container9.Icon3.TabIndex",
+                  "fullyQualifiedName": "'Dashboard Screen'.DS_Container9.DS_Icon.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Dashboard Screen",
-                "type": "'Dashboard Screen'.DS_Container9.Icon3"
+                "type": "'Dashboard Screen'.DS_Container9.DS_Icon"
               }
             }
           ],
@@ -1914,19 +1914,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Dashboard Screen'.DS_Container9.Icon3.AccessibleLabel"
+                  "fullyQualifiedName": "'Dashboard Screen'.DS_Container9.DS_Icon.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Dashboard Screen'.DS_Container9.Icon3.AccessibleLabel",
+                  "fullyQualifiedName": "'Dashboard Screen'.DS_Container9.DS_Icon.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Dashboard Screen",
-                "type": "'Dashboard Screen'.DS_Container9.Icon3"
+                "type": "'Dashboard Screen'.DS_Container9.DS_Icon"
               }
             }
           ],
