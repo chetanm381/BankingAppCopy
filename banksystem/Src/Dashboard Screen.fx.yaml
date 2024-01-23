@@ -269,7 +269,7 @@
                 =ColorFade(ColorValue("#6b1d5eff"), 20%)
             Icon: =Icon.Reload
             OnSelect: =Refresh('Identification Details')
-            Tooltip: ="Refresh the grid"
+            Tooltip: ="Refresh"
             Width: =30
             X: =Parent.Width-Self.Width-Parent.Width*.03
             Y: =(Parent.Height-Self.Height)/2
@@ -334,25 +334,11 @@
             OnSelect: |-
                 =Set(order,!order);
                 Set(sorting,DS_Dropdown1_2.Selected.value)
-            Tooltip: ="Click to sort the grid accordingly"
+            Tooltip: ="Click to sort "
             Width: =30
-            X: =DS_Icon4.X-Self.Width-Parent.Width*.015
+            X: =DS_Dropdown1_2.X+DS_Dropdown1_2.Width+Parent.Width*0.01
             Y: =16
             ZIndex: =12
-
-        DS_Icon4_1 As icon.Reload:
-            BorderColor: =RGBA(107, 29, 94, 1)
-            Color: =RGBA(107, 29, 94, 1)
-            Height: =30
-            HoverColor: |-
-                =ColorFade(ColorValue("#6b1d5eff"), 20%)
-            Icon: =Icon.Reset
-            OnSelect: =Reset(DS_Dropdown1)
-            Visible: =If(DS_Dropdown1.Selected.Value=Blank(),false,true)
-            Width: =30
-            X: =DS_Dropdown1.X+DS_Dropdown1.Width+Parent.Width*.015
-            Y: =(Parent.Height-Self.Height)/2
-            ZIndex: =14
 
         DS_Dropdown1_2 As dropdown:
             BorderColor: =RGBA(107, 29, 94, 0.55)
@@ -370,8 +356,8 @@
             SelectionFill: =RGBA(107, 29, 94, 1)
             Size: =12
             Width: =Parent.Width*.22
-            X: =DS_Icon.X-Self.Width-Parent.Width*.015
-            Y: =(Parent.Height-Self.Height)/2
+            X: =DS_Label72_1.X+DS_Label72_1.Width
+            Y: =16
             ZIndex: =15
 
         DS_Label72_1 As label:
@@ -382,9 +368,23 @@
             Size: =12
             Text: ="Sort By  "
             Width: =100
-            X: =DS_Dropdown1_2.X-Self.Width-Parent.Width*0.01
+            X: =DS_Dropdown1.X+DS_Dropdown1.Width+Parent.Width*0.01
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =16
+
+        DS_Icon4_1 As icon.Reload:
+            BorderColor: =RGBA(107, 29, 94, 1)
+            Color: =RGBA(107, 29, 94, 1)
+            Height: =30
+            HoverColor: |-
+                =ColorFade(ColorValue("#6b1d5eff"), 20%)
+            Icon: =Icon.Reset
+            OnSelect: =Reset(DS_Dropdown1)
+            Tooltip: ="Reset "
+            Width: =30
+            X: =DS_Icon4.X-Self.Width-Parent.Width*.015
+            Y: =15
+            ZIndex: =17
 
     DS_Group1 As group:
         Height: =5
