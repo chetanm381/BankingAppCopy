@@ -1,9 +1,8 @@
 "'Dashboard Screen' As screen":
     ContentLanguage: =""
-    OnVisible: |-
+    OnVisible: |
         =Reset(DS_Dropdown1);
         Set(order,true);
-        Set(InReview,false)
 
     DS_HeaderContainer_1 As groupContainer.manualLayoutContainer:
         BorderStyle: =BorderStyle.None
@@ -236,7 +235,7 @@
                 );
             Size: =10
             Text: ="New Customer Visit"
-            Width: =Parent.Width*.2
+            Width: =Parent.Width*.17
             X: =Parent.Width-Self.Width-Parent.Width*.01
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =5
@@ -247,10 +246,11 @@
             Fill: =RGBA(252, 242, 247, 1)
             Height: =Parent.Height*.3
             HoverFill: =ColorFade(Self.Color, 20%)
-            OnSelect: =Set(InReview,!InReview);
+            OnSelect: |
+                =If(IsBlank(DS_Dropdown1.Selected.Value),Set(InReview,true),Set(InReview,InReview));
             Size: =10
             Text: ="Pending Applications"
-            Width: =Parent.Width*.2
+            Width: =Parent.Width*.17
             X: =DS_Button1_10.X-Self.Width-Parent.Width*.015
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =6
@@ -298,8 +298,7 @@
             Color: =RGBA(107, 29, 94, 1)
             Height: =Parent.Height*.5
             HoverFill: =RGBA(107, 29, 94, 0.27)
-            Items: |
-                =[Blank(),"New","In-Review","Visited","Account-Opened"]
+            Items: =[Blank(),"New","In-Review","Visited","Account-Opened"]
             PressedFill: =RGBA(107, 29, 94, 1)
             SelectionFill: =RGBA(107, 29, 94, 1)
             Size: =12
@@ -374,19 +373,30 @@
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =16
 
-        DS_Icon4_1 As icon.Reload:
-            BorderColor: =RGBA(107, 29, 94, 1)
+        Button1 As button:
+            BorderColor: |-
+                =ColorFade(ColorValue("#6b1d5e"), 70%)
             Color: =RGBA(107, 29, 94, 1)
+            Fill: =RGBA(255, 255, 255, 1)
             Height: =Parent.Height*.5
-            HoverColor: |-
-                =ColorFade(ColorValue("#6b1d5eff"), 20%)
-            Icon: =Icon.Reset
-            OnSelect: =Reset(DS_Dropdown1)
-            Tooltip: ="Reset "
-            Width: =Parent.Width*.035
-            X: =DS_Icon4.X-Self.Width-Parent.Width*.015
+            HoverBorderColor: |-
+                =ColorValue("#6b1d5e")
+            HoverFill: |-
+                =ColorValue("#6b1d5e")
+            OnSelect: |-
+                =Reset(DS_Dropdown1);
+                Reset(DS_Dropdown1_2);
+                Set(InReview,false);
+            PressedBorderColor: |-
+                =ColorValue("#6b1d5e")
+            PressedFill: |-
+                =ColorValue("#6b1d5e")
+            Size: =10
+            Text: ="Reset"
+            Width: =Parent.Width*.06
+            X: =DS_Icon4.X-Self.Width-Parent.Width*.01
             Y: =(Parent.Height-Self.Height)/2
-            ZIndex: =17
+            ZIndex: =18
 
     DS_Group1 As group:
         Height: =5
@@ -574,15 +584,17 @@
                 =SortByColumns(
                     Filter(
                         'Identification Details',
-                        If(And(IsBlank(DS_Dropdown1.Selected.Value),!InReview),
-                        true,
-                        
                         If(
-                            InReview,
-                            Application_Status in ("In-Review"),
-                            Application_Status in DS_Dropdown1.Selected.Value
-                            )
-                    )),
+                                IsBlank(DS_Dropdown1.Selected.Value),
+                                If(
+                                        InReview,
+                                        Application_Status in ("In-Review"),
+                                        true
+                                ),
+                                Application_Status in DS_Dropdown1.Selected.Value
+                        )
+                        
+                    ),
                 sorting
                 ,
                      If(

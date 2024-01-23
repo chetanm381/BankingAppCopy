@@ -383,10 +383,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 243,
+                  "charLength": 296,
                   "charOffset": 69,
                   "snippet": {
-                    "text": "If(And(IsBlank(DS_Dropdown1.Selected.Value),!InReview),\n        true,\n        \n        If(\n            InReview,\n            Application_Status in (\"In-Review\"),\n            Application_Status in DS_Dropdown1.Selected.Value\n            )\n    )"
+                    "text": "If(\n                IsBlank(DS_Dropdown1.Selected.Value),\n                If(\n                        InReview,\n                        Application_Status in (\"In-Review\"),\n                        true\n                ),\n                Application_Status in DS_Dropdown1.Selected.Value\n        )"
                   }
                 }
               },
@@ -1728,66 +1728,6 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Dashboard Screen'.DS_Container9.DS_Icon4_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Dashboard Screen'.DS_Container9.DS_Icon4_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Dashboard Screen",
-                "type": "'Dashboard Screen'.DS_Container9.DS_Icon4_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Dashboard Screen'.DS_Container9.DS_Icon4_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Dashboard Screen'.DS_Container9.DS_Icon4_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Dashboard Screen",
-                "type": "'Dashboard Screen'.DS_Container9.DS_Icon4_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 3
         },
         {
           "locations": [
