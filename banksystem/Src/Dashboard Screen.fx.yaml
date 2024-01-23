@@ -617,7 +617,11 @@
             LoadingSpinner: =LoadingSpinner.Data
             LoadingSpinnerColor: |-
                 =ColorValue("#6b1d5e")
-            OnSelect: =If(Text(Gallery1.Selected.Application_Status)=Text(ApplicationStatus.'In-Review'),Navigate(OpenAccountScreen))   
+            OnSelect: |-
+                =If(
+                    ThisItem.Application_Status = ApplicationStatus.'In-Review',
+                    Navigate(OpenAccountScreen)
+                )
             Selectable: =false
             ShowScrollbar: =false
             TemplatePadding: =0
