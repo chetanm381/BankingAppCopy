@@ -3717,7 +3717,7 @@
       "MetaDataIDKey": "",
       "Name": "PDUD__Image1111_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3968,7 +3968,7 @@
       "MetaDataIDKey": "",
       "Name": "PDUD__Image1111_2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4424,7 +4424,7 @@
       "MetaDataIDKey": "",
       "Name": "PDUD_aadharCard",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6012,7 +6012,7 @@
       "MetaDataIDKey": "",
       "Name": "PDUD_Circle2_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6159,7 +6159,7 @@
       "MetaDataIDKey": "",
       "Name": "PDUD_Circle2_2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8566,7 +8566,7 @@
       "MetaDataIDKey": "",
       "Name": "PDUD_Icon2_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8760,7 +8760,7 @@
       "MetaDataIDKey": "",
       "Name": "PDUD_Icon2_2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8976,7 +8976,7 @@
       "MetaDataIDKey": "",
       "Name": "PDUD_Icon31111_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9197,7 +9197,7 @@
       "MetaDataIDKey": "",
       "Name": "PDUD_Icon31111_2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9814,7 +9814,7 @@
       "MetaDataIDKey": "",
       "Name": "PDUD_Image1_61",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10045,7 +10045,7 @@
       "MetaDataIDKey": "",
       "Name": "PDUD_Image1_7",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -13861,7 +13861,7 @@
       "MetaDataIDKey": "",
       "Name": "PDUD_pancard",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

@@ -1,8 +1,9 @@
 "'Dashboard Screen' As screen":
     ContentLanguage: =""
-    OnVisible: |
+    OnVisible: |-
         =Reset(DS_Dropdown1);
         Set(order,true);
+        Set(InReview,false)
 
     DS_HeaderContainer_1 As groupContainer.manualLayoutContainer:
         BorderStyle: =BorderStyle.None
@@ -246,6 +247,7 @@
             Fill: =RGBA(252, 242, 247, 1)
             Height: =Parent.Height*.3
             HoverFill: =ColorFade(Self.Color, 20%)
+            OnSelect: =Set(InReview,!InReview);
             Size: =10
             Text: ="Pending Applications"
             Width: =Parent.Width*.2
@@ -264,13 +266,13 @@
         DS_Icon4 As icon.Reload:
             BorderColor: =RGBA(107, 29, 94, 1)
             Color: =RGBA(107, 29, 94, 1)
-            Height: =30
+            Height: =Parent.Height*.5
             HoverColor: |-
                 =ColorFade(ColorValue("#6b1d5eff"), 20%)
             Icon: =Icon.Reload
             OnSelect: =Refresh('Identification Details')
             Tooltip: ="Refresh"
-            Width: =30
+            Width: =Parent.Width*.035
             X: =Parent.Width-Self.Width-Parent.Width*.03
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =3
@@ -281,7 +283,7 @@
             Height: =39
             Size: =12
             Text: ="Application Status"
-            Width: =165
+            Width: =Parent.Width*.19
             X: =Parent.Width*.02
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =6
@@ -329,15 +331,15 @@
 
         DS_Icon As icon.FilterFlat:
             Color: =RGBA(107, 29, 94, 1)
-            Height: =30
+            Height: =Parent.Height*.5
             Icon: =Icon.Sort
             OnSelect: |-
                 =Set(order,!order);
                 Set(sorting,DS_Dropdown1_2.Selected.value)
             Tooltip: ="Click to sort "
-            Width: =30
+            Width: =Parent.Width*.035
             X: =DS_Dropdown1_2.X+DS_Dropdown1_2.Width+Parent.Width*0.01
-            Y: =16
+            Y: =(Parent.Height-Self.Height)/2
             ZIndex: =12
 
         DS_Dropdown1_2 As dropdown:
@@ -357,7 +359,7 @@
             Size: =12
             Width: =Parent.Width*.22
             X: =DS_Label72_1.X+DS_Label72_1.Width
-            Y: =16
+            Y: =(Parent.Height-Self.Height)/2
             ZIndex: =15
 
         DS_Label72_1 As label:
@@ -367,7 +369,7 @@
             Height: =39
             Size: =12
             Text: ="Sort By  "
-            Width: =100
+            Width: =Parent.Width*.1
             X: =DS_Dropdown1.X+DS_Dropdown1.Width+Parent.Width*0.01
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =16
@@ -375,15 +377,15 @@
         DS_Icon4_1 As icon.Reload:
             BorderColor: =RGBA(107, 29, 94, 1)
             Color: =RGBA(107, 29, 94, 1)
-            Height: =30
+            Height: =Parent.Height*.5
             HoverColor: |-
                 =ColorFade(ColorValue("#6b1d5eff"), 20%)
             Icon: =Icon.Reset
             OnSelect: =Reset(DS_Dropdown1)
             Tooltip: ="Reset "
-            Width: =30
+            Width: =Parent.Width*.035
             X: =DS_Icon4.X-Self.Width-Parent.Width*.015
-            Y: =15
+            Y: =(Parent.Height-Self.Height)/2
             ZIndex: =17
 
     DS_Group1 As group:
@@ -572,12 +574,15 @@
                 =SortByColumns(
                     Filter(
                         'Identification Details',
+                        If(And(IsBlank(DS_Dropdown1.Selected.Value),!InReview),
+                        true,
+                        
                         If(
-                            IsBlank(DS_Dropdown1.Selected.Value),
-                            true,
+                            InReview,
+                            Application_Status in ("In-Review"),
                             Application_Status in DS_Dropdown1.Selected.Value
-                        )
-                    ),
+                            )
+                    )),
                 sorting
                 ,
                      If(
@@ -597,7 +602,7 @@
             TemplateSize: =57
             Transition: =Transition.Pop
             Width: =Parent.Width
-            Y: =DS_Rectangle4.Y+DS_Rectangle4.Height+Parent.Height*.015
+            Y: =63
             ZIndex: =7
 
             DS_Label14 As label:
