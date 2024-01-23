@@ -305,43 +305,6 @@
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =7
 
-        DS_Button1_11 As button:
-            BorderThickness: =1
-            Color: =RGBA(107, 29, 94, 1)
-            Fill: =RGBA(255, 255, 255, 1)
-            Height: =Parent.Height/2
-            HoverFill: =ColorFade(Self.Color, 20%)
-            OnSelect: =Reset(DS_Dropdown1)
-            Size: =10
-            Text: ="Reset"
-            Width: =Parent.Width*.09
-            X: =DS_Icon4.X-Self.Width-Parent.Width*.015
-            Y: =(Parent.Height-Self.Height)/2
-            ZIndex: =8
-
-        Icon3 As icon.ArrowUp:
-            Height: =30
-            Icon: =Icon.ArrowUp
-            OnSelect: =Set(order,!order)
-            Visible: |-
-                =//If(order,true,false)
-                true
-            Width: =30
-            X: =725
-            Y: =(Parent.Height-Self.Height)/2
-            ZIndex: =9
-
-        Icon3_1 As icon.ArrowUp:
-            Height: =30
-            OnSelect: =Set(order,!order)
-            Visible: |-
-                =//If(order,true,false)
-                true
-            Width: =30
-            X: =748
-            Y: =(Parent.Height-Self.Height)/2
-            ZIndex: =10
-
         DS_Dropdown1_1 As dropdown:
             BorderColor: =RGBA(107, 29, 94, 0.55)
             BorderThickness: =1
@@ -357,10 +320,35 @@
             PressedFill: =RGBA(107, 29, 94, 1)
             SelectionFill: =RGBA(107, 29, 94, 1)
             Size: =12
+            Visible: =false
             Width: =Parent.Width*.22
-            X: =DS_Dropdown1.X+DS_Dropdown1.Width
+            X: =Icon3.X-Self.Width-Parent.Width*.015
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =11
+
+        Icon3 As icon.FilterFlat:
+            Color: =RGBA(107, 29, 94, 1)
+            Height: =30
+            Icon: =Icon.FilterFlatFilled
+            OnSelect: =Set(order,!order)
+            Width: =30
+            X: =DS_Icon4.X-Self.Width-Parent.Width*.015
+            Y: =16
+            ZIndex: =12
+
+        DS_Icon4_1 As icon.Reload:
+            BorderColor: =RGBA(107, 29, 94, 1)
+            Color: =RGBA(107, 29, 94, 1)
+            Height: =30
+            HoverColor: |-
+                =ColorFade(ColorValue("#6b1d5eff"), 20%)
+            Icon: =Icon.Reset
+            OnSelect: =Reset(DS_Dropdown1)
+            Visible: =If(DS_Dropdown1.Selected.Value=Blank(),false,true)
+            Width: =30
+            X: =DS_Dropdown1.X+DS_Dropdown1.Width+Parent.Width*.015
+            Y: =(Parent.Height-Self.Height)/2
+            ZIndex: =14
 
     DS_Group1 As group:
         Height: =5
