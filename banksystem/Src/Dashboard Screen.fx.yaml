@@ -255,7 +255,7 @@
 
     DS_Container9 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.None
-        Height: =65
+        Height: =60
         Width: =Parent.Width-DS_Container5.Width-DS_Container5.X-Parent.Width*.05
         X: =(DS_Container5.Width+DS_Container5.X)+(Parent.Width-DS_Container5.Width-DS_Container5.X-Self.Width)/2
         Y: =DS_Container8.Y+DS_Container8.Height+Parent.Height*.025
@@ -451,10 +451,10 @@
 
     DS_Container10 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.None
-        Height: =Parent.Height*0.5
+        Height: =Parent.Height*0.53
         Width: =Parent.Width-DS_Container5.Width-DS_Container5.X-Parent.Width*.04
         X: =(DS_Container5.Width+DS_Container5.X)+(Parent.Width-DS_Container5.Width-DS_Container5.X-Self.Width)*.5
-        Y: =DS_Container9.Y+DS_Container9.Height+Parent.Height*0.015
+        Y: =DS_Container9.Y+DS_Container9.Height+Parent.Height*0.001
         ZIndex: =9
 
         DS_Rectangle4 As rectangle:
@@ -542,7 +542,7 @@
                             Application_Status in DS_Dropdown1.Selected.Value
                         )
                     ),
-                   "app_fullname",
+                  "app_fullname",
                      If(
                         order,
                         SortOrder.Descending,
