@@ -310,7 +310,6 @@ PersonalDetailsFormScreen As screen:
                         DisplayMode: =
                         Height: =40
                         Icon: =Icon.Check
-                        Visible: =If(IsEmpty(PDUD_aadharCard.Attachments),false,true)
                         Width: =40
                         X: =PFD_Circle1_8.X+(PFD_Circle1_8.Width-Self.Width)/2
                         Y: =PFD_Circle1_8.Y+(PFD_Circle1_8.Height-Self.Height)/2
@@ -321,7 +320,6 @@ PersonalDetailsFormScreen As screen:
                         DisplayMode: =
                         Height: =40
                         Icon: =Icon.Check
-                        Visible: =If(IsEmpty(PDUD_aadharCard.Attachments),false,true)
                         Width: =40
                         X: =PFD_Circle2_8.X+(PFD_Circle2_8.Width-Self.Width)/2
                         Y: =PFD_Circle1_8.Y+(PFD_Circle1_8.Height-Self.Height)/2
@@ -332,7 +330,6 @@ PersonalDetailsFormScreen As screen:
                         DisplayMode: =
                         Height: =40
                         Icon: =Icon.Check
-                        Visible: =If(IsEmpty(PDUD_aadharCard.Attachments),false,true)
                         Width: =40
                         X: =PFD_Circle3_8.X+(PFD_Circle3_8.Width-Self.Width)/2
                         Y: =PFD_Circle1_8.Y+(PFD_Circle1_8.Height-Self.Height)/2
@@ -343,7 +340,6 @@ PersonalDetailsFormScreen As screen:
                         DisplayMode: =
                         Height: =40
                         Icon: =Icon.Check
-                        Visible: =If(IsEmpty(PDUD_aadharCard.Attachments),false,true)
                         Width: =40
                         X: =PFD_Circle4_8.X+(PFD_Circle4_8.Width-Self.Width)/2
                         Y: =PFD_Circle1_8.Y+(PFD_Circle1_8.Height-Self.Height)/2
@@ -354,7 +350,6 @@ PersonalDetailsFormScreen As screen:
                         DisplayMode: =
                         Height: =40
                         Icon: =Icon.Check
-                        Visible: =If(IsEmpty(PDUD_aadharCard.Attachments),false,true)
                         Width: =40
                         X: =PFD_Circle5_8.X+(PFD_Circle5_8.Width-Self.Width)/2
                         Y: =PFD_Circle1_8.Y+(PFD_Circle1_8.Height-Self.Height)/2
@@ -365,7 +360,6 @@ PersonalDetailsFormScreen As screen:
                         DisplayMode: =
                         Height: =40
                         Icon: =Icon.Check
-                        Visible: =If(IsEmpty(PDUD_aadharCard.Attachments),false,true)
                         Width: =40
                         X: =PFD_Circle6_8.X+(PFD_Circle6_8.Width-Self.Width)/2
                         Y: =PFD_Circle1_8.Y+(PFD_Circle1_8.Height-Self.Height)/2
@@ -376,7 +370,6 @@ PersonalDetailsFormScreen As screen:
                         DisplayMode: =
                         Height: =40
                         Icon: =Icon.Check
-                        Visible: =If(IsEmpty(PDUD_aadharCard.Attachments),false,true)
                         Width: =40
                         X: =PFD_Circle8_8.X+(PFD_Circle8_8.Width-Self.Width)/2
                         Y: =PFD_Circle1_8.Y+(PFD_Circle1_8.Height-Self.Height)/2
@@ -387,7 +380,6 @@ PersonalDetailsFormScreen As screen:
                         DisplayMode: =
                         Height: =40
                         Icon: =Icon.Check
-                        Visible: =If(IsEmpty(PDUD_aadharCard.Attachments),false,true)
                         Width: =40
                         X: =PFD_Circle9_8.X+(PFD_Circle9_8.Width-Self.Width)/2
                         Y: =PFD_Circle1_8.Y+(PFD_Circle1_8.Height-Self.Height)/2

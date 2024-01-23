@@ -310,7 +310,6 @@
                         DisplayMode: =
                         Height: =40
                         Icon: =Icon.Check
-                        Visible: =If(IsEmpty(PDUD_aadharCard.Attachments),false,true)
                         Width: =40
                         X: =PFD_Circle1_5.X+(PFD_Circle1_5.Width-Self.Width)/2
                         Y: =PFD_Circle1_5.Y+(PFD_Circle1_5.Height-Self.Height)/2
@@ -321,7 +320,6 @@
                         DisplayMode: =
                         Height: =40
                         Icon: =Icon.Check
-                        Visible: =If(IsEmpty(PDUD_aadharCard.Attachments),false,true)
                         Width: =40
                         X: =PFD_Circle2_5.X+(PFD_Circle2_5.Width-Self.Width)/2
                         Y: =PFD_Circle1_5.Y+(PFD_Circle1_5.Height-Self.Height)/2
@@ -332,7 +330,6 @@
                         DisplayMode: =
                         Height: =40
                         Icon: =Icon.Check
-                        Visible: =If(IsEmpty(PDUD_aadharCard.Attachments),false,true)
                         Width: =40
                         X: =PFD_Circle3_5.X+(PFD_Circle3_5.Width-Self.Width)/2
                         Y: =PFD_Circle1_5.Y+(PFD_Circle1_5.Height-Self.Height)/2
@@ -343,7 +340,6 @@
                         DisplayMode: =
                         Height: =40
                         Icon: =Icon.Check
-                        Visible: =If(IsEmpty(PDUD_aadharCard.Attachments),false,true)
                         Width: =40
                         X: =PFD_Circle4_5.X+(PFD_Circle4_5.Width-Self.Width)/2
                         Y: =PFD_Circle1_5.Y+(PFD_Circle1_5.Height-Self.Height)/2
@@ -354,7 +350,6 @@
                         DisplayMode: =
                         Height: =40
                         Icon: =Icon.Check
-                        Visible: =If(IsEmpty(PDUD_aadharCard.Attachments),false,true)
                         Width: =40
                         X: =PFD_Circle5_5.X+(PFD_Circle5_5.Width-Self.Width)/2
                         Y: =PFD_Circle1_5.Y+(PFD_Circle1_5.Height-Self.Height)/2
@@ -365,7 +360,6 @@
                         DisplayMode: =
                         Height: =40
                         Icon: =Icon.Check
-                        Visible: =If(IsEmpty(PDUD_aadharCard.Attachments),false,true)
                         Width: =40
                         X: =PFD_Circle6_5.X+(PFD_Circle6_5.Width-Self.Width)/2
                         Y: =PFD_Circle1_5.Y+(PFD_Circle1_5.Height-Self.Height)/2
@@ -376,7 +370,6 @@
                         DisplayMode: =
                         Height: =40
                         Icon: =Icon.Check
-                        Visible: =If(IsEmpty(PDUD_aadharCard.Attachments),false,true)
                         Width: =40
                         X: =PFD_Circle8_5.X+(PFD_Circle8_5.Width-Self.Width)/2
                         Y: =PFD_Circle1_5.Y+(PFD_Circle1_5.Height-Self.Height)/2
@@ -387,7 +380,6 @@
                         DisplayMode: =
                         Height: =40
                         Icon: =Icon.Check
-                        Visible: =If(IsEmpty(PDUD_aadharCard.Attachments),false,true)
                         Width: =40
                         X: =PFD_Circle9_5.X+(PFD_Circle9_5.Width-Self.Width)/2
                         Y: =PFD_Circle1_5.Y+(PFD_Circle1_5.Height-Self.Height)/2

@@ -310,7 +310,6 @@ PersonalDetailsUploadDocumentsScreen As screen:
                         DisplayMode: =
                         Height: =40
                         Icon: =Icon.Check
-                        Visible: =If(IsEmpty(PDUD_aadharCard.Attachments),false,true)
                         Width: =40
                         X: =PFD_Circle1_4.X+(PFD_Circle1_4.Width-Self.Width)/2
                         Y: =PFD_Circle1_4.Y+(PFD_Circle1_4.Height-Self.Height)/2
@@ -321,7 +320,6 @@ PersonalDetailsUploadDocumentsScreen As screen:
                         DisplayMode: =
                         Height: =40
                         Icon: =Icon.Check
-                        Visible: =If(IsEmpty(PDUD_aadharCard.Attachments),false,true)
                         Width: =40
                         X: =PFD_Circle2_4.X+(PFD_Circle2_4.Width-Self.Width)/2
                         Y: =PFD_Circle1_4.Y+(PFD_Circle1_4.Height-Self.Height)/2
@@ -332,7 +330,6 @@ PersonalDetailsUploadDocumentsScreen As screen:
                         DisplayMode: =
                         Height: =40
                         Icon: =Icon.Check
-                        Visible: =If(IsEmpty(PDUD_aadharCard.Attachments),false,true)
                         Width: =40
                         X: =PFD_Circle3_4.X+(PFD_Circle3_4.Width-Self.Width)/2
                         Y: =PFD_Circle1_4.Y+(PFD_Circle1_4.Height-Self.Height)/2
@@ -343,7 +340,6 @@ PersonalDetailsUploadDocumentsScreen As screen:
                         DisplayMode: =
                         Height: =40
                         Icon: =Icon.Check
-                        Visible: =If(IsEmpty(PDUD_aadharCard.Attachments),false,true)
                         Width: =40
                         X: =PFD_Circle4_4.X+(PFD_Circle4_4.Width-Self.Width)/2
                         Y: =PFD_Circle1_4.Y+(PFD_Circle1_4.Height-Self.Height)/2
@@ -354,7 +350,6 @@ PersonalDetailsUploadDocumentsScreen As screen:
                         DisplayMode: =
                         Height: =40
                         Icon: =Icon.Check
-                        Visible: =If(IsEmpty(PDUD_aadharCard.Attachments),false,true)
                         Width: =40
                         X: =PFD_Circle5_4.X+(PFD_Circle5_4.Width-Self.Width)/2
                         Y: =PFD_Circle1_4.Y+(PFD_Circle1_4.Height-Self.Height)/2
@@ -365,7 +360,6 @@ PersonalDetailsUploadDocumentsScreen As screen:
                         DisplayMode: =
                         Height: =40
                         Icon: =Icon.Check
-                        Visible: =If(IsEmpty(PDUD_aadharCard.Attachments),false,true)
                         Width: =40
                         X: =PFD_Circle6_4.X+(PFD_Circle6_4.Width-Self.Width)/2
                         Y: =PFD_Circle1_4.Y+(PFD_Circle1_4.Height-Self.Height)/2
@@ -376,7 +370,6 @@ PersonalDetailsUploadDocumentsScreen As screen:
                         DisplayMode: =
                         Height: =40
                         Icon: =Icon.Check
-                        Visible: =If(IsEmpty(PDUD_aadharCard.Attachments),false,true)
                         Width: =40
                         X: =PFD_Circle8_4.X+(PFD_Circle8_4.Width-Self.Width)/2
                         Y: =PFD_Circle1_4.Y+(PFD_Circle1_4.Height-Self.Height)/2
@@ -387,7 +380,6 @@ PersonalDetailsUploadDocumentsScreen As screen:
                         DisplayMode: =
                         Height: =40
                         Icon: =Icon.Check
-                        Visible: =If(IsEmpty(PDUD_aadharCard.Attachments),false,true)
                         Width: =40
                         X: =PFD_Circle9_4.X+(PFD_Circle9_4.Width-Self.Width)/2
                         Y: =PFD_Circle1_4.Y+(PFD_Circle1_4.Height-Self.Height)/2
@@ -943,6 +935,7 @@ PersonalDetailsUploadDocumentsScreen As screen:
                                 loadervisibility,
                                 false
                             );
+                            Set(milestone,1)
                         RadiusBottomLeft: =20
                         RadiusBottomRight: =20
                         RadiusTopLeft: =20

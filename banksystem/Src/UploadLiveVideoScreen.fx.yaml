@@ -311,7 +311,6 @@ UploadLiveVideoScreen As screen:
                         DisplayMode: =
                         Height: =40
                         Icon: =Icon.Check
-                        Visible: =If(IsEmpty(PDUD_aadharCard.Attachments),false,true)
                         Width: =40
                         X: =PFD_Circle1_9.X+(PFD_Circle1_9.Width-Self.Width)/2
                         Y: =PFD_Circle1_9.Y+(PFD_Circle1_9.Height-Self.Height)/2
@@ -322,7 +321,6 @@ UploadLiveVideoScreen As screen:
                         DisplayMode: =
                         Height: =40
                         Icon: =Icon.Check
-                        Visible: =If(IsEmpty(PDUD_aadharCard.Attachments),false,true)
                         Width: =40
                         X: =PFD_Circle2_9.X+(PFD_Circle2_9.Width-Self.Width)/2
                         Y: =PFD_Circle1_9.Y+(PFD_Circle1_9.Height-Self.Height)/2
@@ -333,7 +331,6 @@ UploadLiveVideoScreen As screen:
                         DisplayMode: =
                         Height: =40
                         Icon: =Icon.Check
-                        Visible: =If(IsEmpty(PDUD_aadharCard.Attachments),false,true)
                         Width: =40
                         X: =PFD_Circle3_9.X+(PFD_Circle3_9.Width-Self.Width)/2
                         Y: =PFD_Circle1_9.Y+(PFD_Circle1_9.Height-Self.Height)/2
@@ -344,7 +341,6 @@ UploadLiveVideoScreen As screen:
                         DisplayMode: =
                         Height: =40
                         Icon: =Icon.Check
-                        Visible: =If(IsEmpty(PDUD_aadharCard.Attachments),false,true)
                         Width: =40
                         X: =PFD_Circle4_9.X+(PFD_Circle4_9.Width-Self.Width)/2
                         Y: =PFD_Circle1_9.Y+(PFD_Circle1_9.Height-Self.Height)/2
@@ -355,7 +351,6 @@ UploadLiveVideoScreen As screen:
                         DisplayMode: =
                         Height: =40
                         Icon: =Icon.Check
-                        Visible: =If(IsEmpty(PDUD_aadharCard.Attachments),false,true)
                         Width: =40
                         X: =PFD_Circle5_9.X+(PFD_Circle5_9.Width-Self.Width)/2
                         Y: =PFD_Circle1_9.Y+(PFD_Circle1_9.Height-Self.Height)/2
@@ -366,7 +361,6 @@ UploadLiveVideoScreen As screen:
                         DisplayMode: =
                         Height: =40
                         Icon: =Icon.Check
-                        Visible: =If(IsEmpty(PDUD_aadharCard.Attachments),false,true)
                         Width: =40
                         X: =PFD_Circle6_9.X+(PFD_Circle6_9.Width-Self.Width)/2
                         Y: =PFD_Circle1_9.Y+(PFD_Circle1_9.Height-Self.Height)/2
@@ -377,7 +371,6 @@ UploadLiveVideoScreen As screen:
                         DisplayMode: =
                         Height: =40
                         Icon: =Icon.Check
-                        Visible: =If(IsEmpty(PDUD_aadharCard.Attachments),false,true)
                         Width: =40
                         X: =PFD_Circle8_9.X+(PFD_Circle8_9.Width-Self.Width)/2
                         Y: =PFD_Circle1_9.Y+(PFD_Circle1_9.Height-Self.Height)/2
@@ -388,7 +381,6 @@ UploadLiveVideoScreen As screen:
                         DisplayMode: =
                         Height: =40
                         Icon: =Icon.Check
-                        Visible: =If(IsEmpty(PDUD_aadharCard.Attachments),false,true)
                         Width: =40
                         X: =PFD_Circle9_9.X+(PFD_Circle9_9.Width-Self.Width)/2
                         Y: =PFD_Circle1_9.Y+(PFD_Circle1_9.Height-Self.Height)/2

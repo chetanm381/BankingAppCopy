@@ -313,7 +313,6 @@ KYCVerificationVideoScreen As screen:
                         DisplayMode: =
                         Height: =40
                         Icon: =Icon.Check
-                        Visible: =If(IsEmpty(PDUD_aadharCard.Attachments),false,true)
                         Width: =40
                         X: =PFD_Circle1_10.X+(PFD_Circle1_10.Width-Self.Width)/2
                         Y: =PFD_Circle1_10.Y+(PFD_Circle1_10.Height-Self.Height)/2
@@ -324,7 +323,6 @@ KYCVerificationVideoScreen As screen:
                         DisplayMode: =
                         Height: =40
                         Icon: =Icon.Check
-                        Visible: =If(IsEmpty(PDUD_aadharCard.Attachments),false,true)
                         Width: =40
                         X: =PFD_Circle2_10.X+(PFD_Circle2_10.Width-Self.Width)/2
                         Y: =PFD_Circle1_10.Y+(PFD_Circle1_10.Height-Self.Height)/2
@@ -335,7 +333,6 @@ KYCVerificationVideoScreen As screen:
                         DisplayMode: =
                         Height: =40
                         Icon: =Icon.Check
-                        Visible: =If(IsEmpty(PDUD_aadharCard.Attachments),false,true)
                         Width: =40
                         X: =PFD_Circle3_10.X+(PFD_Circle3_10.Width-Self.Width)/2
                         Y: =PFD_Circle1_10.Y+(PFD_Circle1_10.Height-Self.Height)/2
@@ -346,7 +343,6 @@ KYCVerificationVideoScreen As screen:
                         DisplayMode: =
                         Height: =40
                         Icon: =Icon.Check
-                        Visible: =If(IsEmpty(PDUD_aadharCard.Attachments),false,true)
                         Width: =40
                         X: =PFD_Circle4_10.X+(PFD_Circle4_10.Width-Self.Width)/2
                         Y: =PFD_Circle1_10.Y+(PFD_Circle1_10.Height-Self.Height)/2
@@ -357,7 +353,6 @@ KYCVerificationVideoScreen As screen:
                         DisplayMode: =
                         Height: =40
                         Icon: =Icon.Check
-                        Visible: =If(IsEmpty(PDUD_aadharCard.Attachments),false,true)
                         Width: =40
                         X: =PFD_Circle5_10.X+(PFD_Circle5_10.Width-Self.Width)/2
                         Y: =PFD_Circle1_10.Y+(PFD_Circle1_10.Height-Self.Height)/2
@@ -368,7 +363,6 @@ KYCVerificationVideoScreen As screen:
                         DisplayMode: =
                         Height: =40
                         Icon: =Icon.Check
-                        Visible: =If(IsEmpty(PDUD_aadharCard.Attachments),false,true)
                         Width: =40
                         X: =PFD_Circle6_10.X+(PFD_Circle6_10.Width-Self.Width)/2
                         Y: =PFD_Circle1_10.Y+(PFD_Circle1_10.Height-Self.Height)/2
@@ -379,7 +373,6 @@ KYCVerificationVideoScreen As screen:
                         DisplayMode: =
                         Height: =40
                         Icon: =Icon.Check
-                        Visible: =If(IsEmpty(PDUD_aadharCard.Attachments),false,true)
                         Width: =40
                         X: =PFD_Circle8_10.X+(PFD_Circle8_10.Width-Self.Width)/2
                         Y: =PFD_Circle1_10.Y+(PFD_Circle1_10.Height-Self.Height)/2
@@ -390,7 +383,6 @@ KYCVerificationVideoScreen As screen:
                         DisplayMode: =
                         Height: =40
                         Icon: =Icon.Check
-                        Visible: =If(IsEmpty(PDUD_aadharCard.Attachments),false,true)
                         Width: =40
                         X: =PFD_Circle9_10.X+(PFD_Circle9_10.Width-Self.Width)/2
                         Y: =PFD_Circle1_10.Y+(PFD_Circle1_10.Height-Self.Height)/2
