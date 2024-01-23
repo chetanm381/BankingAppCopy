@@ -260,8 +260,8 @@
                 =If(IsBlank(DS_Dropdown1.Selected.Value),Set(InReview,true),Set(InReview,InReview));
             Size: =10
             Text: ="My Task"
-            Width: =Parent.Width*.12
-            X: =DS_Button1_10.X-Self.Width-Parent.Width*.015
+            Width: =Parent.Width*.1
+            X: =DS_Button1_10.X-Self.Width-Parent.Width*.012
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =6
 
