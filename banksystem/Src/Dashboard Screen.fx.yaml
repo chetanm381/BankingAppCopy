@@ -329,7 +329,7 @@
         Icon3 As icon.FilterFlat:
             Color: =RGBA(107, 29, 94, 1)
             Height: =30
-            Icon: =Icon.FilterFlatFilled
+            Icon: =Icon.Sort
             OnSelect: |-
                 =Set(order,!order);
                 Set(sorting,DS_Dropdown1_2.Selected.value)
@@ -363,7 +363,7 @@
             Height: =Parent.Height*.5
             HoverFill: =RGBA(107, 29, 94, 0.27)
             Items: |-
-                =[Blank(),{ label:"Full Name", value:"app_fullname" }, { label:"Scheduled Date", value:"app_scheduledate" }, { label:"Application Number", value:"app_applicationnumber" } ]
+                =[Blank(),{ label:"Full Name", value:"app_fullname" }, { label:"Scheduled Date", value:"app_scheduledate" }, { label:"Application Date", value:"createdon" } ]
             PressedFill: =RGBA(107, 29, 94, 1)
             SelectionFill: =RGBA(107, 29, 94, 1)
             Size: =12
@@ -629,7 +629,7 @@
                 OnSelect: =Select(Parent)
                 Size: =11
                 Text: |
-                    =Text(DateTimeValue(ThisItem.'Schedule Date'),  "[$-en-US]dd mmm' yy")
+                    =Text(DateTimeValue(ThisItem.'Created On'),  "[$-en-US]dd mmm' yy")
                 Width: =Parent.Width*.2
                 X: =DS_Label13_2.X
                 Y: =(Gallery1.TemplateHeight-Self.Height)/2
