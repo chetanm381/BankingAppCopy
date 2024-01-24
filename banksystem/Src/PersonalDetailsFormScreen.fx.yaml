@@ -310,6 +310,7 @@ PersonalDetailsFormScreen As screen:
                         DisplayMode: =
                         Height: =40
                         Icon: =Icon.Check
+                        Visible: =If(First(data_application).ApplicationStage>0,true,false)
                         Width: =40
                         X: =PFD_Circle1_8.X+(PFD_Circle1_8.Width-Self.Width)/2
                         Y: =PFD_Circle1_8.Y+(PFD_Circle1_8.Height-Self.Height)/2
@@ -320,6 +321,7 @@ PersonalDetailsFormScreen As screen:
                         DisplayMode: =
                         Height: =40
                         Icon: =Icon.Check
+                        Visible: =If(First(data_application).ApplicationStage>1,true,false)
                         Width: =40
                         X: =PFD_Circle2_8.X+(PFD_Circle2_8.Width-Self.Width)/2
                         Y: =PFD_Circle1_8.Y+(PFD_Circle1_8.Height-Self.Height)/2
@@ -330,6 +332,7 @@ PersonalDetailsFormScreen As screen:
                         DisplayMode: =
                         Height: =40
                         Icon: =Icon.Check
+                        Visible: =If(First(data_application).ApplicationStage>2,true,false)
                         Width: =40
                         X: =PFD_Circle3_8.X+(PFD_Circle3_8.Width-Self.Width)/2
                         Y: =PFD_Circle1_8.Y+(PFD_Circle1_8.Height-Self.Height)/2
@@ -340,6 +343,7 @@ PersonalDetailsFormScreen As screen:
                         DisplayMode: =
                         Height: =40
                         Icon: =Icon.Check
+                        Visible: =If(First(data_application).ApplicationStage>3,true,false)
                         Width: =40
                         X: =PFD_Circle4_8.X+(PFD_Circle4_8.Width-Self.Width)/2
                         Y: =PFD_Circle1_8.Y+(PFD_Circle1_8.Height-Self.Height)/2
@@ -350,6 +354,7 @@ PersonalDetailsFormScreen As screen:
                         DisplayMode: =
                         Height: =40
                         Icon: =Icon.Check
+                        Visible: =If(First(data_application).ApplicationStage>4,true,false)
                         Width: =40
                         X: =PFD_Circle5_8.X+(PFD_Circle5_8.Width-Self.Width)/2
                         Y: =PFD_Circle1_8.Y+(PFD_Circle1_8.Height-Self.Height)/2
@@ -360,6 +365,7 @@ PersonalDetailsFormScreen As screen:
                         DisplayMode: =
                         Height: =40
                         Icon: =Icon.Check
+                        Visible: =If(First(data_application).ApplicationStage>5,true,false)
                         Width: =40
                         X: =PFD_Circle6_8.X+(PFD_Circle6_8.Width-Self.Width)/2
                         Y: =PFD_Circle1_8.Y+(PFD_Circle1_8.Height-Self.Height)/2
@@ -370,6 +376,7 @@ PersonalDetailsFormScreen As screen:
                         DisplayMode: =
                         Height: =40
                         Icon: =Icon.Check
+                        Visible: =If(First(data_application).ApplicationStage>6,true,false)
                         Width: =40
                         X: =PFD_Circle8_8.X+(PFD_Circle8_8.Width-Self.Width)/2
                         Y: =PFD_Circle1_8.Y+(PFD_Circle1_8.Height-Self.Height)/2
@@ -380,6 +387,7 @@ PersonalDetailsFormScreen As screen:
                         DisplayMode: =
                         Height: =40
                         Icon: =Icon.Check
+                        Visible: =If(First(data_application).ApplicationStage>7,true,false)
                         Width: =40
                         X: =PFD_Circle9_8.X+(PFD_Circle9_8.Width-Self.Width)/2
                         Y: =PFD_Circle1_8.Y+(PFD_Circle1_8.Height-Self.Height)/2
@@ -818,7 +826,7 @@ PersonalDetailsFormScreen As screen:
                         Fill: =RGBA(11, 163, 54, 1)
                         HoverFill: |-
                             =ColorFade(ColorValue("#0ba336"), -20%)
-                        OnSelect: |-
+                        OnSelect: |
                             =
                             Patch(
                                 'Identification Details',
@@ -828,6 +836,7 @@ PersonalDetailsFormScreen As screen:
                                 }
                             );
                             Reset(DataCardValue6);
+                            ClearCollect(data_application,LookUp('Identification Details',Id=Idfordata));
                             Navigate(UploadPassportSizePhoto,ScreenTransition.CoverRight);
                         RadiusBottomLeft: =20
                         RadiusBottomRight: =20
