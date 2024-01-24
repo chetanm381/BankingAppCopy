@@ -718,7 +718,7 @@
         {
           "Category": "Design",
           "PropertyName": "HoverBorderColor",
-          "RuleProviderType": "User"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",

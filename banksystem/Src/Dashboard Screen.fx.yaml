@@ -228,8 +228,7 @@
             Color: =RGBA(107, 29, 94, 1)
             Fill: =RGBA(252, 242, 247, 1)
             Height: =Parent.Height*.3
-            HoverBorderColor: |-
-                =ColorFade(ColorValue("#6b1d5e"), 70%)
+            HoverBorderColor: =RGBA(252, 242, 247, 1)
             HoverFill: =ColorFade(Self.Color, 20%)
             OnSelect: |
                 =Set(
