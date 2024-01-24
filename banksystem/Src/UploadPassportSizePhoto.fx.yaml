@@ -91,7 +91,7 @@ UploadPassportSizePhoto As screen:
                 Width: =Parent.Width
                 ZIndex: =1
 
-                PDUD_Milstone_7 As group:
+                UPS_Milstone_7 As group:
                     Height: =5
                     Width: =5
                     X: =60
@@ -306,7 +306,7 @@ UploadPassportSizePhoto As screen:
                         Y: =PFD_Circle1_11.Y+PFD_Circle1_11.Height
                         ZIndex: =23
 
-                    PDUD_Icon2_66 As icon.Check:
+                    UPS_Icon2_66 As icon.Check:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
                         Height: =40
@@ -317,7 +317,7 @@ UploadPassportSizePhoto As screen:
                         Y: =PFD_Circle1_11.Y+(PFD_Circle1_11.Height-Self.Height)/2
                         ZIndex: =24
 
-                    PDUD_Icon2_65 As icon.Check:
+                    UPS_Icon2_65 As icon.Check:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
                         Height: =40
@@ -328,7 +328,7 @@ UploadPassportSizePhoto As screen:
                         Y: =PFD_Circle1_11.Y+(PFD_Circle1_11.Height-Self.Height)/2
                         ZIndex: =25
 
-                    PDUD_Icon2_64 As icon.Check:
+                    UPS_Icon2_64 As icon.Check:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
                         Height: =40
@@ -339,7 +339,7 @@ UploadPassportSizePhoto As screen:
                         Y: =PFD_Circle1_11.Y+(PFD_Circle1_11.Height-Self.Height)/2
                         ZIndex: =26
 
-                    PDUD_Icon2_63 As icon.Check:
+                    UPS_Icon2_63 As icon.Check:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
                         Height: =40
@@ -350,7 +350,7 @@ UploadPassportSizePhoto As screen:
                         Y: =PFD_Circle1_11.Y+(PFD_Circle1_11.Height-Self.Height)/2
                         ZIndex: =27
 
-                    PDUD_Icon2_62 As icon.Check:
+                    UPS_Icon2_62 As icon.Check:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
                         Height: =40
@@ -361,7 +361,7 @@ UploadPassportSizePhoto As screen:
                         Y: =PFD_Circle1_11.Y+(PFD_Circle1_11.Height-Self.Height)/2
                         ZIndex: =28
 
-                    PDUD_Icon2_61 As icon.Check:
+                    UPS_Icon2_61 As icon.Check:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
                         Height: =40
@@ -372,7 +372,7 @@ UploadPassportSizePhoto As screen:
                         Y: =PFD_Circle1_11.Y+(PFD_Circle1_11.Height-Self.Height)/2
                         ZIndex: =29
 
-                    PDUD_Icon2_60 As icon.Check:
+                    UPS_Icon2_60 As icon.Check:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
                         Height: =40
@@ -383,7 +383,7 @@ UploadPassportSizePhoto As screen:
                         Y: =PFD_Circle1_11.Y+(PFD_Circle1_11.Height-Self.Height)/2
                         ZIndex: =30
 
-                    PDUD_Icon2_59 As icon.Check:
+                    UPS_Icon2_59 As icon.Check:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
                         Height: =40
