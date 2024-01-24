@@ -517,6 +517,7 @@
 
     DS_Container10 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.None
+        Fill: =RGBA(255, 255, 255, 1)
         Height: =Parent.Height*0.53
         Width: =Parent.Width-DS_Container5.Width-DS_Container5.X-Parent.Width*.04
         X: =(DS_Container5.Width+DS_Container5.X)+(Parent.Width-DS_Container5.Width-DS_Container5.X-Self.Width)*.5
@@ -595,7 +596,7 @@
         "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
             AccessibleLabel: ="No Item to display"
             DelayItemLoading: =true
-            Height: =Parent.Height-DS_Rectangle4.Y-DS_Rectangle4.Height
+            Height: =Parent.Height-Self.Y
             ItemAccessibleLabel: ="No Item To display"
             Items: |-
                 =SortByColumns(
@@ -625,7 +626,7 @@
                 =ColorValue("#6b1d5e")
             OnSelect: |-
                 =If(
-                    ThisItem.Application_Status = ApplicationStatus.'In-Review',
+                    Or( ThisItem.Application_Status = ApplicationStatus.'In-Review',ThisItem.Application_Status = ApplicationStatus.'New'),
                     Navigate(OpenAccountScreen)
                 )
             Selectable: =false
@@ -634,7 +635,7 @@
             TemplateSize: =57
             Transition: =Transition.Pop
             Width: =Parent.Width
-            Y: =63
+            Y: =DS_Rectangle4.Y+DS_Rectangle4.Height+Parent.Height*.02
             ZIndex: =7
 
             DS_Label14 As label:
