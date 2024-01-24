@@ -112,6 +112,7 @@ PersonalDetailsUploadDocumentsScreen As screen:
                         Size: =10
                         Text: ="Document Upload"
                         Width: =193
+                        X: =PFD_Circle1_12.X+(PFD_Circle1_12.Width-Self.Width)/2
                         Y: =PFD_Circle1_12.Y+PFD_Circle1_12.Height
                         ZIndex: =2
 

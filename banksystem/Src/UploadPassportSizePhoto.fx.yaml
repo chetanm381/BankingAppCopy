@@ -113,6 +113,7 @@ UploadPassportSizePhoto As screen:
                         Size: =10
                         Text: ="Document Upload"
                         Width: =193
+                        X: =PFD_Circle1_12.X+(PFD_Circle1_12.Width-Self.Width)/2
                         Y: =PFD_Circle1_11.Y+PFD_Circle1_11.Height
                         ZIndex: =2
 
@@ -587,7 +588,7 @@ UploadPassportSizePhoto As screen:
                     RadiusTopRight: =20
                     Size: =11
                     Text: ="Next"
-                    Width: =Parent.Width*.09
+                    Width: =Parent.Width*.08
                     X: =Parent.Width-Self.Width-Parent.Width*0.03
                     Y: =(UPS_Container1_2.Y+UPS_Container1_2.Height)+(Parent.Height-(UPS_Container1_2.Y+UPS_Container1_2.Height)-Self.Height)/2
                     ZIndex: =8
@@ -607,7 +608,7 @@ UploadPassportSizePhoto As screen:
                     RadiusTopRight: =20
                     Size: =11
                     Text: ="Back"
-                    Width: =Parent.Width*.09
+                    Width: =Parent.Width*.08
                     X: =Parent.Width-UPS_Button2_5.Width-Self.Width-Parent.Width*0.05
                     Y: =(UPS_Container1_2.Y+UPS_Container1_2.Height)+(Parent.Height-(UPS_Container1_2.Y+UPS_Container1_2.Height)-Self.Height)/2
                     ZIndex: =9
