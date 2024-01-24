@@ -1283,7 +1283,14 @@
         "DisabledColor",
         "PressedColor",
         "HoverColor",
-        "DisplayMode",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "DisplayMode.Edit",
+          "InvariantPropertyName": "DisplayMode",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -1545,7 +1552,7 @@
         {
           "Category": "Design",
           "PropertyName": "DisplayMode",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -6575,7 +6582,7 @@
       "StyleName": "defaultVideoPlaybackStyle",
       "Type": "ControlInfo"
     },
-    "PDF_Label8_56": {
+    "PDF_Label8_120": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Live",
@@ -6676,7 +6683,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "PDF_Label8_56",
+      "Name": "PDF_Label8_120",
       "OptimizeForDevices": "Off",
       "ParentIndex": 30,
       "PersistMetaDataIDKey": false,
@@ -6880,7 +6887,7 @@
       "StyleName": "defaultLabelStyle",
       "Type": "ControlInfo"
     },
-    "PDF_Label8_57": {
+    "PDF_Label8_121": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Live",
@@ -6981,7 +6988,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "PDF_Label8_57",
+      "Name": "PDF_Label8_121",
       "OptimizeForDevices": "Off",
       "ParentIndex": 24,
       "PersistMetaDataIDKey": false,
@@ -7185,7 +7192,7 @@
       "StyleName": "defaultLabelStyle",
       "Type": "ControlInfo"
     },
-    "PDF_Label8_58": {
+    "PDF_Label8_122": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Live",
@@ -7279,7 +7286,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "PDF_Label8_58",
+      "Name": "PDF_Label8_122",
       "OptimizeForDevices": "Off",
       "ParentIndex": 28,
       "PersistMetaDataIDKey": false,
@@ -7483,7 +7490,7 @@
       "StyleName": "defaultLabelStyle",
       "Type": "ControlInfo"
     },
-    "PDF_Label8_59": {
+    "PDF_Label8_123": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Live",
@@ -7584,7 +7591,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "PDF_Label8_59",
+      "Name": "PDF_Label8_123",
       "OptimizeForDevices": "Off",
       "ParentIndex": 25,
       "PersistMetaDataIDKey": false,
@@ -7788,7 +7795,7 @@
       "StyleName": "defaultLabelStyle",
       "Type": "ControlInfo"
     },
-    "PDF_Label8_60": {
+    "PDF_Label8_124": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Live",
@@ -7882,7 +7889,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "PDF_Label8_60",
+      "Name": "PDF_Label8_124",
       "OptimizeForDevices": "Off",
       "ParentIndex": 26,
       "PersistMetaDataIDKey": false,
@@ -8086,7 +8093,7 @@
       "StyleName": "defaultLabelStyle",
       "Type": "ControlInfo"
     },
-    "PDF_Label8_61": {
+    "PDF_Label8_125": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Live",
@@ -8187,7 +8194,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "PDF_Label8_61",
+      "Name": "PDF_Label8_125",
       "OptimizeForDevices": "Off",
       "ParentIndex": 27,
       "PersistMetaDataIDKey": false,
@@ -8391,7 +8398,7 @@
       "StyleName": "defaultLabelStyle",
       "Type": "ControlInfo"
     },
-    "PDF_Label8_62": {
+    "PDF_Label8_126": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Live",
@@ -8485,7 +8492,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "PDF_Label8_62",
+      "Name": "PDF_Label8_126",
       "OptimizeForDevices": "Off",
       "ParentIndex": 29,
       "PersistMetaDataIDKey": false,
@@ -8689,7 +8696,7 @@
       "StyleName": "defaultLabelStyle",
       "Type": "ControlInfo"
     },
-    "PDF_Label8_63": {
+    "PDF_Label8_127": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Live",
@@ -8790,7 +8797,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "PDF_Label8_63",
+      "Name": "PDF_Label8_127",
       "OptimizeForDevices": "Off",
       "ParentIndex": 23,
       "PersistMetaDataIDKey": false,
@@ -8994,10 +9001,17 @@
       "StyleName": "defaultLabelStyle",
       "Type": "ControlInfo"
     },
-    "PDUD_Icon2_27": {
+    "PDUD_Icon2_91": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
-        "Icon",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "Icon.Check",
+          "InvariantPropertyName": "Icon",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -9066,7 +9080,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "PDUD_Icon2_27",
+      "Name": "PDUD_Icon2_91",
       "OptimizeForDevices": "Off",
       "ParentIndex": 15,
       "PersistMetaDataIDKey": false,
@@ -9129,7 +9143,7 @@
         {
           "Category": "Design",
           "PropertyName": "Icon",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -9195,10 +9209,17 @@
       "StyleName": "defaultIconStyle",
       "Type": "ControlInfo"
     },
-    "PDUD_Icon2_28": {
+    "PDUD_Icon2_92": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
-        "Icon",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "Icon.Check",
+          "InvariantPropertyName": "Icon",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -9274,7 +9295,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "PDUD_Icon2_28",
+      "Name": "PDUD_Icon2_92",
       "OptimizeForDevices": "Off",
       "ParentIndex": 14,
       "PersistMetaDataIDKey": false,
@@ -9337,7 +9358,7 @@
         {
           "Category": "Design",
           "PropertyName": "Icon",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -9403,10 +9424,17 @@
       "StyleName": "defaultIconStyle",
       "Type": "ControlInfo"
     },
-    "PDUD_Icon2_29": {
+    "PDUD_Icon2_93": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
-        "Icon",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "Icon.Check",
+          "InvariantPropertyName": "Icon",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -9482,7 +9510,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "PDUD_Icon2_29",
+      "Name": "PDUD_Icon2_93",
       "OptimizeForDevices": "Off",
       "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
@@ -9545,7 +9573,7 @@
         {
           "Category": "Design",
           "PropertyName": "Icon",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -9611,10 +9639,17 @@
       "StyleName": "defaultIconStyle",
       "Type": "ControlInfo"
     },
-    "PDUD_Icon2_30": {
+    "PDUD_Icon2_94": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
-        "Icon",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "Icon.Check",
+          "InvariantPropertyName": "Icon",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -9690,7 +9725,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "PDUD_Icon2_30",
+      "Name": "PDUD_Icon2_94",
       "OptimizeForDevices": "Off",
       "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
@@ -9753,7 +9788,7 @@
         {
           "Category": "Design",
           "PropertyName": "Icon",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -9819,10 +9854,17 @@
       "StyleName": "defaultIconStyle",
       "Type": "ControlInfo"
     },
-    "PDUD_Icon2_31": {
+    "PDUD_Icon2_95": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
-        "Icon",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "Icon.Check",
+          "InvariantPropertyName": "Icon",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -9898,7 +9940,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "PDUD_Icon2_31",
+      "Name": "PDUD_Icon2_95",
       "OptimizeForDevices": "Off",
       "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
@@ -9961,7 +10003,7 @@
         {
           "Category": "Design",
           "PropertyName": "Icon",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -10027,10 +10069,17 @@
       "StyleName": "defaultIconStyle",
       "Type": "ControlInfo"
     },
-    "PDUD_Icon2_32": {
+    "PDUD_Icon2_96": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
-        "Icon",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "Icon.Check",
+          "InvariantPropertyName": "Icon",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -10106,7 +10155,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "PDUD_Icon2_32",
+      "Name": "PDUD_Icon2_96",
       "OptimizeForDevices": "Off",
       "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
@@ -10169,7 +10218,7 @@
         {
           "Category": "Design",
           "PropertyName": "Icon",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -10235,10 +10284,17 @@
       "StyleName": "defaultIconStyle",
       "Type": "ControlInfo"
     },
-    "PDUD_Icon2_33": {
+    "PDUD_Icon2_97": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
-        "Icon",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "Icon.Check",
+          "InvariantPropertyName": "Icon",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -10307,7 +10363,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "PDUD_Icon2_33",
+      "Name": "PDUD_Icon2_97",
       "OptimizeForDevices": "Off",
       "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
@@ -10370,7 +10426,7 @@
         {
           "Category": "Design",
           "PropertyName": "Icon",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -10436,10 +10492,17 @@
       "StyleName": "defaultIconStyle",
       "Type": "ControlInfo"
     },
-    "PDUD_Icon2_34": {
+    "PDUD_Icon2_98": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
-        "Icon",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Icon",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -10497,6 +10560,14 @@
           "InvariantPropertyName": "Visible",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Rotation",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
         }
       ],
       "HasDynamicProperties": false,
@@ -10508,7 +10579,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "PDUD_Icon2_34",
+      "Name": "PDUD_Icon2_98",
       "OptimizeForDevices": "Off",
       "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
@@ -10571,7 +10642,7 @@
         {
           "Category": "Design",
           "PropertyName": "Icon",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -10632,12 +10703,17 @@
           "Category": "Design",
           "PropertyName": "Visible",
           "RuleProviderType": "User"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Rotation",
+          "RuleProviderType": "Unknown"
         }
       ],
       "StyleName": "defaultIconStyle",
       "Type": "ControlInfo"
     },
-    "PDUD_Milstone_3": {
+    "PDUD_Milstone_11": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "X",
@@ -10655,7 +10731,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "PDUD_Milstone_3",
+      "Name": "PDUD_Milstone_11",
       "OptimizeForDevices": "Off",
       "ParentIndex": 31,
       "PersistMetaDataIDKey": false,
@@ -10689,7 +10765,7 @@
       "StyleName": "",
       "Type": "ControlInfo"
     },
-    "PFD_Circle1_7": {
+    "PFD_Circle1_15": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -10751,7 +10827,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "PFD_Circle1_7",
+      "Name": "PFD_Circle1_15",
       "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
@@ -10830,7 +10906,7 @@
       "StyleName": "defaultCircleStyle",
       "Type": "ControlInfo"
     },
-    "PFD_Circle2_7": {
+    "PFD_Circle2_15": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -10892,7 +10968,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "PFD_Circle2_7",
+      "Name": "PFD_Circle2_15",
       "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
@@ -10945,7 +11021,7 @@
         {
           "Category": "Design",
           "PropertyName": "Fill",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -10971,7 +11047,7 @@
       "StyleName": "defaultCircleStyle",
       "Type": "ControlInfo"
     },
-    "PFD_Circle3_7": {
+    "PFD_Circle3_15": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -11033,7 +11109,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "PFD_Circle3_7",
+      "Name": "PFD_Circle3_15",
       "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
@@ -11086,7 +11162,7 @@
         {
           "Category": "Design",
           "PropertyName": "Fill",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -11112,7 +11188,7 @@
       "StyleName": "defaultCircleStyle",
       "Type": "ControlInfo"
     },
-    "PFD_Circle4_7": {
+    "PFD_Circle4_15": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -11167,7 +11243,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "PFD_Circle4_7",
+      "Name": "PFD_Circle4_15",
       "OptimizeForDevices": "Off",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
@@ -11220,7 +11296,7 @@
         {
           "Category": "Design",
           "PropertyName": "Fill",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -11246,7 +11322,7 @@
       "StyleName": "defaultCircleStyle",
       "Type": "ControlInfo"
     },
-    "PFD_Circle5_7": {
+    "PFD_Circle5_15": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -11308,7 +11384,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "PFD_Circle5_7",
+      "Name": "PFD_Circle5_15",
       "OptimizeForDevices": "Off",
       "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
@@ -11361,7 +11437,7 @@
         {
           "Category": "Design",
           "PropertyName": "Fill",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -11387,7 +11463,7 @@
       "StyleName": "defaultCircleStyle",
       "Type": "ControlInfo"
     },
-    "PFD_Circle6_7": {
+    "PFD_Circle6_15": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -11449,7 +11525,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "PFD_Circle6_7",
+      "Name": "PFD_Circle6_15",
       "OptimizeForDevices": "Off",
       "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
@@ -11502,7 +11578,7 @@
         {
           "Category": "Design",
           "PropertyName": "Fill",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -11528,7 +11604,7 @@
       "StyleName": "defaultCircleStyle",
       "Type": "ControlInfo"
     },
-    "PFD_Circle8_7": {
+    "PFD_Circle8_15": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -11590,7 +11666,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "PFD_Circle8_7",
+      "Name": "PFD_Circle8_15",
       "OptimizeForDevices": "Off",
       "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
@@ -11643,7 +11719,7 @@
         {
           "Category": "Design",
           "PropertyName": "Fill",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -11669,7 +11745,7 @@
       "StyleName": "defaultCircleStyle",
       "Type": "ControlInfo"
     },
-    "PFD_Circle9_7": {
+    "PFD_Circle9_15": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -11731,7 +11807,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "PFD_Circle9_7",
+      "Name": "PFD_Circle9_15",
       "OptimizeForDevices": "Off",
       "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
@@ -11794,7 +11870,7 @@
         {
           "Category": "Design",
           "PropertyName": "Fill",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -11810,7 +11886,7 @@
       "StyleName": "defaultCircleStyle",
       "Type": "ControlInfo"
     },
-    "PFD_Rectangle1_7": {
+    "PFD_Rectangle1_15": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -11873,7 +11949,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "PFD_Rectangle1_7",
+      "Name": "PFD_Rectangle1_15",
       "OptimizeForDevices": "Off",
       "ParentIndex": 16,
       "PersistMetaDataIDKey": false,
@@ -11921,7 +11997,7 @@
         {
           "Category": "Design",
           "PropertyName": "Fill",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -11957,7 +12033,7 @@
       "StyleName": "defaultRectangleStyle",
       "Type": "ControlInfo"
     },
-    "PFD_Rectangle3_7": {
+    "PFD_Rectangle3_15": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -12020,7 +12096,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "PFD_Rectangle3_7",
+      "Name": "PFD_Rectangle3_15",
       "OptimizeForDevices": "Off",
       "ParentIndex": 17,
       "PersistMetaDataIDKey": false,
@@ -12068,7 +12144,7 @@
         {
           "Category": "Design",
           "PropertyName": "Fill",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -12104,7 +12180,7 @@
       "StyleName": "defaultRectangleStyle",
       "Type": "ControlInfo"
     },
-    "PFD_Rectangle4_7": {
+    "PFD_Rectangle4_15": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -12160,7 +12236,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "PFD_Rectangle4_7",
+      "Name": "PFD_Rectangle4_15",
       "OptimizeForDevices": "Off",
       "ParentIndex": 18,
       "PersistMetaDataIDKey": false,
@@ -12208,7 +12284,7 @@
         {
           "Category": "Design",
           "PropertyName": "Fill",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -12244,7 +12320,7 @@
       "StyleName": "defaultRectangleStyle",
       "Type": "ControlInfo"
     },
-    "PFD_Rectangle5_7": {
+    "PFD_Rectangle5_15": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -12300,7 +12376,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "PFD_Rectangle5_7",
+      "Name": "PFD_Rectangle5_15",
       "OptimizeForDevices": "Off",
       "ParentIndex": 19,
       "PersistMetaDataIDKey": false,
@@ -12348,7 +12424,7 @@
         {
           "Category": "Design",
           "PropertyName": "Fill",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -12384,7 +12460,7 @@
       "StyleName": "defaultRectangleStyle",
       "Type": "ControlInfo"
     },
-    "PFD_Rectangle6_7": {
+    "PFD_Rectangle6_15": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -12447,7 +12523,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "PFD_Rectangle6_7",
+      "Name": "PFD_Rectangle6_15",
       "OptimizeForDevices": "Off",
       "ParentIndex": 20,
       "PersistMetaDataIDKey": false,
@@ -12495,7 +12571,7 @@
         {
           "Category": "Design",
           "PropertyName": "Fill",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -12531,7 +12607,7 @@
       "StyleName": "defaultRectangleStyle",
       "Type": "ControlInfo"
     },
-    "PFD_Rectangle7_7": {
+    "PFD_Rectangle7_15": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -12594,7 +12670,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "PFD_Rectangle7_7",
+      "Name": "PFD_Rectangle7_15",
       "OptimizeForDevices": "Off",
       "ParentIndex": 21,
       "PersistMetaDataIDKey": false,
@@ -12642,7 +12718,7 @@
         {
           "Category": "Design",
           "PropertyName": "Fill",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -12678,7 +12754,7 @@
       "StyleName": "defaultRectangleStyle",
       "Type": "ControlInfo"
     },
-    "PFD_Rectangle8_7": {
+    "PFD_Rectangle8_15": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -12741,7 +12817,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "PFD_Rectangle8_7",
+      "Name": "PFD_Rectangle8_15",
       "OptimizeForDevices": "Off",
       "ParentIndex": 22,
       "PersistMetaDataIDKey": false,
@@ -12819,7 +12895,7 @@
         {
           "Category": "Design",
           "PropertyName": "Fill",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         }
       ],
       "StyleName": "defaultRectangleStyle",

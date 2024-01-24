@@ -117,7 +117,7 @@ UploadPassportSizePhoto As screen:
                         ZIndex: =2
 
                     PFD_Rectangle1_11 As rectangle:
-                        Fill: =RGBA(252, 242, 247, 1)
+                        Fill: =If(First(data_application).ApplicationStage>1, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
                         Height: =2
                         Width: =Parent.Width*0.0785714285714
                         X: =PFD_Circle1_11.X+PFD_Circle1_11.Width+Parent.Width*.005
@@ -125,7 +125,7 @@ UploadPassportSizePhoto As screen:
                         ZIndex: =3
 
                     PFD_Circle2_11 As circle:
-                        Fill: =RGBA(252, 242, 247, 1)
+                        Fill: =If(First(data_application).ApplicationStage>1, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
                         Height: =Parent.Width*0.035
                         Width: =Parent.Width*0.035
                         X: =PFD_Rectangle1_11.X+PFD_Rectangle1_11.Width+Parent.Width*.005
@@ -133,7 +133,7 @@ UploadPassportSizePhoto As screen:
                         ZIndex: =4
 
                     PFD_Rectangle3_11 As rectangle:
-                        Fill: =RGBA(252, 242, 247, 1)
+                        Fill: =If(First(data_application).ApplicationStage>2, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
                         Height: =2
                         Width: =Parent.Width*0.0785714285714
                         X: =PFD_Circle2_11.X+PFD_Circle2_11.Width+Parent.Width*.005
@@ -141,7 +141,7 @@ UploadPassportSizePhoto As screen:
                         ZIndex: =5
 
                     PFD_Circle3_11 As circle:
-                        Fill: =RGBA(252, 242, 247, 1)
+                        Fill: =If(First(data_application).ApplicationStage>2, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
                         Height: =Parent.Width*0.035
                         Width: =Parent.Width*0.035
                         X: =PFD_Rectangle3_11.X+PFD_Rectangle3_11.Width+Parent.Width*.005
@@ -149,7 +149,7 @@ UploadPassportSizePhoto As screen:
                         ZIndex: =6
 
                     PFD_Rectangle4_11 As rectangle:
-                        Fill: =RGBA(252, 242, 247, 1)
+                        Fill: =If(First(data_application).ApplicationStage>3, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
                         Height: =2
                         Width: =Parent.Width*0.0785714285714
                         X: =PFD_Circle3_11.X+PFD_Circle3_11.Width+Parent.Width*.005
@@ -157,7 +157,7 @@ UploadPassportSizePhoto As screen:
                         ZIndex: =7
 
                     PFD_Rectangle5_11 As rectangle:
-                        Fill: =RGBA(252, 242, 247, 1)
+                        Fill: =If(First(data_application).ApplicationStage>4, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
                         Height: =2
                         Width: =Parent.Width*0.0785714285714
                         X: =PFD_Circle4_11.X+PFD_Circle4_11.Width+Parent.Width*.005
@@ -165,7 +165,7 @@ UploadPassportSizePhoto As screen:
                         ZIndex: =8
 
                     PFD_Circle4_11 As circle:
-                        Fill: =RGBA(252, 242, 247, 1)
+                        Fill: =If(First(data_application).ApplicationStage>3, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
                         Height: =Parent.Width*0.035
                         Width: =Parent.Width*0.035
                         X: =PFD_Rectangle4_11.X+PFD_Rectangle4_11.Width+Parent.Width*.005
@@ -173,7 +173,7 @@ UploadPassportSizePhoto As screen:
                         ZIndex: =9
 
                     PFD_Circle5_11 As circle:
-                        Fill: =RGBA(252, 242, 247, 1)
+                        Fill: =If(First(data_application).ApplicationStage>4, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
                         Height: =Parent.Width*0.035
                         Width: =Parent.Width*0.035
                         X: =PFD_Rectangle5_11.X+PFD_Rectangle5_11.Width+Parent.Width*.005
@@ -181,7 +181,7 @@ UploadPassportSizePhoto As screen:
                         ZIndex: =10
 
                     PFD_Rectangle6_11 As rectangle:
-                        Fill: =RGBA(252, 242, 247, 1)
+                        Fill: =If(First(data_application).ApplicationStage>5, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
                         Height: =2
                         Width: =Parent.Width*0.0785714285714
                         X: =PFD_Circle5_11.X+PFD_Circle5_11.Width+Parent.Width*.005
@@ -189,7 +189,7 @@ UploadPassportSizePhoto As screen:
                         ZIndex: =11
 
                     PFD_Circle6_12 As circle:
-                        Fill: =RGBA(252, 242, 247, 1)
+                        Fill: =If(First(data_application).ApplicationStage>5, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
                         Height: =Parent.Width*0.035
                         Width: =Parent.Width*0.035
                         X: =PFD_Rectangle6_11.X+PFD_Rectangle6_11.Width+Parent.Width*.005
@@ -197,7 +197,7 @@ UploadPassportSizePhoto As screen:
                         ZIndex: =12
 
                     PFD_Rectangle7_12 As rectangle:
-                        Fill: =RGBA(252, 242, 247, 1)
+                        Fill: =If(First(data_application).ApplicationStage>6, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
                         Height: =2
                         Width: =Parent.Width*0.0785714285714
                         X: =PFD_Circle6_12.X+PFD_Circle6_12.Width+Parent.Width*.005
@@ -205,7 +205,7 @@ UploadPassportSizePhoto As screen:
                         ZIndex: =13
 
                     PFD_Circle8_12 As circle:
-                        Fill: =RGBA(252, 242, 247, 1)
+                        Fill: =If(First(data_application).ApplicationStage>6, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
                         Height: =Parent.Width*0.035
                         Width: =Parent.Width*0.035
                         X: =PFD_Rectangle7_12.X+PFD_Rectangle7_12.Width+Parent.Width*.005
@@ -279,7 +279,7 @@ UploadPassportSizePhoto As screen:
                         ZIndex: =20
 
                     PFD_Circle9_12 As circle:
-                        Fill: =RGBA(252, 242, 247, 1)
+                        Fill: =If(First(data_application).ApplicationStage>7, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
                         Height: =Parent.Width*0.035
                         Width: =Parent.Width*0.035
                         X: =PFD_Rectangle8_12.X+PFD_Rectangle8_12.Width+Parent.Width*.005
@@ -287,7 +287,7 @@ UploadPassportSizePhoto As screen:
                         ZIndex: =21
 
                     PFD_Rectangle8_12 As rectangle:
-                        Fill: =RGBA(252, 242, 247, 1)
+                        Fill: =If(First(data_application).ApplicationStage>7, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
                         Height: =2
                         Width: =Parent.Width*0.0785714285714
                         X: =PFD_Circle8_12.X+PFD_Circle8_12.Width+Parent.Width*.005
@@ -309,9 +309,9 @@ UploadPassportSizePhoto As screen:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
                         Height: =Parent.Width*0.025
-                        Icon: =Icon.Check
+                        Icon: =Icon.CheckBadge
                         Visible: =If(First(data_application).ApplicationStage>0,true,false)
-                        Width: =Parent.Width*0.035
+                        Width: =Parent.Width*0.03
                         X: =PFD_Circle1_11.X+(PFD_Circle1_11.Width-Self.Width)/2
                         Y: =PFD_Circle1_11.Y+(PFD_Circle1_11.Height-Self.Height)/2
                         ZIndex: =24
@@ -320,7 +320,7 @@ UploadPassportSizePhoto As screen:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
                         Height: =Parent.Width*0.025
-                        Icon: =Icon.Check
+                        Icon: =Icon.CheckBadge
                         Visible: =If(First(data_application).ApplicationStage>1,true,false)
                         Width: =Parent.Width*0.035
                         X: =PFD_Circle2_11.X+(PFD_Circle2_11.Width-Self.Width)/2
@@ -331,7 +331,7 @@ UploadPassportSizePhoto As screen:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
                         Height: =Parent.Width*0.025
-                        Icon: =Icon.Check
+                        Icon: =Icon.CheckBadge
                         Visible: =If(First(data_application).ApplicationStage>2,true,false)
                         Width: =Parent.Width*0.035
                         X: =PFD_Circle3_11.X+(PFD_Circle3_11.Width-Self.Width)/2
@@ -342,7 +342,7 @@ UploadPassportSizePhoto As screen:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
                         Height: =Parent.Width*0.025
-                        Icon: =Icon.Check
+                        Icon: =Icon.CheckBadge
                         Visible: =If(First(data_application).ApplicationStage>3,true,false)
                         Width: =Parent.Width*0.035
                         X: =PFD_Circle4_11.X+(PFD_Circle4_11.Width-Self.Width)/2
@@ -353,7 +353,7 @@ UploadPassportSizePhoto As screen:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
                         Height: =Parent.Width*0.025
-                        Icon: =Icon.Check
+                        Icon: =Icon.CheckBadge
                         Visible: =If(First(data_application).ApplicationStage>4,true,false)
                         Width: =Parent.Width*0.035
                         X: =PFD_Circle5_11.X+(PFD_Circle5_11.Width-Self.Width)/2
@@ -364,7 +364,7 @@ UploadPassportSizePhoto As screen:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
                         Height: =Parent.Width*0.025
-                        Icon: =Icon.Check
+                        Icon: =Icon.CheckBadge
                         Visible: =If(First(data_application).ApplicationStage>5,true,false)
                         Width: =Parent.Width*0.035
                         X: =PFD_Circle6_12.X+(PFD_Circle6_12.Width-Self.Width)/2
@@ -375,7 +375,7 @@ UploadPassportSizePhoto As screen:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
                         Height: =Parent.Width*0.025
-                        Icon: =Icon.Check
+                        Icon: =Icon.CheckBadge
                         Visible: =If(First(data_application).ApplicationStage>6,true,false)
                         Width: =Parent.Width*0.035
                         X: =PFD_Circle8_12.X+(PFD_Circle8_12.Width-Self.Width)/2
@@ -386,7 +386,7 @@ UploadPassportSizePhoto As screen:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
                         Height: =Parent.Width*0.025
-                        Icon: =Icon.Check
+                        Icon: =Icon.CheckBadge
                         Visible: =If(First(data_application).ApplicationStage>=7,true,false)
                         Width: =Parent.Width*0.035
                         X: =PFD_Circle9_12.X+(PFD_Circle9_12.Width-Self.Width)/2

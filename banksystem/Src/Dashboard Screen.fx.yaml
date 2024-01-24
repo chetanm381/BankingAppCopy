@@ -245,7 +245,7 @@
                 );
             Size: =10
             Text: ="New Customer Visit"
-            Width: =Parent.Width*.17
+            Width: =Parent.Width*.2
             X: =Parent.Width-Self.Width-Parent.Width*.01
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =5
@@ -311,7 +311,7 @@
             Items: =[Blank(),"New","In-Review","Visited","Account-Opened"]
             PressedFill: =RGBA(107, 29, 94, 1)
             SelectionFill: =RGBA(107, 29, 94, 1)
-            Size: =12
+            Size: =11
             Width: =Parent.Width*.22
             X: =DS_Label72.X+DS_Label72.Width
             Y: =(Parent.Height-Self.Height)/2
@@ -340,14 +340,14 @@
 
         DS_Icon As icon.FilterFlat:
             Color: =RGBA(107, 29, 94, 1)
-            Height: =Parent.Height*.5
+            Height: =Parent.Height*.40
             Icon: =Icon.Sort
             OnSelect: |-
                 =Set(order,!order);
                 Set(sorting,DS_Dropdown1_2.Selected.value)
             Tooltip: ="Click to sort "
             Width: =Parent.Width*.035
-            X: =DS_Dropdown1_2.X+DS_Dropdown1_2.Width+Parent.Width*0.0
+            X: =DS_Dropdown1_2.X+DS_Dropdown1_2.Width+Parent.Width*0.01
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =12
 
@@ -365,7 +365,7 @@
                 =[Blank(),{ label:"Name", value:"app_fullname" }, { label:"Scheduled Date", value:"app_scheduledate" }, { label:"Application Date", value:"createdon" } ]
             PressedFill: =RGBA(107, 29, 94, 1)
             SelectionFill: =RGBA(107, 29, 94, 1)
-            Size: =12
+            Size: =11
             Width: =Parent.Width*.22
             X: =DS_Label72_1.X+DS_Label72_1.Width
             Y: =(Parent.Height-Self.Height)/2
@@ -403,7 +403,7 @@
                 =ColorValue("#6b1d5e")
             Size: =10
             Text: ="Reset"
-            Width: =Parent.Width*.06
+            Width: =Parent.Width*.09
             X: =DS_Icon4.X-Self.Width-Parent.Width*.01
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =18
