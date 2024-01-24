@@ -222,10 +222,14 @@
             ZIndex: =4
 
         DS_Button1_10 As button:
+            BorderColor: |-
+                =ColorFade(ColorValue("#6b1d5e"), 70%)
             BorderThickness: =1
             Color: =RGBA(107, 29, 94, 1)
             Fill: =RGBA(252, 242, 247, 1)
             Height: =Parent.Height*.3
+            HoverBorderColor: |-
+                =ColorFade(ColorValue("#6b1d5e"), 70%)
             HoverFill: =ColorFade(Self.Color, 20%)
             OnSelect: |
                 =Set(
@@ -243,6 +247,7 @@
                     OpenAccountScreen,
                     ScreenTransition.CoverRight
                 );
+            PressedBorderColor: =RGBA(252, 242, 247, 1)
             Size: =10
             Text: ="New Customer Visit"
             Width: =Parent.Width*.2
@@ -251,13 +256,17 @@
             ZIndex: =5
 
         DS_Button1_12 As button:
+            BorderColor: |-
+                =ColorFade(ColorValue("#6b1d5e"), 70%)
             BorderThickness: =1
             Color: =RGBA(107, 29, 94, 1)
             Fill: =RGBA(252, 242, 247, 1)
             Height: =Parent.Height*.3
+            HoverBorderColor: =RGBA(252, 242, 247, 1)
             HoverFill: =ColorFade(Self.Color, 20%)
             OnSelect: |
                 =If(IsBlank(DS_Dropdown1.Selected.Value),Set(InReview,true),Set(InReview,InReview));
+            PressedBorderColor: =RGBA(252, 242, 247, 1)
             Size: =10
             Text: ="My Task"
             Width: =Parent.Width*.1
@@ -311,7 +320,7 @@
             Items: =[Blank(),"New","In-Review","Visited","Account-Opened"]
             PressedFill: =RGBA(107, 29, 94, 1)
             SelectionFill: =RGBA(107, 29, 94, 1)
-            Size: =11
+            Size: =10
             Width: =Parent.Width*.22
             X: =DS_Label72.X+DS_Label72.Width
             Y: =(Parent.Height-Self.Height)/2
@@ -365,7 +374,7 @@
                 =[Blank(),{ label:"Name", value:"app_fullname" }, { label:"Scheduled Date", value:"app_scheduledate" }, { label:"Application Date", value:"createdon" } ]
             PressedFill: =RGBA(107, 29, 94, 1)
             SelectionFill: =RGBA(107, 29, 94, 1)
-            Size: =11
+            Size: =10
             Width: =Parent.Width*.22
             X: =DS_Label72_1.X+DS_Label72_1.Width
             Y: =(Parent.Height-Self.Height)/2

@@ -93,6 +93,7 @@ OpenAccountScreen As screen:
 
                 OA_Label1_1 As label:
                     Color: =RGBA(255, 255, 255, 1)
+                    DisplayMode: =DisplayMode.View
                     FontWeight: =FontWeight.Bold
                     Height: =64
                     Size: =20
@@ -165,14 +166,14 @@ OpenAccountScreen As screen:
 
                     OA_HtmlText1 As htmlViewer:
                         DisplayMode: =DisplayMode.View
-                        Height: =127
+                        Height: =119
                         HtmlText: |-
                             ="<p style='color: #6b1d5e; text-align: center'> Please enter Customer Agent visit <b><font color=orange>Code</font></b> recieved on registered 
                             email ID </p> "
                         Size: =17
                         Width: =Parent.Width*.55
                         X: =(Parent.Width-Self.Width)/2+Parent.Width*.02
-                        Y: =OA_Label6.Y+Parent.Height*.05
+                        Y: =OA_Label6.Y+Parent.Height*.055
                         ZIndex: =2
 
                     OA_Label2_2 As label:
@@ -308,9 +309,10 @@ OpenAccountScreen As screen:
                         Align: =Align.Center
                         Color: =RGBA(107, 29, 94, 1)
                         FontWeight: =FontWeight.Bold
-                        Height: =44
+                        Height: =30
                         Size: =11
                         Text: ="Enter OTP you recieved on Email"
+                        Visible: =false
                         Width: =Parent.Width*.55
                         X: |+
                             =(Parent.Width-Self.Width)/2+Parent.Width*.02
@@ -334,7 +336,7 @@ OpenAccountScreen As screen:
                         Size: =15
                         Width: =60
                         X: =(OA_TextInput2_8.X)-Self.Width-Parent.Width*0.025
-                        Y: =OA_Label8_1.Y+OA_Label8_1.Height+Parent.Height*0.05
+                        Y: =OA_Label8_1.Y+OA_Label8_1.Height+Parent.Height*0.001
                         ZIndex: =18
 
                     OA_TextInput2_7 As text:
@@ -353,7 +355,7 @@ OpenAccountScreen As screen:
                         Size: =15
                         Width: =60
                         X: =OA_TextInput2_10.X+OA_TextInput2_10.Width+Parent.Width*0.025
-                        Y: =OA_Label8_1.Y+OA_Label8_1.Height+Parent.Height*0.05
+                        Y: =OA_Label8_1.Y+OA_Label8_1.Height+Parent.Height*0.001
                         ZIndex: =19
 
                     OA_TextInput2_8 As text:
@@ -372,7 +374,7 @@ OpenAccountScreen As screen:
                         Size: =15
                         Width: =60
                         X: =(OA_TextInput2_9.X)-Self.Width-Parent.Width*0.025
-                        Y: =OA_Label8_1.Y+OA_Label8_1.Height+Parent.Height*0.05
+                        Y: =OA_Label8_1.Y+OA_Label8_1.Height+Parent.Height*0.001
                         ZIndex: =20
 
                     OA_TextInput2_9 As text:
@@ -391,7 +393,7 @@ OpenAccountScreen As screen:
                         Size: =15
                         Width: =60
                         X: =(Parent.Width-Self.Width)/2-Parent.Width*0.0125
-                        Y: =OA_Label8_1.Y+OA_Label8_1.Height+Parent.Height*0.05
+                        Y: =OA_Label8_1.Y+OA_Label8_1.Height+Parent.Height*0.001
                         ZIndex: =21
 
                     OA_TextInput2_10 As text:
@@ -410,7 +412,7 @@ OpenAccountScreen As screen:
                         Size: =15
                         Width: =60
                         X: =(Parent.Width+Self.Width)/2+Parent.Width*0.0125
-                        Y: =OA_Label8_1.Y+OA_Label8_1.Height+Parent.Height*0.05
+                        Y: =OA_Label8_1.Y+OA_Label8_1.Height+Parent.Height*0.001
                         ZIndex: =22
 
                     OA_TextInput2_11 As text:
@@ -429,7 +431,7 @@ OpenAccountScreen As screen:
                         Size: =15
                         Width: =60
                         X: =OA_TextInput2_7.X+OA_TextInput2_7.Width+Parent.Width*0.025
-                        Y: =OA_Label8_1.Y+OA_Label8_1.Height+Parent.Height*0.05
+                        Y: =OA_Label8_1.Y+OA_Label8_1.Height+Parent.Height*0.001
                         ZIndex: =23
 
                     OA_Label9_1 As label:
@@ -538,6 +540,7 @@ OpenAccountScreen As screen:
                         RadiusTopRight: =20
                         Size: =11
                         Text: =""
+                        Tooltip: ="Click to Verify"
                         Width: =Parent.Width*.09
                         X: =OA_Label9_1.X+OA_Label9_1.Width-Self.Width
                         Y: =OA_Label9_1.Y
