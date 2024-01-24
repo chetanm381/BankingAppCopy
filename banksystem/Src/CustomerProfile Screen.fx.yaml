@@ -99,10 +99,10 @@
 
                     PFD_Circle1_5 As circle:
                         Fill: =RGBA(252, 242, 247, 1)
-                        Height: =60
-                        Width: =60
-                        X: =Parent.Width*.05
-                        Y: =Parent.Height*.06
+                        Height: =Parent.Width*0.035
+                        Width: =Parent.Width*0.035
+                        X: =Container12.X
+                        Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
                         ZIndex: =1
 
                     PDF_Label8_47 As label:
@@ -119,39 +119,39 @@
                     PFD_Rectangle1_5 As rectangle:
                         Fill: =RGBA(252, 242, 247, 1)
                         Height: =2
-                        Width: =Parent.Width*.07
+                        Width: =Parent.Width*0.0785714285714
                         X: =PFD_Circle1_5.X+PFD_Circle1_5.Width+Parent.Width*.005
                         Y: =PFD_Circle1_5.Y+(PFD_Circle1_5.Height-Self.Height)/2
                         ZIndex: =3
 
                     PFD_Circle2_5 As circle:
                         Fill: =RGBA(252, 242, 247, 1)
-                        Height: =60
-                        Width: =60
+                        Height: =Parent.Width*0.035
+                        Width: =Parent.Width*0.035
                         X: =PFD_Rectangle1_5.X+PFD_Rectangle1_5.Width+Parent.Width*.005
-                        Y: =Parent.Height*.06
+                        Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
                         ZIndex: =4
 
                     PFD_Rectangle3_5 As rectangle:
                         Fill: =RGBA(252, 242, 247, 1)
                         Height: =2
-                        Width: =PFD_Rectangle1_5.Width
+                        Width: =Parent.Width*0.0785714285714
                         X: =PFD_Circle2_5.X+PFD_Circle2_5.Width+Parent.Width*.005
                         Y: =PFD_Circle1_5.Y+(PFD_Circle1_5.Height-Self.Height)/2
                         ZIndex: =5
 
                     PFD_Circle3_5 As circle:
                         Fill: =RGBA(252, 242, 247, 1)
-                        Height: =60
-                        Width: =60
+                        Height: =Parent.Width*0.035
+                        Width: =Parent.Width*0.035
                         X: =PFD_Rectangle3_5.X+PFD_Rectangle3_5.Width+Parent.Width*.005
-                        Y: =Parent.Height*.06
+                        Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
                         ZIndex: =6
 
                     PFD_Rectangle4_5 As rectangle:
                         Fill: =RGBA(252, 242, 247, 1)
                         Height: =2
-                        Width: =PFD_Rectangle1_5.Width
+                        Width: =Parent.Width*0.0785714285714
                         X: =PFD_Circle3_5.X+PFD_Circle3_5.Width+Parent.Width*.005
                         Y: =PFD_Circle1_5.Y+(PFD_Circle1_5.Height-Self.Height)/2
                         ZIndex: =7
@@ -159,57 +159,57 @@
                     PFD_Rectangle5_5 As rectangle:
                         Fill: =RGBA(252, 242, 247, 1)
                         Height: =2
-                        Width: =PFD_Rectangle1_5.Width
+                        Width: =Parent.Width*0.0785714285714
                         X: =PFD_Circle4_5.X+PFD_Circle4_5.Width+Parent.Width*.005
                         Y: =PFD_Circle1_5.Y+(PFD_Circle1_5.Height-Self.Height)/2
                         ZIndex: =8
 
                     PFD_Circle4_5 As circle:
                         Fill: =RGBA(252, 242, 247, 1)
-                        Height: =60
-                        Width: =60
+                        Height: =Parent.Width*0.035
+                        Width: =Parent.Width*0.035
                         X: =PFD_Rectangle4_5.X+PFD_Rectangle4_5.Width+Parent.Width*.005
-                        Y: =Parent.Height*.06
+                        Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
                         ZIndex: =9
 
                     PFD_Circle5_5 As circle:
                         Fill: =RGBA(252, 242, 247, 1)
-                        Height: =60
-                        Width: =60
+                        Height: =Parent.Width*0.035
+                        Width: =Parent.Width*0.035
                         X: =PFD_Rectangle5_5.X+PFD_Rectangle5_5.Width+Parent.Width*.005
-                        Y: =Parent.Height*.06
+                        Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
                         ZIndex: =10
 
                     PFD_Rectangle6_5 As rectangle:
                         Fill: =RGBA(252, 242, 247, 1)
                         Height: =2
-                        Width: =PFD_Rectangle1_5.Width
+                        Width: =Parent.Width*0.0785714285714
                         X: =PFD_Circle5_5.X+PFD_Circle5_5.Width+Parent.Width*.005
                         Y: =PFD_Circle1_5.Y+(PFD_Circle1_5.Height-Self.Height)/2
                         ZIndex: =11
 
                     PFD_Circle6_5 As circle:
                         Fill: =RGBA(252, 242, 247, 1)
-                        Height: =60
-                        Width: =60
+                        Height: =Parent.Width*0.035
+                        Width: =Parent.Width*0.035
                         X: =PFD_Rectangle6_5.X+PFD_Rectangle6_5.Width+Parent.Width*.005
-                        Y: =Parent.Height*.06
+                        Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
                         ZIndex: =12
 
                     PFD_Rectangle7_5 As rectangle:
                         Fill: =RGBA(252, 242, 247, 1)
                         Height: =2
-                        Width: =PFD_Rectangle1_5.Width
+                        Width: =Parent.Width*0.0785714285714
                         X: =PFD_Circle6_5.X+PFD_Circle6_5.Width+Parent.Width*.005
-                        Y: =40
+                        Y: =PFD_Circle1_5.Y+(PFD_Circle1_5.Height-Self.Height)/2
                         ZIndex: =13
 
                     PFD_Circle8_5 As circle:
                         Fill: =RGBA(252, 242, 247, 1)
-                        Height: =60
-                        Width: =60
+                        Height: =Parent.Width*0.035
+                        Width: =Parent.Width*0.035
                         X: =PFD_Rectangle7_5.X+PFD_Rectangle7_5.Width+Parent.Width*.005
-                        Y: =Parent.Height*.06
+                        Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
                         ZIndex: =14
 
                     PDF_Label8_46 As label:
@@ -253,7 +253,7 @@
                         Text: ="Photo Upload"
                         Width: =193
                         X: =PFD_Circle3_5.X+(PFD_Circle3_5.Width-Self.Width)/2
-                        Y: =70
+                        Y: =PFD_Circle1_5.Y+PFD_Circle1_5.Height
                         ZIndex: =18
 
                     PDF_Label8_42 As label:
@@ -280,16 +280,16 @@
 
                     PFD_Circle9_5 As circle:
                         Fill: =RGBA(252, 242, 247, 1)
-                        Height: =60
-                        Width: =60
+                        Height: =Parent.Width*0.035
+                        Width: =Parent.Width*0.035
                         X: =PFD_Rectangle8_5.X+PFD_Rectangle8_5.Width+Parent.Width*.005
-                        Y: =Parent.Height*.06
+                        Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
                         ZIndex: =21
 
                     PFD_Rectangle8_5 As rectangle:
                         Fill: =RGBA(252, 242, 247, 1)
                         Height: =2
-                        Width: =PFD_Rectangle1_5.Width
+                        Width: =Parent.Width*0.0785714285714
                         X: =PFD_Circle8_5.X+PFD_Circle8_5.Width+Parent.Width*.005
                         Y: =PFD_Circle1_5.Y+(PFD_Circle1_5.Height-Self.Height)/2
                         ZIndex: =22
@@ -308,10 +308,10 @@
                     PDUD_Icon2_18 As icon.Check:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
-                        Height: =40
+                        Height: =Parent.Width*0.025
                         Icon: =Icon.Check
                         Visible: =If(First(data_application).ApplicationStage>0,true,false)
-                        Width: =40
+                        Width: =Parent.Width*0.035
                         X: =PFD_Circle1_5.X+(PFD_Circle1_5.Width-Self.Width)/2
                         Y: =PFD_Circle1_5.Y+(PFD_Circle1_5.Height-Self.Height)/2
                         ZIndex: =24
@@ -319,10 +319,10 @@
                     PDUD_Icon2_17 As icon.Check:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
-                        Height: =40
+                        Height: =Parent.Width*0.025
                         Icon: =Icon.Check
                         Visible: =If(First(data_application).ApplicationStage>1,true,false)
-                        Width: =40
+                        Width: =Parent.Width*0.035
                         X: =PFD_Circle2_5.X+(PFD_Circle2_5.Width-Self.Width)/2
                         Y: =PFD_Circle1_5.Y+(PFD_Circle1_5.Height-Self.Height)/2
                         ZIndex: =25
@@ -330,10 +330,10 @@
                     PDUD_Icon2_16 As icon.Check:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
-                        Height: =40
+                        Height: =Parent.Width*0.025
                         Icon: =Icon.Check
                         Visible: =If(First(data_application).ApplicationStage>2,true,false)
-                        Width: =40
+                        Width: =Parent.Width*0.035
                         X: =PFD_Circle3_5.X+(PFD_Circle3_5.Width-Self.Width)/2
                         Y: =PFD_Circle1_5.Y+(PFD_Circle1_5.Height-Self.Height)/2
                         ZIndex: =26
@@ -341,10 +341,10 @@
                     PDUD_Icon2_15 As icon.Check:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
-                        Height: =40
+                        Height: =Parent.Width*0.025
                         Icon: =Icon.Check
                         Visible: =If(First(data_application).ApplicationStage>3,true,false)
-                        Width: =40
+                        Width: =Parent.Width*0.035
                         X: =PFD_Circle4_5.X+(PFD_Circle4_5.Width-Self.Width)/2
                         Y: =PFD_Circle1_5.Y+(PFD_Circle1_5.Height-Self.Height)/2
                         ZIndex: =27
@@ -352,10 +352,10 @@
                     PDUD_Icon2_14 As icon.Check:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
-                        Height: =40
+                        Height: =Parent.Width*0.025
                         Icon: =Icon.Check
                         Visible: =If(First(data_application).ApplicationStage>4,true,false)
-                        Width: =40
+                        Width: =Parent.Width*0.035
                         X: =PFD_Circle5_5.X+(PFD_Circle5_5.Width-Self.Width)/2
                         Y: =PFD_Circle1_5.Y+(PFD_Circle1_5.Height-Self.Height)/2
                         ZIndex: =28
@@ -363,10 +363,10 @@
                     PDUD_Icon2_13 As icon.Check:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
-                        Height: =40
+                        Height: =Parent.Width*0.025
                         Icon: =Icon.Check
                         Visible: =If(First(data_application).ApplicationStage>5,true,false)
-                        Width: =40
+                        Width: =Parent.Width*0.035
                         X: =PFD_Circle6_5.X+(PFD_Circle6_5.Width-Self.Width)/2
                         Y: =PFD_Circle1_5.Y+(PFD_Circle1_5.Height-Self.Height)/2
                         ZIndex: =29
@@ -374,10 +374,10 @@
                     PDUD_Icon2_12 As icon.Check:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
-                        Height: =40
+                        Height: =Parent.Width*0.025
                         Icon: =Icon.Check
                         Visible: =If(First(data_application).ApplicationStage>6,true,false)
-                        Width: =40
+                        Width: =Parent.Width*0.035
                         X: =PFD_Circle8_5.X+(PFD_Circle8_5.Width-Self.Width)/2
                         Y: =PFD_Circle1_5.Y+(PFD_Circle1_5.Height-Self.Height)/2
                         ZIndex: =30
@@ -385,10 +385,10 @@
                     PDUD_Icon2_11 As icon.Check:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
-                        Height: =40
+                        Height: =Parent.Width*0.025
                         Icon: =Icon.Check
                         Visible: =If(First(data_application).ApplicationStage>=7,true,false)
-                        Width: =40
+                        Width: =Parent.Width*0.035
                         X: =PFD_Circle9_5.X+(PFD_Circle9_5.Width-Self.Width)/2
                         Y: =PFD_Circle1_5.Y+(PFD_Circle1_5.Height-Self.Height)/2
                         ZIndex: =31

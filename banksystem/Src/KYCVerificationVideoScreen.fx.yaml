@@ -97,15 +97,15 @@ KYCVerificationVideoScreen As screen:
                     Height: =5
                     Width: =5
                     X: =60
-                    Y: =60
+                    Y: =40
                     ZIndex: =32
 
                     PFD_Circle1_10 As circle:
                         Fill: =RGBA(252, 242, 247, 1)
-                        Height: =60
-                        Width: =60
-                        X: =Parent.Width*.05
-                        Y: =Parent.Height*.06
+                        Height: =Parent.Width*0.035
+                        Width: =Parent.Width*0.035
+                        X: =Container12.X
+                        Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
                         ZIndex: =1
 
                     PDF_Label8_87 As label:
@@ -115,46 +115,45 @@ KYCVerificationVideoScreen As screen:
                         Size: =10
                         Text: ="Document Upload"
                         Width: =193
-                        X: =PFD_Circle1_10.X+(PFD_Circle1_10.Width-Self.Width)/2
                         Y: =PFD_Circle1_10.Y+PFD_Circle1_10.Height
                         ZIndex: =2
 
                     PFD_Rectangle1_10 As rectangle:
                         Fill: =RGBA(252, 242, 247, 1)
                         Height: =2
-                        Width: =Parent.Width*.07
+                        Width: =Parent.Width*0.0785714285714
                         X: =PFD_Circle1_10.X+PFD_Circle1_10.Width+Parent.Width*.005
                         Y: =PFD_Circle1_10.Y+(PFD_Circle1_10.Height-Self.Height)/2
                         ZIndex: =3
 
                     PFD_Circle2_10 As circle:
                         Fill: =RGBA(252, 242, 247, 1)
-                        Height: =60
-                        Width: =60
+                        Height: =Parent.Width*0.035
+                        Width: =Parent.Width*0.035
                         X: =PFD_Rectangle1_10.X+PFD_Rectangle1_10.Width+Parent.Width*.005
-                        Y: =Parent.Height*.06
+                        Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
                         ZIndex: =4
 
                     PFD_Rectangle3_10 As rectangle:
                         Fill: =RGBA(252, 242, 247, 1)
                         Height: =2
-                        Width: =PFD_Rectangle1_10.Width
+                        Width: =Parent.Width*0.0785714285714
                         X: =PFD_Circle2_10.X+PFD_Circle2_10.Width+Parent.Width*.005
                         Y: =PFD_Circle1_10.Y+(PFD_Circle1_10.Height-Self.Height)/2
                         ZIndex: =5
 
                     PFD_Circle3_10 As circle:
                         Fill: =RGBA(252, 242, 247, 1)
-                        Height: =60
-                        Width: =60
+                        Height: =Parent.Width*0.035
+                        Width: =Parent.Width*0.035
                         X: =PFD_Rectangle3_10.X+PFD_Rectangle3_10.Width+Parent.Width*.005
-                        Y: =Parent.Height*.06
+                        Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
                         ZIndex: =6
 
                     PFD_Rectangle4_10 As rectangle:
                         Fill: =RGBA(252, 242, 247, 1)
                         Height: =2
-                        Width: =PFD_Rectangle1_10.Width
+                        Width: =Parent.Width*0.0785714285714
                         X: =PFD_Circle3_10.X+PFD_Circle3_10.Width+Parent.Width*.005
                         Y: =PFD_Circle1_10.Y+(PFD_Circle1_10.Height-Self.Height)/2
                         ZIndex: =7
@@ -162,57 +161,57 @@ KYCVerificationVideoScreen As screen:
                     PFD_Rectangle5_10 As rectangle:
                         Fill: =RGBA(252, 242, 247, 1)
                         Height: =2
-                        Width: =PFD_Rectangle1_10.Width
+                        Width: =Parent.Width*0.0785714285714
                         X: =PFD_Circle4_10.X+PFD_Circle4_10.Width+Parent.Width*.005
                         Y: =PFD_Circle1_10.Y+(PFD_Circle1_10.Height-Self.Height)/2
                         ZIndex: =8
 
                     PFD_Circle4_10 As circle:
                         Fill: =RGBA(252, 242, 247, 1)
-                        Height: =60
-                        Width: =60
+                        Height: =Parent.Width*0.035
+                        Width: =Parent.Width*0.035
                         X: =PFD_Rectangle4_10.X+PFD_Rectangle4_10.Width+Parent.Width*.005
-                        Y: =Parent.Height*.06
+                        Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
                         ZIndex: =9
 
                     PFD_Circle5_10 As circle:
                         Fill: =RGBA(252, 242, 247, 1)
-                        Height: =60
-                        Width: =60
+                        Height: =Parent.Width*0.035
+                        Width: =Parent.Width*0.035
                         X: =PFD_Rectangle5_10.X+PFD_Rectangle5_10.Width+Parent.Width*.005
-                        Y: =Parent.Height*.06
+                        Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
                         ZIndex: =10
 
                     PFD_Rectangle6_10 As rectangle:
                         Fill: =RGBA(252, 242, 247, 1)
                         Height: =2
-                        Width: =PFD_Rectangle1_10.Width
+                        Width: =Parent.Width*0.0785714285714
                         X: =PFD_Circle5_10.X+PFD_Circle5_10.Width+Parent.Width*.005
                         Y: =PFD_Circle1_10.Y+(PFD_Circle1_10.Height-Self.Height)/2
                         ZIndex: =11
 
                     PFD_Circle6_10 As circle:
                         Fill: =RGBA(252, 242, 247, 1)
-                        Height: =60
-                        Width: =60
+                        Height: =Parent.Width*0.035
+                        Width: =Parent.Width*0.035
                         X: =PFD_Rectangle6_10.X+PFD_Rectangle6_10.Width+Parent.Width*.005
-                        Y: =Parent.Height*.06
+                        Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
                         ZIndex: =12
 
                     PFD_Rectangle7_10 As rectangle:
                         Fill: =RGBA(252, 242, 247, 1)
                         Height: =2
-                        Width: =PFD_Rectangle1_10.Width
+                        Width: =Parent.Width*0.0785714285714
                         X: =PFD_Circle6_10.X+PFD_Circle6_10.Width+Parent.Width*.005
-                        Y: =40
+                        Y: =PFD_Circle1_10.Y+(PFD_Circle1_10.Height-Self.Height)/2
                         ZIndex: =13
 
                     PFD_Circle8_10 As circle:
                         Fill: =RGBA(252, 242, 247, 1)
-                        Height: =60
-                        Width: =60
+                        Height: =Parent.Width*0.035
+                        Width: =Parent.Width*0.035
                         X: =PFD_Rectangle7_10.X+PFD_Rectangle7_10.Width+Parent.Width*.005
-                        Y: =Parent.Height*.06
+                        Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
                         ZIndex: =14
 
                     PDF_Label8_86 As label:
@@ -256,7 +255,7 @@ KYCVerificationVideoScreen As screen:
                         Text: ="Photo Upload"
                         Width: =193
                         X: =PFD_Circle3_10.X+(PFD_Circle3_10.Width-Self.Width)/2
-                        Y: =70
+                        Y: =PFD_Circle1_10.Y+PFD_Circle1_10.Height
                         ZIndex: =18
 
                     PDF_Label8_82 As label:
@@ -283,16 +282,16 @@ KYCVerificationVideoScreen As screen:
 
                     PFD_Circle9_10 As circle:
                         Fill: =RGBA(252, 242, 247, 1)
-                        Height: =60
-                        Width: =60
+                        Height: =Parent.Width*0.035
+                        Width: =Parent.Width*0.035
                         X: =PFD_Rectangle8_10.X+PFD_Rectangle8_10.Width+Parent.Width*.005
-                        Y: =Parent.Height*.06
+                        Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
                         ZIndex: =21
 
                     PFD_Rectangle8_10 As rectangle:
                         Fill: =RGBA(252, 242, 247, 1)
                         Height: =2
-                        Width: =PFD_Rectangle1_10.Width
+                        Width: =Parent.Width*0.0785714285714
                         X: =PFD_Circle8_10.X+PFD_Circle8_10.Width+Parent.Width*.005
                         Y: =PFD_Circle1_10.Y+(PFD_Circle1_10.Height-Self.Height)/2
                         ZIndex: =22
@@ -311,10 +310,10 @@ KYCVerificationVideoScreen As screen:
                     PDUD_Icon2_58 As icon.Check:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
-                        Height: =40
+                        Height: =Parent.Width*0.025
                         Icon: =Icon.Check
                         Visible: =If(First(data_application).ApplicationStage>0,true,false)
-                        Width: =40
+                        Width: =Parent.Width*0.035
                         X: =PFD_Circle1_10.X+(PFD_Circle1_10.Width-Self.Width)/2
                         Y: =PFD_Circle1_10.Y+(PFD_Circle1_10.Height-Self.Height)/2
                         ZIndex: =24
@@ -322,10 +321,10 @@ KYCVerificationVideoScreen As screen:
                     PDUD_Icon2_57 As icon.Check:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
-                        Height: =40
+                        Height: =Parent.Width*0.025
                         Icon: =Icon.Check
                         Visible: =If(First(data_application).ApplicationStage>1,true,false)
-                        Width: =40
+                        Width: =Parent.Width*0.035
                         X: =PFD_Circle2_10.X+(PFD_Circle2_10.Width-Self.Width)/2
                         Y: =PFD_Circle1_10.Y+(PFD_Circle1_10.Height-Self.Height)/2
                         ZIndex: =25
@@ -333,10 +332,10 @@ KYCVerificationVideoScreen As screen:
                     PDUD_Icon2_56 As icon.Check:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
-                        Height: =40
+                        Height: =Parent.Width*0.025
                         Icon: =Icon.Check
                         Visible: =If(First(data_application).ApplicationStage>2,true,false)
-                        Width: =40
+                        Width: =Parent.Width*0.035
                         X: =PFD_Circle3_10.X+(PFD_Circle3_10.Width-Self.Width)/2
                         Y: =PFD_Circle1_10.Y+(PFD_Circle1_10.Height-Self.Height)/2
                         ZIndex: =26
@@ -344,10 +343,10 @@ KYCVerificationVideoScreen As screen:
                     PDUD_Icon2_55 As icon.Check:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
-                        Height: =40
+                        Height: =Parent.Width*0.025
                         Icon: =Icon.Check
                         Visible: =If(First(data_application).ApplicationStage>3,true,false)
-                        Width: =40
+                        Width: =Parent.Width*0.035
                         X: =PFD_Circle4_10.X+(PFD_Circle4_10.Width-Self.Width)/2
                         Y: =PFD_Circle1_10.Y+(PFD_Circle1_10.Height-Self.Height)/2
                         ZIndex: =27
@@ -355,10 +354,10 @@ KYCVerificationVideoScreen As screen:
                     PDUD_Icon2_54 As icon.Check:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
-                        Height: =40
+                        Height: =Parent.Width*0.025
                         Icon: =Icon.Check
                         Visible: =If(First(data_application).ApplicationStage>4,true,false)
-                        Width: =40
+                        Width: =Parent.Width*0.035
                         X: =PFD_Circle5_10.X+(PFD_Circle5_10.Width-Self.Width)/2
                         Y: =PFD_Circle1_10.Y+(PFD_Circle1_10.Height-Self.Height)/2
                         ZIndex: =28
@@ -366,10 +365,10 @@ KYCVerificationVideoScreen As screen:
                     PDUD_Icon2_53 As icon.Check:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
-                        Height: =40
+                        Height: =Parent.Width*0.025
                         Icon: =Icon.Check
                         Visible: =If(First(data_application).ApplicationStage>5,true,false)
-                        Width: =40
+                        Width: =Parent.Width*0.035
                         X: =PFD_Circle6_10.X+(PFD_Circle6_10.Width-Self.Width)/2
                         Y: =PFD_Circle1_10.Y+(PFD_Circle1_10.Height-Self.Height)/2
                         ZIndex: =29
@@ -377,10 +376,10 @@ KYCVerificationVideoScreen As screen:
                     PDUD_Icon2_52 As icon.Check:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
-                        Height: =40
+                        Height: =Parent.Width*0.025
                         Icon: =Icon.Check
                         Visible: =If(First(data_application).ApplicationStage>6,true,false)
-                        Width: =40
+                        Width: =Parent.Width*0.035
                         X: =PFD_Circle8_10.X+(PFD_Circle8_10.Width-Self.Width)/2
                         Y: =PFD_Circle1_10.Y+(PFD_Circle1_10.Height-Self.Height)/2
                         ZIndex: =30
@@ -388,10 +387,10 @@ KYCVerificationVideoScreen As screen:
                     PDUD_Icon2_51 As icon.Check:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
-                        Height: =40
+                        Height: =Parent.Width*0.025
                         Icon: =Icon.Check
-                        Visible: =If(First(data_application).ApplicationStage>7,true,false)
-                        Width: =40
+                        Visible: =If(First(data_application).ApplicationStage>=7,true,false)
+                        Width: =Parent.Width*0.035
                         X: =PFD_Circle9_10.X+(PFD_Circle9_10.Width-Self.Width)/2
                         Y: =PFD_Circle1_10.Y+(PFD_Circle1_10.Height-Self.Height)/2
                         ZIndex: =31
