@@ -626,7 +626,7 @@
                 =ColorValue("#6b1d5e")
             OnSelect: |-
                 =If(
-                    Or( ThisItem.Application_Status = ApplicationStatus.'In-Review',ThisItem.Application_Status = ApplicationStatus.'New'),
+                    Or( ThisItem.Application_Status = ApplicationStatus.'In-Review',ThisItem.Application_Status = ApplicationStatus.New),
                     Navigate(OpenAccountScreen)
                 )
             Selectable: =false

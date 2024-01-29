@@ -142,6 +142,7 @@
     "UploadLiveVideoScreen",
     "Dashboard Screen",
     "KYCVerificationVideoScreen",
-    "UploadPassportSizePhoto"
+    "UploadPassportSizePhoto",
+    "Screen1"
   ]
 }
