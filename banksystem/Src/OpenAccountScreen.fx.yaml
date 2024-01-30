@@ -506,13 +506,13 @@ OpenAccountScreen As screen:
                                     ),
                                     Set(
                                         messageNotification,
-                                        "OTP in Valid"
+                                        "OTP Invalid"
                                     ),
                                     Reset('Toast Notification_1')
                                 );
                                 Set(
                                     visibility,
-                                    false
+                                    true
                                 );
                                 Set(
                                     Ic,
@@ -580,7 +580,7 @@ OpenAccountScreen As screen:
                         NotificationType: =typeofnotification
                         Visible: =Self.OutIsShowNotification
                         Width: ='Toast Notification_1'.NotificationWidth
-                        X: =Parent.Width-Self.Width
-                        Y: =16
+                        X: =Parent.Width-Self.Width-Parent.Width*0.015
+                        Y: =Parent.Height*0.015
                         ZIndex: =27
 
