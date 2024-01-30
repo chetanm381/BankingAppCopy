@@ -2464,7 +2464,7 @@
       },
       "NavigateToScreenWhenNotificationCloses"
     ],
-    "LastModifiedTimestamp": "638422059561494454",
+    "LastModifiedTimestamp": "638422078068718975",
     "Name": "Toast Notification",
     "Rules": [
       {
@@ -2725,7 +2725,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638422059561494454",
+  "LastModifiedTimestamp": "638422078068718975",
   "Name": "f2fb8ecc7a9d42cabaea24efbdc58380",
   "OverridableProperties": {},
   "TemplateOriginalName": "6322d06eb6034c4f85c6c09a255549a8",
