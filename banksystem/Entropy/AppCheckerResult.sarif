@@ -654,96 +654,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container12_2.MPV_Container3_2.MPV_Container5.MPV_Video2.ClosedCaptionsUrl"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container12_2.MPV_Container3_2.MPV_Container5.MPV_Video2.ClosedCaptionsUrl",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "ClosedCaptionsUrl",
-                "module": "MatchPhoto&VideoScreen",
-                "type": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container12_2.MPV_Container3_2.MPV_Container5.MPV_Video2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-CaptionsNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container12_2.MPV_Container3_2.MPV_Container5.MPV_Video2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container12_2.MPV_Container3_2.MPV_Container5.MPV_Video2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "MatchPhoto&VideoScreen",
-                "type": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container12_2.MPV_Container3_2.MPV_Container5.MPV_Video2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container12_2.MPV_Container1_2.MPV_Container5_1.Spinner1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container12_2.MPV_Container1_2.MPV_Container5_1.Spinner1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "MatchPhoto&VideoScreen",
-                "type": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container12_2.MPV_Container1_2.MPV_Container5_1.Spinner1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'Dashboard Screen'.DS_Container9.DS_Dropdown1.AccessibleLabel"
                 }
               ],
@@ -2393,6 +2303,96 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container12_2.MPV_Container3_2.MPV_Container5.MPV_Video2.ClosedCaptionsUrl"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container12_2.MPV_Container3_2.MPV_Container5.MPV_Video2.ClosedCaptionsUrl",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "ClosedCaptionsUrl",
+                "module": "MatchPhoto&VideoScreen",
+                "type": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container12_2.MPV_Container3_2.MPV_Container5.MPV_Video2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-CaptionsNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container12_2.MPV_Container3_2.MPV_Container5.MPV_Video2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container12_2.MPV_Container3_2.MPV_Container5.MPV_Video2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "MatchPhoto&VideoScreen",
+                "type": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container12_2.MPV_Container3_2.MPV_Container5.MPV_Video2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container12_2.MPV_Container1_2.MPV_Container5_1.Spinner1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container12_2.MPV_Container1_2.MPV_Container5_1.Spinner1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "MatchPhoto&VideoScreen",
+                "type": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container12_2.MPV_Container1_2.MPV_Container5_1.Spinner1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.SelectedSortField"
                 }
               ],
@@ -2423,17 +2423,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.visibility"
+                  "fullyQualifiedName": "App.Ic"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.visibility",
+                  "fullyQualifiedName": "App.Ic",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "visibility",
+                "member": "Ic",
                 "module": "App",
                 "type": "App"
               }
@@ -2886,306 +2886,6 @@
                 "member": "X",
                 "module": "UploadLiveVideoScreen",
                 "type": "UploadLiveVideoScreen.ULV_BgContainer_2.ULV_ScrollableContainer_2.ULV_Container11_3.PDF_Label8_143"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle1_15.X"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle1_15.X",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "X",
-                "module": "MatchPhoto&VideoScreen",
-                "type": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle1_15"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle1_15.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle1_15.Y",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "MatchPhoto&VideoScreen",
-                "type": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle1_15"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle2_15.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle2_15.Y",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "MatchPhoto&VideoScreen",
-                "type": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle2_15"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle3_15.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle3_15.Y",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "MatchPhoto&VideoScreen",
-                "type": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle3_15"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle4_15.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle4_15.Y",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "MatchPhoto&VideoScreen",
-                "type": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle4_15"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle5_15.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle5_15.Y",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "MatchPhoto&VideoScreen",
-                "type": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle5_15"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle6_15.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle6_15.Y",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "MatchPhoto&VideoScreen",
-                "type": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle6_15"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle8_15.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle8_15.Y",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "MatchPhoto&VideoScreen",
-                "type": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle8_15"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle9_15.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle9_15.Y",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "MatchPhoto&VideoScreen",
-                "type": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle9_15"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PDF_Label8_127.X"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PDF_Label8_127.X",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "X",
-                "module": "MatchPhoto&VideoScreen",
-                "type": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PDF_Label8_127"
               }
             }
           ],
@@ -4806,6 +4506,306 @@
                 "member": "X",
                 "module": "CustomerProfile Screen",
                 "type": "'CustomerProfile Screen'.BgContainer.ScrollableContainer.Container11.PDF_Label8_111"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle1_15.X"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle1_15.X",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "X",
+                "module": "MatchPhoto&VideoScreen",
+                "type": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle1_15"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle1_15.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle1_15.Y",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "MatchPhoto&VideoScreen",
+                "type": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle1_15"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle2_15.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle2_15.Y",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "MatchPhoto&VideoScreen",
+                "type": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle2_15"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle3_15.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle3_15.Y",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "MatchPhoto&VideoScreen",
+                "type": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle3_15"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle4_15.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle4_15.Y",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "MatchPhoto&VideoScreen",
+                "type": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle4_15"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle5_15.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle5_15.Y",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "MatchPhoto&VideoScreen",
+                "type": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle5_15"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle6_15.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle6_15.Y",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "MatchPhoto&VideoScreen",
+                "type": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle6_15"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle8_15.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle8_15.Y",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "MatchPhoto&VideoScreen",
+                "type": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle8_15"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle9_15.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle9_15.Y",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "MatchPhoto&VideoScreen",
+                "type": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PFD_Circle9_15"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PDF_Label8_127.X"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PDF_Label8_127.X",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "X",
+                "module": "MatchPhoto&VideoScreen",
+                "type": "'MatchPhoto&VideoScreen'.MPV_BgContainer_1.MPV_ScrollableContainer_1.MPV_Container11_2.PDF_Label8_127"
               }
             }
           ],

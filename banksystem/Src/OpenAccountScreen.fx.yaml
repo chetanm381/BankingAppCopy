@@ -194,7 +194,7 @@ OpenAccountScreen As screen:
                         ZIndex: =4
 
                     OA_Button2_6 As button:
-                        DisplayMode: =If(Ic="Valid",DisplayMode.Edit,DisplayMode.Disabled)
+                        DisplayMode: =If(messageNotification="OTP Verified",DisplayMode.Edit,DisplayMode.Disabled)
                         Fill: =RGBA(11, 163, 54, 1)
                         HoverFill: |-
                             =ColorFade(ColorValue("#0ba336"), -20%)
@@ -448,10 +448,10 @@ OpenAccountScreen As screen:
                         ZIndex: =24
 
                     OA_Icon1 As icon.Check:
-                        Color: =If(Ic="Valid",RGBA(12, 204, 67, 1),Color.Red)
+                        Color: =If(messageNotification="OTP Verified",RGBA(12, 204, 67, 1),Color.Red)
                         Height: =50
-                        Icon: =If(Ic="Valid",Icon.Check,Icon.Cancel)
-                        Visible: =false
+                        Icon: =If(messageNotification="OTP Verified",Icon.Check,Icon.Cancel)
+                        Visible: =visibility
                         Width: =50
                         X: =OA_TextInput2_11.X+OA_TextInput2_11.Width+Parent.Width*0.025
                         Y: =OA_Label8_1.Y+OA_Label8_1.Height+Parent.Height*0.015
@@ -510,10 +510,8 @@ OpenAccountScreen As screen:
                                     ),
                                     Reset('Toast Notification_1')
                                 );
-                                Set(
-                                    visibility,
-                                    true
-                                );
+                             Set(visibility,false);
+                             
                                 Set(
                                     Ic,
                                     "Invalid"
@@ -536,10 +534,7 @@ OpenAccountScreen As screen:
                                     ),
                                     Reset('Toast Notification_1')
                                 );
-                                Set(
-                                    visibility,
-                                    true
-                                );
+                               Set(visibility,true);
                                 Set(
                                     Ic,
                                     "Valid"
