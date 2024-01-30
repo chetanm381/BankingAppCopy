@@ -915,7 +915,7 @@
       "MetaDataIDKey": "",
       "Name": "OA_Button2_6",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 14,
+      "ParentIndex": 15,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1265,7 +1265,7 @@
       "MetaDataIDKey": "",
       "Name": "OA_Button2_7",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 13,
+      "ParentIndex": 14,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1679,7 +1679,7 @@
       "MetaDataIDKey": "",
       "Name": "OA_Button2_8",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 12,
+      "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3025,7 +3025,7 @@
       "MetaDataIDKey": "",
       "Name": "OA_HtmlText1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3205,7 +3205,7 @@
       "MetaDataIDKey": "",
       "Name": "OA_Icon1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 10,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3216,7 +3216,7 @@
         {
           "Category": "Design",
           "PropertyName": "Y",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -3226,7 +3226,7 @@
         {
           "Category": "Design",
           "PropertyName": "Visible",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -4908,7 +4908,7 @@
       "MetaDataIDKey": "",
       "Name": "OA_Label8_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5239,7 +5239,7 @@
       "MetaDataIDKey": "",
       "Name": "OA_Label9_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 11,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5506,7 +5506,7 @@
       "MetaDataIDKey": "",
       "Name": "OA_Rectangle1_2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5998,7 +5998,7 @@
       "MetaDataIDKey": "",
       "Name": "OA_TextInput2_10",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 7,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6391,7 +6391,7 @@
       "MetaDataIDKey": "",
       "Name": "OA_TextInput2_11",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 9,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6784,7 +6784,7 @@
       "MetaDataIDKey": "",
       "Name": "OA_TextInput2_6",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7177,7 +7177,7 @@
       "MetaDataIDKey": "",
       "Name": "OA_TextInput2_7",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 8,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7570,7 +7570,7 @@
       "MetaDataIDKey": "",
       "Name": "OA_TextInput2_8",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7963,7 +7963,7 @@
       "MetaDataIDKey": "",
       "Name": "OA_TextInput2_9",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 6,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8260,6 +8260,257 @@
         }
       ],
       "StyleName": "defaultScreenStyle",
+      "Type": "ControlInfo"
+    },
+    "Toast Notification_1": {
+      "AllowAccessToGlobals": true,
+      "ControlPropertyState": [
+        "Fill",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "640",
+          "InvariantPropertyName": "Height",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "640",
+          "InvariantPropertyName": "Width",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "610",
+          "InvariantPropertyName": "X",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        "Y",
+        "ZIndex",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "100",
+          "InvariantPropertyName": "NotificationWidth",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "100",
+          "InvariantPropertyName": "NotificationHeight",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "100",
+          "InvariantPropertyName": "Duration",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        "Styles",
+        "Icons",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "\"Texto\"",
+          "InvariantPropertyName": "NotificationMessage",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "\"Texto\"",
+          "InvariantPropertyName": "NotificationType",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "100",
+          "InvariantPropertyName": "FontSize",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "\"Texto\"",
+          "InvariantPropertyName": "Font",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        "NotificationTypes",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "true",
+          "InvariantPropertyName": "OutIsShowNotification",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "100",
+          "InvariantPropertyName": "OutNotificationHeight",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "OnReset",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        "NavigateToScreenWhenNotificationCloses",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "true",
+          "InvariantPropertyName": "Visible",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        }
+      ],
+      "HasDynamicProperties": false,
+      "IsAutoGenerated": false,
+      "IsComponentDefinition": false,
+      "IsDataControl": false,
+      "IsFromScreenLayout": false,
+      "IsGroupControl": false,
+      "IsLocked": false,
+      "LayoutName": "",
+      "Metadata": {
+        "AllowAccessToGlobals": false,
+        "AllowCustomization": true,
+        "Description": ""
+      },
+      "MetaDataIDKey": "",
+      "Name": "Toast Notification_1",
+      "OptimizeForDevices": "Off",
+      "ParentIndex": 1,
+      "PersistMetaDataIDKey": false,
+      "Properties": [
+        {
+          "Category": "Data",
+          "PropertyName": "NotificationWidth",
+          "RuleProviderType": "System"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "NotificationHeight",
+          "RuleProviderType": "System"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "Duration",
+          "RuleProviderType": "System"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "Styles",
+          "RuleProviderType": "System"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "Icons",
+          "RuleProviderType": "System"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "NotificationMessage",
+          "RuleProviderType": "User"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "NotificationType",
+          "RuleProviderType": "User"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "FontSize",
+          "RuleProviderType": "System"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "Font",
+          "RuleProviderType": "System"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "NotificationTypes",
+          "RuleProviderType": "System"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "OutIsShowNotification",
+          "RuleProviderType": "System"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "OutNotificationHeight",
+          "RuleProviderType": "System"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "NavigateToScreenWhenNotificationCloses",
+          "RuleProviderType": "System"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "ZIndex",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Y",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "X",
+          "RuleProviderType": "User"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Width",
+          "RuleProviderType": "System"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Height",
+          "RuleProviderType": "System"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Fill",
+          "RuleProviderType": "System"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Visible",
+          "RuleProviderType": "User"
+        },
+        {
+          "Category": "Behavior",
+          "PropertyName": "OnReset",
+          "RuleProviderType": "System"
+        }
+      ],
+      "StyleName": "",
       "Type": "ControlInfo"
     },
     "USP_Button1_5": {

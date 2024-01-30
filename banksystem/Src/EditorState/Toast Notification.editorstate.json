@@ -983,7 +983,7 @@
       "MetaDataIDKey": "",
       "Name": "icoCloseNotification",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1536,7 +1536,7 @@
       "MetaDataIDKey": "",
       "Name": "lblNotificationMessage",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2211,17 +2211,17 @@
         {
           "Category": "Design",
           "PropertyName": "ZIndex",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
           "PropertyName": "Y",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
           "PropertyName": "X",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
