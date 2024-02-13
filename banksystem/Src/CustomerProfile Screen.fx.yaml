@@ -279,7 +279,7 @@
                         ZIndex: =20
 
                     PFD_Circle9_13 As circle:
-                        Fill: =If(First(data_application).ApplicationStage=7, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
+                        Fill: =If(First(data_application).ApplicationStage=8, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
                         Height: =Parent.Width*0.035
                         Width: =Parent.Width*0.035
                         X: =PFD_Rectangle8_13.X+PFD_Rectangle8_13.Width+Parent.Width*.005
