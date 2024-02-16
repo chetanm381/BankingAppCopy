@@ -411,7 +411,7 @@
                 =ColorValue("#6b1d5e")
             Size: =10
             Text: ="Reset"
-            Width: =Parent.Width*.09
+            Width: =Parent.Width*.05
             X: =DS_Icon4.X-Self.Width-Parent.Width*.01
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =18
