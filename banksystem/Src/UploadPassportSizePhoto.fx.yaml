@@ -49,6 +49,10 @@ UploadPassportSizePhoto As screen:
                 Height: =30
                 HoverFill: =ColorFade(Self.Color, 20%)
                 OnSelect: =Navigate('Dashboard Screen',ScreenTransition.CoverRight)
+                RadiusBottomLeft: =5
+                RadiusBottomRight: =5
+                RadiusTopLeft: =5
+                RadiusTopRight: =5
                 Size: =9
                 Text: ="Home"
                 Width: =100
@@ -448,10 +452,10 @@ UploadPassportSizePhoto As screen:
                             //contentBytes: First(DataCardValue6.Attachments).Value,
                             //name : "file"
                             //}})
-                        RadiusBottomLeft: =20
-                        RadiusBottomRight: =20
-                        RadiusTopLeft: =20
-                        RadiusTopRight: =20
+                        RadiusBottomLeft: =5
+                        RadiusBottomRight: =5
+                        RadiusTopLeft: =5
+                        RadiusTopRight: =5
                         Size: =12
                         Text: ="Upload"
                         Visible: =false
@@ -582,10 +586,10 @@ UploadPassportSizePhoto As screen:
                         ClearCollect(data_application,LookUp('Identification Details',Id=Idfordata));
                         
                         Navigate(UploadLiveVideoScreen,ScreenTransition.Cover);
-                    RadiusBottomLeft: =20
-                    RadiusBottomRight: =20
-                    RadiusTopLeft: =20
-                    RadiusTopRight: =20
+                    RadiusBottomLeft: =5
+                    RadiusBottomRight: =5
+                    RadiusTopLeft: =5
+                    RadiusTopRight: =5
                     Size: =11
                     Text: ="Next"
                     Width: =Parent.Width*.08
@@ -602,10 +606,10 @@ UploadPassportSizePhoto As screen:
                     HoverFill: |-
                         =ColorFade(ColorValue("#A6A6A6"), 80%)
                     OnSelect: =Back()
-                    RadiusBottomLeft: =20
-                    RadiusBottomRight: =20
-                    RadiusTopLeft: =20
-                    RadiusTopRight: =20
+                    RadiusBottomLeft: =5
+                    RadiusBottomRight: =5
+                    RadiusTopLeft: =5
+                    RadiusTopRight: =5
                     Size: =11
                     Text: ="Back"
                     Width: =Parent.Width*.08

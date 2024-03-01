@@ -676,10 +676,10 @@
                         );
                         ClearCollect(data_application,LookUp('Identification Details',Id=Idfordata));
                         SendEmailAccountProcessed.Run(First(data_application).'Identification Details');
-                    RadiusBottomLeft: =20
-                    RadiusBottomRight: =20
-                    RadiusTopLeft: =20
-                    RadiusTopRight: =20
+                    RadiusBottomLeft: =5
+                    RadiusBottomRight: =5
+                    RadiusTopLeft: =5
+                    RadiusTopRight: =5
                     Size: =11
                     Text: ="Submit"
                     Width: =Parent.Width*.09
@@ -696,10 +696,10 @@
                     HoverFill: |-
                         =ColorFade(ColorValue("#A6A6A6"), 80%)
                     OnSelect: =Back()
-                    RadiusBottomLeft: =20
-                    RadiusBottomRight: =20
-                    RadiusTopLeft: =20
-                    RadiusTopRight: =20
+                    RadiusBottomLeft: =5
+                    RadiusBottomRight: =5
+                    RadiusTopLeft: =5
+                    RadiusTopRight: =5
                     Size: =11
                     Text: ="Back"
                     Width: =Parent.Width*.09

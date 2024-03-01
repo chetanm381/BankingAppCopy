@@ -247,6 +247,10 @@
                     ScreenTransition.CoverRight
                 );
             PressedBorderColor: =RGBA(252, 242, 247, 1)
+            RadiusBottomLeft: =5
+            RadiusBottomRight: =5
+            RadiusTopLeft: =5
+            RadiusTopRight: =5
             Size: =10
             Text: ="New Customer Visit"
             Width: =Parent.Width*.2
@@ -266,6 +270,10 @@
             OnSelect: |
                 =If(IsBlank(DS_Dropdown1.Selected.Value),Set(InReview,true),Set(InReview,InReview));
             PressedBorderColor: =RGBA(252, 242, 247, 1)
+            RadiusBottomLeft: =5
+            RadiusBottomRight: =5
+            RadiusTopLeft: =5
+            RadiusTopRight: =5
             Size: =10
             Text: ="My Task"
             Width: =Parent.Width*.1
