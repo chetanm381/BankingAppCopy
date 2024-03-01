@@ -417,6 +417,10 @@
                 =ColorValue("#6b1d5e")
             PressedFill: |-
                 =ColorValue("#6b1d5e")
+            RadiusBottomLeft: =5
+            RadiusBottomRight: =5
+            RadiusTopLeft: =5
+            RadiusTopRight: =5
             Size: =10
             Text: ="Reset"
             Width: =Parent.Width*.05

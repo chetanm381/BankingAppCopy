@@ -915,7 +915,7 @@
       "MetaDataIDKey": "",
       "Name": "PDF_Button1_7",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5424,7 +5424,7 @@
       "MetaDataIDKey": "",
       "Name": "PDF_Icon3_5",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 16,
+      "ParentIndex": 18,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6000,7 +6000,7 @@
       "MetaDataIDKey": "",
       "Name": "PDF_Icon3_8",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 17,
+      "ParentIndex": 19,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7161,7 +7161,7 @@
       "MetaDataIDKey": "",
       "Name": "PDF_img_xebiaLogo_3",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7388,7 +7388,7 @@
       "MetaDataIDKey": "",
       "Name": "PDF_Label10",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 20,
+      "ParentIndex": 16,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7665,7 +7665,7 @@
       "MetaDataIDKey": "",
       "Name": "PDF_Label10_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 21,
+      "ParentIndex": 17,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12468,7 +12468,7 @@
       "MetaDataIDKey": "",
       "Name": "PDF_Label8_129",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 24,
+      "ParentIndex": 23,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -14277,7 +14277,7 @@
       "MetaDataIDKey": "",
       "Name": "PDF_Label8_135",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 23,
+      "ParentIndex": 24,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -16412,7 +16412,7 @@
       "MetaDataIDKey": "",
       "Name": "PDF_TextInput1_7",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 18,
+      "ParentIndex": 20,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -16787,7 +16787,7 @@
       "MetaDataIDKey": "",
       "Name": "PDF_TextInput1_8",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 19,
+      "ParentIndex": 21,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
