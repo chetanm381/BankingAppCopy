@@ -450,6 +450,7 @@ OpenAccountScreen As screen:
                         Size: =9
                         Text: ="Verify OTP"
                         Underline: =true
+                        Visible: =false
                         Width: =Parent.Width*.40
                         X: =OA_TextInput2_11.X+OA_TextInput2_11.Width-Self.Width
                         Y: =OA_TextInput2_11.Y+OA_TextInput2_11.Height+Parent.Height*0.01
@@ -558,6 +559,7 @@ OpenAccountScreen As screen:
                         Size: =11
                         Text: =""
                         Tooltip: ="Click to Verify"
+                        Visible: =false
                         Width: =Parent.Width*.09
                         X: =OA_Label9_1.X+OA_Label9_1.Width-Self.Width
                         Y: =OA_Label9_1.Y
