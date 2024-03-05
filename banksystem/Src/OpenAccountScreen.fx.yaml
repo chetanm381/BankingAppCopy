@@ -1,5 +1,8 @@
 OpenAccountScreen As screen:
-    OnVisible: =Set(Ic,"Invalid")
+    OnVisible: |
+        =Set(Ic,"Invalid");
+        UpdateContext({lclTimerStart:true});
+        UpdateContext({lclTimerRepeat:true})
 
     OA_BgContainer_1 As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
@@ -585,33 +588,10 @@ OpenAccountScreen As screen:
 
                     Timer1 As timer:
                         AutoPause: =false
-                        AutoStart: =true
-                        Duration: =3000
+                        AutoStart: =lclTimerStart
+                        Duration: =2000
                         OnTimerEnd: |-
-                            =If(Len(Entered_otp)=6,
-                            
-                            Set(
-                                Entered_otp,
-                                Concatenate(
-                                    OA_TextInput2_6.Text,
-                                    OA_TextInput2_8.Text,
-                                    OA_TextInput2_9.Text,
-                                    OA_TextInput2_10.Text,
-                                    OA_TextInput2_7.Text,
-                                    OA_TextInput2_11.Text
-                                )
-                            );
-                            Set(
-                                data_record,
-                                LookUp(
-                                    'Identification Details',
-                                    'OTP Send' = Value(Entered_otp)
-                                )
-                            );
-                            Set(
-                                Idfordata,
-                                data_record.Id
-                            );
+                            =If(!IsBlank(Label1.Text),
                             If(
                                 IsBlank(
                                     LookUp(
@@ -660,9 +640,16 @@ OpenAccountScreen As screen:
                                     "Valid"
                                 )
                             );
-                            )
-                        Repeat: =true
+                            UpdateContext({lclTimerStart:false}),
+                            UpdateContext({lclTimerRepeat:false}))
+                        Repeat: =lclTimerRepeat
                         X: =15
                         Y: =174
                         ZIndex: =28
+
+                    Label1 As label:
+                        Text: =OA_TextInput2_11.Text
+                        X: =51
+                        Y: =91
+                        ZIndex: =29
 
