@@ -663,7 +663,11 @@ OpenAccountScreen As screen:
                                     Set(Idfordata,LookUp(
                                             'Identification Details',
                                             'OTP Send' = Value(Entered_otp)
-                                        ).Id)
+                                        ).Id);
+                                        Set(data_record,LookUp(
+                                            'Identification Details',
+                                            'OTP Send' = Value(Entered_otp)
+                                        ))
                                 );UpdateContext({lclTimerStart: false});UpdateContext({lclTimerRepeat: false}),UpdateContext({lclTimerRepeat: true})
                                 
                                 
