@@ -591,57 +591,86 @@ OpenAccountScreen As screen:
                         AutoStart: =lclTimerStart
                         Duration: =2000
                         OnTimerEnd: |-
-                            =If(!IsBlank(Label1.Text),
-                            If(
-                                IsBlank(
-                                    LookUp(
-                                        'Identification Details',
-                                        'OTP Send' = Value(Entered_otp)
-                                    )
-                                ),
-                                Concurrent(
-                                    Set(
-                                        typeofnotification,
-                                        'Toast Notification_1'.NotificationTypes.Error
-                                    ),
-                                    Set(
-                                        messageNotification,
-                                        "OTP Invalid"
-                                    ),
-                                    Reset('Toast Notification_1')
-                                );
-                             Set(visibility,false);
-                             
-                                Set(
-                                    Ic,
-                                    "Invalid"
-                                );
-                                Reset(OA_TextInput2_6);
-                                Reset(OA_TextInput2_8);
-                                Reset(OA_TextInput2_9);
-                                Reset(OA_TextInput2_10);
-                                Reset(OA_TextInput2_7);
-                                Reset(OA_TextInput2_11);
-                                ,
-                                Concurrent(
-                                    Set(
-                                        typeofnotification,
-                                        'Toast Notification_1'.NotificationTypes.Success
-                                    ),
-                                    Set(
-                                        messageNotification,
-                                        "OTP Verified"
-                                    ),
-                                    Reset('Toast Notification_1')
-                                );
-                               Set(visibility,true);
-                                Set(
-                                    Ic,
-                                    "Valid"
+                            =Set(
+                                Entered_otp,
+                                Concatenate(
+                                    OA_TextInput2_6.Text,
+                                    OA_TextInput2_8.Text,
+                                    OA_TextInput2_9.Text,
+                                    OA_TextInput2_10.Text,
+                                    OA_TextInput2_7.Text,
+                                    OA_TextInput2_11.Text
                                 )
                             );
-                            UpdateContext({lclTimerStart:false}),
-                            UpdateContext({lclTimerRepeat:false}))
+                            Set(
+                                data_record,
+                                LookUp(
+                                    'Identification Details',
+                                    'OTP Send' = Value(Entered_otp)
+                                )
+                            );
+                            Set(
+                                Idfordata,
+                                data_record.Id
+                            );
+                            If(
+                                !IsBlank(Label1.Text),
+                                If(
+                                    IsBlank(
+                                        LookUp(
+                                            'Identification Details',
+                                            'OTP Send' = Value(Entered_otp)
+                                        )
+                                    ),
+                                    Concurrent(
+                                        Set(
+                                            typeofnotification,
+                                            'Toast Notification_1'.NotificationTypes.Error
+                                        ),
+                                        Set(
+                                            messageNotification,
+                                            "OTP Invalid"
+                                        ),
+                                        Reset('Toast Notification_1')
+                                    );
+                                    Set(
+                                        visibility,
+                                        false
+                                    );
+                                    Set(
+                                        Ic,
+                                        "Invalid"
+                                    );
+                                    Reset(OA_TextInput2_6);
+                                    Reset(OA_TextInput2_8);
+                                    Reset(OA_TextInput2_9);
+                                    Reset(OA_TextInput2_10);
+                                    Reset(OA_TextInput2_7);
+                                    Reset(OA_TextInput2_11);
+                                    ,
+                                    Concurrent(
+                                        Set(
+                                            typeofnotification,
+                                            'Toast Notification_1'.NotificationTypes.Success
+                                        ),
+                                        Set(
+                                            messageNotification,
+                                            "OTP Verified"
+                                        ),
+                                        Reset('Toast Notification_1')
+                                    );
+                                    Set(
+                                        visibility,
+                                        true
+                                    );
+                                    Set(
+                                        Ic,
+                                        "Valid"
+                                    )
+                                );
+                                UpdateContext({lclTimerStart: false}),
+                                UpdateContext({lclTimerRepeat: false})
+                            )
                         Repeat: =lclTimerRepeat
                         X: =15
                         Y: =174
