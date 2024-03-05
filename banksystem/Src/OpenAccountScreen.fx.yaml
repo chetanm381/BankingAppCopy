@@ -433,6 +433,7 @@ OpenAccountScreen As screen:
                         HoverBorderColor: =RGBA(107, 29, 94, 1)
                         HoverFill: =ColorFade( RGBA(107, 29, 94, 1),70%)
                         MaxLength: =1
+                        OnChange: =
                         PaddingLeft: =0
                         PaddingRight: =0
                         Size: =15
@@ -589,7 +590,7 @@ OpenAccountScreen As screen:
                     Timer1 As timer:
                         AutoPause: =false
                         AutoStart: =lclTimerStart
-                        Duration: =6000
+                        Duration: =2000
                         OnTimerEnd: |-
                             =Set(
                                 Entered_otp,
@@ -656,8 +657,8 @@ OpenAccountScreen As screen:
                                         Ic,
                                         "Valid"
                                     )
-                                );
-                                UpdateContext({lclTimerStart: false});UpdateContext({lclTimerRepeat: false}),
+                                );UpdateContext({lclTimerStart: false});UpdateContext({lclTimerRepeat: false}),UpdateContext({lclTimerRepeat: true})
+                                
                                 
                             )
                         Repeat: =lclTimerRepeat
