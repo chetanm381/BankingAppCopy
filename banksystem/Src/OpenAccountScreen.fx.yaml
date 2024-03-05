@@ -609,6 +609,7 @@ OpenAccountScreen As screen:
                                 Not(IsBlank(Label1.Text)),
                                 If(
                                     IsBlank(
+                            
                                         LookUp(
                                             'Identification Details',
                                             'OTP Send' = Value(Entered_otp)
@@ -658,18 +659,24 @@ OpenAccountScreen As screen:
                                     Set(
                                         Ic,
                                         "Valid"
-                                    )
+                                    );
+                                    Set(Idfordata,LookUp(
+                                            'Identification Details',
+                                            'OTP Send' = Value(Entered_otp)
+                                        ).Id)
                                 );UpdateContext({lclTimerStart: false});UpdateContext({lclTimerRepeat: false}),UpdateContext({lclTimerRepeat: true})
                                 
                                 
                             )
                         Repeat: =lclTimerRepeat
+                        Visible: =false
                         X: =15
                         Y: =174
                         ZIndex: =28
 
                     Label1 As label:
                         Text: =OA_TextInput2_11.Text
+                        Visible: =false
                         X: =51
                         Y: =91
                         ZIndex: =29
