@@ -685,7 +685,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "03/05/2024 08:01:34",
+  "HeaderLastSavedDateTimeUTC": "03/05/2024 08:01:59",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "0a2ea090-cff8-4477-8f23-68dd0bc4c013": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/3ff78d5fd8d4462ead153c93320085b4-a0e71fb73d3571d8\"",
@@ -1884,7 +1884,7 @@
     "Image3": 44,
     "Image4": 65,
     "img_xebiaLogo_1": 4,
-    "img_xebiaLogo_2": 205,
+    "img_xebiaLogo_2": 206,
     "imgNotificationType": 655,
     "imgNotificationType_1": 649,
     "KVV_BgContainer_3": 527,
@@ -2462,7 +2462,7 @@
     "USP_Rectangle1_1": 129,
     "USP_ScrollableContainer": 93,
     "USP_userimage": 90,
-    "USP_userimage_3": 206
+    "USP_userimage_3": 205
   },
   "ResourcesJsonIndices": {
     "Image-Banknote-rafiki": 2,
