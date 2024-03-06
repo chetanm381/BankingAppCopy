@@ -584,7 +584,7 @@ PersonalDetailsUploadDocumentsScreen As screen:
                     PDUD_Label2_1 As label:
                         Color: =RGBA(107, 29, 94, 1)
                         FontWeight: =FontWeight.Bold
-                        Text: ="UPLOAD DOCUMENTS"
+                        Text: ="Upload Documents"
                         Width: =PDUD_Rectangle1_1.Width*.60
                         X: =PDUD_Rectangle1_1.X
                         Y: =Parent.Height*0.015

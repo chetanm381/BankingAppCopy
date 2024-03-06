@@ -1072,12 +1072,10 @@ PersonalDetailsFormScreen As screen:
                         ZIndex: =11
 
     Rectangle2 As rectangle:
-        Fill: =RGBA(107, 29, 94, 0.16)
-        Height: =PDUD_Container5_1.Height
-        Visible: =!And(Lower(First(data_application).'Full Name')=Lower(PDF_TextInput1_4.Text),(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_2.SelectedDate))
-        Width: =PDUD_Container6_1.Width+PDUD_Container5_1.Width
-        X: =(Parent.Width-Self.Width)/2
-        Y: =PDUD_Container11_2.Height*.95
+        Fill: =RGBA(107, 29, 94, 0.09)
+        Height: =Parent.Height
+        Visible: =!And(Lower(First(data_application).'Full Name')=Lower(PDF_TextInput1_4.Text),(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_2.SelectedDate),(!loadervisibility))
+        Width: =Parent.Width
         ZIndex: =2
 
     Container6_1 As groupContainer.manualLayoutContainer:
@@ -1087,7 +1085,7 @@ PersonalDetailsFormScreen As screen:
         RadiusBottomRight: =20
         RadiusTopLeft: =20
         RadiusTopRight: =20
-        Visible: =!And(Lower(First(data_application).'Full Name')=Lower(PDF_TextInput1_4.Text),(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_2.SelectedDate))
+        Visible: =!And(Lower(First(data_application).'Full Name')=Lower(PDF_TextInput1_4.Text),(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_2.SelectedDate),(!loadervisibility))
         Width: =Parent.Width*.25
         X: =(Parent.Width-Self.Width)/2
         Y: =(Parent.Height-Self.Height)*.4
