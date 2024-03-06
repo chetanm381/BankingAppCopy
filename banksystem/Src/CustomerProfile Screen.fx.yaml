@@ -732,7 +732,7 @@
                 FontWeight: =FontWeight.Semibold
                 Height: =100
                 Size: =20
-                Text: ="Account opening detail have been successfully captured."
+                Text: ="Account opening details have been successfully captured."
                 Width: =Parent.Width*.80
                 X: =(Parent.Width-Self.Width)/2
                 Y: =TS_ThankYouLabel_3.Y+TS_ThankYouLabel_3.Height
