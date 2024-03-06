@@ -416,7 +416,7 @@
                 MPV_Label2_2 As label:
                     Color: =RGBA(107, 29, 94, 1)
                     FontWeight: =FontWeight.Bold
-                    Text: ="MATCHING VIDEO AND PHOTO"
+                    Text: ="Media Verification"
                     Width: =318
                     X: =MPV_Rectangle1_2.X
                     Y: =Parent.Height*0.015

@@ -416,7 +416,7 @@ UploadSignaturePhotoScreen As screen:
                 USP_Label2_1 As label:
                     Color: =RGBA(107, 29, 94, 1)
                     FontWeight: =FontWeight.Bold
-                    Text: ="UPLOAD LIVE SIGNATURE PHOTO"
+                    Text: ="Upload Live Signature Photo"
                     Width: =318
                     X: =USP_Rectangle1_1.X
                     Y: =Parent.Height*0.015

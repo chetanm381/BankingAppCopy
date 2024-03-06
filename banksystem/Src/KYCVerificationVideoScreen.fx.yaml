@@ -418,7 +418,7 @@ KYCVerificationVideoScreen As screen:
                 KVV_Label2_4 As label:
                     Color: =RGBA(107, 29, 94, 1)
                     FontWeight: =FontWeight.Bold
-                    Text: ="KYC VERIFICATION VIDEO"
+                    Text: ="KYC Verification "
                     Width: =318
                     X: =KVV_Rectangle1_4.X
                     Y: =Parent.Height*0.015
@@ -510,7 +510,7 @@ KYCVerificationVideoScreen As screen:
                         Color: =RGBA(107, 29, 94, 1)
                         FontWeight: =FontWeight.Bold
                         Size: =15
-                        Text: ="Extracted Text from Video"
+                        Text: ="Extracted Data"
                         Width: =Parent.Width-Self.X
                         X: =Parent.Width*.05
                         Y: =Parent.Height*.03

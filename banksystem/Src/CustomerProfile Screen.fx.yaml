@@ -411,7 +411,7 @@
                 Label2 As label:
                     Color: =RGBA(107, 29, 94, 1)
                     FontWeight: =FontWeight.Bold
-                    Text: ="CUSTOMER DETAILS"
+                    Text: ="Customer Profile"
                     Width: =318
                     X: =Rectangle1.X
                     Y: =Parent.Height*0.015
