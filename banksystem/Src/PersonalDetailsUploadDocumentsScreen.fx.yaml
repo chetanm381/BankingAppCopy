@@ -892,7 +892,7 @@ PersonalDetailsUploadDocumentsScreen As screen:
                         Fill: =RGBA(11, 163, 54, 1)
                         HoverFill: |-
                             =ColorFade(ColorValue("#0ba336"), -20%)
-                        OnSelect: |+
+                        OnSelect: |
                             =Patch(
                                 'Identification Details',
                                 LookUp(
@@ -948,7 +948,7 @@ PersonalDetailsUploadDocumentsScreen As screen:
                                 loadervisibility,
                                 false
                             );
-                            
+                            Set(popupvisibility,"visible")
                         RadiusBottomLeft: =5
                         RadiusBottomRight: =5
                         RadiusTopLeft: =5
