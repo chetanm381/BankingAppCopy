@@ -1043,12 +1043,35 @@ PersonalDetailsUploadDocumentsScreen As screen:
             Y: =Image5.Y+Image5.Height
             ZIndex: =4
 
-        Button4 As button:
+        USP_Button2_4 As button:
+            BorderColor: =ColorFade(Self.Fill, 15%)
+            Fill: =RGBA(107, 29, 94, 0.88)
             Height: =30
+            HoverFill: |-
+                =ColorFade(ColorValue("#6B1D5E"), -20%)
+            OnSelect: |-
+                =
+                Patch(
+                    'Identification Details',
+                    LookUp('Identification Details',Id=Idfordata),
+                    {
+                        'Signature Photo': {FileName:"file" , Value:First(USP_DataCardValue6_1.Attachments).Value},ApplicationStage:7
+                    }
+                );
+                
+                ClearCollect(
+                data_application,LookUp('Identification Details',Id=Idfordata)
+                
+                
+                );Navigate('CustomerProfile Screen',ScreenTransition.Cover)
+            RadiusBottomLeft: =5
+            RadiusBottomRight: =5
+            RadiusTopLeft: =5
+            RadiusTopRight: =5
             Size: =10
             Text: ="Proceed"
-            Width: =80
+            Width: =Parent.Width*.2
             X: =(Parent.Width-Self.Width)/2
-            Y: =(Parent.Height-Self.Height-Parent.Height*.07)
-            ZIndex: =5
+            Y: =Parent.Height-Self.Height-Parent.Height*.09
+            ZIndex: =6
 
