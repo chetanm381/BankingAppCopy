@@ -457,7 +457,7 @@ KYCVerificationVideoScreen As screen:
                             Color: =RGBA(107, 29, 94, 1)
                             FontWeight: =FontWeight.Semibold
                             Height: =36
-                            Text: ="My Name is "&First(data_application).'Full Name'
+                            Text: ="My Name is "& Proper( First(data_application).'Full Name')
                             Width: =Parent.Width
                             X: =Parent.Width*.03
                             Y: =16

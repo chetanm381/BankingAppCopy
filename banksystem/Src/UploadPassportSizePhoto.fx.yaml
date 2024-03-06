@@ -416,7 +416,7 @@ UploadPassportSizePhoto As screen:
                 UPS_Label2_2 As label:
                     Color: =RGBA(107, 29, 94, 1)
                     FontWeight: =FontWeight.Bold
-                    Text: ="UPLOAD PASSPORT SIZE PHOTO"
+                    Text: ="Upload Passport Size Photo"
                     Width: =318
                     X: =UPS_Rectangle1_2.X
                     Y: =Parent.Height*0.015

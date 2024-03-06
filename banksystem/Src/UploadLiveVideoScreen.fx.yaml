@@ -416,7 +416,7 @@ UploadLiveVideoScreen As screen:
                 ULV_Label2_3 As label:
                     Color: =RGBA(107, 29, 94, 1)
                     FontWeight: =FontWeight.Bold
-                    Text: ="UPLOAD KYC VERIFICATION VIDEO"
+                    Text: ="Upload KYC Verfication Video"
                     Width: =318
                     X: =ULV_Rectangle1_3.X
                     Y: =Parent.Height*0.015
