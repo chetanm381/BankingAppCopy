@@ -980,3 +980,11 @@ PersonalDetailsUploadDocumentsScreen As screen:
                         Y: =(PDUD_Container5.Y+PDUD_Container5.Height)+(Parent.Height-(PDUD_Container5.Y+PDUD_Container5.Height)-Self.Height)/2
                         ZIndex: =8
 
+    Rectangle2 As rectangle:
+        Fill: =RGBA(107, 29, 94, 0.16)
+        Height: =PDUD_Container5_1.Height
+        Width: =PDUD_Container6_1.Width+PDUD_Container5_1.Width
+        X: =PDUD_Container12_2.X
+        Y: =PDUD_Container12_2.Y
+        ZIndex: =2
+

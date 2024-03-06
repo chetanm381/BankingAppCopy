@@ -1,8 +1,9 @@
 OpenAccountScreen As screen:
-    OnVisible: |
+    OnVisible: |-
         =Set(Ic,"Invalid");
         UpdateContext({lclTimerStart:true});
         UpdateContext({lclTimerRepeat:true});
+        Set(messageNotification,"")
 
     OA_BgContainer_1 As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
@@ -175,8 +176,8 @@ OpenAccountScreen As screen:
                         DisplayMode: =DisplayMode.View
                         Height: =119
                         HtmlText: |-
-                            ="<p style='color: #6b1d5e; text-align: center'> Please enter Customer Agent visit <b><font color=orange>Code</font></b> recieved on registered 
-                            email ID </p> "
+                            ="<p style='color: #6b1d5e; text-align: center'> Please enter customer agent visit code recieved on registered 
+                            Email ID </p> "
                         Size: =17
                         Width: =Parent.Width*.55
                         X: =(Parent.Width-Self.Width)/2+Parent.Width*.02
@@ -186,7 +187,7 @@ OpenAccountScreen As screen:
                     OA_Label2_2 As label:
                         Color: =RGBA(107, 29, 94, 1)
                         FontWeight: =FontWeight.Bold
-                        Text: ="VERIFY OTP"
+                        Text: ="OTP Verification"
                         Width: =318
                         X: =OA_Rectangle1_2.X
                         Y: =Parent.Height*0.015
