@@ -1085,7 +1085,7 @@ PersonalDetailsFormScreen As screen:
         RadiusBottomRight: =20
         RadiusTopLeft: =20
         RadiusTopRight: =20
-        Visible: =!And(Lower(First(data_application).'Full Name')=Lower(PDF_TextInput1_4.Text),(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_2.SelectedDate),(!loadervisibility))
+        Visible: =If(IsBlank(popupvisibility),Or(And(Lower(First(data_application).'Full Name')=Lower(PDF_TextInput1_4.Text),(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_2.SelectedDate)),(!loadervisibility)),false)
         Width: =Parent.Width*.25
         X: =(Parent.Width-Self.Width)/2
         Y: =(Parent.Height-Self.Height)*.4

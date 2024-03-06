@@ -605,7 +605,7 @@ UploadPassportSizePhoto As screen:
                     HoverColor: =RGBA(107, 29, 94, 1)
                     HoverFill: |-
                         =ColorFade(ColorValue("#A6A6A6"), 80%)
-                    OnSelect: =Back()
+                    OnSelect: =Set(popupvisibility,Blank());Back()
                     RadiusBottomLeft: =5
                     RadiusBottomRight: =5
                     RadiusTopLeft: =5
