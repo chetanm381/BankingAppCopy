@@ -467,7 +467,10 @@ PersonalDetailsFormScreen As screen:
                         PDF_TextInput1_4 As text:
                             BorderColor: =RGBA(107, 29, 94, 1)
                             Clear: =true
-                            Default: =adhardata.name
+                            Default: |+
+                                =If(First(data_application).ApplicationStage>1,First(data_application).'Full Name',adhardata.name)
+                                
+                                
                             DisabledBorderColor: =RGBA(237, 237, 237, 1)
                             DisabledColor: =RGBA(44, 54, 84, 1)
                             DisabledFill: =RGBA(250, 250, 250, 1)
@@ -484,7 +487,10 @@ PersonalDetailsFormScreen As screen:
 
                         PDF_TextInput1_5 As text:
                             BorderColor: =RGBA(107, 29, 94, 1)
-                            Default: =pandata.name
+                            Default: |+
+                                =If(First(data_application).ApplicationStage>1,First(data_application).'Full Name',pandata.name)
+                                
+                                
                             DisabledBorderColor: =RGBA(237, 237, 237, 1)
                             DisabledColor: =RGBA(44, 54, 84, 1)
                             DisabledFill: =RGBA(250, 250, 250, 1)
@@ -562,7 +568,10 @@ PersonalDetailsFormScreen As screen:
 
                             PDF_DatePicker1_2 As datepicker:
                                 BorderThickness: =0
-                                DefaultDate: =DateValue(adhardata.dob,"hi-IN")
+                                DefaultDate: |+
+                                    =If(First(data_application).ApplicationStage>1,First(data_application).'Date of Birth',DateValue(adhardata.dob,"hi-IN"))
+                                    
+                                    
                                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                                 DisabledColor: =RGBA(107, 29, 94, 1)
                                 DisabledFill: =RGBA(250, 250, 250, 1)
@@ -601,7 +610,10 @@ PersonalDetailsFormScreen As screen:
                         PDF_TextInput1_7 As text:
                             BorderColor: =RGBA(107, 29, 94, 1)
                             Clear: =true
-                            Default: =adhardata.adhar
+                            Default: |+
+                                =If(First(data_application).ApplicationStage>1,First(data_application).'Adhaar Number',adhardata.adhar)
+                                
+                                
                             DisabledBorderColor: =RGBA(237, 237, 237, 1)
                             DisabledColor: =RGBA(44, 54, 84, 1)
                             DisabledFill: =RGBA(250, 250, 250, 1)
@@ -619,7 +631,10 @@ PersonalDetailsFormScreen As screen:
                         PDF_TextInput1_8 As text:
                             BorderColor: =RGBA(107, 29, 94, 1)
                             Clear: =true
-                            Default: =pandata.pan
+                            Default: |+
+                                =If(First(data_application).ApplicationStage>1,First(data_application).'PAN Number',pandata.pan)
+                                
+                                
                             DisabledBorderColor: =RGBA(237, 237, 237, 1)
                             DisabledColor: =RGBA(44, 54, 84, 1)
                             DisabledFill: =RGBA(250, 250, 250, 1)
@@ -656,7 +671,9 @@ PersonalDetailsFormScreen As screen:
                             Color: =If(Lower(First(data_application).'Full Name')=Lower(PDF_TextInput1_4.Text),RGBA(11, 163, 54, 1),Color.Red)
                             Height: =20
                             Icon: =Icon.Check
-                            Visible: =If(Lower(First(data_application).'Full Name')=Lower(adhardata.name),true,false)
+                            Visible: |-
+                                =If(
+                                    First(data_application).ApplicationStage>1, true,If(Lower(First(data_application).'Full Name')=Lower(adhardata.name),true,false))
                             Width: =20
                             X: =PDF_TextInput1_4.Width+PDF_TextInput1_4.X-Self.Width
                             Y: =PDF_Label4_7.Y+(PDF_Label4_7.Height-Self.Height)/2
@@ -666,7 +683,9 @@ PersonalDetailsFormScreen As screen:
                             Color: =If(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_2.SelectedDate,Color.Green,Color.Red)
                             Height: =20
                             Icon: =Icon.Check
-                            Visible: =If(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_2.SelectedDate,true,false)
+                            Visible: |-
+                                =If(
+                                    First(data_application).ApplicationStage>1, true,If(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_2.SelectedDate,true,false))
                             Width: =20
                             X: =PDF_TextInput1_4.Width+PDF_TextInput1_4.X-Self.Width
                             Y: =PDF_Label4_9.Y+(PDF_Label4_9.Height-Self.Height)/2
@@ -686,7 +705,16 @@ PersonalDetailsFormScreen As screen:
                             Color: =If(Lower(First(data_application).'Full Name')=Lower(PDF_TextInput1_5.Text),RGBA(11, 163, 54, 1),Color.Red)
                             Height: =20
                             Icon: =Icon.Check
-                            Visible: =If(Lower(First(data_application).'Full Name')=Lower(pandata.name),true,false)
+                            Visible: |-
+                                =If(
+                                    First(data_application).ApplicationStage>1, true,
+                                    If(
+                                        Lower(First(data_application).'Full Name') = Lower(pandata.name),
+                                        true,
+                                        false
+                                    )
+                                   
+                                )
                             Width: =20
                             X: =PDF_TextInput1_5.Width+PDF_TextInput1_5.X-Self.Width
                             Y: =PDF_Label4_7.Y+(PDF_Label4_7.Height-Self.Height)/2
@@ -696,7 +724,9 @@ PersonalDetailsFormScreen As screen:
                             Color: =If(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_3.SelectedDate,Color.Green,Color.Red)
                             Height: =20
                             Icon: =Icon.Check
-                            Visible: =If(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_3.SelectedDate,true,false)
+                            Visible: |-
+                                =If(
+                                    First(data_application).ApplicationStage>1, true,If(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_3.SelectedDate,true,false))
                             Width: =20
                             X: =PDF_TextInput1_5.Width+PDF_TextInput1_5.X-Self.Width
                             Y: =PDF_Label4_9.Y+(PDF_Label4_9.Height-Self.Height)/2
@@ -743,7 +773,10 @@ PersonalDetailsFormScreen As screen:
 
                             PDF_DatePicker1_3 As datepicker:
                                 BorderThickness: =0
-                                DefaultDate: =DateValue(pandata.dob,"hi-IN")
+                                DefaultDate: |+
+                                    =If(First(data_application).ApplicationStage>1,First(data_application).'Date of Birth',DateValue(pandata.dob,"hi-IN"))
+                                    
+                                    
                                 DisabledColor: =RGBA(107, 29, 94, 1)
                                 DisabledFill: =RGBA(250, 250, 250, 1)
                                 DisplayMode: =DisplayMode.Disabled
