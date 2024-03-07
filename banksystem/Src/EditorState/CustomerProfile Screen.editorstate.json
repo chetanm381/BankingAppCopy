@@ -3490,7 +3490,14 @@
           "NameMapSourceSchema": "?"
         },
         "DateTimeZone",
-        "Format",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "DateTimeFormat.ShortDate",
+          "InvariantPropertyName": "Format",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "InputTextPlaceholder",
         "StartYear",
         "EndYear",
@@ -3623,7 +3630,7 @@
         {
           "Category": "Data",
           "PropertyName": "Format",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Data",

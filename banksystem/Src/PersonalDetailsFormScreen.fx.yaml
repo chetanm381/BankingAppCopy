@@ -589,6 +589,7 @@ PersonalDetailsFormScreen As screen:
                                 DisabledColor: =RGBA(107, 29, 94, 1)
                                 DisabledFill: =RGBA(250, 250, 250, 1)
                                 DisplayMode: =DisplayMode.Disabled
+                                Format: ="dd/mm/yyyy"
                                 Height: =Parent.Height
                                 IconBackground: =Color.White
                                 IconFill: |-
@@ -785,6 +786,7 @@ PersonalDetailsFormScreen As screen:
                                 DisabledColor: =RGBA(107, 29, 94, 1)
                                 DisabledFill: =RGBA(250, 250, 250, 1)
                                 DisplayMode: =DisplayMode.Disabled
+                                Format: ="dd/mm/yyyy"
                                 Height: =Parent.Height
                                 IconBackground: =Color.White
                                 IconFill: |-

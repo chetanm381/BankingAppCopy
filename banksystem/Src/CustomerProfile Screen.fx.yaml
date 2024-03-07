@@ -569,6 +569,7 @@
                         DatePicker1 As datepicker:
                             BorderThickness: =0
                             DefaultDate: =First(data_application).'Date of Birth'
+                            Format: ="dd/mm/yyyy"
                             Height: =Parent.Height
                             IconBackground: =Color.White
                             IconFill: |-
