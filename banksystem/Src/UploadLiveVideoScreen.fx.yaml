@@ -451,6 +451,121 @@ UploadLiveVideoScreen As screen:
                         Y: =(Parent.Height-Self.Height)/2+Parent.Height*.03
                         ZIndex: =1
 
+                        USP_Image1_6 As image:
+                            Height: =Parent.Height*0.2
+                            Image: ='cloud-computing (1)'
+                            Visible: =App.ActiveScreen.Size>=4
+                            Width: =Parent.Width*0.2
+                            X: =(Parent.Width-Self.Width)/2
+                            Y: =Parent.Height*0.25
+                            ZIndex: =1
+
+                        USP_Label8_6 As label:
+                            Align: =Align.Center
+                            Height: =31
+                            Size: =9
+                            Text: ="Drop file here/click to upload"
+                            Visible: =App.ActiveScreen.Size>=4
+                            Width: =186
+                            X: =(Parent.Width-Self.Width)/2
+                            Y: =USP_Image1_6.Y+USP_Image1_6.Height
+                            ZIndex: =2
+
+                        USP_Button3_412 As button:
+                            Fill: =RGBA(107, 29, 94, 1)
+                            HoverFill: |-
+                                =ColorFade(ColorValue("#6B1D5E"), 20%)
+                            RadiusBottomLeft: =5
+                            RadiusBottomRight: =5
+                            RadiusTopLeft: =5
+                            RadiusTopRight: =5
+                            Size: =12
+                            Text: ="Upload"
+                            Visible: =false
+                            Width: =Parent.Width*.25
+                            X: =(Parent.Width-Self.Width)/2
+                            Y: =Parent.Height-Self.Height-Parent.Height*0.10
+                            ZIndex: =3
+
+                        USP_DataCardValue6_2 As attachments:
+                            AddAttachmentText: ="Upload file"
+                            BorderColor: =RGBA(107, 29, 94, 1)
+                            BorderStyle: =BorderStyle.None
+                            BorderThickness: =1
+                            Color: =RGBA(107, 29, 94, 1)
+                            DropTargetBorderColor: |-
+                                =ColorValue("#6B1D5E")
+                            DropTargetBorderThickness: =1
+                            DropTargetTextColor: |-
+                                =ColorValue("#6B1D5E")
+                            FontWeight: =FontWeight.Semibold
+                            Height: =Parent.Height*.70
+                            HoverColor: =RGBA(255, 255, 255, 1)
+                            HoverFill: =ColorFade(Self.HoverBorderColor,30%)
+                            IsInDataCard: =true
+                            ItemFill: |-
+                                =ColorValue("#6B1D5E")
+                            ItemHoverColor: =Color.White
+                            ItemHoverFill: |-
+                                =ColorFade(ColorValue("#6B1D5E"),40%)
+                            ItemPressedColor: =ColorFade(Self.HoverColor,70%)
+                            ItemPressedFill: =ColorFade(Self.HoverFill,70%)
+                            Items: =
+                            MaxAttachments: =1
+                            MaxAttachmentsText: =""
+                            NoAttachmentsText: ="Drop or Drag/ Click here to Upload file"
+                            PaddingBottom: =5
+                            PaddingLeft: =USP_Image1_5112.X-USP_Image1_5112.Width/2
+                            PaddingRight: =5
+                            PaddingTop: =USP_Image1_5112.Y+USP_Image1_5112.Height
+                            PressedColor: =ColorFade(Self.HoverColor,70%)
+                            PressedFill: =ColorFade(Self.HoverFill,70%)
+                            Size: =10
+                            Tooltip: =
+                            Width: =Parent.Width
+                            X: =(Parent.Width-Self.Width)/2
+                            Y: =40
+                            ZIndex: =4
+
+                        USP_Image1_5112 As image:
+                            Height: =Parent.Height*0.25
+                            Image: ='cloud-computing (1)'
+                            Visible: =App.ActiveScreen.Size>=4
+                            Width: =Parent.Width*0.25
+                            X: =(Parent.Width-Self.Width)/2
+                            Y: =Parent.Height*0.2
+                            ZIndex: =5
+
+                        USP__Image1111_1 As image:
+                            Fill: =RGBA(255, 255, 255, 1)
+                            Height: =USP_DataCardValue6_2.Height
+                            Image: =If(IsBlank(First(USP_DataCardValue6_2.Attachments)),SampleImage,First(USP_DataCardValue6_2.Attachments).Value)
+                            Visible: =Not(IsBlank(First(USP_DataCardValue6_2.Attachments)))
+                            Width: =USP_DataCardValue6_2.Width
+                            X: =USP_DataCardValue6_2.X
+                            Y: =USP_DataCardValue6_2.Y
+                            ZIndex: =6
+
+                        USP_Icon31111_1 As icon.Cancel:
+                            Color: =RGBA(107, 29, 94, 1)
+                            Height: =30
+                            Icon: =Icon.Cancel
+                            OnSelect: =Reset(USP_DataCardValue6_2)
+                            Visible: =Not(IsBlank(First(USP_DataCardValue6_2.Attachments)))
+                            Width: =30
+                            X: =Parent.Width*.98-Self.Width
+                            Y: =5
+                            ZIndex: =7
+
+                        Video1 As videoPlayback:
+                            Fill: =RGBA(107, 29, 94, 1)
+                            Height: =USP_DataCardValue6_2.Height
+                            Media: =If(IsBlank(First(USP_DataCardValue6_2.Attachments)),SampleVideo,First(USP_DataCardValue6_2.Attachments).Value)
+                            Visible: =Not(IsBlank(First(USP_DataCardValue6_2.Attachments)))
+                            Width: =USP_DataCardValue6_2.Width
+                            Y: =USP_DataCardValue6_2.Y+10
+                            ZIndex: =8
+
                     ULV_Label7_2 As label:
                         Color: =RGBA(107, 29, 94, 1)
                         FontWeight: =FontWeight.Bold
@@ -479,6 +594,33 @@ UploadLiveVideoScreen As screen:
                         Y: =(Parent.Height-Self.Height)/2+Parent.Height*.03
                         ZIndex: =1
 
+                        KVV_Label6_6 As label:
+                            Color: =RGBA(107, 29, 94, 1)
+                            FontWeight: =FontWeight.Semibold
+                            Height: =36
+                            Text: ="My Name is .........."
+                            Width: =Parent.Width
+                            Y: =40
+                            ZIndex: =1
+
+                        KVV_Label6_7 As label:
+                            Color: =RGBA(107, 29, 94, 1)
+                            FontWeight: =FontWeight.Semibold
+                            Height: =44
+                            Text: ="My Aadhar Card Number ............"
+                            Width: =Parent.Width
+                            Y: =90
+                            ZIndex: =2
+
+                        KVV_Label6_8 As label:
+                            Color: =RGBA(107, 29, 94, 1)
+                            FontWeight: =FontWeight.Semibold
+                            Height: =44
+                            Text: ="My PAN Card Number ........... "
+                            Width: =Parent.Width
+                            Y: =145
+                            ZIndex: =3
+
                     ULV_Label7_3 As label:
                         Color: =RGBA(107, 29, 94, 1)
                         FontWeight: =FontWeight.Bold
@@ -506,7 +648,7 @@ UploadLiveVideoScreen As screen:
                         If(
                            
                              
-                           Or(IsEmpty(ULV_DataCardValue6_1.Attachments),IsEmpty(ULV_DataCardValue6_1.Attachments)
+                           Or(IsEmpty(USP_DataCardValue6_2.Attachments),IsEmpty(USP_DataCardValue6_2.Attachments)
                           ),
                          
                             DisplayMode.Disabled ,  DisplayMode.Edit
@@ -524,7 +666,7 @@ UploadLiveVideoScreen As screen:
                             {
                                 'KYC Video': {
                                     FileName: "file",
-                                    Value: First(ULV_DataCardValue6_1.Attachments).Value
+                                    Value: First(USP_DataCardValue6_2.Attachments).Value
                                 },ApplicationStage:4
                             }
                         );

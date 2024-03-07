@@ -582,7 +582,7 @@ UploadPassportSizePhoto As screen:
                             {
                                 Photo: {FileName:"file" , Value:First(DataCardValue6.Attachments).Value},ApplicationStage:3
                             }
-                        );Reset(ULV_DataCardValue6_1);
+                        );Reset(USP_DataCardValue6_2);
                         ClearCollect(data_application,LookUp('Identification Details',Id=Idfordata));
                         
                         Navigate(UploadLiveVideoScreen,ScreenTransition.Cover);
