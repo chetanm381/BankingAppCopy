@@ -499,7 +499,7 @@ KYCVerificationVideoScreen As screen:
                         Label7_1 As label:
                             Align: =Align.Center
                             Color: =RGBA(255, 255, 255, 1)
-                            Text: ="The information is being extracted from the video so, Please Wait !! "
+                            Text: ="The information is being extracted from the video so, please wait !! "
                             Visible: =SpinnerVisible
                             Width: =Parent.Width*.9
                             X: =(Parent.Width-Self.Width)/2
@@ -609,7 +609,7 @@ KYCVerificationVideoScreen As screen:
 
     KVV_Timer2 As timer:
         AutoStart: =true
-        Duration: =30000
+        Duration: =3000
         OnTimerEnd: =Set(SpinnerVisible,false)
         Text: =Self.Value
         Visible: =false
