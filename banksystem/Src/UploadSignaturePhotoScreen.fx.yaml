@@ -445,6 +445,7 @@ UploadSignaturePhotoScreen As screen:
                     USP_Image1_5 As image:
                         Height: =Parent.Height*0.2
                         Image: ='cloud-computing (1)'
+                        Visible: =App.ActiveScreen.Size>=4
                         Width: =Parent.Width*0.2
                         X: =(Parent.Width-Self.Width)/2
                         Y: =Parent.Height*0.25
@@ -455,6 +456,7 @@ UploadSignaturePhotoScreen As screen:
                         Height: =31
                         Size: =9
                         Text: ="Drop file here/click to upload"
+                        Visible: =App.ActiveScreen.Size>=4
                         Width: =186
                         X: =(Parent.Width-Self.Width)/2
                         Y: =USP_Image1_5.Y+USP_Image1_5.Height
@@ -520,6 +522,7 @@ UploadSignaturePhotoScreen As screen:
                     USP_Image1_5111 As image:
                         Height: =Parent.Height*0.25
                         Image: ='cloud-computing (1)'
+                        Visible: =App.ActiveScreen.Size>=4
                         Width: =Parent.Width*0.25
                         X: =(Parent.Width-Self.Width)/2
                         Y: =Parent.Height*0.2
@@ -577,7 +580,7 @@ UploadSignaturePhotoScreen As screen:
                         If(
                            
                              
-                        IsEmpty(USP_DataCardValue6_1.Attachments)
+                        IsEmpty(USP_DataCardValue6_1.Attachments) && IsBlank(PenInput1.Image)
                         , 
                             DisplayMode.Disabled ,  DisplayMode.Edit
                         )
@@ -590,7 +593,7 @@ UploadSignaturePhotoScreen As screen:
                             'Identification Details',
                             LookUp('Identification Details',Id=Idfordata),
                             {
-                                'Signature Photo': {FileName:"file" , Value:First(USP_DataCardValue6_1.Attachments).Value},ApplicationStage:7
+                                'Signature Photo': {FileName:"file" , Value:If(App.ActiveScreen.Size>=4,First(USP_DataCardValue6_1.Attachments).Value,App.ActiveScreen.Size<4,PenInput1.Image)},ApplicationStage:7
                             }
                         );
                         

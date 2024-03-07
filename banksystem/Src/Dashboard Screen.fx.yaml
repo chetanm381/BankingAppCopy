@@ -423,7 +423,9 @@
             RadiusTopRight: =5
             Size: =10
             Text: ="Reset"
-            Width: =Parent.Width*.05
+            Width: |-
+                =
+                    Parent.Width*.05
             X: =DS_Icon4.X-Self.Width-Parent.Width*.01
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =18
@@ -716,7 +718,7 @@
                 OnSelect: =Select(Parent)
                 Size: =11
                 Text: |
-                    =Text(DateTimeValue(ThisItem.'Schedule Date'),  "[$-en-US]dd mmm' yyyy")
+                    =Text(DateTimeValue(ThisItem.'Schedule Date'),  "[$-en-US]dd mmm' yyyy hh:mm")
                 Width: =Parent.Width*.2
                 X: =DS_Label13_3.X
                 Y: =(Gallery1.TemplateHeight-Self.Height)/2
