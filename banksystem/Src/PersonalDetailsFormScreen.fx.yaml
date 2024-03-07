@@ -97,26 +97,26 @@ PersonalDetailsFormScreen As screen:
                 PDUD_Milstone_12 As group:
                     Height: =5
                     Width: =5
-                    X: =60
+                    X: =39.2200000002731
                     Y: =40
                     ZIndex: =32
 
                     PFD_Circle1_16 As circle:
                         Fill: =RGBA(252, 242, 247, 1)
-                        Height: =Parent.Width*0.035
-                        Width: =Parent.Width*0.035
-                        X: =Container12.X
+                        Height: =Parent.Width*0.030
+                        Width: =Parent.Width*0.030
+                        X: =Container12.X+Parent.Width*0.03
                         Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
                         ZIndex: =1
 
-                    PDF_Label8_135 As label:
+                    PDF_Label8_128 As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         Height: =30
                         Size: =10
                         Text: ="Document Upload"
                         Width: =193
-                        X: =PFD_Circle1_12.X+(PFD_Circle1_12.Width-Self.Width)/2
+                        X: =PFD_Circle1_16.X+(PFD_Circle1_16.Width-Self.Width)/2
                         Y: =PFD_Circle1_16.Y+PFD_Circle1_16.Height
                         ZIndex: =2
 
@@ -130,8 +130,8 @@ PersonalDetailsFormScreen As screen:
 
                     PFD_Circle2_16 As circle:
                         Fill: =If(First(data_application).ApplicationStage>1, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
-                        Height: =Parent.Width*0.035
-                        Width: =Parent.Width*0.035
+                        Height: =Parent.Width*0.030
+                        Width: =Parent.Width*0.030
                         X: =PFD_Rectangle1_16.X+PFD_Rectangle1_16.Width+Parent.Width*.005
                         Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
                         ZIndex: =4
@@ -146,8 +146,8 @@ PersonalDetailsFormScreen As screen:
 
                     PFD_Circle3_16 As circle:
                         Fill: =If(First(data_application).ApplicationStage>2, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
-                        Height: =Parent.Width*0.035
-                        Width: =Parent.Width*0.035
+                        Height: =Parent.Width*0.030
+                        Width: =Parent.Width*0.030
                         X: =PFD_Rectangle3_16.X+PFD_Rectangle3_16.Width+Parent.Width*.005
                         Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
                         ZIndex: =6
@@ -170,16 +170,16 @@ PersonalDetailsFormScreen As screen:
 
                     PFD_Circle4_16 As circle:
                         Fill: =If(First(data_application).ApplicationStage>3, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
-                        Height: =Parent.Width*0.035
-                        Width: =Parent.Width*0.035
+                        Height: =Parent.Width*0.030
+                        Width: =Parent.Width*0.030
                         X: =PFD_Rectangle4_16.X+PFD_Rectangle4_16.Width+Parent.Width*.005
                         Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
                         ZIndex: =9
 
                     PFD_Circle5_16 As circle:
                         Fill: =If(First(data_application).ApplicationStage>4, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
-                        Height: =Parent.Width*0.035
-                        Width: =Parent.Width*0.035
+                        Height: =Parent.Width*0.030
+                        Width: =Parent.Width*0.030
                         X: =PFD_Rectangle5_16.X+PFD_Rectangle5_16.Width+Parent.Width*.005
                         Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
                         ZIndex: =10
@@ -194,8 +194,8 @@ PersonalDetailsFormScreen As screen:
 
                     PFD_Circle6_16 As circle:
                         Fill: =If(First(data_application).ApplicationStage>5, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
-                        Height: =Parent.Width*0.035
-                        Width: =Parent.Width*0.035
+                        Height: =Parent.Width*0.030
+                        Width: =Parent.Width*0.030
                         X: =PFD_Rectangle6_16.X+PFD_Rectangle6_16.Width+Parent.Width*.005
                         Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
                         ZIndex: =12
@@ -210,13 +210,13 @@ PersonalDetailsFormScreen As screen:
 
                     PFD_Circle8_16 As circle:
                         Fill: =If(First(data_application).ApplicationStage>6, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
-                        Height: =Parent.Width*0.035
-                        Width: =Parent.Width*0.035
+                        Height: =Parent.Width*0.030
+                        Width: =Parent.Width*0.030
                         X: =PFD_Rectangle7_16.X+PFD_Rectangle7_16.Width+Parent.Width*.005
                         Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
                         ZIndex: =14
 
-                    PDF_Label8_134 As label:
+                    PDF_Label8_129 As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         Height: =30
@@ -227,7 +227,7 @@ PersonalDetailsFormScreen As screen:
                         Y: =PFD_Circle1_16.Y+PFD_Circle1_16.Height
                         ZIndex: =15
 
-                    PDF_Label8_133 As label:
+                    PDF_Label8_130 As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         Height: =30
@@ -238,7 +238,7 @@ PersonalDetailsFormScreen As screen:
                         Y: =PFD_Circle1_16.Y+PFD_Circle1_16.Height
                         ZIndex: =16
 
-                    PDF_Label8_132 As label:
+                    PDF_Label8_131 As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         Height: =30
@@ -249,7 +249,7 @@ PersonalDetailsFormScreen As screen:
                         Y: =PFD_Circle1_16.Y+PFD_Circle1_16.Height
                         ZIndex: =17
 
-                    PDF_Label8_131 As label:
+                    PDF_Label8_132 As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         Height: =30
@@ -260,7 +260,7 @@ PersonalDetailsFormScreen As screen:
                         Y: =PFD_Circle1_16.Y+PFD_Circle1_16.Height
                         ZIndex: =18
 
-                    PDF_Label8_130 As label:
+                    PDF_Label8_133 As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         Height: =30
@@ -271,7 +271,7 @@ PersonalDetailsFormScreen As screen:
                         Y: =PFD_Circle1_16.Y+PFD_Circle1_16.Height
                         ZIndex: =19
 
-                    PDF_Label8_129 As label:
+                    PDF_Label8_134 As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         Height: =30
@@ -284,8 +284,8 @@ PersonalDetailsFormScreen As screen:
 
                     PFD_Circle9_16 As circle:
                         Fill: =If(First(data_application).ApplicationStage>7, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
-                        Height: =Parent.Width*0.035
-                        Width: =Parent.Width*0.035
+                        Height: =Parent.Width*0.030
+                        Width: =Parent.Width*0.030
                         X: =PFD_Rectangle8_16.X+PFD_Rectangle8_16.Width+Parent.Width*.005
                         Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
                         ZIndex: =21
@@ -298,21 +298,21 @@ PersonalDetailsFormScreen As screen:
                         Y: =PFD_Circle1_16.Y+(PFD_Circle1_16.Height-Self.Height)/2
                         ZIndex: =22
 
-                    PDF_Label8_128 As label:
+                    PDF_Label8_135 As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         Height: =30
                         Size: =10
-                        Text: ="Customer Profile"
+                        Text: ="Customer Summary"
                         Width: =193
                         X: =PFD_Circle9_16.X+(PFD_Circle9_16.Width-Self.Width)/2
                         Y: =PFD_Circle1_16.Y+PFD_Circle1_16.Height
                         ZIndex: =23
 
-                    PDUD_Icon2_106 As icon.Check:
+                    PDUD_Icon2_99 As icon.Check:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
-                        Height: =Parent.Width*0.025
+                        Height: =Parent.Width*0.020
                         Icon: =Icon.CheckBadge
                         Visible: =If(First(data_application).ApplicationStage>0,true,false)
                         Width: =Parent.Width*0.03
@@ -320,10 +320,10 @@ PersonalDetailsFormScreen As screen:
                         Y: =PFD_Circle1_16.Y+(PFD_Circle1_16.Height-Self.Height)/2
                         ZIndex: =24
 
-                    PDUD_Icon2_105 As icon.Check:
+                    PDUD_Icon2_100 As icon.Check:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
-                        Height: =Parent.Width*0.025
+                        Height: =Parent.Width*0.020
                         Icon: =Icon.CheckBadge
                         Visible: =If(First(data_application).ApplicationStage>1,true,false)
                         Width: =Parent.Width*0.035
@@ -331,10 +331,10 @@ PersonalDetailsFormScreen As screen:
                         Y: =PFD_Circle1_16.Y+(PFD_Circle1_16.Height-Self.Height)/2
                         ZIndex: =25
 
-                    PDUD_Icon2_104 As icon.Check:
+                    PDUD_Icon2_101 As icon.Check:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
-                        Height: =Parent.Width*0.025
+                        Height: =Parent.Width*0.020
                         Icon: =Icon.CheckBadge
                         Visible: =If(First(data_application).ApplicationStage>2,true,false)
                         Width: =Parent.Width*0.035
@@ -342,10 +342,10 @@ PersonalDetailsFormScreen As screen:
                         Y: =PFD_Circle1_16.Y+(PFD_Circle1_16.Height-Self.Height)/2
                         ZIndex: =26
 
-                    PDUD_Icon2_103 As icon.Check:
+                    PDUD_Icon2_102 As icon.Check:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
-                        Height: =Parent.Width*0.025
+                        Height: =Parent.Width*0.020
                         Icon: =Icon.CheckBadge
                         Visible: =If(First(data_application).ApplicationStage>3,true,false)
                         Width: =Parent.Width*0.035
@@ -353,10 +353,10 @@ PersonalDetailsFormScreen As screen:
                         Y: =PFD_Circle1_16.Y+(PFD_Circle1_16.Height-Self.Height)/2
                         ZIndex: =27
 
-                    PDUD_Icon2_102 As icon.Check:
+                    PDUD_Icon2_103 As icon.Check:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
-                        Height: =Parent.Width*0.025
+                        Height: =Parent.Width*0.020
                         Icon: =Icon.CheckBadge
                         Visible: =If(First(data_application).ApplicationStage>4,true,false)
                         Width: =Parent.Width*0.035
@@ -364,10 +364,10 @@ PersonalDetailsFormScreen As screen:
                         Y: =PFD_Circle1_16.Y+(PFD_Circle1_16.Height-Self.Height)/2
                         ZIndex: =28
 
-                    PDUD_Icon2_101 As icon.Check:
+                    PDUD_Icon2_104 As icon.Check:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
-                        Height: =Parent.Width*0.025
+                        Height: =Parent.Width*0.020
                         Icon: =Icon.CheckBadge
                         Visible: =If(First(data_application).ApplicationStage>5,true,false)
                         Width: =Parent.Width*0.035
@@ -375,10 +375,10 @@ PersonalDetailsFormScreen As screen:
                         Y: =PFD_Circle1_16.Y+(PFD_Circle1_16.Height-Self.Height)/2
                         ZIndex: =29
 
-                    PDUD_Icon2_100 As icon.Check:
+                    PDUD_Icon2_105 As icon.Check:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
-                        Height: =Parent.Width*0.025
+                        Height: =Parent.Width*0.020
                         Icon: =Icon.CheckBadge
                         Visible: =If(First(data_application).ApplicationStage>6,true,false)
                         Width: =Parent.Width*0.035
@@ -386,10 +386,10 @@ PersonalDetailsFormScreen As screen:
                         Y: =PFD_Circle1_16.Y+(PFD_Circle1_16.Height-Self.Height)/2
                         ZIndex: =30
 
-                    PDUD_Icon2_99 As icon.Check:
+                    PDUD_Icon2_106 As icon.Check:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
-                        Height: =Parent.Width*0.025
+                        Height: =Parent.Width*0.020
                         Icon: =Icon.CheckBadge
                         Visible: =If(First(data_application).ApplicationStage>=7,true,false)
                         Width: =Parent.Width*0.035
@@ -791,6 +791,26 @@ PersonalDetailsFormScreen As screen:
                                 Width: =Parent.Width
                                 Y: =Parent.Height*.97-Self.Height
                                 ZIndex: =2
+
+                        Icon1 As icon.CheckBadge:
+                            Color: =RGBA(11, 163, 54, 1)
+                            Height: =25
+                            Icon: =Icon.CheckBadge
+                            Visible: =(First(data_application).'Date of Birth'<>DateValue(adhardata.dob,"hi-IN"))&&(Lower(First(data_application).'Full Name')<>Lower(adhardata.name))
+                            Width: =25
+                            X: =PDF_Label10.X+5
+                            Y: =PDF_Label10.Y+(PDF_Label10.Height-Self.Height)/2
+                            ZIndex: =26
+
+                        Icon1_1 As icon.CheckBadge:
+                            Color: =RGBA(11, 163, 54, 1)
+                            Height: =25
+                            Icon: =Icon.CheckBadge
+                            Visible: =(First(data_application).'Date of Birth'<>DateValue(pandata.dob,"hi-IN"))&&(Lower(First(data_application).'Full Name')<>Lower(pandata.name))
+                            Width: =25
+                            X: =PDF_Label10_1.X+5
+                            Y: =PDF_Label10.Y+(PDF_Label10.Height-Self.Height)/2
+                            ZIndex: =27
 
                     PDF_Button2_4 As button:
                         DisplayMode: |-

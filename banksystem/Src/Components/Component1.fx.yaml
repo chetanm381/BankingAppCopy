@@ -1,0 +1,312 @@
+Component1 As CanvasComponent:
+    ApplicationStage: =100
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =640
+    Width: =640
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    PDUD_Milstone_14 As group:
+        Height: =5
+        Width: =5
+        X: =-4
+        Y: =14
+        ZIndex: =32
+
+        PFD_Circle1_18 As circle:
+            Fill: =RGBA(252, 242, 247, 1)
+            Height: =Parent.Width*0.035
+            Width: =Parent.Width*0.035
+            X: =Container12.X
+            Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
+            ZIndex: =1
+
+        PDF_Label8_144 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =30
+            Size: =10
+            Text: ="Document Upload"
+            Width: =193
+            X: =PFD_Circle1_12.X+(PFD_Circle1_12.Width-Self.Width)/2
+            Y: =PFD_Circle1_18.Y+PFD_Circle1_18.Height
+            ZIndex: =2
+
+        PFD_Rectangle1_18 As rectangle:
+            Fill: =If(First(data_application).ApplicationStage>1, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
+            Height: =2
+            Width: =Parent.Width*0.0785714285714
+            X: =PFD_Circle1_18.X+PFD_Circle1_18.Width+Parent.Width*.005
+            Y: =PFD_Circle1_18.Y+(PFD_Circle1_18.Height-Self.Height)/2
+            ZIndex: =3
+
+        PFD_Circle2_18 As circle:
+            Fill: =If(First(data_application).ApplicationStage>1, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
+            Height: =Parent.Width*0.035
+            Width: =Parent.Width*0.035
+            X: =PFD_Rectangle1_18.X+PFD_Rectangle1_18.Width+Parent.Width*.005
+            Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
+            ZIndex: =4
+
+        PFD_Rectangle3_18 As rectangle:
+            Fill: =If(First(data_application).ApplicationStage>2, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
+            Height: =2
+            Width: =Parent.Width*0.0785714285714
+            X: =PFD_Circle2_18.X+PFD_Circle2_18.Width+Parent.Width*.005
+            Y: =PFD_Circle1_18.Y+(PFD_Circle1_18.Height-Self.Height)/2
+            ZIndex: =5
+
+        PFD_Circle3_18 As circle:
+            Fill: =If(First(data_application).ApplicationStage>2, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
+            Height: =Parent.Width*0.035
+            Width: =Parent.Width*0.035
+            X: =PFD_Rectangle3_18.X+PFD_Rectangle3_18.Width+Parent.Width*.005
+            Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
+            ZIndex: =6
+
+        PFD_Rectangle4_18 As rectangle:
+            Fill: =If(First(data_application).ApplicationStage>3, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
+            Height: =2
+            Width: =Parent.Width*0.0785714285714
+            X: =PFD_Circle3_18.X+PFD_Circle3_18.Width+Parent.Width*.005
+            Y: =PFD_Circle1_18.Y+(PFD_Circle1_18.Height-Self.Height)/2
+            ZIndex: =7
+
+        PFD_Rectangle5_18 As rectangle:
+            Fill: =If(First(data_application).ApplicationStage>4, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
+            Height: =2
+            Width: =Parent.Width*0.0785714285714
+            X: =PFD_Circle4_18.X+PFD_Circle4_18.Width+Parent.Width*.005
+            Y: =PFD_Circle1_18.Y+(PFD_Circle1_18.Height-Self.Height)/2
+            ZIndex: =8
+
+        PFD_Circle4_18 As circle:
+            Fill: =If(First(data_application).ApplicationStage>3, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
+            Height: =Parent.Width*0.035
+            Width: =Parent.Width*0.035
+            X: =PFD_Rectangle4_18.X+PFD_Rectangle4_18.Width+Parent.Width*.005
+            Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
+            ZIndex: =9
+
+        PFD_Circle5_18 As circle:
+            Fill: =If(First(data_application).ApplicationStage>4, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
+            Height: =Parent.Width*0.035
+            Width: =Parent.Width*0.035
+            X: =PFD_Rectangle5_18.X+PFD_Rectangle5_18.Width+Parent.Width*.005
+            Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
+            ZIndex: =10
+
+        PFD_Rectangle6_18 As rectangle:
+            Fill: =If(First(data_application).ApplicationStage>5, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
+            Height: =2
+            Width: =Parent.Width*0.0785714285714
+            X: =PFD_Circle5_18.X+PFD_Circle5_18.Width+Parent.Width*.005
+            Y: =PFD_Circle1_18.Y+(PFD_Circle1_18.Height-Self.Height)/2
+            ZIndex: =11
+
+        PFD_Circle6_18 As circle:
+            Fill: =If(First(data_application).ApplicationStage>5, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
+            Height: =Parent.Width*0.035
+            Width: =Parent.Width*0.035
+            X: =PFD_Rectangle6_18.X+PFD_Rectangle6_18.Width+Parent.Width*.005
+            Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
+            ZIndex: =12
+
+        PFD_Rectangle7_18 As rectangle:
+            Fill: =If(First(data_application).ApplicationStage>6, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
+            Height: =2
+            Width: =Parent.Width*0.0785714285714
+            X: =PFD_Circle6_18.X+PFD_Circle6_18.Width+Parent.Width*.005
+            Y: =PFD_Circle1_18.Y+(PFD_Circle1_18.Height-Self.Height)/2
+            ZIndex: =13
+
+        PFD_Circle8_18 As circle:
+            Fill: =If(First(data_application).ApplicationStage>6, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
+            Height: =Parent.Width*0.035
+            Width: =Parent.Width*0.035
+            X: =PFD_Rectangle7_18.X+PFD_Rectangle7_18.Width+Parent.Width*.005
+            Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
+            ZIndex: =14
+
+        PDF_Label8_145 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =30
+            Size: =10
+            Text: ="Signature Upload"
+            Width: =193
+            X: =PFD_Circle8_18.X+(PFD_Circle8_18.Width-Self.Width)/2
+            Y: =PFD_Circle1_18.Y+PFD_Circle1_18.Height
+            ZIndex: =15
+
+        PDF_Label8_146 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =30
+            Size: =10
+            Text: ="KYC Verification"
+            Width: =193
+            X: =PFD_Circle5_18.X+(PFD_Circle5_18.Width-Self.Width)/2
+            Y: =PFD_Circle1_18.Y+PFD_Circle1_18.Height
+            ZIndex: =16
+
+        PDF_Label8_147 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =30
+            Size: =10
+            Text: ="KYC Video Upload"
+            Width: =193
+            X: =PFD_Circle4_18.X+(PFD_Circle4_18.Width-Self.Width)/2
+            Y: =PFD_Circle1_18.Y+PFD_Circle1_18.Height
+            ZIndex: =17
+
+        PDF_Label8_148 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =30
+            Size: =10
+            Text: ="Photo Upload"
+            Width: =193
+            X: =PFD_Circle3_18.X+(PFD_Circle3_18.Width-Self.Width)/2
+            Y: =PFD_Circle1_18.Y+PFD_Circle1_18.Height
+            ZIndex: =18
+
+        PDF_Label8_149 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =30
+            Size: =10
+            Text: ="Media Verification"
+            Width: =193
+            X: =PFD_Circle6_18.X+(PFD_Circle6_18.Width-Self.Width)/2
+            Y: =PFD_Circle1_18.Y+PFD_Circle1_18.Height
+            ZIndex: =19
+
+        PDF_Label8_150 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =30
+            Size: =10
+            Text: ="Personal Details"
+            Width: =193
+            X: =PFD_Circle2_18.X+(PFD_Circle2_18.Width-Self.Width)/2
+            Y: =PFD_Circle1_18.Y+PFD_Circle1_18.Height
+            ZIndex: =20
+
+        PFD_Circle9_18 As circle:
+            Fill: =If(First(data_application).ApplicationStage>7, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
+            Height: =Parent.Width*0.035
+            Width: =Parent.Width*0.035
+            X: =PFD_Rectangle8_18.X+PFD_Rectangle8_18.Width+Parent.Width*.005
+            Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
+            ZIndex: =21
+
+        PFD_Rectangle8_18 As rectangle:
+            Fill: =If(First(data_application).ApplicationStage>7, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
+            Height: =2
+            Width: =Parent.Width*0.0785714285714
+            X: =PFD_Circle8_18.X+PFD_Circle8_18.Width+Parent.Width*.005
+            Y: =PFD_Circle1_18.Y+(PFD_Circle1_18.Height-Self.Height)/2
+            ZIndex: =22
+
+        PDF_Label8_151 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =30
+            Size: =10
+            Text: ="Customer Profile"
+            Width: =193
+            X: =PFD_Circle9_18.X+(PFD_Circle9_18.Width-Self.Width)/2
+            Y: =PFD_Circle1_18.Y+PFD_Circle1_18.Height
+            ZIndex: =23
+
+        PDUD_Icon2_115 As icon.Check:
+            Color: =RGBA(107, 29, 94, 1)
+            DisplayMode: =
+            Height: =Parent.Width*0.025
+            Icon: =Icon.CheckBadge
+            Visible: =If(Component1.ApplicationStage>0,true,false)
+            Width: =Parent.Width*0.03
+            X: =PFD_Circle1_18.X+(PFD_Circle1_18.Width-Self.Width)/2
+            Y: =PFD_Circle1_18.Y+(PFD_Circle1_18.Height-Self.Height)/2
+            ZIndex: =24
+
+        PDUD_Icon2_116 As icon.Check:
+            Color: =RGBA(107, 29, 94, 1)
+            DisplayMode: =
+            Height: =Parent.Width*0.025
+            Icon: =Icon.CheckBadge
+            Visible: =If(Component1.ApplicationStage>=1,true,false)
+            Width: =Parent.Width*0.035
+            X: =PFD_Circle2_18.X+(PFD_Circle2_18.Width-Self.Width)/2
+            Y: =PFD_Circle1_18.Y+(PFD_Circle1_18.Height-Self.Height)/2
+            ZIndex: =25
+
+        PDUD_Icon2_117 As icon.Check:
+            Color: =RGBA(107, 29, 94, 1)
+            DisplayMode: =
+            Height: =Parent.Width*0.025
+            Icon: =Icon.CheckBadge
+            Visible: =If(Component1.ApplicationStage>=2,true,false)
+            Width: =Parent.Width*0.035
+            X: =PFD_Circle3_18.X+(PFD_Circle3_18.Width-Self.Width)/2
+            Y: =PFD_Circle1_18.Y+(PFD_Circle1_18.Height-Self.Height)/2
+            ZIndex: =26
+
+        PDUD_Icon2_118 As icon.Check:
+            Color: =RGBA(107, 29, 94, 1)
+            DisplayMode: =
+            Height: =Parent.Width*0.025
+            Icon: =Icon.CheckBadge
+            Visible: =If(Component1.ApplicationStage>=3,true,false)
+            Width: =Parent.Width*0.035
+            X: =PFD_Circle4_18.X+(PFD_Circle4_18.Width-Self.Width)/2
+            Y: =PFD_Circle1_18.Y+(PFD_Circle1_18.Height-Self.Height)/2
+            ZIndex: =27
+
+        PDUD_Icon2_119 As icon.Check:
+            Color: =RGBA(107, 29, 94, 1)
+            DisplayMode: =
+            Height: =Parent.Width*0.025
+            Icon: =Icon.CheckBadge
+            Visible: =If(Component1.ApplicationStage>=4,true,false)
+            Width: =Parent.Width*0.035
+            X: =PFD_Circle5_18.X+(PFD_Circle5_18.Width-Self.Width)/2
+            Y: =PFD_Circle1_18.Y+(PFD_Circle1_18.Height-Self.Height)/2
+            ZIndex: =28
+
+        PDUD_Icon2_120 As icon.Check:
+            Color: =RGBA(107, 29, 94, 1)
+            DisplayMode: =
+            Height: =Parent.Width*0.025
+            Icon: =Icon.CheckBadge
+            Visible: =If(Component1.ApplicationStage>=5,true,false)
+            Width: =Parent.Width*0.035
+            X: =PFD_Circle6_18.X+(PFD_Circle6_18.Width-Self.Width)/2
+            Y: =PFD_Circle1_18.Y+(PFD_Circle1_18.Height-Self.Height)/2
+            ZIndex: =29
+
+        PDUD_Icon2_121 As icon.Check:
+            Color: =RGBA(107, 29, 94, 1)
+            DisplayMode: =
+            Height: =Parent.Width*0.025
+            Icon: =Icon.CheckBadge
+            Visible: =If(Component1.ApplicationStage>=6,true,false)
+            Width: =Parent.Width*0.035
+            X: =PFD_Circle8_18.X+(PFD_Circle8_18.Width-Self.Width)/2
+            Y: =PFD_Circle1_18.Y+(PFD_Circle1_18.Height-Self.Height)/2
+            ZIndex: =30
+
+        PDUD_Icon2_122 As icon.Check:
+            Color: =RGBA(107, 29, 94, 1)
+            DisplayMode: =
+            Height: =Parent.Width*0.025
+            Icon: =Icon.CheckBadge
+            Visible: =If(Component1.ApplicationStage>=7,true,false)
+            Width: =Parent.Width*0.035
+            X: =PFD_Circle9_18.X+(PFD_Circle9_18.Width-Self.Width)/2
+            Y: =PFD_Circle1_18.Y+(PFD_Circle1_18.Height-Self.Height)/2
+            ZIndex: =31
+

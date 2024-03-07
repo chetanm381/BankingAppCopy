@@ -103,9 +103,9 @@ PersonalDetailsUploadDocumentsScreen As screen:
 
                     PFD_Circle1_12 As circle:
                         Fill: =RGBA(252, 242, 247, 1)
-                        Height: =Parent.Width*0.035
-                        Width: =Parent.Width*0.035
-                        X: =Container12.X
+                        Height: =Parent.Width*0.030
+                        Width: =Parent.Width*0.030
+                        X: =Container12.X+Parent.Width*0.03
                         Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
                         ZIndex: =1
 
@@ -130,8 +130,8 @@ PersonalDetailsUploadDocumentsScreen As screen:
 
                     PFD_Circle2_12 As circle:
                         Fill: =If(First(data_application).ApplicationStage>1, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
-                        Height: =Parent.Width*0.035
-                        Width: =Parent.Width*0.035
+                        Height: =Parent.Width*0.030
+                        Width: =Parent.Width*0.030
                         X: =PFD_Rectangle1_12.X+PFD_Rectangle1_12.Width+Parent.Width*.005
                         Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
                         ZIndex: =4
@@ -146,8 +146,8 @@ PersonalDetailsUploadDocumentsScreen As screen:
 
                     PFD_Circle3_12 As circle:
                         Fill: =If(First(data_application).ApplicationStage>2, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
-                        Height: =Parent.Width*0.035
-                        Width: =Parent.Width*0.035
+                        Height: =Parent.Width*0.030
+                        Width: =Parent.Width*0.030
                         X: =PFD_Rectangle3_12.X+PFD_Rectangle3_12.Width+Parent.Width*.005
                         Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
                         ZIndex: =6
@@ -170,16 +170,16 @@ PersonalDetailsUploadDocumentsScreen As screen:
 
                     PFD_Circle4_12 As circle:
                         Fill: =If(First(data_application).ApplicationStage>3, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
-                        Height: =Parent.Width*0.035
-                        Width: =Parent.Width*0.035
+                        Height: =Parent.Width*0.030
+                        Width: =Parent.Width*0.030
                         X: =PFD_Rectangle4_12.X+PFD_Rectangle4_12.Width+Parent.Width*.005
                         Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
                         ZIndex: =9
 
                     PFD_Circle5_12 As circle:
                         Fill: =If(First(data_application).ApplicationStage>4, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
-                        Height: =Parent.Width*0.035
-                        Width: =Parent.Width*0.035
+                        Height: =Parent.Width*0.030
+                        Width: =Parent.Width*0.030
                         X: =PFD_Rectangle5_12.X+PFD_Rectangle5_12.Width+Parent.Width*.005
                         Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
                         ZIndex: =10
@@ -194,8 +194,8 @@ PersonalDetailsUploadDocumentsScreen As screen:
 
                     PFD_Circle6_11 As circle:
                         Fill: =If(First(data_application).ApplicationStage>5, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
-                        Height: =Parent.Width*0.035
-                        Width: =Parent.Width*0.035
+                        Height: =Parent.Width*0.030
+                        Width: =Parent.Width*0.030
                         X: =PFD_Rectangle6_12.X+PFD_Rectangle6_12.Width+Parent.Width*.005
                         Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
                         ZIndex: =12
@@ -210,8 +210,8 @@ PersonalDetailsUploadDocumentsScreen As screen:
 
                     PFD_Circle8_11 As circle:
                         Fill: =If(First(data_application).ApplicationStage>6, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
-                        Height: =Parent.Width*0.035
-                        Width: =Parent.Width*0.035
+                        Height: =Parent.Width*0.030
+                        Width: =Parent.Width*0.030
                         X: =PFD_Rectangle7_11.X+PFD_Rectangle7_11.Width+Parent.Width*.005
                         Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
                         ZIndex: =14
@@ -284,8 +284,8 @@ PersonalDetailsUploadDocumentsScreen As screen:
 
                     PFD_Circle9_11 As circle:
                         Fill: =If(First(data_application).ApplicationStage>7, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
-                        Height: =Parent.Width*0.035
-                        Width: =Parent.Width*0.035
+                        Height: =Parent.Width*0.030
+                        Width: =Parent.Width*0.030
                         X: =PFD_Rectangle8_11.X+PFD_Rectangle8_11.Width+Parent.Width*.005
                         Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
                         ZIndex: =21
@@ -303,7 +303,7 @@ PersonalDetailsUploadDocumentsScreen As screen:
                         Color: =RGBA(255, 255, 255, 1)
                         Height: =30
                         Size: =10
-                        Text: ="Customer Profile"
+                        Text: ="Customer Summary"
                         Width: =193
                         X: =PFD_Circle9_11.X+(PFD_Circle9_11.Width-Self.Width)/2
                         Y: =PFD_Circle1_12.Y+PFD_Circle1_12.Height
@@ -312,7 +312,7 @@ PersonalDetailsUploadDocumentsScreen As screen:
                     PDUD_Icon2_66 As icon.Check:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
-                        Height: =Parent.Width*0.025
+                        Height: =Parent.Width*0.020
                         Icon: =Icon.CheckBadge
                         Visible: =If(First(data_application).ApplicationStage>0,true,false)
                         Width: =Parent.Width*0.03
@@ -323,7 +323,7 @@ PersonalDetailsUploadDocumentsScreen As screen:
                     PDUD_Icon2_65 As icon.Check:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
-                        Height: =Parent.Width*0.025
+                        Height: =Parent.Width*0.020
                         Icon: =Icon.CheckBadge
                         Visible: =If(First(data_application).ApplicationStage>1,true,false)
                         Width: =Parent.Width*0.035
@@ -334,7 +334,7 @@ PersonalDetailsUploadDocumentsScreen As screen:
                     PDUD_Icon2_64 As icon.Check:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
-                        Height: =Parent.Width*0.025
+                        Height: =Parent.Width*0.020
                         Icon: =Icon.CheckBadge
                         Visible: =If(First(data_application).ApplicationStage>2,true,false)
                         Width: =Parent.Width*0.035
@@ -345,7 +345,7 @@ PersonalDetailsUploadDocumentsScreen As screen:
                     PDUD_Icon2_63 As icon.Check:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
-                        Height: =Parent.Width*0.025
+                        Height: =Parent.Width*0.020
                         Icon: =Icon.CheckBadge
                         Visible: =If(First(data_application).ApplicationStage>3,true,false)
                         Width: =Parent.Width*0.035
@@ -356,7 +356,7 @@ PersonalDetailsUploadDocumentsScreen As screen:
                     PDUD_Icon2_62 As icon.Check:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
-                        Height: =Parent.Width*0.025
+                        Height: =Parent.Width*0.020
                         Icon: =Icon.CheckBadge
                         Visible: =If(First(data_application).ApplicationStage>4,true,false)
                         Width: =Parent.Width*0.035
@@ -367,7 +367,7 @@ PersonalDetailsUploadDocumentsScreen As screen:
                     PDUD_Icon2_61 As icon.Check:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
-                        Height: =Parent.Width*0.025
+                        Height: =Parent.Width*0.020
                         Icon: =Icon.CheckBadge
                         Visible: =If(First(data_application).ApplicationStage>5,true,false)
                         Width: =Parent.Width*0.035
@@ -378,7 +378,7 @@ PersonalDetailsUploadDocumentsScreen As screen:
                     PDUD_Icon2_60 As icon.Check:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
-                        Height: =Parent.Width*0.025
+                        Height: =Parent.Width*0.020
                         Icon: =Icon.CheckBadge
                         Visible: =If(First(data_application).ApplicationStage>6,true,false)
                         Width: =Parent.Width*0.035
@@ -389,7 +389,7 @@ PersonalDetailsUploadDocumentsScreen As screen:
                     PDUD_Icon2_59 As icon.Check:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
-                        Height: =Parent.Width*0.025
+                        Height: =Parent.Width*0.020
                         Icon: =Icon.CheckBadge
                         Visible: =If(First(data_application).ApplicationStage>=7,true,false)
                         Width: =Parent.Width*0.035
