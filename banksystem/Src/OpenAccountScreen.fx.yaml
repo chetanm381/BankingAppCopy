@@ -234,7 +234,8 @@ OpenAccountScreen As screen:
                                     Id = Idfordata
                                 )
                             );
-                            Set(popupvisibility,"visible");
+                            
+                            Set(popupvisibility,Blank());
                             Switch(
                                 First(data_application).ApplicationStage,
                                 1,
@@ -243,6 +244,9 @@ OpenAccountScreen As screen:
                                     ScreenTransition.CoverRight
                                 ),
                                 2,
+                              
+                            
+                            
                                 Navigate(
                                     PersonalDetailsFormScreen,
                                     ScreenTransition.CoverRight
