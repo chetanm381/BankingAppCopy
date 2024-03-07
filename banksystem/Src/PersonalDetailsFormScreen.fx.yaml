@@ -796,7 +796,7 @@ PersonalDetailsFormScreen As screen:
                             Color: =RGBA(11, 163, 54, 1)
                             Height: =25
                             Icon: =Icon.CheckBadge
-                            Visible: =(First(data_application).'Date of Birth'<>DateValue(adhardata.dob,"hi-IN"))&&(Lower(First(data_application).'Full Name')<>Lower(adhardata.name))
+                            Visible: =false
                             Width: =25
                             X: =PDF_Label10.X+5
                             Y: =PDF_Label10.Y+(PDF_Label10.Height-Self.Height)/2
@@ -806,7 +806,7 @@ PersonalDetailsFormScreen As screen:
                             Color: =RGBA(11, 163, 54, 1)
                             Height: =25
                             Icon: =Icon.CheckBadge
-                            Visible: =(First(data_application).'Date of Birth'<>DateValue(pandata.dob,"hi-IN"))&&(Lower(First(data_application).'Full Name')<>Lower(pandata.name))
+                            Visible: =false
                             Width: =25
                             X: =PDF_Label10_1.X+5
                             Y: =PDF_Label10.Y+(PDF_Label10.Height-Self.Height)/2
@@ -1068,6 +1068,20 @@ PersonalDetailsFormScreen As screen:
                         Y: =PDF_Label6_4.Y+(PDF_Label6_4.Height-Self.Height)/2
                         ZIndex: =11
 
+    Rectangle2 As rectangle:
+        Fill: =RGBA(219, 219, 219, 0.71)
+        Height: =PDF_Container12_1.Height
+        OnSelect: |-
+            =true
+            //popupvisibility="visible"
+        Visible: |-
+            =
+            popupvisibility="visible"
+        Width: =PDF_Container12_1.Width
+        X: =PDF_Container12_1.X
+        Y: =PDF_Container12_1.Y+PDF_HeaderContainer_1.Y+PDF_HeaderContainer_1.Height
+        ZIndex: =2
+
     Container6_1 As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
         Height: =Parent.Height*.4
@@ -1076,7 +1090,8 @@ PersonalDetailsFormScreen As screen:
         RadiusTopLeft: =20
         RadiusTopRight: =20
         Visible: |-
-            =popupvisibility="visible"
+            =
+            popupvisibility="visible"
             /*If(
                 IsBlank(popupvisibility),
                 false,
@@ -1091,13 +1106,13 @@ PersonalDetailsFormScreen As screen:
         Width: =Parent.Width*.25
         X: =(Parent.Width-Self.Width)/2
         Y: =(Parent.Height-Self.Height)/2
-        ZIndex: =2
+        ZIndex: =3
 
         Label7_3 As label:
             Align: =Align.Center
             FontWeight: =FontWeight.Bold
             Height: =60
-            Text: ="The details provided does not match with Customer's Aadhar card."
+            Text: ="The details does not match with the Customer's Document"
             Width: =Parent.Width*.95
             X: =(Parent.Width-Self.Width)/2
             Y: =Label8_1.Y+Label8_1.Height+Parent.Height*.07
@@ -1110,7 +1125,7 @@ PersonalDetailsFormScreen As screen:
             PaddingBottom: =0
             PaddingTop: =0
             Size: =12
-            Text: ="Do you want to edit the customer's details?"
+            Text: ="Do you want to proceed with the Aadhar card details?"
             Width: =Parent.Width*.85
             X: =(Parent.Width-Self.Width)/2
             Y: =Label7_3.Y+Label7_3.Height+Parent.Height*.02
@@ -1179,14 +1194,4 @@ PersonalDetailsFormScreen As screen:
             X: =(Parent.Width-Self.Width)/2
             Y: =Parent.Height-Self.Height-Parent.Height*.09
             ZIndex: =6
-
-    Rectangle2 As rectangle:
-        Fill: =RGBA(107, 29, 94, 0.09)
-        Height: =PDF_Container12_1.Height
-        OnSelect: =If(IsBlank(popupvisibility),false,Or(And(Lower(First(data_application).'Full Name')=Lower(PDF_TextInput1_4.Text),(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_2.SelectedDate)),(!loadervisibility)))
-        Visible: =popupvisibility="visible"
-        Width: =PDF_Container12_1.Width
-        X: =PDF_Container12_1.X
-        Y: =PDF_Container12_1.Y+PDF_HeaderContainer_1.Y+PDF_HeaderContainer_1.Height
-        ZIndex: =3
 
