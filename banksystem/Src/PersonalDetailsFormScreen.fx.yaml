@@ -801,14 +801,13 @@ PersonalDetailsFormScreen As screen:
                         PDF_Container5 As groupContainer.manualLayoutContainer:
                             Fill: =RGBA(237, 237, 237, 0.55)
                             Height: =Parent.Height
-                            Visible: |-
-                                =//loadervisibility
-                                true
+                            Visible: |
+                                =loadervisibility
                             Width: =Parent.Width
                             ZIndex: =25
 
                             Spinner1_1 As Spinner:
-                                Appearance: ='Spinner.Appearance'.Primary
+                                Appearance: ='Spinner.Appearance'.Inverted
                                 BasePaletteColor: =RGBA(107, 29, 94, 1)
                                 DisplayMode: =DisplayMode.Edit
                                 FontColor: =
