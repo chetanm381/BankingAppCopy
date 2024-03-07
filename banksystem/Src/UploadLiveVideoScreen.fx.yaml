@@ -98,26 +98,26 @@ UploadLiveVideoScreen As screen:
                 PDUD_Milstone_13 As group:
                     Height: =5
                     Width: =5
-                    X: =60
+                    X: =39.2200000002731
                     Y: =40
                     ZIndex: =32
 
                     PFD_Circle1_17 As circle:
                         Fill: =RGBA(252, 242, 247, 1)
-                        Height: =Parent.Width*0.035
-                        Width: =Parent.Width*0.035
-                        X: =Container12.X
+                        Height: =Parent.Width*0.030
+                        Width: =Parent.Width*0.030
+                        X: =Container12.X+Parent.Width*0.03
                         Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
                         ZIndex: =1
 
-                    PDF_Label8_143 As label:
+                    PDF_Label8_136 As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         Height: =30
                         Size: =10
                         Text: ="Document Upload"
                         Width: =193
-                        X: =PFD_Circle1_12.X+(PFD_Circle1_12.Width-Self.Width)/2
+                        X: =PFD_Circle1_17.X+(PFD_Circle1_17.Width-Self.Width)/2
                         Y: =PFD_Circle1_17.Y+PFD_Circle1_17.Height
                         ZIndex: =2
 
@@ -131,8 +131,8 @@ UploadLiveVideoScreen As screen:
 
                     PFD_Circle2_17 As circle:
                         Fill: =If(First(data_application).ApplicationStage>1, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
-                        Height: =Parent.Width*0.035
-                        Width: =Parent.Width*0.035
+                        Height: =Parent.Width*0.030
+                        Width: =Parent.Width*0.030
                         X: =PFD_Rectangle1_17.X+PFD_Rectangle1_17.Width+Parent.Width*.005
                         Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
                         ZIndex: =4
@@ -147,8 +147,8 @@ UploadLiveVideoScreen As screen:
 
                     PFD_Circle3_17 As circle:
                         Fill: =If(First(data_application).ApplicationStage>2, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
-                        Height: =Parent.Width*0.035
-                        Width: =Parent.Width*0.035
+                        Height: =Parent.Width*0.030
+                        Width: =Parent.Width*0.030
                         X: =PFD_Rectangle3_17.X+PFD_Rectangle3_17.Width+Parent.Width*.005
                         Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
                         ZIndex: =6
@@ -171,16 +171,16 @@ UploadLiveVideoScreen As screen:
 
                     PFD_Circle4_17 As circle:
                         Fill: =If(First(data_application).ApplicationStage>3, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
-                        Height: =Parent.Width*0.035
-                        Width: =Parent.Width*0.035
+                        Height: =Parent.Width*0.030
+                        Width: =Parent.Width*0.030
                         X: =PFD_Rectangle4_17.X+PFD_Rectangle4_17.Width+Parent.Width*.005
                         Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
                         ZIndex: =9
 
                     PFD_Circle5_17 As circle:
                         Fill: =If(First(data_application).ApplicationStage>4, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
-                        Height: =Parent.Width*0.035
-                        Width: =Parent.Width*0.035
+                        Height: =Parent.Width*0.030
+                        Width: =Parent.Width*0.030
                         X: =PFD_Rectangle5_17.X+PFD_Rectangle5_17.Width+Parent.Width*.005
                         Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
                         ZIndex: =10
@@ -195,8 +195,8 @@ UploadLiveVideoScreen As screen:
 
                     PFD_Circle6_17 As circle:
                         Fill: =If(First(data_application).ApplicationStage>5, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
-                        Height: =Parent.Width*0.035
-                        Width: =Parent.Width*0.035
+                        Height: =Parent.Width*0.030
+                        Width: =Parent.Width*0.030
                         X: =PFD_Rectangle6_17.X+PFD_Rectangle6_17.Width+Parent.Width*.005
                         Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
                         ZIndex: =12
@@ -211,13 +211,13 @@ UploadLiveVideoScreen As screen:
 
                     PFD_Circle8_17 As circle:
                         Fill: =If(First(data_application).ApplicationStage>6, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
-                        Height: =Parent.Width*0.035
-                        Width: =Parent.Width*0.035
+                        Height: =Parent.Width*0.030
+                        Width: =Parent.Width*0.030
                         X: =PFD_Rectangle7_17.X+PFD_Rectangle7_17.Width+Parent.Width*.005
                         Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
                         ZIndex: =14
 
-                    PDF_Label8_142 As label:
+                    PDF_Label8_137 As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         Height: =30
@@ -228,7 +228,7 @@ UploadLiveVideoScreen As screen:
                         Y: =PFD_Circle1_17.Y+PFD_Circle1_17.Height
                         ZIndex: =15
 
-                    PDF_Label8_141 As label:
+                    PDF_Label8_138 As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         Height: =30
@@ -239,7 +239,7 @@ UploadLiveVideoScreen As screen:
                         Y: =PFD_Circle1_17.Y+PFD_Circle1_17.Height
                         ZIndex: =16
 
-                    PDF_Label8_140 As label:
+                    PDF_Label8_139 As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         Height: =30
@@ -250,7 +250,7 @@ UploadLiveVideoScreen As screen:
                         Y: =PFD_Circle1_17.Y+PFD_Circle1_17.Height
                         ZIndex: =17
 
-                    PDF_Label8_139 As label:
+                    PDF_Label8_140 As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         Height: =30
@@ -261,7 +261,7 @@ UploadLiveVideoScreen As screen:
                         Y: =PFD_Circle1_17.Y+PFD_Circle1_17.Height
                         ZIndex: =18
 
-                    PDF_Label8_138 As label:
+                    PDF_Label8_141 As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         Height: =30
@@ -272,7 +272,7 @@ UploadLiveVideoScreen As screen:
                         Y: =PFD_Circle1_17.Y+PFD_Circle1_17.Height
                         ZIndex: =19
 
-                    PDF_Label8_137 As label:
+                    PDF_Label8_142 As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         Height: =30
@@ -285,8 +285,8 @@ UploadLiveVideoScreen As screen:
 
                     PFD_Circle9_17 As circle:
                         Fill: =If(First(data_application).ApplicationStage>7, RGBA(252, 242, 247, 1),ColorFade(Color.Gray,60%))
-                        Height: =Parent.Width*0.035
-                        Width: =Parent.Width*0.035
+                        Height: =Parent.Width*0.030
+                        Width: =Parent.Width*0.030
                         X: =PFD_Rectangle8_17.X+PFD_Rectangle8_17.Width+Parent.Width*.005
                         Y: =(Container12.Y+Container11.Y-Self.Width-30)/2
                         ZIndex: =21
@@ -299,21 +299,21 @@ UploadLiveVideoScreen As screen:
                         Y: =PFD_Circle1_17.Y+(PFD_Circle1_17.Height-Self.Height)/2
                         ZIndex: =22
 
-                    PDF_Label8_136 As label:
+                    PDF_Label8_143 As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         Height: =30
                         Size: =10
-                        Text: ="Customer Profile"
+                        Text: ="Customer Summary"
                         Width: =193
                         X: =PFD_Circle9_17.X+(PFD_Circle9_17.Width-Self.Width)/2
                         Y: =PFD_Circle1_17.Y+PFD_Circle1_17.Height
                         ZIndex: =23
 
-                    PDUD_Icon2_114 As icon.Check:
+                    PDUD_Icon2_107 As icon.Check:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
-                        Height: =Parent.Width*0.025
+                        Height: =Parent.Width*0.020
                         Icon: =Icon.CheckBadge
                         Visible: =If(First(data_application).ApplicationStage>0,true,false)
                         Width: =Parent.Width*0.03
@@ -321,10 +321,10 @@ UploadLiveVideoScreen As screen:
                         Y: =PFD_Circle1_17.Y+(PFD_Circle1_17.Height-Self.Height)/2
                         ZIndex: =24
 
-                    PDUD_Icon2_113 As icon.Check:
+                    PDUD_Icon2_108 As icon.Check:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
-                        Height: =Parent.Width*0.025
+                        Height: =Parent.Width*0.020
                         Icon: =Icon.CheckBadge
                         Visible: =If(First(data_application).ApplicationStage>1,true,false)
                         Width: =Parent.Width*0.035
@@ -332,10 +332,10 @@ UploadLiveVideoScreen As screen:
                         Y: =PFD_Circle1_17.Y+(PFD_Circle1_17.Height-Self.Height)/2
                         ZIndex: =25
 
-                    PDUD_Icon2_112 As icon.Check:
+                    PDUD_Icon2_109 As icon.Check:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
-                        Height: =Parent.Width*0.025
+                        Height: =Parent.Width*0.020
                         Icon: =Icon.CheckBadge
                         Visible: =If(First(data_application).ApplicationStage>2,true,false)
                         Width: =Parent.Width*0.035
@@ -343,10 +343,10 @@ UploadLiveVideoScreen As screen:
                         Y: =PFD_Circle1_17.Y+(PFD_Circle1_17.Height-Self.Height)/2
                         ZIndex: =26
 
-                    PDUD_Icon2_111 As icon.Check:
+                    PDUD_Icon2_110 As icon.Check:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
-                        Height: =Parent.Width*0.025
+                        Height: =Parent.Width*0.020
                         Icon: =Icon.CheckBadge
                         Visible: =If(First(data_application).ApplicationStage>3,true,false)
                         Width: =Parent.Width*0.035
@@ -354,10 +354,10 @@ UploadLiveVideoScreen As screen:
                         Y: =PFD_Circle1_17.Y+(PFD_Circle1_17.Height-Self.Height)/2
                         ZIndex: =27
 
-                    PDUD_Icon2_110 As icon.Check:
+                    PDUD_Icon2_111 As icon.Check:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
-                        Height: =Parent.Width*0.025
+                        Height: =Parent.Width*0.020
                         Icon: =Icon.CheckBadge
                         Visible: =If(First(data_application).ApplicationStage>4,true,false)
                         Width: =Parent.Width*0.035
@@ -365,10 +365,10 @@ UploadLiveVideoScreen As screen:
                         Y: =PFD_Circle1_17.Y+(PFD_Circle1_17.Height-Self.Height)/2
                         ZIndex: =28
 
-                    PDUD_Icon2_109 As icon.Check:
+                    PDUD_Icon2_112 As icon.Check:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
-                        Height: =Parent.Width*0.025
+                        Height: =Parent.Width*0.020
                         Icon: =Icon.CheckBadge
                         Visible: =If(First(data_application).ApplicationStage>5,true,false)
                         Width: =Parent.Width*0.035
@@ -376,10 +376,10 @@ UploadLiveVideoScreen As screen:
                         Y: =PFD_Circle1_17.Y+(PFD_Circle1_17.Height-Self.Height)/2
                         ZIndex: =29
 
-                    PDUD_Icon2_108 As icon.Check:
+                    PDUD_Icon2_113 As icon.Check:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
-                        Height: =Parent.Width*0.025
+                        Height: =Parent.Width*0.020
                         Icon: =Icon.CheckBadge
                         Visible: =If(First(data_application).ApplicationStage>6,true,false)
                         Width: =Parent.Width*0.035
@@ -387,10 +387,10 @@ UploadLiveVideoScreen As screen:
                         Y: =PFD_Circle1_17.Y+(PFD_Circle1_17.Height-Self.Height)/2
                         ZIndex: =30
 
-                    PDUD_Icon2_107 As icon.Check:
+                    PDUD_Icon2_114 As icon.Check:
                         Color: =RGBA(107, 29, 94, 1)
                         DisplayMode: =
-                        Height: =Parent.Width*0.025
+                        Height: =Parent.Width*0.020
                         Icon: =Icon.CheckBadge
                         Visible: =If(First(data_application).ApplicationStage>=7,true,false)
                         Width: =Parent.Width*0.035
