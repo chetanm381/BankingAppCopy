@@ -1,4 +1,5 @@
 PersonalDetailsUploadDocumentsScreen As screen:
+    OnVisible: =Set(popupvisibility,Blank())
 
     PDUD_BgContainer_2 As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height

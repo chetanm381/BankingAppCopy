@@ -234,6 +234,7 @@ OpenAccountScreen As screen:
                                     Id = Idfordata
                                 )
                             );
+                            Set(popupvisibility,"visible");
                             Switch(
                                 First(data_application).ApplicationStage,
                                 1,

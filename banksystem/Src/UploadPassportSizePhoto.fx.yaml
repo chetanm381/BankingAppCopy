@@ -552,11 +552,95 @@ UploadPassportSizePhoto As screen:
                     Y: =UPS_Rectangle1_2.Y+UPS_Rectangle1_2.Height+Parent.Height*0.02
                     ZIndex: =7
 
-                    USP_Image1_1 As image:
-                        Height: =Parent.Height
-                        Image: =rafiki_1
-                        Width: =Parent.Width
+                    ULV_Container5_4 As groupContainer.manualLayoutContainer:
+                        DropShadow: =DropShadow.None
+                        Fill: =RGBA(255, 255, 255, 1)
+                        Height: =Parent.Height*.9
+                        Width: =Parent.Width*.9
+                        X: =(Parent.Width-Self.Width)/2
+                        Y: =(Parent.Height-Self.Height)/2+Parent.Height*.03
                         ZIndex: =1
+
+                        KVV_Label6_9 As label:
+                            Color: =RGBA(107, 29, 94, 1)
+                            FontWeight: =FontWeight.Semibold
+                            Height: =50
+                            Size: =12
+                            Text: ="1.Use standard dimensions (2x2 inches)."
+                            Width: =Parent.Width
+                            ZIndex: =1
+
+                        KVV_Label6_10 As label:
+                            Color: =RGBA(107, 29, 94, 1)
+                            FontWeight: =FontWeight.Semibold
+                            Height: =44
+                            Text: ="2.Ensure a clear, neutral background."
+                            Width: =Parent.Width
+                            Y: =33
+                            ZIndex: =2
+
+                        KVV_Label6_11 As label:
+                            Color: =RGBA(107, 29, 94, 1)
+                            FontWeight: =FontWeight.Semibold
+                            Height: =44
+                            Text: ="3.Capture a front-facing view with a neutral expression."
+                            Width: =Parent.Width
+                            Y: =77
+                            ZIndex: =3
+
+                        KVV_Label6_12 As label:
+                            Color: =RGBA(107, 29, 94, 1)
+                            FontWeight: =FontWeight.Semibold
+                            Height: =44
+                            Text: ="4.Eyes should be open and visible."
+                            Width: =Parent.Width
+                            Y: =121
+                            ZIndex: =4
+
+                        KVV_Label6_13 As label:
+                            Color: =RGBA(107, 29, 94, 1)
+                            FontWeight: =FontWeight.Semibold
+                            Height: =44
+                            Text: ="5.Wear normal clothing; avoid accessories that obscure the face."
+                            Width: =Parent.Width
+                            Y: =165
+                            ZIndex: =5
+
+                        KVV_Label6_14 As label:
+                            Color: =RGBA(107, 29, 94, 1)
+                            FontWeight: =FontWeight.Semibold
+                            Height: =44
+                            Text: ="6.Submit a recent, high-resolution photo."
+                            Width: =Parent.Width
+                            Y: =209
+                            ZIndex: =6
+
+                        KVV_Label6_15 As label:
+                            Color: =RGBA(107, 29, 94, 1)
+                            FontWeight: =FontWeight.Semibold
+                            Height: =44
+                            Text: ="7.If digital, use a common format (e.g., JPEG)."
+                            Width: =Parent.Width
+                            Y: =253
+                            ZIndex: =7
+
+                        KVV_Label6_16 As label:
+                            Color: =RGBA(107, 29, 94, 1)
+                            FontWeight: =FontWeight.Semibold
+                            Height: =44
+                            Text: ="8.Follow specific KYC guidelines provided by the institution or authority."
+                            Width: =Parent.Width
+                            Y: =297
+                            ZIndex: =8
+
+                    KVV_Label6_17 As label:
+                        Color: =RGBA(107, 29, 94, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =44
+                        Size: =14
+                        Text: ="Instructions"
+                        Width: =Parent.Width
+                        ZIndex: =2
 
                 UPS_Button2_5 As button:
                     DisplayMode: |-
