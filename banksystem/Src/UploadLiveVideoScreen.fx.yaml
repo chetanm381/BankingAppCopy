@@ -442,74 +442,6 @@ UploadLiveVideoScreen As screen:
                     Y: =ULV_Rectangle1_3.Y+ULV_Rectangle1_3.Height+Parent.Height*0.02
                     ZIndex: =6
 
-                    ULV_Container5_3 As groupContainer.manualLayoutContainer:
-                        DropShadow: =DropShadow.None
-                        Fill: =RGBA(255, 255, 255, 1)
-                        Height: =Parent.Height*.75
-                        Width: =Parent.Width*.75
-                        X: =(Parent.Width-Self.Width)/2
-                        Y: =(Parent.Height-Self.Height)/2+Parent.Height*.03
-                        ZIndex: =1
-
-                        ULV_Label6 As label:
-                            Color: =RGBA(107, 29, 94, 1)
-                            FontWeight: =FontWeight.Semibold
-                            Height: =36
-                            Text: ="My Name is .............."
-                            Width: =207
-                            X: =16
-                            Y: =16
-                            ZIndex: =1
-
-                        ULV_Label6_1 As label:
-                            Color: =RGBA(107, 29, 94, 1)
-                            FontWeight: =FontWeight.Semibold
-                            Height: =44
-                            Text: ="My Aadhar Card Number  is .............."
-                            Width: =372
-                            X: =16
-                            Y: =66
-                            ZIndex: =2
-
-                        ULV_Label6_2 As label:
-                            Color: =RGBA(107, 29, 94, 1)
-                            FontWeight: =FontWeight.Semibold
-                            Height: =44
-                            Text: ="My PAN Card Number  is .............."
-                            Width: =372
-                            X: =16
-                            Y: =121
-                            ZIndex: =3
-
-                    ULV_Label7_3 As label:
-                        Color: =RGBA(107, 29, 94, 1)
-                        FontWeight: =FontWeight.Bold
-                        Size: =15
-                        Text: ="Script"
-                        X: =Parent.Width*.05
-                        Y: =Parent.Height*.03
-                        ZIndex: =2
-
-                    ULV_Label7 As label:
-                        Color: =RGBA(255, 0, 0, 1)
-                        Height: =Parent.Height-Self.Y
-                        Size: =8
-                        Text: ="Upload Live Video where user holds Adhar card and Pan Card in front of Camera while Reading the script"
-                        Width: =ULV_Container5_3.Width
-                        X: =ULV_Container5_3.X
-                        Y: =ULV_Container5_3.Height+ULV_Container5_3.Y-Parent.Height*0.01
-                        ZIndex: =3
-
-                ULV_Container3_3 As groupContainer.manualLayoutContainer:
-                    BorderStyle: =BorderStyle.None
-                    DropShadow: =DropShadow.None
-                    Fill: =RGBA(252, 242, 247, 1)
-                    Height: =Parent.Height*.75
-                    Width: =Parent.Width*.45
-                    X: =(Parent.Width/2-Self.Width)/2
-                    Y: =ULV_Rectangle1_3.Y+ULV_Rectangle1_3.Height+Parent.Height*0.02
-                    ZIndex: =7
-
                     ULV_Container5_2 As groupContainer.manualLayoutContainer:
                         DropShadow: =DropShadow.None
                         Fill: =RGBA(255, 255, 255, 1)
@@ -597,6 +529,74 @@ UploadLiveVideoScreen As screen:
                         X: =Parent.Width*.05
                         Y: =Parent.Height*.03
                         ZIndex: =2
+
+                ULV_Container3_3 As groupContainer.manualLayoutContainer:
+                    BorderStyle: =BorderStyle.None
+                    DropShadow: =DropShadow.None
+                    Fill: =RGBA(252, 242, 247, 1)
+                    Height: =Parent.Height*.75
+                    Width: =Parent.Width*.45
+                    X: =(Parent.Width/2-Self.Width)/2
+                    Y: =ULV_Rectangle1_3.Y+ULV_Rectangle1_3.Height+Parent.Height*0.02
+                    ZIndex: =7
+
+                    ULV_Container5_3 As groupContainer.manualLayoutContainer:
+                        DropShadow: =DropShadow.None
+                        Fill: =RGBA(255, 255, 255, 1)
+                        Height: =Parent.Height*.75
+                        Width: =Parent.Width*.75
+                        X: =(Parent.Width-Self.Width)/2
+                        Y: =(Parent.Height-Self.Height)/2+Parent.Height*.03
+                        ZIndex: =1
+
+                        ULV_Label6 As label:
+                            Color: =RGBA(107, 29, 94, 1)
+                            FontWeight: =FontWeight.Semibold
+                            Height: =36
+                            Text: ="My Name is .............."
+                            Width: =207
+                            X: =16
+                            Y: =16
+                            ZIndex: =1
+
+                        ULV_Label6_1 As label:
+                            Color: =RGBA(107, 29, 94, 1)
+                            FontWeight: =FontWeight.Semibold
+                            Height: =44
+                            Text: ="My Aadhar Card Number  is .............."
+                            Width: =372
+                            X: =16
+                            Y: =66
+                            ZIndex: =2
+
+                        ULV_Label6_2 As label:
+                            Color: =RGBA(107, 29, 94, 1)
+                            FontWeight: =FontWeight.Semibold
+                            Height: =44
+                            Text: ="My PAN Card Number  is .............."
+                            Width: =372
+                            X: =16
+                            Y: =121
+                            ZIndex: =3
+
+                    ULV_Label7_3 As label:
+                        Color: =RGBA(107, 29, 94, 1)
+                        FontWeight: =FontWeight.Bold
+                        Size: =15
+                        Text: ="Script"
+                        X: =Parent.Width*.05
+                        Y: =Parent.Height*.03
+                        ZIndex: =2
+
+                    ULV_Label7 As label:
+                        Color: =RGBA(255, 0, 0, 1)
+                        Height: =Parent.Height-Self.Y
+                        Size: =8
+                        Text: ="Upload Live Video where user holds Adhar card and Pan Card in front of Camera while Reading the script"
+                        Width: =ULV_Container5_3.Width
+                        X: =ULV_Container5_3.X
+                        Y: =ULV_Container5_3.Height+ULV_Container5_3.Y-Parent.Height*0.01
+                        ZIndex: =3
 
                 ULV_Button2_7 As button:
                     DisplayMode: |-

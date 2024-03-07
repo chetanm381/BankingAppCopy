@@ -792,6 +792,26 @@ PersonalDetailsFormScreen As screen:
                                 Y: =Parent.Height*.97-Self.Height
                                 ZIndex: =2
 
+                        Icon1 As icon.CheckBadge:
+                            Color: =RGBA(11, 163, 54, 1)
+                            Height: =25
+                            Icon: =Icon.CheckBadge
+                            Visible: =(First(data_application).'Date of Birth'<>DateValue(adhardata.dob,"hi-IN"))&&(Lower(First(data_application).'Full Name')<>Lower(adhardata.name))
+                            Width: =25
+                            X: =PDF_Label10.X+5
+                            Y: =PDF_Label10.Y+(PDF_Label10.Height-Self.Height)/2
+                            ZIndex: =26
+
+                        Icon1_1 As icon.CheckBadge:
+                            Color: =RGBA(11, 163, 54, 1)
+                            Height: =25
+                            Icon: =Icon.CheckBadge
+                            Visible: =(First(data_application).'Date of Birth'<>DateValue(pandata.dob,"hi-IN"))&&(Lower(First(data_application).'Full Name')<>Lower(pandata.name))
+                            Width: =25
+                            X: =PDF_Label10_1.X+5
+                            Y: =PDF_Label10.Y+(PDF_Label10.Height-Self.Height)/2
+                            ZIndex: =27
+
                     PDF_Button2_4 As button:
                         DisplayMode: |-
                             =If(And(
