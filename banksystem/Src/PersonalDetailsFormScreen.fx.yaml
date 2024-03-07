@@ -581,7 +581,7 @@ PersonalDetailsFormScreen As screen:
                                                     7,
                                                     4
                                                 ),
-                                                "[$-en-US]mm/dd/yyyy"
+                                                "[$-en-US]dd/mm/yyyy"
                                             )
                                         )
                                     )
@@ -778,7 +778,7 @@ PersonalDetailsFormScreen As screen:
                                                     7,
                                                     4
                                                 ),
-                                                "[$-en-US]mm/dd/yyyy"
+                                                "[$-en-US]dd/mm/yyyy"
                                             )
                                         )
                                     )
@@ -986,7 +986,7 @@ PersonalDetailsFormScreen As screen:
                             Text: |-
                                 =" "&Text(
                                     First(data_application).'Date of Birth',
-                                    "[$-en-US]dd-mm-yyyy"
+                                    "[$-en-US]dd/mm/yyyy"
                                 )
                             X: =62
                             ZIndex: =3
