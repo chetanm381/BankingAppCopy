@@ -675,7 +675,7 @@ PersonalDetailsFormScreen As screen:
                         PDF_Icon3_3 As icon.Check:
                             Color: =If(Lower(First(data_application).'Full Name')=Lower(PDF_TextInput1_4.Text),RGBA(11, 163, 54, 1),Color.Red)
                             Height: =20
-                            Icon: =If(Lower(First(data_application).'Full Name')=Lower(PDF_TextInput1_4.Text),Icon.Check,Icon.Cancel)
+                            Icon: =If(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_3.SelectedDate,Icon.Check)
                             Width: =20
                             X: =PDF_TextInput1_4.Width+PDF_TextInput1_4.X-Self.Width
                             Y: =PDF_Label4_7.Y+(PDF_Label4_7.Height-Self.Height)/2
@@ -684,7 +684,7 @@ PersonalDetailsFormScreen As screen:
                         PDF_Icon3_4 As icon.Check:
                             Color: =If(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_2.SelectedDate,Color.Green,Color.Red)
                             Height: =20
-                            Icon: =If(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_2.SelectedDate,Icon.Check,Icon.Cancel)
+                            Icon: =If(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_3.SelectedDate,Icon.Check)
                             Width: =20
                             X: =PDF_TextInput1_4.Width+PDF_TextInput1_4.X-Self.Width
                             Y: =PDF_Label4_9.Y+(PDF_Label4_9.Height-Self.Height)/2
@@ -693,7 +693,7 @@ PersonalDetailsFormScreen As screen:
                         PDF_Icon3_5 As icon.Check:
                             Color: =RGBA(11, 163, 54, 1)
                             Height: =20
-                            Icon: =Icon.Check
+                            Icon: =If(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_3.SelectedDate,Icon.Check)
                             Visible: =false
                             Width: =20
                             X: =PDF_TextInput1_4.Width+PDF_TextInput1_4.X-Self.Width
@@ -703,7 +703,7 @@ PersonalDetailsFormScreen As screen:
                         PDF_Icon3_6 As icon.Check:
                             Color: =If(Lower(First(data_application).'Full Name')=Lower(PDF_TextInput1_5.Text),RGBA(11, 163, 54, 1),Color.Red)
                             Height: =20
-                            Icon: =If(Lower(First(data_application).'Full Name')=Lower(PDF_TextInput1_5.Text),Icon.Check,Icon.Cancel)
+                            Icon: =If(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_3.SelectedDate,Icon.Check)
                             Width: =20
                             X: =PDF_TextInput1_5.Width+PDF_TextInput1_5.X-Self.Width
                             Y: =PDF_Label4_7.Y+(PDF_Label4_7.Height-Self.Height)/2
@@ -712,7 +712,7 @@ PersonalDetailsFormScreen As screen:
                         PDF_Icon3_7 As icon.Check:
                             Color: =If(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_3.SelectedDate,Color.Green,Color.Red)
                             Height: =20
-                            Icon: =If(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_3.SelectedDate,Icon.Check,Icon.Cancel)
+                            Icon: =If(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_3.SelectedDate,Icon.Check)
                             Width: =20
                             X: =PDF_TextInput1_5.Width+PDF_TextInput1_5.X-Self.Width
                             Y: =PDF_Label4_9.Y+(PDF_Label4_9.Height-Self.Height)/2
@@ -721,7 +721,7 @@ PersonalDetailsFormScreen As screen:
                         PDF_Icon3_8 As icon.Check:
                             Color: =RGBA(11, 163, 54, 1)
                             Height: =20
-                            Icon: =Icon.Check
+                            Icon: =If(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_3.SelectedDate,Icon.Check)
                             Visible: =false
                             Width: =20
                             X: =PDF_TextInput1_5.Width+PDF_TextInput1_5.X-Self.Width
@@ -799,20 +799,28 @@ PersonalDetailsFormScreen As screen:
                         PDF_Container5 As groupContainer.manualLayoutContainer:
                             Fill: =RGBA(237, 237, 237, 0.55)
                             Height: =Parent.Height
-                            Visible: =loadervisibility
+                            Visible: |-
+                                =//loadervisibility
+                                true
                             Width: =Parent.Width
                             ZIndex: =25
 
-                            PDF_Image1 As image:
-                                Fill: =RGBA(255, 255, 255, 1)
+                            Spinner1_1 As Spinner:
+                                Appearance: ='Spinner.Appearance'.Primary
+                                BasePaletteColor: =RGBA(107, 29, 94, 1)
+                                DisplayMode: =DisplayMode.Edit
+                                FontColor: =
                                 Height: =Parent.Height
-                                Image: ='Fast loading'
+                                SpinnerSize: ='Spinner.SpinnerSize'.Huge
+                                Visible: =true
                                 Width: =Parent.Width
+                                X: =0
+                                Y: =0.19999999999998863
                                 ZIndex: =1
 
                             PDF_Label6 As label:
                                 Align: =Align.Center
-                                Color: =RGBA(107, 29, 94, 1)
+                                Color: =RGBA(255, 255, 255, 1)
                                 FontWeight: =FontWeight.Bold
                                 Size: =15
                                 Text: ="Please Wait till information is processed"
@@ -1055,7 +1063,7 @@ PersonalDetailsFormScreen As screen:
                         Height: =20
                         Icon: =If(Lower(First(data_application).'Full Name')=Lower(PDF_TextInput1_4.Text),Icon.Check,Icon.Cancel)
                         OnSelect: =!loadervisibility
-                        Visible: =!loadervisibility
+                        Visible: =false
                         Width: =20
                         X: =PDF_Label6_3.X+PDF_Label6_3.Width-Self.Width
                         Y: =PDF_Label6_3.Y+(PDF_Label6_3.Height-Self.Height)/2
@@ -1065,7 +1073,7 @@ PersonalDetailsFormScreen As screen:
                         Color: =If(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_2.SelectedDate,Color.Green,Color.Red)
                         Height: =20
                         Icon: =If(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_2.SelectedDate,Icon.Check,Icon.Cancel)
-                        Visible: =!loadervisibility
+                        Visible: =false
                         Width: =20
                         X: =PDF_Label6_4.X+PDF_Label6_4.Width-Self.Width
                         Y: =PDF_Label6_4.Y+(PDF_Label6_4.Height-Self.Height)/2
@@ -1088,10 +1096,11 @@ PersonalDetailsFormScreen As screen:
         RadiusBottomRight: =20
         RadiusTopLeft: =20
         RadiusTopRight: =20
-        Visible: =If(IsBlank(popupvisibility),false,Or(And(Lower(First(data_application).'Full Name')=Lower(PDF_TextInput1_4.Text),(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_2.SelectedDate)),(!loadervisibility)))
+        Visible: |
+            =If(IsBlank(popupvisibility),false,Or(And(Lower(First(data_application).'Full Name')=Lower(PDF_TextInput1_4.Text),(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_2.SelectedDate)),(!loadervisibility)))
         Width: =Parent.Width*.25
         X: =(Parent.Width-Self.Width)/2
-        Y: =(Parent.Height-Self.Height)*.4
+        Y: =(Parent.Height-Self.Height)/2
         ZIndex: =3
 
         Label7_3 As label:
