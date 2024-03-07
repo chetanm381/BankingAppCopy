@@ -511,6 +511,7 @@ UploadSignaturePhotoScreen As screen:
                         PressedFill: =ColorFade(Self.HoverFill,70%)
                         Size: =10
                         Tooltip: =
+                        Visible: =App.ActiveScreen.Size>=4
                         Width: =Parent.Width*.75
                         X: =(Parent.Width-Self.Width)/2
                         Y: =40
@@ -543,6 +544,14 @@ UploadSignaturePhotoScreen As screen:
                         X: =Parent.Width*.97-Self.Width
                         Y: =Parent.Height*0.12-Self.Height
                         ZIndex: =10
+
+                    PenInput1 As inkControl:
+                        Height: =Parent.Height*.70
+                        Visible: =App.ActiveScreen.Size<4
+                        Width: =Parent.Width*.75
+                        X: =USP_DataCardValue6_1.X
+                        Y: =USP_DataCardValue6_1.Y
+                        ZIndex: =11
 
                 USP_Container3_1 As groupContainer.manualLayoutContainer:
                     BorderStyle: =BorderStyle.None
