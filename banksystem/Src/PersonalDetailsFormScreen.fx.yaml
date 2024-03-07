@@ -467,7 +467,7 @@ PersonalDetailsFormScreen As screen:
                         PDF_TextInput1_4 As text:
                             BorderColor: =RGBA(107, 29, 94, 1)
                             Clear: =true
-                            Default: =If(IsBlank(adhardata.name),First(data_application).'Full Name',adhardata.name)
+                            Default: =adhardata.name
                             DisabledBorderColor: =RGBA(237, 237, 237, 1)
                             DisabledColor: =RGBA(44, 54, 84, 1)
                             DisabledFill: =RGBA(250, 250, 250, 1)
@@ -484,7 +484,7 @@ PersonalDetailsFormScreen As screen:
 
                         PDF_TextInput1_5 As text:
                             BorderColor: =RGBA(107, 29, 94, 1)
-                            Default: =If(IsBlank(pandata.name),First(data_application).'Full Name',pandata.name)
+                            Default: =pandata.name
                             DisabledBorderColor: =RGBA(237, 237, 237, 1)
                             DisabledColor: =RGBA(44, 54, 84, 1)
                             DisabledFill: =RGBA(250, 250, 250, 1)
@@ -562,29 +562,7 @@ PersonalDetailsFormScreen As screen:
 
                             PDF_DatePicker1_2 As datepicker:
                                 BorderThickness: =0
-                                DefaultDate: |-
-                                    =If(
-                                        IsBlank(adhardata.dob),
-                                        First(data_application).'Date of Birth',
-                                        DateValue(
-                                            Text(
-                                                Mid(
-                                                    adhardata.dob,
-                                                    4,
-                                                    2
-                                                ) & "/" & Mid(
-                                                    adhardata.dob,
-                                                    1,
-                                                    2
-                                                ) & "/" & Mid(
-                                                    adhardata.dob,
-                                                    7,
-                                                    4
-                                                ),
-                                                "[$-en-US]dd/mm/yyyy"
-                                            )
-                                        )
-                                    )
+                                DefaultDate: =DateValue(adhardata.dob,"hi-IN")
                                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                                 DisabledColor: =RGBA(107, 29, 94, 1)
                                 DisabledFill: =RGBA(250, 250, 250, 1)
@@ -594,6 +572,7 @@ PersonalDetailsFormScreen As screen:
                                 IconBackground: =Color.White
                                 IconFill: |-
                                     =ColorValue("#969696")
+                                InputTextPlaceholder: =
                                 PaddingLeft: =5
                                 PaddingTop: =5
                                 Size: =11
@@ -604,7 +583,7 @@ PersonalDetailsFormScreen As screen:
                         PDF_Label4_11 As label:
                             FontWeight: =FontWeight.Semibold
                             Size: =11
-                            Text: ="Aadhar Card Name"
+                            Text: ="Aadhar Card Number"
                             Width: =Parent.Width*.40
                             X: =Parent.Width*.05
                             Y: =PDF_TextInput1_6.Y+PDF_TextInput1_6.Height+Parent.Height*0.03
@@ -622,7 +601,7 @@ PersonalDetailsFormScreen As screen:
                         PDF_TextInput1_7 As text:
                             BorderColor: =RGBA(107, 29, 94, 1)
                             Clear: =true
-                            Default: =If(IsBlank(adhardata.adhar),First(data_application).'Adhaar Number',adhardata.adhar)
+                            Default: =adhardata.adhar
                             DisabledBorderColor: =RGBA(237, 237, 237, 1)
                             DisabledColor: =RGBA(44, 54, 84, 1)
                             DisabledFill: =RGBA(250, 250, 250, 1)
@@ -640,7 +619,7 @@ PersonalDetailsFormScreen As screen:
                         PDF_TextInput1_8 As text:
                             BorderColor: =RGBA(107, 29, 94, 1)
                             Clear: =true
-                            Default: =If(IsBlank(pandata.pan),First(data_application).'PAN Number',pandata.pan)
+                            Default: =pandata.pan
                             DisabledBorderColor: =RGBA(237, 237, 237, 1)
                             DisabledColor: =RGBA(44, 54, 84, 1)
                             DisabledFill: =RGBA(250, 250, 250, 1)
@@ -676,7 +655,8 @@ PersonalDetailsFormScreen As screen:
                         PDF_Icon3_3 As icon.Check:
                             Color: =If(Lower(First(data_application).'Full Name')=Lower(PDF_TextInput1_4.Text),RGBA(11, 163, 54, 1),Color.Red)
                             Height: =20
-                            Icon: =If(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_3.SelectedDate,Icon.Check)
+                            Icon: =Icon.Check
+                            Visible: =If(Lower(First(data_application).'Full Name')=Lower(adhardata.name),true,false)
                             Width: =20
                             X: =PDF_TextInput1_4.Width+PDF_TextInput1_4.X-Self.Width
                             Y: =PDF_Label4_7.Y+(PDF_Label4_7.Height-Self.Height)/2
@@ -685,7 +665,8 @@ PersonalDetailsFormScreen As screen:
                         PDF_Icon3_4 As icon.Check:
                             Color: =If(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_2.SelectedDate,Color.Green,Color.Red)
                             Height: =20
-                            Icon: =If(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_3.SelectedDate,Icon.Check)
+                            Icon: =Icon.Check
+                            Visible: =If(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_2.SelectedDate,true,false)
                             Width: =20
                             X: =PDF_TextInput1_4.Width+PDF_TextInput1_4.X-Self.Width
                             Y: =PDF_Label4_9.Y+(PDF_Label4_9.Height-Self.Height)/2
@@ -704,7 +685,8 @@ PersonalDetailsFormScreen As screen:
                         PDF_Icon3_6 As icon.Check:
                             Color: =If(Lower(First(data_application).'Full Name')=Lower(PDF_TextInput1_5.Text),RGBA(11, 163, 54, 1),Color.Red)
                             Height: =20
-                            Icon: =If(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_3.SelectedDate,Icon.Check)
+                            Icon: =Icon.Check
+                            Visible: =If(Lower(First(data_application).'Full Name')=Lower(pandata.name),true,false)
                             Width: =20
                             X: =PDF_TextInput1_5.Width+PDF_TextInput1_5.X-Self.Width
                             Y: =PDF_Label4_7.Y+(PDF_Label4_7.Height-Self.Height)/2
@@ -713,7 +695,8 @@ PersonalDetailsFormScreen As screen:
                         PDF_Icon3_7 As icon.Check:
                             Color: =If(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_3.SelectedDate,Color.Green,Color.Red)
                             Height: =20
-                            Icon: =If(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_3.SelectedDate,Icon.Check)
+                            Icon: =Icon.Check
+                            Visible: =If(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_3.SelectedDate,true,false)
                             Width: =20
                             X: =PDF_TextInput1_5.Width+PDF_TextInput1_5.X-Self.Width
                             Y: =PDF_Label4_9.Y+(PDF_Label4_9.Height-Self.Height)/2
@@ -760,29 +743,7 @@ PersonalDetailsFormScreen As screen:
 
                             PDF_DatePicker1_3 As datepicker:
                                 BorderThickness: =0
-                                DefaultDate: |-
-                                    =If(
-                                        IsBlank(pandata.dob),
-                                        First(data_application).'Date of Birth',
-                                        DateValue(
-                                            Text(
-                                                Mid(
-                                                    pandata.dob,
-                                                    4,
-                                                    2
-                                                ) & "/" & Mid(
-                                                    pandata.dob,
-                                                    1,
-                                                    2
-                                                ) & "/" & Mid(
-                                                    pandata.dob,
-                                                    7,
-                                                    4
-                                                ),
-                                                "[$-en-US]dd/mm/yyyy"
-                                            )
-                                        )
-                                    )
+                                DefaultDate: =DateValue(pandata.dob,"hi-IN")
                                 DisabledColor: =RGBA(107, 29, 94, 1)
                                 DisabledFill: =RGBA(250, 250, 250, 1)
                                 DisplayMode: =DisplayMode.Disabled
@@ -791,6 +752,7 @@ PersonalDetailsFormScreen As screen:
                                 IconBackground: =Color.White
                                 IconFill: |-
                                     =ColorValue("#969696")
+                                InputTextPlaceholder: =
                                 PaddingLeft: =5
                                 PaddingTop: =5
                                 Size: =11
@@ -807,8 +769,8 @@ PersonalDetailsFormScreen As screen:
                             ZIndex: =25
 
                             Spinner1_1 As Spinner:
-                                Appearance: ='Spinner.Appearance'.Inverted
-                                BasePaletteColor: =RGBA(107, 29, 94, 1)
+                                Appearance: ='Spinner.Appearance'.Primary
+                                BasePaletteColor: =RGBA(107, 29, 94, 0.2)
                                 DisplayMode: =DisplayMode.Edit
                                 FontColor: =
                                 Height: =Parent.Height
@@ -821,10 +783,11 @@ PersonalDetailsFormScreen As screen:
 
                             PDF_Label6 As label:
                                 Align: =Align.Center
-                                Color: =RGBA(255, 255, 255, 1)
+                                Color: =RGBA(107, 29, 94, 1)
                                 FontWeight: =FontWeight.Bold
                                 Size: =15
                                 Text: ="Please Wait till information is processed"
+                                Visible: =false
                                 Width: =Parent.Width
                                 Y: =Parent.Height*.97-Self.Height
                                 ZIndex: =2
@@ -883,7 +846,12 @@ PersonalDetailsFormScreen As screen:
                         HoverColor: =RGBA(107, 29, 94, 1)
                         HoverFill: |-
                             =ColorFade(ColorValue("#A6A6A6"), 80%)
-                        OnSelect: =Back()
+                        OnSelect: |-
+                            =Back();
+                            Set(popupvisibility,Blank());
+                            Set(loadervisibility,false);
+                            Set(adhardata,Blank());
+                            Set(pandata,Blank())
                         RadiusBottomLeft: =5
                         RadiusBottomRight: =5
                         RadiusTopLeft: =5
@@ -1063,8 +1031,8 @@ PersonalDetailsFormScreen As screen:
                         Color: =If(Lower(First(data_application).'Full Name')=Lower(PDF_TextInput1_4.Text),RGBA(11, 163, 54, 1),Color.Red)
                         Height: =20
                         Icon: =If(Lower(First(data_application).'Full Name')=Lower(PDF_TextInput1_4.Text),Icon.Check,Icon.Cancel)
-                        OnSelect: =!loadervisibility
-                        Visible: =false
+                        OnSelect: =
+                        Visible: =If(Lower(First(data_application).'Full Name')=Lower(adhardata.name),true,false)
                         Width: =20
                         X: =PDF_Label6_3.X+PDF_Label6_3.Width-Self.Width
                         Y: =PDF_Label6_3.Y+(PDF_Label6_3.Height-Self.Height)/2
@@ -1074,21 +1042,11 @@ PersonalDetailsFormScreen As screen:
                         Color: =If(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_2.SelectedDate,Color.Green,Color.Red)
                         Height: =20
                         Icon: =If(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_2.SelectedDate,Icon.Check,Icon.Cancel)
-                        Visible: =false
+                        Visible: =If(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_2.SelectedDate,true,false)
                         Width: =20
                         X: =PDF_Label6_4.X+PDF_Label6_4.Width-Self.Width
                         Y: =PDF_Label6_4.Y+(PDF_Label6_4.Height-Self.Height)/2
                         ZIndex: =11
-
-    Rectangle2 As rectangle:
-        Fill: =RGBA(107, 29, 94, 0.09)
-        Height: =PDF_Container12_1.Height
-        OnSelect: =If(IsBlank(popupvisibility),false,Or(And(Lower(First(data_application).'Full Name')=Lower(PDF_TextInput1_4.Text),(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_2.SelectedDate)),(!loadervisibility)))
-        Visible: =If(IsBlank(popupvisibility),false,Or(And(Lower(First(data_application).'Full Name')=Lower(PDF_TextInput1_4.Text),(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_2.SelectedDate)),(!loadervisibility)))
-        Width: =PDF_Container12_1.Width
-        X: =PDF_Container12_1.X
-        Y: =PDF_Container12_1.Y+PDF_HeaderContainer_1.Y+PDF_HeaderContainer_1.Height
-        ZIndex: =2
 
     Container6_1 As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
@@ -1097,12 +1055,23 @@ PersonalDetailsFormScreen As screen:
         RadiusBottomRight: =20
         RadiusTopLeft: =20
         RadiusTopRight: =20
-        Visible: |
-            =If(IsBlank(popupvisibility),false,Or(And(Lower(First(data_application).'Full Name')=Lower(PDF_TextInput1_4.Text),(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_2.SelectedDate)),(!loadervisibility)))
+        Visible: |-
+            =popupvisibility="visible"
+            /*If(
+                IsBlank(popupvisibility),
+                false,
+                Or(
+                    And(
+                        Lower(First(data_application).'Full Name') = Lower(PDF_TextInput1_4.Text),
+                        (DateValue(First(data_application).'Date of Birth') = PDF_DatePicker1_2.SelectedDate)
+                    ),
+                    (!loadervisibility)
+                )
+            )*/
         Width: =Parent.Width*.25
         X: =(Parent.Width-Self.Width)/2
         Y: =(Parent.Height-Self.Height)/2
-        ZIndex: =3
+        ZIndex: =2
 
         Label7_3 As label:
             Align: =Align.Center
@@ -1190,4 +1159,14 @@ PersonalDetailsFormScreen As screen:
             X: =(Parent.Width-Self.Width)/2
             Y: =Parent.Height-Self.Height-Parent.Height*.09
             ZIndex: =6
+
+    Rectangle2 As rectangle:
+        Fill: =RGBA(107, 29, 94, 0.09)
+        Height: =PDF_Container12_1.Height
+        OnSelect: =If(IsBlank(popupvisibility),false,Or(And(Lower(First(data_application).'Full Name')=Lower(PDF_TextInput1_4.Text),(DateValue(First(data_application).'Date of Birth')=PDF_DatePicker1_2.SelectedDate)),(!loadervisibility)))
+        Visible: =popupvisibility="visible"
+        Width: =PDF_Container12_1.Width
+        X: =PDF_Container12_1.X
+        Y: =PDF_Container12_1.Y+PDF_HeaderContainer_1.Y+PDF_HeaderContainer_1.Height
+        ZIndex: =3
 

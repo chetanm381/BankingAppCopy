@@ -22,6 +22,7 @@
       "app_fullname": "Full Name",
       "app_id": "Id",
       "app_identificationdetails_Annotations": "Notes",
+      "app_IdentificationDetails_app_Identificat": "Verification Otps",
       "app_identificationdetails_AsyncOperations": "System Jobs",
       "app_identificationdetails_BulkDeleteFailures": "Bulk Delete Failures",
       "app_identificationdetails_DuplicateBaseRecord": "Duplicate Records (app_identificationdetails_DuplicateBaseRecord)",

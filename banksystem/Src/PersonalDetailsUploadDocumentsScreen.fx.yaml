@@ -893,7 +893,7 @@ PersonalDetailsUploadDocumentsScreen As screen:
                         Fill: =RGBA(11, 163, 54, 1)
                         HoverFill: |-
                             =ColorFade(ColorValue("#0ba336"), -20%)
-                        OnSelect: |
+                        OnSelect: |+
                             =Patch(
                                 'Identification Details',
                                 LookUp(
@@ -945,11 +945,20 @@ PersonalDetailsUploadDocumentsScreen As screen:
                                     )
                                 )
                             );
+                            If((First(data_application).'Date of Birth'<>DateValue(adhardata.dob,"hi-IN"))||(Lower(First(data_application).'Full Name')<>Lower(adhardata.name))||
+                            (First(data_application).'Date of Birth'<>DateValue(pandata.dob,"hi-IN"))||(Lower(First(data_application).'Full Name')<>Lower(pandata.name)),
                             Set(
                                 loadervisibility,
                                 false
                             );
-                            Set(popupvisibility,"visible")
+                            Set(popupvisibility,"visible"),
+                            Set(
+                                loadervisibility,
+                                false
+                            );
+                            Set(popupvisibility,"")
+                            );
+                            
                         RadiusBottomLeft: =5
                         RadiusBottomRight: =5
                         RadiusTopLeft: =5
