@@ -1,4 +1,4 @@
-<widget xmlns="http://openajax.org/metadata" spec="1.0" id="http://microsoft.com/appmagic/videoPlayback" name="videoPlayback" jsClass="AppMagic.Controls.Playback.VideoPlayback" authoringjsClass="AppMagic.Controls.Playback.AuthoringVideoPlayback" version="2.3.2" styleable="true" runtimeCost="1" xmlns:appMagic="http://schemas.microsoft.com/appMagic">
+<widget xmlns="http://openajax.org/metadata" spec="1.0" id="http://microsoft.com/appmagic/videoPlayback" name="videoPlayback" jsClass="AppMagic.Controls.Playback.VideoPlayback" authoringjsClass="AppMagic.Controls.Playback.AuthoringVideoPlayback" version="2.4.0" styleable="true" runtimeCost="1" xmlns:appMagic="http://schemas.microsoft.com/appMagic">
   <author name="Microsoft AppMagic" />
   <license type="text/html"><![CDATA[<p>TODO:  Need license text here.</p>]]></license>
   <description><![CDATA[VIDEOPLAYBACK
@@ -25,9 +25,6 @@
     <require type="other" src="/controls/playback/images/volume.svg" group="videoPlaybackCss" />
     <require type="other" src="/controls/playback/images/volumemuted.svg" group="videoPlaybackCss" />
     <require type="other" src="/images/RibbonTab/icon-media.svg" group="videoPlaybackCss" />
-    <require type="other" src="/controls/common/seekBar/css/seekBar.css" group="videoPlaybackSeekBar" />
-    <require type="other" src="/controls/common/seekBar/images/seekBarThumb.svg" group="videoPlaybackJs" />
-    <require type="other" src="/controls/common/seekBar/images/seekBarThumbSelected.svg" group="videoPlaybackJs" />
     <require type="other" src="/controls/playback/amp/assets/fonts/azuremediaplayer.eot" group="azuremediaplayerCss" />
     <require type="other" src="/controls/playback/amp/assets/fonts/azuremediaplayer.svg" group="azuremediaplayerCss" />
     <require type="other" src="/controls/playback/amp/assets/fonts/azuremediaplayer.ttf" group="azuremediaplayerCss" />
@@ -116,6 +113,9 @@
     <require type="other" src="/controls/playback/amp/assets/icons/subtitles.svg" group="azuremediaplayerCss" />
     <require type="other" src="/controls/playback/amp/assets/icons/volume-slider.svg" group="azuremediaplayerCss" />
     <require type="other" src="/controls/playback/amp/assets/icons/zoom.svg" group="azuremediaplayerCss" />
+    <require type="other" src="/controls/common/seekBar/images/seekBarThumb.svg" group="videoPlaybackSeekBar" />
+    <require type="other" src="/controls/common/seekBar/images/seekBarThumbSelected.svg" group="videoPlaybackSeekBar" />
+    <require type="css" src="/controls/common/seekBar/css/seekBar.css" group="videoPlaybackSeekBar" />
     <require type="markup" src="/controls/common/seekBar/seekBar.html" group="videoPlaybackSeekBar" />
   </requires>
   <appMagic:capabilities contextualViewsEnabled="true" autoBorders="true" autoFocusedBorders="true" outlineIncompatible="true" screenActiveAware="true" isVersionFlexible="true" />
@@ -482,5 +482,8 @@
   </appMagic:conversion>
   <appMagic:conversion from="2.3.1" to="2.3.2">
     <!-- Accessibility fix for closed caption in KO template -->
+  </appMagic:conversion>
+  <appMagic:conversion from="2.3.2" to="2.4.0">
+    <!-- Updates to appMagic:requirements -->
   </appMagic:conversion>
 </widget>

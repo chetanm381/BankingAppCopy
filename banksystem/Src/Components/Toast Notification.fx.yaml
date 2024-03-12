@@ -192,7 +192,7 @@
                 IsVisible,
                 false
             );
-            Navigate('Toast Notification'.NavigateToScreenWhenNotificationCloses)
+            //Navigate('Toast Notification'.NavigateToScreenWhenNotificationCloses)
         Reset: =true
         Start: =IsVisible
         Visible: =false

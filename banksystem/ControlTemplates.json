@@ -194,7 +194,7 @@
     "LastModifiedTimestamp": "0",
     "Name": "image",
     "OverridableProperties": {},
-    "Version": "2.2.2"
+    "Version": "2.2.3"
   },
   "inkControl": {
     "CustomGroupControlTemplateName": "",
@@ -208,7 +208,7 @@
     "LastModifiedTimestamp": "0",
     "Name": "inkControl",
     "OverridableProperties": {},
-    "Version": "2.2.0"
+    "Version": "2.3.0"
   },
   "label": {
     "CustomGroupControlTemplateName": "",
@@ -307,6 +307,6 @@
     "LastModifiedTimestamp": "0",
     "Name": "videoPlayback",
     "OverridableProperties": {},
-    "Version": "2.3.2"
+    "Version": "2.4.0"
   }
 }

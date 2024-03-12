@@ -606,9 +606,25 @@ OpenAccountScreen As screen:
                     Timer1 As timer:
                         AutoPause: =false
                         AutoStart: =lclTimerStart
-                        Duration: =2000
-                        OnTimerEnd: |-
-                            =Set(
+                        Duration: =100
+                        OnTimerEnd: |+
+                            =If(!IsBlank(Label1.Text) && lclSwitchID = 1,
+                                UpdateContext({lclSwitchID:lclSwitchID+1});
+                                SetFocus(OA_TextInput2_8),
+                            !IsBlank(Label1.Text) && lclSwitchID = 2,
+                                UpdateContext({lclSwitchID:lclSwitchID+1});
+                                SetFocus(OA_TextInput2_9),
+                            !IsBlank(Label1.Text) && lclSwitchID = 3,
+                                UpdateContext({lclSwitchID:lclSwitchID+1});
+                                SetFocus(OA_TextInput2_10),
+                            !IsBlank(Label1.Text) && lclSwitchID = 4,
+                                UpdateContext({lclSwitchID:lclSwitchID+1});
+                                SetFocus(OA_TextInput2_7),
+                            !IsBlank(Label1.Text) && lclSwitchID =5,
+                                UpdateContext({lclSwitchID:lclSwitchID+1});
+                                SetFocus(OA_TextInput2_11),
+                            !IsBlank(Label1.Text) && lclSwitchID =6,
+                                Set(
                                 Entered_otp,
                                 Concatenate(
                                     OA_TextInput2_6.Text,
@@ -618,74 +634,67 @@ OpenAccountScreen As screen:
                                     OA_TextInput2_7.Text,
                                     OA_TextInput2_11.Text
                                 )
-                            );
-                            If(
-                                Not(IsBlank(Label1.Text)),
-                                If(
-                                    IsBlank(
-                            
-                                        LookUp(
-                                            'Identification Details',
-                                            'OTP Send' = Value(Entered_otp)
-                                        )
-                                    ),
-                                    Concurrent(
+                                );
+                                With(
+                                    {lclIdentificationDetails:LookUp('Identification Details','OTP Send' = Value(Entered_otp))},
+                                    If(
+                                        IsBlank(lclIdentificationDetails),
+                                        Concurrent(
+                                            Set(
+                                                typeofnotification,
+                                                'Toast Notification_1'.NotificationTypes.Error
+                                            ),
+                                            Set(
+                                                messageNotification,
+                                                "OTP Invalid"
+                                            ),
+                                            Reset('Toast Notification_1')
+                                        );
                                         Set(
-                                            typeofnotification,
-                                            'Toast Notification_1'.NotificationTypes.Error
-                                        ),
+                                            visibility,
+                                            false
+                                        );
                                         Set(
-                                            messageNotification,
-                                            "OTP Invalid"
-                                        ),
-                                        Reset('Toast Notification_1')
-                                    );
-                                    Set(
-                                        visibility,
-                                        false
-                                    );
-                                    Set(
-                                        Ic,
-                                        "Invalid"
-                                    );
-                                    Reset(OA_TextInput2_6);
-                                    Reset(OA_TextInput2_8);
-                                    Reset(OA_TextInput2_9);
-                                    Reset(OA_TextInput2_10);
-                                    Reset(OA_TextInput2_7);
-                                    Reset(OA_TextInput2_11);
-                                    ,
-                                    Concurrent(
+                                            Ic,
+                                            "Invalid"
+                                        );
+                                        Reset(OA_TextInput2_6);
+                                        Reset(OA_TextInput2_8);
+                                        Reset(OA_TextInput2_9);
+                                        Reset(OA_TextInput2_10);
+                                        Reset(OA_TextInput2_7);
+                                        Reset(OA_TextInput2_11);
+                                        UpdateContext({lclSwitchID:1});
+                                        SetFocus(OA_TextInput2_6)
+                                        ,
+                                        Concurrent(
+                                            Set(
+                                                typeofnotification,
+                                                'Toast Notification_1'.NotificationTypes.Success
+                                            ),
+                                            Set(
+                                                messageNotification,
+                                                "OTP Verified"
+                                            ),
+                                            Reset('Toast Notification_1')
+                                        );
                                         Set(
-                                            typeofnotification,
-                                            'Toast Notification_1'.NotificationTypes.Success
-                                        ),
+                                            visibility,
+                                            true
+                                        );
                                         Set(
-                                            messageNotification,
-                                            "OTP Verified"
-                                        ),
-                                        Reset('Toast Notification_1')
-                                    );
-                                    Set(
-                                        visibility,
-                                        true
-                                    );
-                                    Set(
-                                        Ic,
-                                        "Valid"
-                                    );
-                                    Set(Idfordata,LookUp(
-                                            'Identification Details',
-                                            'OTP Send' = Value(Entered_otp)
-                                        ).Id);
-                                        Set(data_record,LookUp(
-                                            'Identification Details',
-                                            'OTP Send' = Value(Entered_otp)
-                                        ))
-                                );UpdateContext({lclTimerStart: false});UpdateContext({lclTimerRepeat: false}),UpdateContext({lclTimerRepeat: true})
-                                
-                                
+                                            Ic,
+                                            "Valid"
+                                        );
+                                        Set(Idfordata,lclIdentificationDetails.Id);
+                                        Set(data_record,lclIdentificationDetails);
+                                        UpdateContext({lclTimerStart:false});UpdateContext({lclTimerRepeat:false});
+                                        
+                                    )
+                                )
                             )
+                            
+                            
                         Repeat: =lclTimerRepeat
                         Visible: =false
                         X: =15
@@ -693,7 +702,20 @@ OpenAccountScreen As screen:
                         ZIndex: =28
 
                     Label1 As label:
-                        Text: =OA_TextInput2_11.Text
+                        Text: |-
+                            =Switch(lclSwitchID,
+                                1,
+                                OA_TextInput2_6.Text,
+                                2,
+                                OA_TextInput2_8.Text,
+                                3,
+                                OA_TextInput2_9.Text,
+                                4,
+                                OA_TextInput2_10.Text,
+                                5,
+                                OA_TextInput2_7.Text,
+                                6,
+                                OA_TextInput2_11.Text)
                         Visible: =false
                         X: =51
                         Y: =91
