@@ -603,7 +603,7 @@ OpenAccountScreen As screen:
                         Y: =Parent.Height*0.015
                         ZIndex: =27
 
-                    Timer1 As timer:
+                    TimCheckForChangeFocus As timer:
                         AutoPause: =false
                         AutoStart: =lclTimerStart
                         Duration: =100
@@ -689,7 +689,7 @@ OpenAccountScreen As screen:
                                         Set(Idfordata,lclIdentificationDetails.Id);
                                         Set(data_record,lclIdentificationDetails);
                                         UpdateContext({lclTimerStart:false});UpdateContext({lclTimerRepeat:false});
-                                        
+                                        UpdateContext({lclTimerReverseRepeat:true});UpdateContext({lclTimerReverseStart:true});
                                     )
                                 )
                             )
@@ -720,4 +720,36 @@ OpenAccountScreen As screen:
                         X: =51
                         Y: =91
                         ZIndex: =29
+
+                    TimCheckForReverseFocus As timer:
+                        AutoPause: =false
+                        AutoStart: =lclTimerReverseStart
+                        Duration: =100
+                        OnTimerEnd: |-
+                            =If(
+                                IsBlank(Label1.Text) && lclSwitchID =6,
+                                UpdateContext({lclSwitchID:lclSwitchID-1});
+                                 Set(visibility,false );
+                                SetFocus(OA_TextInput2_7),
+                                IsBlank(Label1.Text) && lclSwitchID =5,
+                                UpdateContext({lclSwitchID:lclSwitchID-1});
+                                SetFocus(OA_TextInput2_10),
+                                IsBlank(Label1.Text) && lclSwitchID =4,
+                                UpdateContext({lclSwitchID:lclSwitchID-1});
+                                SetFocus(OA_TextInput2_9),
+                                IsBlank(Label1.Text) && lclSwitchID =3,
+                                UpdateContext({lclSwitchID:lclSwitchID-1});
+                                SetFocus(OA_TextInput2_8),
+                                IsBlank(Label1.Text) && lclSwitchID =2,
+                                UpdateContext({lclSwitchID:lclSwitchID-1});
+                                SetFocus(OA_TextInput2_6),
+                                IsBlank(Label1.Text) && lclSwitchID =1,
+                                UpdateContext({lclTimerReverseRepeat:false});UpdateContext({lclTimerReverseStart:false});
+                                UpdateContext({lclTimerStart:true});UpdateContext({lclTimerRepeat:true});
+                            )
+                        Repeat: =lclTimerReverseRepeat
+                        Visible: =false
+                        X: =27
+                        Y: =309
+                        ZIndex: =30
 
