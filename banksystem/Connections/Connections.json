@@ -1,4 +1,40 @@
 {
+  "06372c55-ee9b-4110-94d6-591fe2a06f51": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1680/1.0.1680.3652/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowDisplayName": {
+          "value": "FR_ExtractPanDetails"
+        },
+        "workflowEntityId": {
+          "value": "1cce6fec-ebe1-ee11-904c-0022486e63c7"
+        },
+        "workflowName": {
+          "value": "b4f8fb12-03f4-9beb-7751-44a6ea58a953"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowDisplayName": {
+          "value": "FR_ExtractPanDetails"
+        },
+        "workflowEntityId": {
+          "value": "1cce6fec-ebe1-ee11-904c-0022486e63c7"
+        },
+        "workflowName": {
+          "value": "b4f8fb12-03f4-9beb-7751-44a6ea58a953"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "FR_ExtractPanDetails"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "06372c55-ee9b-4110-94d6-591fe2a06f51"
+  },
   "0a2ea090-cff8-4477-8f23-68dd0bc4c013": {
     "connectionRef": {
       "displayName": "Logic flows",
@@ -82,6 +118,42 @@
     "dependents": [],
     "id": "22f8fa1c-f941-4992-97ad-7750d240b033"
   },
+  "43e19bea-8bb4-4d1d-b9a3-c3dff7cd04f1": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1680/1.0.1680.3652/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowDisplayName": {
+          "value": "BankingApp_GetTranscriptionFromVideo"
+        },
+        "workflowEntityId": {
+          "value": "0c56dde0-edd6-ee11-904c-000d3aa01f80"
+        },
+        "workflowName": {
+          "value": "1aaa80d5-084d-583e-2290-55a843962133"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowDisplayName": {
+          "value": "BankingApp_GetTranscriptionFromVideo"
+        },
+        "workflowEntityId": {
+          "value": "0c56dde0-edd6-ee11-904c-000d3aa01f80"
+        },
+        "workflowName": {
+          "value": "1aaa80d5-084d-583e-2290-55a843962133"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "BankingApp_GetTranscriptionFromVideo"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "43e19bea-8bb4-4d1d-b9a3-c3dff7cd04f1"
+  },
   "990eedd9-e76a-474e-a77a-45927cbb0447": {
     "connectionRef": {
       "displayName": "Logic flows",
@@ -119,6 +191,42 @@
     },
     "dependents": [],
     "id": "990eedd9-e76a-474e-a77a-45927cbb0447"
+  },
+  "a3847067-8620-4a74-9fde-eaabe86490bc": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1680/1.0.1680.3652/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowDisplayName": {
+          "value": "FR_GetAadharDetails"
+        },
+        "workflowEntityId": {
+          "value": "07720651-46dc-ee11-904c-0022486e63c7"
+        },
+        "workflowName": {
+          "value": "f7be0a57-773b-c768-649a-05ce9a73f371"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowDisplayName": {
+          "value": "FR_GetAadharDetails"
+        },
+        "workflowEntityId": {
+          "value": "07720651-46dc-ee11-904c-0022486e63c7"
+        },
+        "workflowName": {
+          "value": "f7be0a57-773b-c768-649a-05ce9a73f371"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "FR_GetAadharDetails"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "a3847067-8620-4a74-9fde-eaabe86490bc"
   },
   "cae46ba5-af31-4373-a3fc-1bede7ff7044": {
     "connectionRef": {

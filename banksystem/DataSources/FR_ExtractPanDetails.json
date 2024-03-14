@@ -1,0 +1,10 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
+    "FlowNameId": "91d99c33-fd55-4162-a33c-1fab133918ba",
+    "Name": "FR_ExtractPanDetails",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo",
+    "WorkflowEntityId": "1cce6fec-ebe1-ee11-904c-0022486e63c7"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
+    "FlowNameId": "3df69de7-36aa-46bd-a1aa-ff01f23b1035",
+    "Name": "FR_GetAadharDetails",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo",
+    "WorkflowEntityId": "07720651-46dc-ee11-904c-0022486e63c7"
+  }
+]

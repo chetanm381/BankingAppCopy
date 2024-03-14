@@ -63,3 +63,143 @@ Screen1 As screen:
         X: =(Parent.Width-Self.Width)/2
         ZIndex: =9
 
+    AttachmentControlDoc As attachments:
+        AddAttachmentText: ="Upload file"
+        BorderColor: =RGBA(107, 29, 94, 1)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =1
+        Color: =RGBA(107, 29, 94, 1)
+        DropTargetBorderColor: |-
+            =ColorValue("#6B1D5E")
+        DropTargetBorderThickness: =1
+        DropTargetTextColor: |-
+            =ColorValue("#6B1D5E")
+        FontWeight: =FontWeight.Semibold
+        Height: =213
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(Self.HoverBorderColor,30%)
+        IsInDataCard: =true
+        ItemFill: |-
+            =ColorValue("#6B1D5E")
+        ItemHoverColor: =Color.White
+        ItemHoverFill: |-
+            =ColorFade(ColorValue("#6B1D5E"),40%)
+        ItemPressedColor: =ColorFade(Self.HoverColor,70%)
+        ItemPressedFill: =ColorFade(Self.HoverFill,70%)
+        Items: =
+        MaxAttachments: =1
+        MaxAttachmentsText: =""
+        NoAttachmentsText: ="Drop or Drag/ Click here to Upload file"
+        PaddingBottom: =5
+        PaddingLeft: =Self.Width*.15
+        PaddingRight: =5
+        PaddingTop: =PDUD_Image1_61.Y+PDUD_Image1_61.Height-Parent.Height*0.05
+        PressedColor: =ColorFade(Self.HoverColor,70%)
+        PressedFill: =ColorFade(Self.HoverFill,70%)
+        Reset: =true
+        Size: =9
+        Tooltip: =
+        Width: =285
+        X: =81
+        Y: =45
+        ZIndex: =10
+
+    ButtonCanvas1 As Button:
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        OnSelect: |
+            =UpdateContext({lclAadharDetails:FR_GetAadharDetails.Run({file:{name:"file",contentBytes:First(AttachmentControlDoc.Attachments).Value}})});
+            UpdateContext({lclPanDetails:FR_ExtractPanDetails.Run({file:{name:"file",contentBytes:First(AttachmentControlDoc_1.Attachments).Value}})});
+            If(!IsBlank(lclAadharDetails.errormessage),
+                Notify(lclAadharDetails.errormessage));
+            If(!IsBlank(lclPanDetails.errormessage),
+                Notify(lclPanDetails.errormessage));
+        Width: =96
+        X: =490
+        Y: =123
+        ZIndex: =11
+
+    Label7 As label:
+        Height: =226
+        Overflow: =Overflow.Scroll
+        Text: |-
+            =$"Full Name : {lclAadharDetails.fullname}
+            DoB: {lclAadharDetails.dob}
+            Aadhar No: {lclAadharDetails.aadhar}
+            
+            "&
+            
+            
+            
+            $"Full Name : {lclPanDetails.fullname}
+            DoB: {lclPanDetails.dob}
+            PAN: {lclPanDetails.pannumber}"
+        Width: =250
+        X: =733
+        Y: =45
+        ZIndex: =12
+
+    AttachmentControlDoc_1 As attachments:
+        AddAttachmentText: ="Upload file"
+        BorderColor: =RGBA(107, 29, 94, 1)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =1
+        Color: =RGBA(107, 29, 94, 1)
+        DropTargetBorderColor: |-
+            =ColorValue("#6B1D5E")
+        DropTargetBorderThickness: =1
+        DropTargetTextColor: |-
+            =ColorValue("#6B1D5E")
+        FontWeight: =FontWeight.Semibold
+        Height: =213
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(Self.HoverBorderColor,30%)
+        IsInDataCard: =true
+        ItemFill: |-
+            =ColorValue("#6B1D5E")
+        ItemHoverColor: =Color.White
+        ItemHoverFill: |-
+            =ColorFade(ColorValue("#6B1D5E"),40%)
+        ItemPressedColor: =ColorFade(Self.HoverColor,70%)
+        ItemPressedFill: =ColorFade(Self.HoverFill,70%)
+        Items: =
+        MaxAttachments: =1
+        MaxAttachmentsText: =""
+        NoAttachmentsText: ="Drop or Drag/ Click here to Upload file"
+        PaddingBottom: =5
+        PaddingLeft: =Self.Width*.15
+        PaddingRight: =5
+        PaddingTop: =PDUD_Image1_61.Y+PDUD_Image1_61.Height-Parent.Height*0.05
+        PressedColor: =ColorFade(Self.HoverColor,70%)
+        PressedFill: =ColorFade(Self.HoverFill,70%)
+        Reset: =true
+        Size: =9
+        Tooltip: =
+        Width: =285
+        X: =81
+        Y: =314
+        ZIndex: =13
+
+    Label7_2 As label:
+        Height: =226
+        Overflow: =Overflow.Scroll
+        Text: |-
+            =
+            lclDisplayText.transcriptiontext
+        Width: =250
+        X: =733
+        Y: =314
+        ZIndex: =14
+
+    ButtonCanvas1_1 As Button:
+        BasePaletteColor: =
+        DisplayMode: =DisplayMode.Edit
+        FontColor: =
+        Height: =32
+        OnSelect: |-
+            =UpdateContext({lclDisplayText:BankingApp_GetTranscriptionFromVideo.Run({file:{name:"file",contentBytes:First(AttachmentControlDoc_1.Attachments).Value}})})
+        Width: =96
+        X: =490
+        Y: =351
+        ZIndex: =15
+

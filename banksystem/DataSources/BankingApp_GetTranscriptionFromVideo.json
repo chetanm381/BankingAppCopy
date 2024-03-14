@@ -1,0 +1,10 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
+    "FlowNameId": "d44b6037-5e1e-497f-a111-5e3c41b8854c",
+    "Name": "BankingApp_GetTranscriptionFromVideo",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo",
+    "WorkflowEntityId": "0c56dde0-edd6-ee11-904c-000d3aa01f80"
+  }
+]
