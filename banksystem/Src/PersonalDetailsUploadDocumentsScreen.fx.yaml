@@ -946,8 +946,8 @@ PersonalDetailsUploadDocumentsScreen As screen:
                                     )
                                 )
                             );
-                            If((First(data_application).'Date of Birth'<>DateValue(adhardata.dob,"hi-IN"))||(Lower(First(data_application).'Full Name')<>Lower(adhardata.name))||
-                            (First(data_application).'Date of Birth'<>DateValue(pandata.dob,"hi-IN"))||(Lower(First(data_application).'Full Name')<>Lower(pandata.name)),
+                            If((DateValue(First(data_application).'Date of Birth')<>DateValue(adhardata.dob,"hi-IN"))||(Lower(First(data_application).'Full Name')<>Lower(adhardata.name))||
+                            (DateValue(First(data_application).'Date of Birth')<>DateValue(pandata.dob,"hi-IN"))||(Lower(First(data_application).'Full Name')<>Lower(pandata.name)),
                             Set(
                                 loadervisibility,
                                 false

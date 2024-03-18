@@ -215,14 +215,7 @@ OpenAccountScreen As screen:
                         HoverFill: |-
                             =ColorFade(ColorValue("#0ba336"), -20%)
                         OnSelect: |-
-                            =Reset(OA_TextInput2_6);
-                            Reset(OA_TextInput2_8);
-                            Reset(OA_TextInput2_9);
-                            Reset(OA_TextInput2_10);
-                            Reset(OA_TextInput2_7);
-                            Reset(OA_TextInput2_11);
-                            Reset(PDUD_aadharCard);
-                            Reset(PDUD_pancard);
+                            =
                             Set(
                                 visibility,
                                 false
@@ -294,6 +287,14 @@ OpenAccountScreen As screen:
                                 );
                                 
                             );
+                            Reset(OA_TextInput2_6);
+                            Reset(OA_TextInput2_8);
+                            Reset(OA_TextInput2_9);
+                            Reset(OA_TextInput2_10);
+                            Reset(OA_TextInput2_7);
+                            Reset(OA_TextInput2_11);
+                            Reset(PDUD_aadharCard);
+                            Reset(PDUD_pancard);
                             //Navigate(PersonalDetailsUploadDocumentsScreen,ScreenTransition.CoverRight);
                         RadiusBottomLeft: =5
                         RadiusBottomRight: =5
@@ -667,6 +668,7 @@ OpenAccountScreen As screen:
                                         UpdateContext({lclSwitchID:1});
                                         SetFocus(OA_TextInput2_6)
                                         ,
+                                        UpdateContext({lclSwitchID:lclSwitchID+1});
                                         Concurrent(
                                             Set(
                                                 typeofnotification,
@@ -715,6 +717,8 @@ OpenAccountScreen As screen:
                                 5,
                                 OA_TextInput2_7.Text,
                                 6,
+                                OA_TextInput2_11.Text,
+                                7,
                                 OA_TextInput2_11.Text)
                         Visible: =false
                         X: =51
@@ -727,8 +731,8 @@ OpenAccountScreen As screen:
                         Duration: =100
                         OnTimerEnd: |-
                             =If(
-                                IsBlank(Label1.Text) && lclSwitchID =6,
-                                UpdateContext({lclSwitchID:lclSwitchID-1});
+                                IsBlank(Label1.Text) && lclSwitchID =7,
+                                UpdateContext({lclSwitchID:lclSwitchID-2});
                                  Set(visibility,false );
                                 SetFocus(OA_TextInput2_7),
                                 IsBlank(Label1.Text) && lclSwitchID =5,

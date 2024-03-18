@@ -105,7 +105,9 @@ Screen1 As screen:
         ZIndex: =10
 
     ButtonCanvas1 As Button:
+        BasePaletteColor: =
         DisplayMode: =DisplayMode.Edit
+        FontColor: =
         Height: =32
         OnSelect: |
             =UpdateContext({lclAadharDetails:FR_GetAadharDetails.Run({file:{name:"file",contentBytes:First(AttachmentControlDoc.Attachments).Value}})});
